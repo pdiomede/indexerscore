@@ -1,10 +1,10 @@
 # Indexer Score Dashboard — The Graph Network
 This project generates a detailed performance dashboard and CSV report for **indexers** on [The Graph Network](https://thegraph.com). It fetches on-chain data via The Graph Network, evaluates indexers using the custom **Indexer Score** metric, and builds a modern, responsive HTML dashboard.
 
-📊 **Live Dashboard:**  
-👉 [https://indexerscore.com](https://indexerscore.com)
+**Live Dashboard:**  
+🔗 [https://indexerscore.com](https://indexerscore.com)
 
-🧪 This dashboard is part of **Graph Tools Pro**, a community-driven initiative to provide useful, independent analytics tools for the entire [Graph ecosystem](https://thegraph.com).
+🧪 This dashboard is part of [**Graph Tools Pro**](https://graphtools.pro), a community-driven initiative to provide useful, independent analytics tools for the entire [Graph ecosystem](https://thegraph.com).
 
 ---
 

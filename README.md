@@ -1,5 +1,5 @@
 # Indexer Score Dashboard — The Graph Network
-This project generates a detailed performance dashboard and CSV report for **indexers** on [The Graph Network](https://thegraph.com). It fetches on-chain data via The Graph’s hosted subgraph API, evaluates indexers using the custom **Indexer Score** metric, and builds a modern, responsive HTML dashboard.
+This project generates a detailed performance dashboard and CSV report for **indexers** on [The Graph Network](https://thegraph.com). It fetches on-chain data via The Graph Network, evaluates indexers using the custom **Indexer Score** metric, and builds a modern, responsive HTML dashboard.
 
 📊 **Live Dashboard:**  
 👉 [https://indexerscore.com](https://indexerscore.com)

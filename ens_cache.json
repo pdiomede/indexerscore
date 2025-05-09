@@ -1,0 +1,362 @@
+{
+  "0x0058223c6617cca7ce76fc929ec9724cd43d4542": {
+    "ens": "grassets-tech-2.eth",
+    "timestamp": "2025-05-06T11:14:10.878705+00:00"
+  },
+  "0x01f17c392614c7ea586e7272ed348efee21b90a3": {
+    "ens": "oraclegen-indexer.eth",
+    "timestamp": "2025-05-06T11:14:11.228966+00:00"
+  },
+  "0x089f78d8cf0a5ae1b7a581b1910a73f8cb3e4774": {
+    "ens": "darksiders-team.eth",
+    "timestamp": "2025-05-06T11:14:11.491299+00:00"
+  },
+  "0x0b9d582b7fdd387ba13ad7f453d49af255a8ed5e": {
+    "ens": "dapplooker-indexer.eth",
+    "timestamp": "2025-05-06T11:14:11.794513+00:00"
+  },
+  "0x0fd8fd1dc8162148cb9413062fe6c6b144335dbf": {
+    "ens": "a1.protofire.eth",
+    "timestamp": "2025-05-06T11:14:12.038369+00:00"
+  },
+  "0x17def1a43a323c711c7a32101ecf41e58eff54a2": {
+    "ens": "rampdefi4.eth",
+    "timestamp": "2025-05-06T11:14:12.283508+00:00"
+  },
+  "0x1b7e0068ca1d7929c8c56408d766e1510e54d98d": {
+    "ens": "suntzu-indexer-arb.eth",
+    "timestamp": "2025-05-06T11:14:12.534695+00:00"
+  },
+  "0x1b92e4cba0f82c85c1298af861247849988c788c": {
+    "ens": "vincenttaglia-indexer.eth",
+    "timestamp": "2025-05-06T11:14:12.769769+00:00"
+  },
+  "0x269ebeee083ce6f70486a67dc8036a889bf322a9": {
+    "ens": "thomasblock.eth",
+    "timestamp": "2025-05-06T11:14:13.000676+00:00"
+  },
+  "0x2b3c7d1ef5fdfc0557934019c531d3e70d6200ae": {
+    "ens": "",
+    "timestamp": "2025-05-06T11:14:13.227742+00:00"
+  },
+  "0x2e15f3f0d37b191c33ee06e953c8cce4c493b47a": {
+    "ens": "ai.swiftstaking.eth",
+    "timestamp": "2025-05-06T11:14:13.453625+00:00"
+  },
+  "0x2e8d26e9b0d280738728e71c37bf05e70a636238": {
+    "ens": "moonli.eth",
+    "timestamp": "2025-05-06T11:14:13.698607+00:00"
+  },
+  "0x2f09092aacd80196fc984908c5a9a7ab3ee4f1ce": {
+    "ens": "p2p-org-arbitrum.eth",
+    "timestamp": "2025-05-06T11:14:13.973841+00:00"
+  },
+  "0x326c584e0f0eab1f1f83c93cc6ae1acc0feba0bc": {
+    "ens": "graphtronauts-arbitrum.eth",
+    "timestamp": "2025-05-06T11:14:14.218839+00:00"
+  },
+  "0x32bbd16a94ebb289edceebe77f35acc82664157b": {
+    "ens": "rampdefi3.eth",
+    "timestamp": "2025-05-06T11:14:14.455700+00:00"
+  },
+  "0x345c9a221e4caa15f78fb8078c441745de48a225": {
+    "ens": "0xfury.eth",
+    "timestamp": "2025-05-06T11:14:14.690859+00:00"
+  },
+  "0x35917c0eb91d2e21bef40940d028940484230c06": {
+    "ens": "streamingfastindexer.eth",
+    "timestamp": "2025-05-06T11:14:14.925618+00:00"
+  },
+  "0x3717cef8020bddee7a18f4efb2bfa88fefdcb1bc": {
+    "ens": "pinax2.eth",
+    "timestamp": "2025-05-06T11:14:15.144716+00:00"
+  },
+  "0x3863a65ce278a240f9aa2a4b4a48493be59e6139": {
+    "ens": "indexer.nftx.eth",
+    "timestamp": "2025-05-06T11:14:15.393314+00:00"
+  },
+  "0x38f412c8d6346a17a53ff9ceecd2e01acecd27c0": {
+    "ens": "graphops.eth",
+    "timestamp": "2025-05-06T11:14:15.640506+00:00"
+  },
+  "0x3b9ba748691f135b71582dc3292e5e3ed7e13341": {
+    "ens": "",
+    "timestamp": "2025-05-06T11:14:15.882338+00:00"
+  },
+  "0x3e1536fc83cd5bed83a521a26034ff3e59c6a7c4": {
+    "ens": "differential-graph.eth",
+    "timestamp": "2025-05-06T11:14:16.114798+00:00"
+  },
+  "0x3f74870f80ff7449fe4c6ff257da5fa72734c970": {
+    "ens": "stake\ud83e\udd91squid-2.eth",
+    "timestamp": "2025-05-06T11:14:16.346787+00:00"
+  },
+  "0x4207df52f7ff229364899b21e9c4ad36d3d42981": {
+    "ens": "lux8-net.eth",
+    "timestamp": "2025-05-06T11:14:16.583887+00:00"
+  },
+  "0x474e571ab6dd77489ec3c7ddf9cbc893fcba684c": {
+    "ens": "allnodescom.eth",
+    "timestamp": "2025-05-06T11:14:16.833005+00:00"
+  },
+  "0x4d67938e9b07681526fe0345a45b770bba88c659": {
+    "ens": "4block-team.eth",
+    "timestamp": "2025-05-06T11:14:17.078239+00:00"
+  },
+  "0x4e5c87772c29381bcabc58c3f182b6633b5a274a": {
+    "ens": "indexer.datanexus.eth",
+    "timestamp": "2025-05-06T11:14:17.417534+00:00"
+  },
+  "0x51637a35f7f054c98ed51904de939b9561d37885": {
+    "ens": "kolbin.eth",
+    "timestamp": "2025-05-06T11:14:17.679126+00:00"
+  },
+  "0x53dbbc9d916b1840a2c4c26b150ba2e13f36e10f": {
+    "ens": "thoalt-indexer.eth",
+    "timestamp": "2025-05-06T11:14:17.908632+00:00"
+  },
+  "0x550c1f4814a85aa10f5f061ca8c45e2ee9620226": {
+    "ens": "experimental.infradao.eth",
+    "timestamp": "2025-05-06T11:14:18.134222+00:00"
+  },
+  "0x59749d1fa9635cd0413aeff5ee295490a7e87f54": {
+    "ens": "",
+    "timestamp": "2025-05-06T11:14:18.385496+00:00"
+  },
+  "0x5b3c8f7245dfbd9bea22d9c4b975df60a638e5a3": {
+    "ens": "thegraph.mind-heart-soul.eth",
+    "timestamp": "2025-05-06T11:14:18.856945+00:00"
+  },
+  "0x5ddee9720e17aad28febb55643cd8ab50c51c60b": {
+    "ens": "maplenodes.eth",
+    "timestamp": "2025-05-06T11:14:19.082700+00:00"
+  },
+  "0x600f2b53719e1dbacf340572b31a9df9921b82fa": {
+    "ens": "",
+    "timestamp": "2025-05-06T11:14:19.307818+00:00"
+  },
+  "0x63c9dc729ba7a22bb8605216b24a34b902e5fe94": {
+    "ens": "infradao.eth",
+    "timestamp": "2025-05-06T11:14:19.550164+00:00"
+  },
+  "0x6f3ce93a09f30f18d728d2364268b5fe9444b89e": {
+    "ens": "",
+    "timestamp": "2025-05-06T11:14:19.776293+00:00"
+  },
+  "0x6f8a032b4b1ee622ef2f0fc091bdbb98cfae81a3": {
+    "ens": "indexer.semiotic.eth",
+    "timestamp": "2025-05-06T11:14:20.032994+00:00"
+  },
+  "0x6f9bb7e454f5b3eb2310343f0e99269dc2bb8a1d": {
+    "ens": "cp0x.eth",
+    "timestamp": "2025-05-06T11:14:20.262402+00:00"
+  },
+  "0x735f422922bd4d459ea491f46e1bb9295b89f961": {
+    "ens": "",
+    "timestamp": "2025-05-06T11:14:20.502271+00:00"
+  },
+  "0x74dbb201ecc0b16934e68377bc13013883d9417b": {
+    "ens": "rickydata-indexer.eth",
+    "timestamp": "2025-05-06T11:14:20.723770+00:00"
+  },
+  "0x7bb834017672b1135466661d8dd69c5dd0b3bf51": {
+    "ens": "dataservices.eth",
+    "timestamp": "2025-05-06T11:14:20.959925+00:00"
+  },
+  "0x8bbe94c2894f76406568dfb44e905dac4b7df699": {
+    "ens": "",
+    "timestamp": "2025-05-06T11:14:21.266797+00:00"
+  },
+  "0x8f689a83dd52eaa1d5ad6a40c46189b4a0d70b06": {
+    "ens": "art3mis-cloud.eth",
+    "timestamp": "2025-05-06T11:14:21.525593+00:00"
+  },
+  "0x9082f497bdc512d08ffde50d6fce28e72c2addcf": {
+    "ens": "holographic-indexer.eth",
+    "timestamp": "2025-05-06T11:14:21.754097+00:00"
+  },
+  "0x918fcc24e6b7f5ec73b4cf766e2393d8fe707541": {
+    "ens": "dacm.eth",
+    "timestamp": "2025-05-06T11:14:22.004554+00:00"
+  },
+  "0x91f137715ef8e141d6a8074cbbbc53a0f76b09c5": {
+    "ens": "chainodetech-arbitrum.eth",
+    "timestamp": "2025-05-06T11:14:22.229636+00:00"
+  },
+  "0x920fdeb00ee04dd72f62d8a8f80f13c82ef76c1e": {
+    "ens": "braindexer.eth",
+    "timestamp": "2025-05-06T11:14:22.476977+00:00"
+  },
+  "0x958ad15ea21fb79b935524cf90c90276031bee20": {
+    "ens": "hashkeycloud.eth",
+    "timestamp": "2025-05-06T11:14:22.717093+00:00"
+  },
+  "0x9da1017766bfeb2835db4f811516eea68996538b": {
+    "ens": "ryabina.eth",
+    "timestamp": "2025-05-06T11:14:22.972074+00:00"
+  },
+  "0xa01b06b0e9feb016d5ab669ce89d059bc666e569": {
+    "ens": "",
+    "timestamp": "2025-05-06T11:14:23.213428+00:00"
+  },
+  "0xa181d0f242b3730f8a244cc94eda05faf17a43e8": {
+    "ens": "",
+    "timestamp": "2025-05-06T11:14:23.452710+00:00"
+  },
+  "0xa28a99b0219a34142a9398a19460fcd69250a2b2": {
+    "ens": "",
+    "timestamp": "2025-05-06T11:14:23.679857+00:00"
+  },
+  "0xa4d629ba2ffb3321008d8cec37cca077696bf24d": {
+    "ens": "",
+    "timestamp": "2025-05-06T11:14:23.946757+00:00"
+  },
+  "0xa6ff993e0f6253f1b7f55c873577a2f0f0ceb325": {
+    "ens": "",
+    "timestamp": "2025-05-06T11:14:24.208291+00:00"
+  },
+  "0xa9b5da22440dedd72535ec0525582ca0b63be5e1": {
+    "ens": "pdp-indexer.eth",
+    "timestamp": "2025-05-06T11:14:24.481210+00:00"
+  },
+  "0xaa988dcb035518bc0e20082a3148a5d3dfd1776d": {
+    "ens": "stake\ud83e\udd91squid-1.eth",
+    "timestamp": "2025-05-06T11:14:24.699770+00:00"
+  },
+  "0xaddd3e23599d2b7267067afbcd18830aefca640a": {
+    "ens": "",
+    "timestamp": "2025-05-06T11:14:24.927126+00:00"
+  },
+  "0xb4b4570df6f7fe320f10fdfb702dba7e35244550": {
+    "ens": "nodeify.eth",
+    "timestamp": "2025-05-06T11:14:25.194906+00:00"
+  },
+  "0xb54c7c9fa1a51300e6054b70ae9952c1fb2800b4": {
+    "ens": "kukisglobal.eth",
+    "timestamp": "2025-05-06T11:14:25.433493+00:00"
+  },
+  "0xb8ca929e2bd96548cabcabc56cfc9a5147cef0ff": {
+    "ens": "waynewayner.eth",
+    "timestamp": "2025-05-06T11:14:25.659826+00:00"
+  },
+  "0xc55c63563efb36f7cc65ac3060c52987c6694b37": {
+    "ens": "figment-prime.eth",
+    "timestamp": "2025-05-06T11:14:25.897028+00:00"
+  },
+  "0xc9014686f6336ad558b539565d5dff840b339082": {
+    "ens": "rampdefigrt.eth",
+    "timestamp": "2025-05-06T11:14:26.147024+00:00"
+  },
+  "0xcba919cf1ee9c537545975d9968718a09d20f071": {
+    "ens": "",
+    "timestamp": "2025-05-06T11:14:26.379329+00:00"
+  },
+  "0xd9819426c82e2b8fc58b9b62a78efe93f78077c6": {
+    "ens": "",
+    "timestamp": "2025-05-06T11:14:26.631153+00:00"
+  },
+  "0xda20dde459c8d918f81566995d899a046d4d8503": {
+    "ens": "dsrvlabs-indexer-01.eth",
+    "timestamp": "2025-05-06T11:14:26.874320+00:00"
+  },
+  "0xdc7daef4d0751a9f6ec28b06d6d9475b13eb0918": {
+    "ens": "bitnordic.eth",
+    "timestamp": "2025-05-06T11:14:27.121340+00:00"
+  },
+  "0xdeb712db301285ed483ef9e02dd08a1980f273f1": {
+    "ens": "easy2stake-com.eth",
+    "timestamp": "2025-05-06T11:14:27.367230+00:00"
+  },
+  "0xdec965f0604125be05cd8a136c85d02ef344d61a": {
+    "ens": "stakesquid-3.eth",
+    "timestamp": "2025-05-06T11:14:27.610276+00:00"
+  },
+  "0xdecba5154aab37ae5e381a19f804f3af4d1bcbb5": {
+    "ens": "0y.decisionbasis.eth",
+    "timestamp": "2025-05-06T11:14:27.845965+00:00"
+  },
+  "0xe0ceec6daa59cc951f3f71d6fc4221e55ef6c386": {
+    "ens": "arb.stake-machine.eth",
+    "timestamp": "2025-05-06T11:14:28.088630+00:00"
+  },
+  "0xe13840a2e92e0cb17a246609b432d0fa2e418774": {
+    "ens": "lunanova-indexer.eth",
+    "timestamp": "2025-05-06T11:14:28.324485+00:00"
+  },
+  "0xe48b586eeb81bde60f14b0b8d80ddd06c7a24720": {
+    "ens": "",
+    "timestamp": "2025-05-06T11:14:28.549611+00:00"
+  },
+  "0xe63e935fba572784d5aa40715e372e7948bbdb12": {
+    "ens": "chorusone-thegraph.eth",
+    "timestamp": "2025-05-06T11:14:28.790065+00:00"
+  },
+  "0xe6de2325ef1aac1f058fae59d3c38a472f569846": {
+    "ens": "",
+    "timestamp": "2025-05-06T11:14:29.013988+00:00"
+  },
+  "0xe91273727203bcc827521fc8b0c762d435c3c5d0": {
+    "ens": "",
+    "timestamp": "2025-05-06T11:14:29.253432+00:00"
+  },
+  "0xe9e284277648fcdb09b8efc1832c73c09b5ecf59": {
+    "ens": "",
+    "timestamp": "2025-05-06T11:14:29.486083+00:00"
+  },
+  "0xeccdf8231326a9c5aad32df76a633aaa4c49b104": {
+    "ens": "catapulta.eth",
+    "timestamp": "2025-05-06T11:14:29.708723+00:00"
+  },
+  "0xedca8740873152ff30a2696add66d1ab41882beb": {
+    "ens": "pinax.eth",
+    "timestamp": "2025-05-06T11:14:29.942587+00:00"
+  },
+  "0xeeeee689aa442c607105f29f06d00d2f748776b2": {
+    "ens": "grt.stakecn.eth",
+    "timestamp": "2025-05-06T11:14:30.168923+00:00"
+  },
+  "0xf00f7157fa8fd0420b87956d46058a16b2f23adc": {
+    "ens": "p2p-org-booster.eth",
+    "timestamp": "2025-05-06T11:14:30.465834+00:00"
+  },
+  "0xf0e33495afe697dbe32168bd0743ba32ebb978a3": {
+    "ens": "blockonaut.eth",
+    "timestamp": "2025-05-06T11:14:30.686734+00:00"
+  },
+  "0xf57dcd881ebd1d81df99194abdfa90f9e0e92f11": {
+    "ens": "",
+    "timestamp": "2025-05-06T11:14:30.951306+00:00"
+  },
+  "0xf671c6b83f44ead14ca1c5f4a629f1b9b18c8f29": {
+    "ens": "capitanbeto.eth",
+    "timestamp": "2025-05-06T11:14:31.188370+00:00"
+  },
+  "0xf7793bf9561c32ffbac603ce572fa55643f9cf72": {
+    "ens": "",
+    "timestamp": "2025-05-06T11:14:31.467376+00:00"
+  },
+  "0xf9123292b4d958c53aaad8c5df0138ee0e62944b": {
+    "ens": "figment-prime-2.eth",
+    "timestamp": "2025-05-06T11:14:31.723184+00:00"
+  },
+  "0xf92f430dd8567b0d466358c79594ab58d919a6d4": {
+    "ens": "ellipfra-indexer.eth",
+    "timestamp": "2025-05-06T11:14:31.965661+00:00"
+  },
+  "0xfb168335f5a3868a03696904ed38fa95fd167c0e": {
+    "ens": "validatrium.eth",
+    "timestamp": "2025-05-06T11:14:32.186506+00:00"
+  },
+  "0xfc842f81490dcb37e82d416b2d28327dfb24ba9a": {
+    "ens": "grassets-tech-1.eth",
+    "timestamp": "2025-05-06T11:14:32.421320+00:00"
+  },
+  "0xfeff9093f6b32d0e5cddba743b06a1fedb87c004": {
+    "ens": "p-ops2.eth",
+    "timestamp": "2025-05-06T11:14:32.759057+00:00"
+  },
+  "0x5af569b692b0598721461027dbbecde74d465d99": {
+    "ens": "",
+    "timestamp": "2025-05-06T11:14:18.614964+00:00"
+  }
+}

@@ -1,0 +1,2702 @@
+
+    <html>
+    <head>
+        <meta charset='UTF-8' />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <title>Indexer Score Dashboard - The Graph Network</title>
+        <meta name="description" content="Explore The Graph Indexer Score Dashboard to analyze indexer performance, allocations, and rewards.">
+        <meta name="keywords" content="The Graph, Indexer Score, blockchain indexing, GRT, subgraph allocations, query fees, indexer performance">
+        <meta name="robots" content="index, follow">
+
+        <link rel="canonical" href="https://indexerscore.com/index.html">
+
+        <meta property="og:title" content="Indexer Score Dashboard - The Graph Network">
+        <meta property="og:description" content="Explore The Graph Indexer Score Dashboard to analyze indexer performance, allocations, and rewards.">
+        <meta property="og:image" content="https://graphtools.pro/IndexerScore.jpg">
+        <meta property="og:url" content="https://indexerscore.com/index.html">
+        <meta property="og:type" content="website">
+
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:title" content="Indexer Score Dashboard - The Graph Network">
+        <meta name="twitter:description" content="Analyze indexer performance and rewards on The Graph Network with our dashboard.">
+        <meta name="twitter:image" content="https://graphtools.pro/IndexerScore.jpg">
+        <meta name="twitter:site" content="@graphtronauts_c">
+
+        <link rel="icon" type="image/png" href="https://graphtools.pro/favicon.ico">
+
+        <style>
+            :root {
+                --bg-color: #111;
+                --text-color: #fff;
+                --table-bg: #1e1e1e;
+                --header-bg: #333;
+                --link-color: #fff;
+            }
+            
+            .light-mode {
+                --bg-color: #f0f2f5;
+                --text-color: #000;
+                --table-bg: #ffffff;
+                --header-bg: #ddd;
+                --link-color: #000;
+            }
+            
+            body {
+                font-family: Arial, sans-serif;
+                padding: 10px 20px 20px 20px;
+                margin-top: 0;
+                background-color: var(--bg-color);
+                color: var(--text-color);
+                transition: all 0.3s ease;
+            }
+
+            .header-container {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin-bottom: 15px;
+                line-height: 1;
+            }
+            
+            .breadcrumb {
+                font-size: 0.9em;
+                margin: 0;
+                padding: 0;
+                display: flex;
+                align-items: center;
+            }
+
+            .toggle-container {
+                display: flex;
+                align-items: center;
+                margin: 0;
+                padding: 0;
+            }
+
+            .toggle-switch {
+                position: relative;
+                width: 50px;
+                height: 24px;
+                margin-right: 10px;
+            }
+
+            .toggle-switch input {
+                opacity: 0;
+                width: 0;
+                height: 0;
+            }
+
+            .toggle-switch .slider {
+                position: absolute;
+                top: 0; left: 0;
+                right: 0; bottom: 0;
+                background: #ccc;
+                transition: 0.4s;
+                border-radius: 34px;
+            }
+
+            .toggle-switch .slider:before {
+                position: absolute;
+                content: "";
+                height: 18px;
+                width: 18px;
+                left: 4px;
+                bottom: 3px;
+                background: white;
+                transition: 0.4s;
+                border-radius: 50%;
+            }
+
+            .toggle-switch input:checked + .slider {
+                background: #2196F3;
+            }
+
+            .toggle-switch input:checked + .slider:before {
+                transform: translateX(24px);
+            }
+
+            #toggle-icon {
+                font-size: 1.5rem;
+                line-height: 1;
+            }
+
+            .divider {
+                border: 0;
+                height: 2px;
+                background: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0));
+                margin: 15px 0;
+            }
+
+            .light-mode .divider {
+                background: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0));
+            }
+    
+            .tooltip-wrapper {
+                position: relative;
+                display: inline-block;
+                cursor: help;
+                border-bottom: 1px dotted #999;
+            }
+            .tooltip-wrapper::after {
+                font-size: 50%;
+            }
+
+            .tooltip-text {
+                visibility: hidden;
+                background-color: #333;
+                color: #fff;
+                text-align: left;
+                padding: 6px 10px;
+                border-radius: 4px;
+                position: absolute;
+                z-index: 1000;
+                top: -5px;
+                left: 50%;
+                transform: translateX(-50%);
+                opacity: 0;
+                transition: opacity 0.3s;
+                width: max-content;
+                max-width: 220px;
+                font-size: 13px;
+                pointer-events: none;
+                white-space: normal;
+            }
+
+            .tooltip-wrapper:hover .tooltip-text {
+                visibility: visible;
+                opacity: 1;
+                display: block;
+                position: absolute;
+           }
+
+            .highlight-delegator {
+                color: #0066ff !important;
+            }
+            .dark-mode .highlight-delegator {
+                color: #66b3ff !important;
+            }
+
+            .box {
+                padding: 10px;
+                margin-top: 20px;
+                border-left: 5px solid;
+                width: 50%;
+            }
+
+            .thresholds-box {
+                background-color: #e1f5fe;
+                border-color: #2196f3;
+            }
+
+            .network-box {
+                background-color: #e8f5e9;
+                border-color: #4caf50;
+            }
+
+            .dark-mode .thresholds-box {
+                background-color: #1e2a38;
+                color: #eee;
+            }
+
+            .dark-mode .network-box {
+                background-color: #1e3022;
+                color: #eee;
+            }
+
+            a {
+                color: var(--link-color);
+                text-decoration: none;
+            }
+            a:hover {
+                text-decoration: underline;
+            }
+
+            table {
+                border-collapse: collapse;
+                width: 100%;
+                border-radius: 12px;
+                overflow: hidden;
+                border: 1px solid #ccc;
+            }
+
+            th, td {
+                border: 1px solid #ccc;
+                padding: 8px;
+                text-align: left;
+            }
+
+            th {
+                background-color: #f2f2f2;
+                cursor: pointer;
+                font-size: 0.85em;
+                /* Remove underlining effect */
+                text-decoration: none;
+                border-bottom: none;
+            }
+
+            th span {
+                text-decoration: none !important;
+                border-bottom: none !important;
+            }
+
+            tr:nth-child(even) {
+                background-color: #fafafa;
+            }
+
+            .dark-mode table {
+                border-color: #555;
+            }
+
+            .dark-mode th {
+                background-color: #444;
+                color: #fff;
+            }
+
+            .dark-mode tr:nth-child(even) {
+                background-color: #2c2c2c;
+            }
+
+            .light-mode table {
+                background-color: #ffffff;
+                color: #000;
+            }
+
+            .light-mode th, .light-mode td {
+                background-color: #ffffff;
+                color: #000;
+            }
+
+            .switch {
+                position: relative;
+                display: inline-block;
+                width: 50px;
+                height: 24px;
+            }
+
+            .switch input {
+                opacity: 0;
+                width: 0;
+                height: 0;
+            }
+
+            .slider {
+                position: absolute;
+                cursor: pointer;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                background-color: #ccc;
+                transition: .4s;
+                border-radius: 24px;
+            }
+
+            .slider:before {
+                position: absolute;
+                content: "";
+                height: 18px;
+                width: 18px;
+                left: 3px;
+                bottom: 3px;
+                background-color: white;
+                transition: .4s;
+                border-radius: 50%;
+            }
+
+            input:checked + .slider {
+                background-color: #2196f3;
+            }
+
+            input:checked + .slider:before {
+                transform: translateX(26px);
+            }
+
+            th.sorted-column {
+                background-color: #d1ecf1 !important;
+                color: #000 !important;
+            }
+
+            th.sorted-column::after {
+                content: attr(data-sort-direction);
+                margin-left: 6px;
+                font-size: 12px;
+            }
+
+            .sorted-column {
+                background-color: #d1ecf1 !important;
+            }
+
+            .version { 
+                font-size: 12px; 
+            }
+
+            .download-button { 
+                padding: 5px 10px; background-color: #4CAF50; color: white; border: none; border-radius: 3px; cursor: pointer;
+            }
+
+            .download-button:hover { 
+                background-color: #45a049; 
+            }
+
+            .performance-filter a {
+                text-decoration: none;
+            }
+
+            .footer {
+                    text-align: center;
+                    margin: 10px 0 40px;
+                    font-size: 0.9rem;
+                    opacity: 0.9;
+            }
+
+            .footer a {
+                color: #80bfff;
+                text-decoration: none;
+                transition: color 0.3s ease;
+            }
+
+            .footer a:hover {
+                color: #4d94ff;
+            }
+
+            .light-mode .footer a {
+                color: #0066cc;
+            }
+
+            .light-mode .footer a:hover {
+            color: #0033ff;
+            }
+
+            .footer-divider {
+                border: none;
+                border-bottom: 1px solid rgba(200, 200, 200, 0.2);
+                margin: 40px 0 10px;
+                opacity: 0.8;
+            }
+
+            .current-page-title {
+                color: #00bcd4;
+                font-weight: bold;
+            }
+
+            .light-mode .current-page-title {
+                color: #1a73e8;
+            }
+            
+            .filter-button.active-filter {
+                background-color: #ffeb3b;
+                padding: 2px 6px;
+                border-radius: 4px;
+                color: black;
+                font-weight: bold;
+            }
+
+        </style>
+
+        <!-- Plausible Analytics -->
+        <script defer data-domain="indexerscore.com" src="https://plausible.io/js/script.file-downloads.hash.outbound-links.pageview-props.tagged-events.js"></script>
+        <script>
+            window.plausible = window.plausible || function() {
+                (window.plausible.q = window.plausible.q || []).push(arguments)
+            }
+        </script>
+
+    </head>
+    
+    <body>
+        <!-- Header with breadcrumb and toggle -->
+
+        <div class="header-container">
+            <div class="breadcrumb" style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-weight: 500; font-size: 0.85em; letter-spacing: 0.3px; text-shadow: 0 1px 2px rgba(0,0,0,0.15);">
+                <a href="https://graphtools.pro" class="home-link" style="text-decoration: none;">🏠 Home</a>&nbsp;&nbsp;&raquo;&nbsp;&nbsp;
+                <span class="current-page-title">📊 Indexer Score Dashboard</span>    
+            </div>
+
+            <div class="toggle-container">
+                <label class="toggle-switch">
+                  <input type="checkbox">
+                  <span class="slider"></span>
+                </label>
+                <span id="toggle-icon">🌙</span>
+            </div>
+        </div>
+
+        
+        <hr class="divider">
+        <div style="text-align: center;">       
+            <h1 style="margin-bottom: 4px;">Indexer Score Dashboard</h1>
+            <div style="text-align: center; font-size: 0.8em; color: var(--text-color); margin-top: 0; margin-bottom: 30px;">
+                Generated on: 2025-05-06 13:22:41 UTC - (updated every 6 hours) - v1.2.1
+                <p style="margin-top: 10px;">
+                    💬 <a target="_blank" href="https://forum.thegraph.com/t/introducing-the-indexer-score/6501">Join the Forum Discussion</a>
+                    | 📚 <a href="docs.html" target="_blank">How the Dashboard Works</a>
+                    | 📄 <a  target="_blank" href="./indexer_score_documentation_v1.1.0.pdf" download>Download PDF Documentation</a>
+                </p>
+            </div>
+        </div>
+
+ 
+        <div style="display: flex; gap: 20px; flex-wrap: wrap;">
+            <!-- Network Stats Box -->
+            <div style="padding: 6px 12px; background-color: #d6cbd3; border-left: 5px solid #4caf50; width: fit-content; color: black !important;">
+                <ul style="margin: 0; padding-left: 20px;">
+                    <li><strong>Active Indexers:</strong> 98  <span style="font-size: 0.8em;"> (excluding the Upgrade Indexer)</span></li>
+                    <li><strong>Indexers with allocations:</strong> 90</li>
+                    <li><strong>Indexers serving <span style="color: #c83349;">less than</span> 10 allocations:</strong> 29 <span style="font-size: 0.8em;">→ check the 'Underserving' column</span></li>
+                </ul>
+            </div>
+        </div>
+
+        <br /> 
+        <br />
+
+        <div style="display: flex; align-items: center; gap: 12px; flex-wrap: wrap; margin-bottom: 10px;">
+            <input type="text" id="searchBox" placeholder="Search indexers..." style="padding: 5px; width: 300px;" />
+            
+            <button class="download-button" onclick="downloadCSV()">Download CSV</button>
+
+            <div class="performance-filter" style="display: flex; align-items: center; gap: 8px; font-size: 0.8em;">
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong style="margin-right: 6px;">Filter by Performance: </strong>
+                <a href="#" class="filter-button" onclick="filterByFlag('Excellent')">🟢 Excellent (39)</a>
+                | <a href="#" class="filter-button" onclick="filterByFlag('Fair')">🟡 Fair (24)</a>
+                | <a href="#" class="filter-button" onclick="filterByFlag('Poor')">🔴 Poor (27)</a>
+                | <a href="#" class="filter-button" onclick="filterByFlag('All')">🧹 Clear Filter</a>
+            </div>
+
+        </div>
+        
+        <div style="overflow-x: auto; border-radius: 12px; border: 1px solid #ccc;">
+        <table>
+            <tr>
+                <th>
+                  <span class="tooltip-wrapper">ID<span class="tooltip-text">ETH address or ENS of the Indexer</span></span>
+                </th>
+                <th>
+                  <span class="tooltip-wrapper">Allocated Stake<span class="tooltip-text">GRT currently allocated by the Indexer</span></span>
+                </th>
+                <th>
+                  <span class="tooltip-wrapper"># Allocations<span class="tooltip-text">Number of active allocations the Indexer has open</span></span>
+                </th>
+                <th>
+                  <span class="tooltip-wrapper highlight-delegator">Delegator Reward %<span class="tooltip-text">Percentage of total rewards given to Delegators</span></span>
+                </th>
+                <th>
+                  <span class="tooltip-wrapper">Delegator Rewards<span class="tooltip-text">Delegators portion of indexing rewards</span></span>
+                </th>
+                <th>
+                  <span class="tooltip-wrapper">Indexing Rewards<span class="tooltip-text">Indexer portion of indexing rewards</span></span>
+                </th>
+                <th>
+                  <span class="tooltip-wrapper">Total Rewards<span class="tooltip-text">Total rewards earned (Indexer + delegators)</span></span>
+                </th>
+                <th>
+                  <span class="tooltip-wrapper">Underserving<span class="tooltip-text">Yes if Indexer is serving fewer than 10 subgraphs</span></span>
+                </th>
+                <th>
+                  <span class="tooltip-wrapper">Indexer Score<span class="tooltip-text">Final Indexer Score (1 = best, 10 = worst)</span></span>
+                </th>
+                <th data-sort-direction="asc" class="sorted-column">
+                  <span class="tooltip-wrapper">Performance<span class="tooltip-text">Performance flag based on score</span></span>
+                </th>
+            </tr>
+    
+        <tr>
+            
+            <td>
+                <img src='https://api.thegraph.com/ipfs/api/v0/cat?arg=QmdYKDtquMu1mMXCAbPT9GKqYBDrmZbCNvHGMf86z2ChUJ' style='width:20px; height:20px; border-radius:50%; vertical-align:middle; margin-right:6px;' />
+                <a target="_blank" href="https://thegraph.com/explorer/profile/0x0058223c6617cca7ce76fc929ec9724cd43d4542?view=Overview&chain=arbitrum-one"><span style="font-size: 0.85em;">grassets-tech-2.eth</span></a>
+            <!--
+                <a href="statements/0x0058223c6617cca7ce76fc929ec9724cd43d4542.pdf" target="_blank">
+                    <img src="images/pdf.png" alt="PDF" style="width:14px; height:14px; vertical-align:middle; margin-left:6px;" />
+                </a>
+            -->
+            </td>
+
+            <td data-value="5217804.0"><span style="font-size: 0.85em;">5,217,804</span></td>
+            <td data-value="15"><span style="font-size: 0.85em;">15</span></td>
+            <td data-value="53.47"><span style="font-size: 0.85em; color: #0066ff;">53.47%</span></td>
+            <td data-value="1298682.679725704"><span style="font-size: 0.85em;">1,298,683</span></td>
+            <td data-value="1130122.7024477816"><span style="font-size: 0.85em;">1,130,123</span></td>
+            <td data-value="2428805.3821734856"><span style="font-size: 0.85em;">2,428,805</span></td>
+            <td style="color: inherit;"><span style="font-size: 0.85em;">No</span></td>
+            <td data-value="1.45"><span style="font-size: 0.85em;">1.45</span></td>
+            <td data-value="1.45"><span style="font-size: 0.85em;">Fair 🟡</span></td>
+        </tr>
+        
+        <tr>
+            
+            <td>
+                <img src='https://api.thegraph.com/ipfs/api/v0/cat?arg=QmVARwoQwcnF8RFRJohirJy6nHKNsRXSNXcGuskefHCZG3' style='width:20px; height:20px; border-radius:50%; vertical-align:middle; margin-right:6px;' />
+                <a target="_blank" href="https://thegraph.com/explorer/profile/0x01f17c392614c7ea586e7272ed348efee21b90a3?view=Overview&chain=arbitrum-one"><span style="font-size: 0.85em;">oraclegen-indexer.eth</span></a>
+            <!--
+                <a href="statements/0x01f17c392614c7ea586e7272ed348efee21b90a3.pdf" target="_blank">
+                    <img src="images/pdf.png" alt="PDF" style="width:14px; height:14px; vertical-align:middle; margin-left:6px;" />
+                </a>
+            -->
+            </td>
+
+            <td data-value="8112350.0"><span style="font-size: 0.85em;">8,112,350</span></td>
+            <td data-value="2"><span style="font-size: 0.85em;">2</span></td>
+            <td data-value="22.00"><span style="font-size: 0.85em; color: #0066ff;">22.00%</span></td>
+            <td data-value="550341.2937571064"><span style="font-size: 0.85em;">550,341</span></td>
+            <td data-value="1951210.041502468"><span style="font-size: 0.85em;">1,951,210</span></td>
+            <td data-value="2501551.3352595745"><span style="font-size: 0.85em;">2,501,551</span></td>
+            <td style="color: #c83349;"><span style="font-size: 0.85em;">Yes</span></td>
+            <td data-value="7.71"><span style="font-size: 0.85em;">7.71</span></td>
+            <td data-value="7.71"><span style="font-size: 0.85em;">Poor 🔴</span></td>
+        </tr>
+        
+        <tr>
+            
+            <td>
+                <img src='https://api.thegraph.com/ipfs/api/v0/cat?arg=QmXhGmdGC5sxb9b3p5JTzFqq9iUC7CKPTa7oPXpQ8CTjnk' style='width:20px; height:20px; border-radius:50%; vertical-align:middle; margin-right:6px;' />
+                <a target="_blank" href="https://thegraph.com/explorer/profile/0x089f78d8cf0a5ae1b7a581b1910a73f8cb3e4774?view=Overview&chain=arbitrum-one"><span style="font-size: 0.85em;">darksiders-team.eth</span></a>
+            <!--
+                <a href="statements/0x089f78d8cf0a5ae1b7a581b1910a73f8cb3e4774.pdf" target="_blank">
+                    <img src="images/pdf.png" alt="PDF" style="width:14px; height:14px; vertical-align:middle; margin-left:6px;" />
+                </a>
+            -->
+            </td>
+
+            <td data-value="30144840.0"><span style="font-size: 0.85em;">30,144,840</span></td>
+            <td data-value="20"><span style="font-size: 0.85em;">20</span></td>
+            <td data-value="83.46"><span style="font-size: 0.85em; color: #0066ff;">83.46%</span></td>
+            <td data-value="5232078.014542356"><span style="font-size: 0.85em;">5,232,078</span></td>
+            <td data-value="1036520.9580514678"><span style="font-size: 0.85em;">1,036,521</span></td>
+            <td data-value="6268598.972593823"><span style="font-size: 0.85em;">6,268,599</span></td>
+            <td style="color: inherit;"><span style="font-size: 0.85em;">No</span></td>
+            <td data-value="1.95"><span style="font-size: 0.85em;">1.95</span></td>
+            <td data-value="1.95"><span style="font-size: 0.85em;">Fair 🟡</span></td>
+        </tr>
+        
+        <tr>
+            
+            <td>
+                <img src='https://api.thegraph.com/ipfs/api/v0/cat?arg=QmWNp5bTnYsEdXZiig2AUVDbF7GmeurzjFFjwU8sbLy7ey' style='width:20px; height:20px; border-radius:50%; vertical-align:middle; margin-right:6px;' />
+                <a target="_blank" href="https://thegraph.com/explorer/profile/0x0b9d582b7fdd387ba13ad7f453d49af255a8ed5e?view=Overview&chain=arbitrum-one"><span style="font-size: 0.85em;">dapplooker-indexer.eth</span></a>
+            <!--
+                <a href="statements/0x0b9d582b7fdd387ba13ad7f453d49af255a8ed5e.pdf" target="_blank">
+                    <img src="images/pdf.png" alt="PDF" style="width:14px; height:14px; vertical-align:middle; margin-left:6px;" />
+                </a>
+            -->
+            </td>
+
+            <td data-value="3616693.0"><span style="font-size: 0.85em;">3,616,693</span></td>
+            <td data-value="5"><span style="font-size: 0.85em;">5</span></td>
+            <td data-value="80.19"><span style="font-size: 0.85em; color: #0066ff;">80.19%</span></td>
+            <td data-value="724247.7023438577"><span style="font-size: 0.85em;">724,248</span></td>
+            <td data-value="178897.45864057497"><span style="font-size: 0.85em;">178,897</span></td>
+            <td data-value="903145.1609844327"><span style="font-size: 0.85em;">903,145</span></td>
+            <td style="color: #c83349;"><span style="font-size: 0.85em;">Yes</span></td>
+            <td data-value="2.91"><span style="font-size: 0.85em;">2.91</span></td>
+            <td data-value="2.91"><span style="font-size: 0.85em;">Poor 🔴</span></td>
+        </tr>
+        
+        <tr>
+            
+            <td>
+                <img src='https://api.thegraph.com/ipfs/api/v0/cat?arg=QmUoehEc4z2RTgu86jmtWeNGg9yu6DfbbdRQma8vxPwZvS' style='width:20px; height:20px; border-radius:50%; vertical-align:middle; margin-right:6px;' />
+                <a target="_blank" href="https://thegraph.com/explorer/profile/0x0fd8fd1dc8162148cb9413062fe6c6b144335dbf?view=Overview&chain=arbitrum-one"><span style="font-size: 0.85em;">a1.protofire.eth</span></a>
+            <!--
+                <a href="statements/0x0fd8fd1dc8162148cb9413062fe6c6b144335dbf.pdf" target="_blank">
+                    <img src="images/pdf.png" alt="PDF" style="width:14px; height:14px; vertical-align:middle; margin-left:6px;" />
+                </a>
+            -->
+            </td>
+
+            <td data-value="37274575.589999996"><span style="font-size: 0.85em;">37,274,576</span></td>
+            <td data-value="45"><span style="font-size: 0.85em;">45</span></td>
+            <td data-value="75.20"><span style="font-size: 0.85em; color: #0066ff;">75.20%</span></td>
+            <td data-value="13270983.244666405"><span style="font-size: 0.85em;">13,270,983</span></td>
+            <td data-value="4376857.14230806"><span style="font-size: 0.85em;">4,376,857</span></td>
+            <td data-value="17647840.386974465"><span style="font-size: 0.85em;">17,647,840</span></td>
+            <td style="color: inherit;"><span style="font-size: 0.85em;">No</span></td>
+            <td data-value="1.53"><span style="font-size: 0.85em;">1.53</span></td>
+            <td data-value="1.53"><span style="font-size: 0.85em;">Fair 🟡</span></td>
+        </tr>
+        
+        <tr>
+            
+            <td>
+                
+                <a target="_blank" href="https://thegraph.com/explorer/profile/0x17def1a43a323c711c7a32101ecf41e58eff54a2?view=Overview&chain=arbitrum-one"><span style="font-size: 0.85em;">rampdefi4.eth</span></a>
+            <!--
+                <a href="statements/0x17def1a43a323c711c7a32101ecf41e58eff54a2.pdf" target="_blank">
+                    <img src="images/pdf.png" alt="PDF" style="width:14px; height:14px; vertical-align:middle; margin-left:6px;" />
+                </a>
+            -->
+            </td>
+
+            <td data-value="4777600.0"><span style="font-size: 0.85em;">4,777,600</span></td>
+            <td data-value="1"><span style="font-size: 0.85em;">1</span></td>
+            <td data-value="0.00"><span style="font-size: 0.85em; color: #0066ff;">0.00%</span></td>
+            <td data-value="0.0"><span style="font-size: 0.85em;">0</span></td>
+            <td data-value="1509349.757214997"><span style="font-size: 0.85em;">1,509,350</span></td>
+            <td data-value="1509349.757214997"><span style="font-size: 0.85em;">1,509,350</span></td>
+            <td style="color: #c83349;"><span style="font-size: 0.85em;">Yes</span></td>
+            <td data-value="8.82"><span style="font-size: 0.85em;">8.82</span></td>
+            <td data-value="8.82"><span style="font-size: 0.85em;">Poor 🔴</span></td>
+        </tr>
+        
+        <tr>
+            
+            <td>
+                <img src='https://api.thegraph.com/ipfs/api/v0/cat?arg=QmZvsLvd86CExcnEmG2HYfs4hA7vBeCrTAJ4mPQRYpUfjy' style='width:20px; height:20px; border-radius:50%; vertical-align:middle; margin-right:6px;' />
+                <a target="_blank" href="https://thegraph.com/explorer/profile/0x1b7e0068ca1d7929c8c56408d766e1510e54d98d?view=Overview&chain=arbitrum-one"><span style="font-size: 0.85em;">suntzu-indexer-arb.eth</span></a>
+            <!--
+                <a href="statements/0x1b7e0068ca1d7929c8c56408d766e1510e54d98d.pdf" target="_blank">
+                    <img src="images/pdf.png" alt="PDF" style="width:14px; height:14px; vertical-align:middle; margin-left:6px;" />
+                </a>
+            -->
+            </td>
+
+            <td data-value="59169638.99999999"><span style="font-size: 0.85em;">59,169,639</span></td>
+            <td data-value="437"><span style="font-size: 0.85em;">437</span></td>
+            <td data-value="64.49"><span style="font-size: 0.85em; color: #0066ff;">64.49%</span></td>
+            <td data-value="8840209.912267044"><span style="font-size: 0.85em;">8,840,210</span></td>
+            <td data-value="4868166.174413957"><span style="font-size: 0.85em;">4,868,166</span></td>
+            <td data-value="13708376.086681"><span style="font-size: 0.85em;">13,708,376</span></td>
+            <td style="color: inherit;"><span style="font-size: 0.85em;">No</span></td>
+            <td data-value="1.07"><span style="font-size: 0.85em;">1.07</span></td>
+            <td data-value="1.07"><span style="font-size: 0.85em;">Excellent 🟢</span></td>
+        </tr>
+        
+        <tr>
+            
+            <td>
+                <img src='https://api.thegraph.com/ipfs/api/v0/cat?arg=QmXgN5NKFMxY8qGLMdBMWUfQy1SkNW7wzek4tE9AmXvpQu' style='width:20px; height:20px; border-radius:50%; vertical-align:middle; margin-right:6px;' />
+                <a target="_blank" href="https://thegraph.com/explorer/profile/0x1b92e4cba0f82c85c1298af861247849988c788c?view=Overview&chain=arbitrum-one"><span style="font-size: 0.85em;">vincenttaglia-indexer.eth</span></a>
+            <!--
+                <a href="statements/0x1b92e4cba0f82c85c1298af861247849988c788c.pdf" target="_blank">
+                    <img src="images/pdf.png" alt="PDF" style="width:14px; height:14px; vertical-align:middle; margin-left:6px;" />
+                </a>
+            -->
+            </td>
+
+            <td data-value="2817603.9999999995"><span style="font-size: 0.85em;">2,817,604</span></td>
+            <td data-value="18"><span style="font-size: 0.85em;">18</span></td>
+            <td data-value="75.77"><span style="font-size: 0.85em; color: #0066ff;">75.77%</span></td>
+            <td data-value="945611.6843552717"><span style="font-size: 0.85em;">945,612</span></td>
+            <td data-value="302346.9330108352"><span style="font-size: 0.85em;">302,347</span></td>
+            <td data-value="1247958.617366107"><span style="font-size: 0.85em;">1,247,959</span></td>
+            <td style="color: inherit;"><span style="font-size: 0.85em;">No</span></td>
+            <td data-value="1.21"><span style="font-size: 0.85em;">1.21</span></td>
+            <td data-value="1.21"><span style="font-size: 0.85em;">Excellent 🟢</span></td>
+        </tr>
+        
+        <tr>
+            
+            <td>
+                <img src='https://api.thegraph.com/ipfs/api/v0/cat?arg=QmfFJp96i9AsfiUJTEQ4PwYALBDNnK2qxZoVu3HrXXhrQw' style='width:20px; height:20px; border-radius:50%; vertical-align:middle; margin-right:6px;' />
+                <a target="_blank" href="https://thegraph.com/explorer/profile/0x269ebeee083ce6f70486a67dc8036a889bf322a9?view=Overview&chain=arbitrum-one"><span style="font-size: 0.85em;">thomasblock.eth</span></a>
+            <!--
+                <a href="statements/0x269ebeee083ce6f70486a67dc8036a889bf322a9.pdf" target="_blank">
+                    <img src="images/pdf.png" alt="PDF" style="width:14px; height:14px; vertical-align:middle; margin-left:6px;" />
+                </a>
+            -->
+            </td>
+
+            <td data-value="746314.0"><span style="font-size: 0.85em;">746,314</span></td>
+            <td data-value="3"><span style="font-size: 0.85em;">3</span></td>
+            <td data-value="90.04"><span style="font-size: 0.85em; color: #0066ff;">90.04%</span></td>
+            <td data-value="112949.540393236"><span style="font-size: 0.85em;">112,950</span></td>
+            <td data-value="12490.830627428943"><span style="font-size: 0.85em;">12,491</span></td>
+            <td data-value="125440.37102066494"><span style="font-size: 0.85em;">125,440</span></td>
+            <td style="color: #c83349;"><span style="font-size: 0.85em;">Yes</span></td>
+            <td data-value="3.03"><span style="font-size: 0.85em;">3.03</span></td>
+            <td data-value="3.03"><span style="font-size: 0.85em;">Poor 🔴</span></td>
+        </tr>
+        
+        <tr>
+            
+            <td>
+                
+                <a target="_blank" href="https://thegraph.com/explorer/profile/0x2b3c7d1ef5fdfc0557934019c531d3e70d6200ae?view=Overview&chain=arbitrum-one"><span style="font-size: 0.85em;">0x2b3c7d1ef5fdfc0557934019c531d3e70d6200ae</span></a>
+            <!--
+                <a href="statements/0x2b3c7d1ef5fdfc0557934019c531d3e70d6200ae.pdf" target="_blank">
+                    <img src="images/pdf.png" alt="PDF" style="width:14px; height:14px; vertical-align:middle; margin-left:6px;" />
+                </a>
+            -->
+            </td>
+
+            <td data-value="123576131.0"><span style="font-size: 0.85em;">123,576,131</span></td>
+            <td data-value="240"><span style="font-size: 0.85em;">240</span></td>
+            <td data-value="0.00"><span style="font-size: 0.85em; color: #0066ff;">0.00%</span></td>
+            <td data-value="0.0"><span style="font-size: 0.85em;">0</span></td>
+            <td data-value="22045105.62112628"><span style="font-size: 0.85em;">22,045,106</span></td>
+            <td data-value="22045105.62112628"><span style="font-size: 0.85em;">22,045,106</span></td>
+            <td style="color: inherit;"><span style="font-size: 0.85em;">No</span></td>
+            <td data-value="1.16"><span style="font-size: 0.85em;">1.16</span></td>
+            <td data-value="1.16"><span style="font-size: 0.85em;">Excellent 🟢</span></td>
+        </tr>
+        
+        <tr>
+            
+            <td>
+                <img src='https://api.thegraph.com/ipfs/api/v0/cat?arg=QmcHcmJTkEFt7P6Duw3ZYr7sLDDCAUE8aEAE12561kBA8R' style='width:20px; height:20px; border-radius:50%; vertical-align:middle; margin-right:6px;' />
+                <a target="_blank" href="https://thegraph.com/explorer/profile/0x2e15f3f0d37b191c33ee06e953c8cce4c493b47a?view=Overview&chain=arbitrum-one"><span style="font-size: 0.85em;">ai.swiftstaking.eth</span></a>
+            <!--
+                <a href="statements/0x2e15f3f0d37b191c33ee06e953c8cce4c493b47a.pdf" target="_blank">
+                    <img src="images/pdf.png" alt="PDF" style="width:14px; height:14px; vertical-align:middle; margin-left:6px;" />
+                </a>
+            -->
+            </td>
+
+            <td data-value="4843535.0"><span style="font-size: 0.85em;">4,843,535</span></td>
+            <td data-value="4"><span style="font-size: 0.85em;">4</span></td>
+            <td data-value="47.41"><span style="font-size: 0.85em; color: #0066ff;">47.41%</span></td>
+            <td data-value="345517.74048697524"><span style="font-size: 0.85em;">345,518</span></td>
+            <td data-value="383203.76932083914"><span style="font-size: 0.85em;">383,204</span></td>
+            <td data-value="728721.5098078144"><span style="font-size: 0.85em;">728,722</span></td>
+            <td style="color: #c83349;"><span style="font-size: 0.85em;">Yes</span></td>
+            <td data-value="3.73"><span style="font-size: 0.85em;">3.73</span></td>
+            <td data-value="3.73"><span style="font-size: 0.85em;">Poor 🔴</span></td>
+        </tr>
+        
+        <tr>
+            
+            <td>
+                <img src='https://api.thegraph.com/ipfs/api/v0/cat?arg=QmPEnVeRvuPtjqarKhRFEfStPzrsreKoR3N7gXQS9SGkxw' style='width:20px; height:20px; border-radius:50%; vertical-align:middle; margin-right:6px;' />
+                <a target="_blank" href="https://thegraph.com/explorer/profile/0x2e8d26e9b0d280738728e71c37bf05e70a636238?view=Overview&chain=arbitrum-one"><span style="font-size: 0.85em;">moonli.eth</span></a>
+            <!--
+                <a href="statements/0x2e8d26e9b0d280738728e71c37bf05e70a636238.pdf" target="_blank">
+                    <img src="images/pdf.png" alt="PDF" style="width:14px; height:14px; vertical-align:middle; margin-left:6px;" />
+                </a>
+            -->
+            </td>
+
+            <td data-value="5300000.0"><span style="font-size: 0.85em;">5,300,000</span></td>
+            <td data-value="4"><span style="font-size: 0.85em;">4</span></td>
+            <td data-value="46.99"><span style="font-size: 0.85em; color: #0066ff;">46.99%</span></td>
+            <td data-value="429975.13679102715"><span style="font-size: 0.85em;">429,975</span></td>
+            <td data-value="485080.39167179505"><span style="font-size: 0.85em;">485,080</span></td>
+            <td data-value="915055.5284628222"><span style="font-size: 0.85em;">915,056</span></td>
+            <td style="color: #c83349;"><span style="font-size: 0.85em;">Yes</span></td>
+            <td data-value="3.87"><span style="font-size: 0.85em;">3.87</span></td>
+            <td data-value="3.87"><span style="font-size: 0.85em;">Poor 🔴</span></td>
+        </tr>
+        
+        <tr>
+            
+            <td>
+                <img src='https://api.thegraph.com/ipfs/api/v0/cat?arg=QmQXXj2rYSeTup6MDZNzchjauXaGTXtmrqTL9gJD6FNAvT' style='width:20px; height:20px; border-radius:50%; vertical-align:middle; margin-right:6px;' />
+                <a target="_blank" href="https://thegraph.com/explorer/profile/0x2f09092aacd80196fc984908c5a9a7ab3ee4f1ce?view=Overview&chain=arbitrum-one"><span style="font-size: 0.85em;">p2p-org-arbitrum.eth</span></a>
+            <!--
+                <a href="statements/0x2f09092aacd80196fc984908c5a9a7ab3ee4f1ce.pdf" target="_blank">
+                    <img src="images/pdf.png" alt="PDF" style="width:14px; height:14px; vertical-align:middle; margin-left:6px;" />
+                </a>
+            -->
+            </td>
+
+            <td data-value="247943760.0"><span style="font-size: 0.85em;">247,943,760</span></td>
+            <td data-value="93"><span style="font-size: 0.85em;">93</span></td>
+            <td data-value="79.94"><span style="font-size: 0.85em; color: #0066ff;">79.94%</span></td>
+            <td data-value="40244056.63684982"><span style="font-size: 0.85em;">40,244,057</span></td>
+            <td data-value="10099116.625014145"><span style="font-size: 0.85em;">10,099,117</span></td>
+            <td data-value="50343173.26186396"><span style="font-size: 0.85em;">50,343,173</span></td>
+            <td style="color: inherit;"><span style="font-size: 0.85em;">No</span></td>
+            <td data-value="1.84"><span style="font-size: 0.85em;">1.84</span></td>
+            <td data-value="1.84"><span style="font-size: 0.85em;">Fair 🟡</span></td>
+        </tr>
+        
+        <tr>
+            
+            <td>
+                <img src='https://api.thegraph.com/ipfs/api/v0/cat?arg=QmTMvpL7D2qRfHM3Kn3KaTTxEVLvsUkkG3YLGTNJvseSqu' style='width:20px; height:20px; border-radius:50%; vertical-align:middle; margin-right:6px;' />
+                <a target="_blank" href="https://thegraph.com/explorer/profile/0x326c584e0f0eab1f1f83c93cc6ae1acc0feba0bc?view=Overview&chain=arbitrum-one"><span style="font-size: 0.85em;">graphtronauts-arbitrum.eth</span></a>
+            <!--
+                <a href="statements/0x326c584e0f0eab1f1f83c93cc6ae1acc0feba0bc.pdf" target="_blank">
+                    <img src="images/pdf.png" alt="PDF" style="width:14px; height:14px; vertical-align:middle; margin-left:6px;" />
+                </a>
+            -->
+            </td>
+
+            <td data-value="36980028.0"><span style="font-size: 0.85em;">36,980,028</span></td>
+            <td data-value="485"><span style="font-size: 0.85em;">485</span></td>
+            <td data-value="82.93"><span style="font-size: 0.85em; color: #0066ff;">82.93%</span></td>
+            <td data-value="4501524.251709208"><span style="font-size: 0.85em;">4,501,524</span></td>
+            <td data-value="926643.3247178181"><span style="font-size: 0.85em;">926,643</span></td>
+            <td data-value="5428167.576427026"><span style="font-size: 0.85em;">5,428,168</span></td>
+            <td style="color: inherit;"><span style="font-size: 0.85em;">No</span></td>
+            <td data-value="1.05"><span style="font-size: 0.85em;">1.05</span></td>
+            <td data-value="1.05"><span style="font-size: 0.85em;">Excellent 🟢</span></td>
+        </tr>
+        
+        <tr>
+            
+            <td>
+                
+                <a target="_blank" href="https://thegraph.com/explorer/profile/0x32bbd16a94ebb289edceebe77f35acc82664157b?view=Overview&chain=arbitrum-one"><span style="font-size: 0.85em;">rampdefi3.eth</span></a>
+            <!--
+                <a href="statements/0x32bbd16a94ebb289edceebe77f35acc82664157b.pdf" target="_blank">
+                    <img src="images/pdf.png" alt="PDF" style="width:14px; height:14px; vertical-align:middle; margin-left:6px;" />
+                </a>
+            -->
+            </td>
+
+            <td data-value="15436000.0"><span style="font-size: 0.85em;">15,436,000</span></td>
+            <td data-value="1"><span style="font-size: 0.85em;">1</span></td>
+            <td data-value="0.00"><span style="font-size: 0.85em; color: #0066ff;">0.00%</span></td>
+            <td data-value="0.0"><span style="font-size: 0.85em;">0</span></td>
+            <td data-value="2535111.965729905"><span style="font-size: 0.85em;">2,535,112</span></td>
+            <td data-value="2535111.965729905"><span style="font-size: 0.85em;">2,535,112</span></td>
+            <td style="color: #c83349;"><span style="font-size: 0.85em;">Yes</span></td>
+            <td data-value="9.1"><span style="font-size: 0.85em;">9.10</span></td>
+            <td data-value="9.1"><span style="font-size: 0.85em;">Poor 🔴</span></td>
+        </tr>
+        
+        <tr>
+            
+            <td>
+                <img src='https://api.thegraph.com/ipfs/api/v0/cat?arg=QmPQcUtUYBNizkQkN7rcVZduRjWaWLb4Wsrs6YwoeqkiLc' style='width:20px; height:20px; border-radius:50%; vertical-align:middle; margin-right:6px;' />
+                <a target="_blank" href="https://thegraph.com/explorer/profile/0x345c9a221e4caa15f78fb8078c441745de48a225?view=Overview&chain=arbitrum-one"><span style="font-size: 0.85em;">0xfury.eth</span></a>
+            <!--
+                <a href="statements/0x345c9a221e4caa15f78fb8078c441745de48a225.pdf" target="_blank">
+                    <img src="images/pdf.png" alt="PDF" style="width:14px; height:14px; vertical-align:middle; margin-left:6px;" />
+                </a>
+            -->
+            </td>
+
+            <td data-value="8457764.0"><span style="font-size: 0.85em;">8,457,764</span></td>
+            <td data-value="101"><span style="font-size: 0.85em;">101</span></td>
+            <td data-value="80.24"><span style="font-size: 0.85em; color: #0066ff;">80.24%</span></td>
+            <td data-value="1432958.5756948995"><span style="font-size: 0.85em;">1,432,959</span></td>
+            <td data-value="352815.2627452079"><span style="font-size: 0.85em;">352,815</span></td>
+            <td data-value="1785773.8384401074"><span style="font-size: 0.85em;">1,785,774</span></td>
+            <td style="color: inherit;"><span style="font-size: 0.85em;">No</span></td>
+            <td data-value="1.1"><span style="font-size: 0.85em;">1.10</span></td>
+            <td data-value="1.1"><span style="font-size: 0.85em;">Excellent 🟢</span></td>
+        </tr>
+        
+        <tr>
+            
+            <td>
+                <img src='https://api.thegraph.com/ipfs/api/v0/cat?arg=QmcEaBoxbdXD2ogUQZJfdbPMEiWRDChqfHziroYaFzXWjJ' style='width:20px; height:20px; border-radius:50%; vertical-align:middle; margin-right:6px;' />
+                <a target="_blank" href="https://thegraph.com/explorer/profile/0x35917c0eb91d2e21bef40940d028940484230c06?view=Overview&chain=arbitrum-one"><span style="font-size: 0.85em;">streamingfastindexer.eth</span></a>
+            <!--
+                <a href="statements/0x35917c0eb91d2e21bef40940d028940484230c06.pdf" target="_blank">
+                    <img src="images/pdf.png" alt="PDF" style="width:14px; height:14px; vertical-align:middle; margin-left:6px;" />
+                </a>
+            -->
+            </td>
+
+            <td data-value="25268090.0"><span style="font-size: 0.85em;">25,268,090</span></td>
+            <td data-value="833"><span style="font-size: 0.85em;">833</span></td>
+            <td data-value="22.74"><span style="font-size: 0.85em; color: #0066ff;">22.74%</span></td>
+            <td data-value="1873920.7505999785"><span style="font-size: 0.85em;">1,873,921</span></td>
+            <td data-value="6365237.03282618"><span style="font-size: 0.85em;">6,365,237</span></td>
+            <td data-value="8239157.783426158"><span style="font-size: 0.85em;">8,239,158</span></td>
+            <td style="color: inherit;"><span style="font-size: 0.85em;">No</span></td>
+            <td data-value="1.21"><span style="font-size: 0.85em;">1.21</span></td>
+            <td data-value="1.21"><span style="font-size: 0.85em;">Excellent 🟢</span></td>
+        </tr>
+        
+        <tr>
+            
+            <td>
+                <img src='https://api.thegraph.com/ipfs/api/v0/cat?arg=QmdFKawEFPYzDVwZrXyJcyaYyCZd6PP9N5NCuTi2XmLJMD' style='width:20px; height:20px; border-radius:50%; vertical-align:middle; margin-right:6px;' />
+                <a target="_blank" href="https://thegraph.com/explorer/profile/0x3717cef8020bddee7a18f4efb2bfa88fefdcb1bc?view=Overview&chain=arbitrum-one"><span style="font-size: 0.85em;">pinax2.eth</span></a>
+            <!--
+                <a href="statements/0x3717cef8020bddee7a18f4efb2bfa88fefdcb1bc.pdf" target="_blank">
+                    <img src="images/pdf.png" alt="PDF" style="width:14px; height:14px; vertical-align:middle; margin-left:6px;" />
+                </a>
+            -->
+            </td>
+
+            <td data-value="3864.0"><span style="font-size: 0.85em;">3,864</span></td>
+            <td data-value="146"><span style="font-size: 0.85em;">146</span></td>
+            <td data-value="0.00"><span style="font-size: 0.85em; color: #0066ff;">0.00%</span></td>
+            <td data-value="0.0"><span style="font-size: 0.85em;">0</span></td>
+            <td data-value="945.6266230451054"><span style="font-size: 0.85em;">946</span></td>
+            <td data-value="945.6266230451054"><span style="font-size: 0.85em;">946</span></td>
+            <td style="color: inherit;"><span style="font-size: 0.85em;">No</span></td>
+            <td data-value="1.27"><span style="font-size: 0.85em;">1.27</span></td>
+            <td data-value="1.27"><span style="font-size: 0.85em;">Fair 🟡</span></td>
+        </tr>
+        
+        <tr>
+            
+            <td>
+                
+                <a target="_blank" href="https://thegraph.com/explorer/profile/0x3863a65ce278a240f9aa2a4b4a48493be59e6139?view=Overview&chain=arbitrum-one"><span style="font-size: 0.85em;">indexer.nftx.eth</span></a>
+            <!--
+                <a href="statements/0x3863a65ce278a240f9aa2a4b4a48493be59e6139.pdf" target="_blank">
+                    <img src="images/pdf.png" alt="PDF" style="width:14px; height:14px; vertical-align:middle; margin-left:6px;" />
+                </a>
+            -->
+            </td>
+
+            <td data-value="12241.0"><span style="font-size: 0.85em;">12,241</span></td>
+            <td data-value="15"><span style="font-size: 0.85em;">15</span></td>
+            <td data-value="95.00"><span style="font-size: 0.85em; color: #0066ff;">95.00%</span></td>
+            <td data-value="12378.54104570145"><span style="font-size: 0.85em;">12,379</span></td>
+            <td data-value="651.5021603000763"><span style="font-size: 0.85em;">652</span></td>
+            <td data-value="13030.043206001526"><span style="font-size: 0.85em;">13,030</span></td>
+            <td style="color: inherit;"><span style="font-size: 0.85em;">No</span></td>
+            <td data-value="1.26"><span style="font-size: 0.85em;">1.26</span></td>
+            <td data-value="1.26"><span style="font-size: 0.85em;">Fair 🟡</span></td>
+        </tr>
+        
+        <tr>
+            
+            <td>
+                <img src='https://api.thegraph.com/ipfs/api/v0/cat?arg=QmVfCRgSLQiQEVwD1Bj47RRpLBQqeSu5UXZFCSsr9LS1qj' style='width:20px; height:20px; border-radius:50%; vertical-align:middle; margin-right:6px;' />
+                <a target="_blank" href="https://thegraph.com/explorer/profile/0x38f412c8d6346a17a53ff9ceecd2e01acecd27c0?view=Overview&chain=arbitrum-one"><span style="font-size: 0.85em;">graphops.eth</span></a>
+            <!--
+                <a href="statements/0x38f412c8d6346a17a53ff9ceecd2e01acecd27c0.pdf" target="_blank">
+                    <img src="images/pdf.png" alt="PDF" style="width:14px; height:14px; vertical-align:middle; margin-left:6px;" />
+                </a>
+            -->
+            </td>
+
+            <td data-value="32956848.3"><span style="font-size: 0.85em;">32,956,848</span></td>
+            <td data-value="112"><span style="font-size: 0.85em;">112</span></td>
+            <td data-value="48.75"><span style="font-size: 0.85em; color: #0066ff;">48.75%</span></td>
+            <td data-value="3224470.934815498"><span style="font-size: 0.85em;">3,224,471</span></td>
+            <td data-value="3389373.8581994167"><span style="font-size: 0.85em;">3,389,374</span></td>
+            <td data-value="6613844.793014915"><span style="font-size: 0.85em;">6,613,845</span></td>
+            <td style="color: inherit;"><span style="font-size: 0.85em;">No</span></td>
+            <td data-value="1.18"><span style="font-size: 0.85em;">1.18</span></td>
+            <td data-value="1.18"><span style="font-size: 0.85em;">Excellent 🟢</span></td>
+        </tr>
+        
+        <tr>
+            
+            <td>
+                
+                <a target="_blank" href="https://thegraph.com/explorer/profile/0x3b9ba748691f135b71582dc3292e5e3ed7e13341?view=Overview&chain=arbitrum-one"><span style="font-size: 0.85em;">0x3b9ba748691f135b71582dc3292e5e3ed7e13341</span></a>
+            <!--
+                <a href="statements/0x3b9ba748691f135b71582dc3292e5e3ed7e13341.pdf" target="_blank">
+                    <img src="images/pdf.png" alt="PDF" style="width:14px; height:14px; vertical-align:middle; margin-left:6px;" />
+                </a>
+            -->
+            </td>
+
+            <td data-value="2750846.9999999995"><span style="font-size: 0.85em;">2,750,847</span></td>
+            <td data-value="43"><span style="font-size: 0.85em;">43</span></td>
+            <td data-value="64.96"><span style="font-size: 0.85em; color: #0066ff;">64.96%</span></td>
+            <td data-value="276378.007895819"><span style="font-size: 0.85em;">276,378</span></td>
+            <td data-value="149050.5048469311"><span style="font-size: 0.85em;">149,051</span></td>
+            <td data-value="425428.5127427501"><span style="font-size: 0.85em;">425,429</span></td>
+            <td style="color: inherit;"><span style="font-size: 0.85em;">No</span></td>
+            <td data-value="1.09"><span style="font-size: 0.85em;">1.09</span></td>
+            <td data-value="1.09"><span style="font-size: 0.85em;">Excellent 🟢</span></td>
+        </tr>
+        
+        <tr>
+            
+            <td>
+                <img src='https://api.thegraph.com/ipfs/api/v0/cat?arg=QmSQ7DQvFhqNP8SkzmyinWucumzFE6ivRhg4jP8WMTsyu3' style='width:20px; height:20px; border-radius:50%; vertical-align:middle; margin-right:6px;' />
+                <a target="_blank" href="https://thegraph.com/explorer/profile/0x3e1536fc83cd5bed83a521a26034ff3e59c6a7c4?view=Overview&chain=arbitrum-one"><span style="font-size: 0.85em;">differential-graph.eth</span></a>
+            <!--
+                <a href="statements/0x3e1536fc83cd5bed83a521a26034ff3e59c6a7c4.pdf" target="_blank">
+                    <img src="images/pdf.png" alt="PDF" style="width:14px; height:14px; vertical-align:middle; margin-left:6px;" />
+                </a>
+            -->
+            </td>
+
+            <td data-value="3761399.0000000005"><span style="font-size: 0.85em;">3,761,399</span></td>
+            <td data-value="128"><span style="font-size: 0.85em;">128</span></td>
+            <td data-value="78.73"><span style="font-size: 0.85em; color: #0066ff;">78.73%</span></td>
+            <td data-value="703398.4537165966"><span style="font-size: 0.85em;">703,398</span></td>
+            <td data-value="189988.4597773262"><span style="font-size: 0.85em;">189,988</span></td>
+            <td data-value="893386.9134939228"><span style="font-size: 0.85em;">893,387</span></td>
+            <td style="color: inherit;"><span style="font-size: 0.85em;">No</span></td>
+            <td data-value="1.04"><span style="font-size: 0.85em;">1.04</span></td>
+            <td data-value="1.04"><span style="font-size: 0.85em;">Excellent 🟢</span></td>
+        </tr>
+        
+        <tr>
+            
+            <td>
+                <img src='https://api.thegraph.com/ipfs/api/v0/cat?arg=Qmc5x4ZTDUf67GZPyNJa1TGLAugVhYADHAfaiVLmatKdcA' style='width:20px; height:20px; border-radius:50%; vertical-align:middle; margin-right:6px;' />
+                <a target="_blank" href="https://thegraph.com/explorer/profile/0x3f74870f80ff7449fe4c6ff257da5fa72734c970?view=Overview&chain=arbitrum-one"><span style="font-size: 0.85em;">stake🦑squid-2.eth</span></a>
+            <!--
+                <a href="statements/0x3f74870f80ff7449fe4c6ff257da5fa72734c970.pdf" target="_blank">
+                    <img src="images/pdf.png" alt="PDF" style="width:14px; height:14px; vertical-align:middle; margin-left:6px;" />
+                </a>
+            -->
+            </td>
+
+            <td data-value="9326933.0"><span style="font-size: 0.85em;">9,326,933</span></td>
+            <td data-value="391"><span style="font-size: 0.85em;">391</span></td>
+            <td data-value="53.52"><span style="font-size: 0.85em; color: #0066ff;">53.52%</span></td>
+            <td data-value="2657201.0040429486"><span style="font-size: 0.85em;">2,657,201</span></td>
+            <td data-value="2307809.6882314263"><span style="font-size: 0.85em;">2,307,810</span></td>
+            <td data-value="4965010.692274375"><span style="font-size: 0.85em;">4,965,011</span></td>
+            <td style="color: inherit;"><span style="font-size: 0.85em;">No</span></td>
+            <td data-value="1.04"><span style="font-size: 0.85em;">1.04</span></td>
+            <td data-value="1.04"><span style="font-size: 0.85em;">Excellent 🟢</span></td>
+        </tr>
+        
+        <tr>
+            
+            <td>
+                <img src='https://api.thegraph.com/ipfs/api/v0/cat?arg=QmXJ3suvVjsTr1sJVE9GwDiuJGPMjgaNkm4XFkAaezc83x' style='width:20px; height:20px; border-radius:50%; vertical-align:middle; margin-right:6px;' />
+                <a target="_blank" href="https://thegraph.com/explorer/profile/0x4207df52f7ff229364899b21e9c4ad36d3d42981?view=Overview&chain=arbitrum-one"><span style="font-size: 0.85em;">lux8-net.eth</span></a>
+            <!--
+                <a href="statements/0x4207df52f7ff229364899b21e9c4ad36d3d42981.pdf" target="_blank">
+                    <img src="images/pdf.png" alt="PDF" style="width:14px; height:14px; vertical-align:middle; margin-left:6px;" />
+                </a>
+            -->
+            </td>
+
+            <td data-value="463999.99999999994"><span style="font-size: 0.85em;">464,000</span></td>
+            <td data-value="1"><span style="font-size: 0.85em;">1</span></td>
+            <td data-value="51.27"><span style="font-size: 0.85em; color: #0066ff;">51.27%</span></td>
+            <td data-value="55993.733653117844"><span style="font-size: 0.85em;">55,994</span></td>
+            <td data-value="53211.59800904026"><span style="font-size: 0.85em;">53,212</span></td>
+            <td data-value="109205.3316621581"><span style="font-size: 0.85em;">109,205</span></td>
+            <td style="color: #c83349;"><span style="font-size: 0.85em;">Yes</span></td>
+            <td data-value="3.97"><span style="font-size: 0.85em;">3.97</span></td>
+            <td data-value="3.97"><span style="font-size: 0.85em;">Poor 🔴</span></td>
+        </tr>
+        
+        <tr>
+            
+            <td>
+                
+                <a target="_blank" href="https://thegraph.com/explorer/profile/0x474e571ab6dd77489ec3c7ddf9cbc893fcba684c?view=Overview&chain=arbitrum-one"><span style="font-size: 0.85em;">allnodescom.eth</span></a>
+            <!--
+                <a href="statements/0x474e571ab6dd77489ec3c7ddf9cbc893fcba684c.pdf" target="_blank">
+                    <img src="images/pdf.png" alt="PDF" style="width:14px; height:14px; vertical-align:middle; margin-left:6px;" />
+                </a>
+            -->
+            </td>
+
+            <td data-value="1596429.9999999998"><span style="font-size: 0.85em;">1,596,430</span></td>
+            <td data-value="1"><span style="font-size: 0.85em;">1</span></td>
+            <td data-value="97.33"><span style="font-size: 0.85em; color: #0066ff;">97.33%</span></td>
+            <td data-value="102024.17604132889"><span style="font-size: 0.85em;">102,024</span></td>
+            <td data-value="2801.647635885215"><span style="font-size: 0.85em;">2,802</span></td>
+            <td data-value="104825.8236772141"><span style="font-size: 0.85em;">104,826</span></td>
+            <td style="color: #c83349;"><span style="font-size: 0.85em;">Yes</span></td>
+            <td data-value="4.81"><span style="font-size: 0.85em;">4.81</span></td>
+            <td data-value="4.81"><span style="font-size: 0.85em;">Poor 🔴</span></td>
+        </tr>
+        
+        <tr>
+            
+            <td>
+                <img src='https://api.thegraph.com/ipfs/api/v0/cat?arg=QmXTBvGkDjCo2JW3yeZxia2cGwV8rq7UuY9nfLATDVhHv7' style='width:20px; height:20px; border-radius:50%; vertical-align:middle; margin-right:6px;' />
+                <a target="_blank" href="https://thegraph.com/explorer/profile/0x4d67938e9b07681526fe0345a45b770bba88c659?view=Overview&chain=arbitrum-one"><span style="font-size: 0.85em;">4block-team.eth</span></a>
+            <!--
+                <a href="statements/0x4d67938e9b07681526fe0345a45b770bba88c659.pdf" target="_blank">
+                    <img src="images/pdf.png" alt="PDF" style="width:14px; height:14px; vertical-align:middle; margin-left:6px;" />
+                </a>
+            -->
+            </td>
+
+            <td data-value="1758397.0"><span style="font-size: 0.85em;">1,758,397</span></td>
+            <td data-value="1"><span style="font-size: 0.85em;">1</span></td>
+            <td data-value="73.76"><span style="font-size: 0.85em; color: #0066ff;">73.76%</span></td>
+            <td data-value="481103.8499826702"><span style="font-size: 0.85em;">481,104</span></td>
+            <td data-value="171184.44017807016"><span style="font-size: 0.85em;">171,184</span></td>
+            <td data-value="652288.2901607404"><span style="font-size: 0.85em;">652,288</span></td>
+            <td style="color: #c83349;"><span style="font-size: 0.85em;">Yes</span></td>
+            <td data-value="5.02"><span style="font-size: 0.85em;">5.02</span></td>
+            <td data-value="5.02"><span style="font-size: 0.85em;">Poor 🔴</span></td>
+        </tr>
+        
+        <tr>
+            
+            <td>
+                <img src='https://api.thegraph.com/ipfs/api/v0/cat?arg=QmVK8MRiVVhs6VPYjHvU6NosF5yLb8Cs6a37sLC9ibQhAs' style='width:20px; height:20px; border-radius:50%; vertical-align:middle; margin-right:6px;' />
+                <a target="_blank" href="https://thegraph.com/explorer/profile/0x4e5c87772c29381bcabc58c3f182b6633b5a274a?view=Overview&chain=arbitrum-one"><span style="font-size: 0.85em;">indexer.datanexus.eth</span></a>
+            <!--
+                <a href="statements/0x4e5c87772c29381bcabc58c3f182b6633b5a274a.pdf" target="_blank">
+                    <img src="images/pdf.png" alt="PDF" style="width:14px; height:14px; vertical-align:middle; margin-left:6px;" />
+                </a>
+            -->
+            </td>
+
+            <td data-value="124080500.0"><span style="font-size: 0.85em;">124,080,500</span></td>
+            <td data-value="300"><span style="font-size: 0.85em;">300</span></td>
+            <td data-value="73.18"><span style="font-size: 0.85em; color: #0066ff;">73.18%</span></td>
+            <td data-value="16848721.137308136"><span style="font-size: 0.85em;">16,848,721</span></td>
+            <td data-value="6176258.417515202"><span style="font-size: 0.85em;">6,176,258</span></td>
+            <td data-value="23024979.55482334"><span style="font-size: 0.85em;">23,024,980</span></td>
+            <td style="color: inherit;"><span style="font-size: 0.85em;">No</span></td>
+            <td data-value="1.14"><span style="font-size: 0.85em;">1.14</span></td>
+            <td data-value="1.14"><span style="font-size: 0.85em;">Excellent 🟢</span></td>
+        </tr>
+        
+        <tr>
+            
+            <td>
+                <img src='https://api.thegraph.com/ipfs/api/v0/cat?arg=Qmd6iUYuHyPBT4xDQAnKH4UmjwnDhwdjJh6xLsiid3foD1' style='width:20px; height:20px; border-radius:50%; vertical-align:middle; margin-right:6px;' />
+                <a target="_blank" href="https://thegraph.com/explorer/profile/0x51637a35f7f054c98ed51904de939b9561d37885?view=Overview&chain=arbitrum-one"><span style="font-size: 0.85em;">kolbin.eth</span></a>
+            <!--
+                <a href="statements/0x51637a35f7f054c98ed51904de939b9561d37885.pdf" target="_blank">
+                    <img src="images/pdf.png" alt="PDF" style="width:14px; height:14px; vertical-align:middle; margin-left:6px;" />
+                </a>
+            -->
+            </td>
+
+            <td data-value="2674100.02"><span style="font-size: 0.85em;">2,674,100</span></td>
+            <td data-value="27"><span style="font-size: 0.85em;">27</span></td>
+            <td data-value="82.15"><span style="font-size: 0.85em; color: #0066ff;">82.15%</span></td>
+            <td data-value="824450.7052078778"><span style="font-size: 0.85em;">824,451</span></td>
+            <td data-value="179081.72881080667"><span style="font-size: 0.85em;">179,082</span></td>
+            <td data-value="1003532.4340186844"><span style="font-size: 0.85em;">1,003,532</span></td>
+            <td style="color: inherit;"><span style="font-size: 0.85em;">No</span></td>
+            <td data-value="1.13"><span style="font-size: 0.85em;">1.13</span></td>
+            <td data-value="1.13"><span style="font-size: 0.85em;">Excellent 🟢</span></td>
+        </tr>
+        
+        <tr>
+            
+            <td>
+                <img src='https://api.thegraph.com/ipfs/api/v0/cat?arg=QmcjGuXG1bsenjpu7te3GjzPAgsDL7cbH5K5xn1oXEHS3b' style='width:20px; height:20px; border-radius:50%; vertical-align:middle; margin-right:6px;' />
+                <a target="_blank" href="https://thegraph.com/explorer/profile/0x53dbbc9d916b1840a2c4c26b150ba2e13f36e10f?view=Overview&chain=arbitrum-one"><span style="font-size: 0.85em;">thoalt-indexer.eth</span></a>
+            <!--
+                <a href="statements/0x53dbbc9d916b1840a2c4c26b150ba2e13f36e10f.pdf" target="_blank">
+                    <img src="images/pdf.png" alt="PDF" style="width:14px; height:14px; vertical-align:middle; margin-left:6px;" />
+                </a>
+            -->
+            </td>
+
+            <td data-value="2082958.0"><span style="font-size: 0.85em;">2,082,958</span></td>
+            <td data-value="95"><span style="font-size: 0.85em;">95</span></td>
+            <td data-value="64.53"><span style="font-size: 0.85em; color: #0066ff;">64.53%</span></td>
+            <td data-value="700324.0000657956"><span style="font-size: 0.85em;">700,324</span></td>
+            <td data-value="384976.3492017171"><span style="font-size: 0.85em;">384,976</span></td>
+            <td data-value="1085300.3492675128"><span style="font-size: 0.85em;">1,085,300</span></td>
+            <td style="color: inherit;"><span style="font-size: 0.85em;">No</span></td>
+            <td data-value="1.17"><span style="font-size: 0.85em;">1.17</span></td>
+            <td data-value="1.17"><span style="font-size: 0.85em;">Excellent 🟢</span></td>
+        </tr>
+        
+        <tr>
+            
+            <td>
+                <img src='https://api.thegraph.com/ipfs/api/v0/cat?arg=QmQYHkFma7DQxWiCAkgFHNyVBVCJCvuPrVDgTbQH8jXMtP' style='width:20px; height:20px; border-radius:50%; vertical-align:middle; margin-right:6px;' />
+                <a target="_blank" href="https://thegraph.com/explorer/profile/0x550c1f4814a85aa10f5f061ca8c45e2ee9620226?view=Overview&chain=arbitrum-one"><span style="font-size: 0.85em;">experimental.infradao.eth</span></a>
+            <!--
+                <a href="statements/0x550c1f4814a85aa10f5f061ca8c45e2ee9620226.pdf" target="_blank">
+                    <img src="images/pdf.png" alt="PDF" style="width:14px; height:14px; vertical-align:middle; margin-left:6px;" />
+                </a>
+            -->
+            </td>
+
+            <td data-value="444504.0"><span style="font-size: 0.85em;">444,504</span></td>
+            <td data-value="4"><span style="font-size: 0.85em;">4</span></td>
+            <td data-value="66.30"><span style="font-size: 0.85em; color: #0066ff;">66.30%</span></td>
+            <td data-value="131154.79510109712"><span style="font-size: 0.85em;">131,155</span></td>
+            <td data-value="66654.56025372303"><span style="font-size: 0.85em;">66,655</span></td>
+            <td data-value="197809.35535482015"><span style="font-size: 0.85em;">197,809</span></td>
+            <td style="color: #c83349;"><span style="font-size: 0.85em;">Yes</span></td>
+            <td data-value="2.52"><span style="font-size: 0.85em;">2.52</span></td>
+            <td data-value="2.52"><span style="font-size: 0.85em;">Poor 🔴</span></td>
+        </tr>
+        
+        <tr>
+            
+            <td>
+                
+                <a target="_blank" href="https://thegraph.com/explorer/profile/0x59749d1fa9635cd0413aeff5ee295490a7e87f54?view=Overview&chain=arbitrum-one"><span style="font-size: 0.85em;">0x59749d1fa9635cd0413aeff5ee295490a7e87f54</span></a>
+            <!--
+                <a href="statements/0x59749d1fa9635cd0413aeff5ee295490a7e87f54.pdf" target="_blank">
+                    <img src="images/pdf.png" alt="PDF" style="width:14px; height:14px; vertical-align:middle; margin-left:6px;" />
+                </a>
+            -->
+            </td>
+
+            <td data-value="4751707.0"><span style="font-size: 0.85em;">4,751,707</span></td>
+            <td data-value="12"><span style="font-size: 0.85em;">12</span></td>
+            <td data-value="77.05"><span style="font-size: 0.85em; color: #0066ff;">77.05%</span></td>
+            <td data-value="843608.1376199656"><span style="font-size: 0.85em;">843,608</span></td>
+            <td data-value="251310.34873930473"><span style="font-size: 0.85em;">251,310</span></td>
+            <td data-value="1094918.4863592703"><span style="font-size: 0.85em;">1,094,918</span></td>
+            <td style="color: inherit;"><span style="font-size: 0.85em;">No</span></td>
+            <td data-value="1.5"><span style="font-size: 0.85em;">1.50</span></td>
+            <td data-value="1.5"><span style="font-size: 0.85em;">Fair 🟡</span></td>
+        </tr>
+        
+        <tr>
+            
+            <td>
+                
+                <a target="_blank" href="https://thegraph.com/explorer/profile/0x5af569b692b0598721461027dbbecde74d465d99?view=Overview&chain=arbitrum-one"><span style="font-size: 0.85em;">0x5af569b692b0598721461027dbbecde74d465d99</span></a>
+            <!--
+                <a href="statements/0x5af569b692b0598721461027dbbecde74d465d99.pdf" target="_blank">
+                    <img src="images/pdf.png" alt="PDF" style="width:14px; height:14px; vertical-align:middle; margin-left:6px;" />
+                </a>
+            -->
+            </td>
+
+            <td data-value="5039484.0"><span style="font-size: 0.85em;">5,039,484</span></td>
+            <td data-value="61"><span style="font-size: 0.85em;">61</span></td>
+            <td data-value="0.00"><span style="font-size: 0.85em; color: #0066ff;">0.00%</span></td>
+            <td data-value="0.0"><span style="font-size: 0.85em;">0</span></td>
+            <td data-value="7545.226287432911"><span style="font-size: 0.85em;">7,545</span></td>
+            <td data-value="7545.226287432911"><span style="font-size: 0.85em;">7,545</span></td>
+            <td style="color: inherit;"><span style="font-size: 0.85em;">No</span></td>
+            <td data-value="1.1"><span style="font-size: 0.85em;">1.10</span></td>
+            <td data-value="1.1"><span style="font-size: 0.85em;">Excellent 🟢</span></td>
+        </tr>
+        
+        <tr>
+            
+            <td>
+                <img src='https://api.thegraph.com/ipfs/api/v0/cat?arg=QmPXffPATdwqBh5rmYbSJftWrMHLhev3irfsQqBXF43V3i' style='width:20px; height:20px; border-radius:50%; vertical-align:middle; margin-right:6px;' />
+                <a target="_blank" href="https://thegraph.com/explorer/profile/0x5b3c8f7245dfbd9bea22d9c4b975df60a638e5a3?view=Overview&chain=arbitrum-one"><span style="font-size: 0.85em;">thegraph.mind-heart-soul.eth</span></a>
+            <!--
+                <a href="statements/0x5b3c8f7245dfbd9bea22d9c4b975df60a638e5a3.pdf" target="_blank">
+                    <img src="images/pdf.png" alt="PDF" style="width:14px; height:14px; vertical-align:middle; margin-left:6px;" />
+                </a>
+            -->
+            </td>
+
+            <td data-value="5638800.0"><span style="font-size: 0.85em;">5,638,800</span></td>
+            <td data-value="15"><span style="font-size: 0.85em;">15</span></td>
+            <td data-value="11.44"><span style="font-size: 0.85em; color: #0066ff;">11.44%</span></td>
+            <td data-value="193609.26709673903"><span style="font-size: 0.85em;">193,609</span></td>
+            <td data-value="1498900.162862872"><span style="font-size: 0.85em;">1,498,900</span></td>
+            <td data-value="1692509.429959611"><span style="font-size: 0.85em;">1,692,509</span></td>
+            <td style="color: inherit;"><span style="font-size: 0.85em;">No</span></td>
+            <td data-value="1.48"><span style="font-size: 0.85em;">1.48</span></td>
+            <td data-value="1.48"><span style="font-size: 0.85em;">Fair 🟡</span></td>
+        </tr>
+        
+        <tr>
+            
+            <td>
+                <img src='https://api.thegraph.com/ipfs/api/v0/cat?arg=QmUhximWcwSEZRyAMf7goH6aBrztLq9mjADcYsEU38URcm' style='width:20px; height:20px; border-radius:50%; vertical-align:middle; margin-right:6px;' />
+                <a target="_blank" href="https://thegraph.com/explorer/profile/0x5ddee9720e17aad28febb55643cd8ab50c51c60b?view=Overview&chain=arbitrum-one"><span style="font-size: 0.85em;">maplenodes.eth</span></a>
+            <!--
+                <a href="statements/0x5ddee9720e17aad28febb55643cd8ab50c51c60b.pdf" target="_blank">
+                    <img src="images/pdf.png" alt="PDF" style="width:14px; height:14px; vertical-align:middle; margin-left:6px;" />
+                </a>
+            -->
+            </td>
+
+            <td data-value="6145725.0"><span style="font-size: 0.85em;">6,145,725</span></td>
+            <td data-value="12"><span style="font-size: 0.85em;">12</span></td>
+            <td data-value="71.37"><span style="font-size: 0.85em; color: #0066ff;">71.37%</span></td>
+            <td data-value="1371672.7096550958"><span style="font-size: 0.85em;">1,371,673</span></td>
+            <td data-value="550338.4181663091"><span style="font-size: 0.85em;">550,338</span></td>
+            <td data-value="1922011.127821405"><span style="font-size: 0.85em;">1,922,011</span></td>
+            <td style="color: inherit;"><span style="font-size: 0.85em;">No</span></td>
+            <td data-value="1.64"><span style="font-size: 0.85em;">1.64</span></td>
+            <td data-value="1.64"><span style="font-size: 0.85em;">Fair 🟡</span></td>
+        </tr>
+        
+        <tr>
+            
+            <td>
+                <img src='https://api.thegraph.com/ipfs/api/v0/cat?arg=QmX88qTPDh3rutSah1vczfG2ZzGEEKz1idvB7vByW8NvNH' style='width:20px; height:20px; border-radius:50%; vertical-align:middle; margin-right:6px;' />
+                <a target="_blank" href="https://thegraph.com/explorer/profile/0x600f2b53719e1dbacf340572b31a9df9921b82fa?view=Overview&chain=arbitrum-one"><span style="font-size: 0.85em;">0x600f2b53719e1dbacf340572b31a9df9921b82fa</span></a>
+            <!--
+                <a href="statements/0x600f2b53719e1dbacf340572b31a9df9921b82fa.pdf" target="_blank">
+                    <img src="images/pdf.png" alt="PDF" style="width:14px; height:14px; vertical-align:middle; margin-left:6px;" />
+                </a>
+            -->
+            </td>
+
+            <td data-value="1558549.0"><span style="font-size: 0.85em;">1,558,549</span></td>
+            <td data-value="2"><span style="font-size: 0.85em;">2</span></td>
+            <td data-value="0.00"><span style="font-size: 0.85em; color: #0066ff;">0.00%</span></td>
+            <td data-value="0.0"><span style="font-size: 0.85em;">0</span></td>
+            <td data-value="367203.799548115"><span style="font-size: 0.85em;">367,204</span></td>
+            <td data-value="367203.799548115"><span style="font-size: 0.85em;">367,204</span></td>
+            <td style="color: #c83349;"><span style="font-size: 0.85em;">Yes</span></td>
+            <td data-value="3.58"><span style="font-size: 0.85em;">3.58</span></td>
+            <td data-value="3.58"><span style="font-size: 0.85em;">Poor 🔴</span></td>
+        </tr>
+        
+        <tr>
+            
+            <td>
+                <img src='https://api.thegraph.com/ipfs/api/v0/cat?arg=QmccgzLqMEw3irXPPUwooSbNNz74eo7qoiazEMpysKrtkQ' style='width:20px; height:20px; border-radius:50%; vertical-align:middle; margin-right:6px;' />
+                <a target="_blank" href="https://thegraph.com/explorer/profile/0x63c9dc729ba7a22bb8605216b24a34b902e5fe94?view=Overview&chain=arbitrum-one"><span style="font-size: 0.85em;">infradao.eth</span></a>
+            <!--
+                <a href="statements/0x63c9dc729ba7a22bb8605216b24a34b902e5fe94.pdf" target="_blank">
+                    <img src="images/pdf.png" alt="PDF" style="width:14px; height:14px; vertical-align:middle; margin-left:6px;" />
+                </a>
+            -->
+            </td>
+
+            <td data-value="170552174.0"><span style="font-size: 0.85em;">170,552,174</span></td>
+            <td data-value="234"><span style="font-size: 0.85em;">234</span></td>
+            <td data-value="66.04"><span style="font-size: 0.85em; color: #0066ff;">66.04%</span></td>
+            <td data-value="19329677.135855027"><span style="font-size: 0.85em;">19,329,677</span></td>
+            <td data-value="9941958.160324859"><span style="font-size: 0.85em;">9,941,958</span></td>
+            <td data-value="29271635.296179883"><span style="font-size: 0.85em;">29,271,635</span></td>
+            <td style="color: inherit;"><span style="font-size: 0.85em;">No</span></td>
+            <td data-value="1.23"><span style="font-size: 0.85em;">1.23</span></td>
+            <td data-value="1.23"><span style="font-size: 0.85em;">Excellent 🟢</span></td>
+        </tr>
+        
+        <tr>
+            
+            <td>
+                
+                <a target="_blank" href="https://thegraph.com/explorer/profile/0x6f3ce93a09f30f18d728d2364268b5fe9444b89e?view=Overview&chain=arbitrum-one"><span style="font-size: 0.85em;">0x6f3ce93a09f30f18d728d2364268b5fe9444b89e</span></a>
+            <!--
+                <a href="statements/0x6f3ce93a09f30f18d728d2364268b5fe9444b89e.pdf" target="_blank">
+                    <img src="images/pdf.png" alt="PDF" style="width:14px; height:14px; vertical-align:middle; margin-left:6px;" />
+                </a>
+            -->
+            </td>
+
+            <td data-value="24890649.0"><span style="font-size: 0.85em;">24,890,649</span></td>
+            <td data-value="226"><span style="font-size: 0.85em;">226</span></td>
+            <td data-value="0.00"><span style="font-size: 0.85em; color: #0066ff;">0.00%</span></td>
+            <td data-value="0.0"><span style="font-size: 0.85em;">0</span></td>
+            <td data-value="5695604.868884446"><span style="font-size: 0.85em;">5,695,605</span></td>
+            <td data-value="5695604.868884446"><span style="font-size: 0.85em;">5,695,605</span></td>
+            <td style="color: inherit;"><span style="font-size: 0.85em;">No</span></td>
+            <td data-value="1.07"><span style="font-size: 0.85em;">1.07</span></td>
+            <td data-value="1.07"><span style="font-size: 0.85em;">Excellent 🟢</span></td>
+        </tr>
+        
+        <tr>
+            
+            <td>
+                <img src='https://api.thegraph.com/ipfs/api/v0/cat?arg=QmWtvuWVqLWguaVJNCeWNwydPuSFxY352DNXhTyC1Z6GWG' style='width:20px; height:20px; border-radius:50%; vertical-align:middle; margin-right:6px;' />
+                <a target="_blank" href="https://thegraph.com/explorer/profile/0x6f8a032b4b1ee622ef2f0fc091bdbb98cfae81a3?view=Overview&chain=arbitrum-one"><span style="font-size: 0.85em;">indexer.semiotic.eth</span></a>
+            <!--
+                <a href="statements/0x6f8a032b4b1ee622ef2f0fc091bdbb98cfae81a3.pdf" target="_blank">
+                    <img src="images/pdf.png" alt="PDF" style="width:14px; height:14px; vertical-align:middle; margin-left:6px;" />
+                </a>
+            -->
+            </td>
+
+            <td data-value="12191518.4"><span style="font-size: 0.85em;">12,191,518</span></td>
+            <td data-value="15"><span style="font-size: 0.85em;">15</span></td>
+            <td data-value="14.81"><span style="font-size: 0.85em; color: #0066ff;">14.81%</span></td>
+            <td data-value="309689.3393124812"><span style="font-size: 0.85em;">309,689</span></td>
+            <td data-value="1782033.5713640694"><span style="font-size: 0.85em;">1,782,034</span></td>
+            <td data-value="2091722.9106765506"><span style="font-size: 0.85em;">2,091,723</span></td>
+            <td style="color: inherit;"><span style="font-size: 0.85em;">No</span></td>
+            <td data-value="2.02"><span style="font-size: 0.85em;">2.02</span></td>
+            <td data-value="2.02"><span style="font-size: 0.85em;">Fair 🟡</span></td>
+        </tr>
+        
+        <tr>
+            
+            <td>
+                
+                <a target="_blank" href="https://thegraph.com/explorer/profile/0x6f9bb7e454f5b3eb2310343f0e99269dc2bb8a1d?view=Overview&chain=arbitrum-one"><span style="font-size: 0.85em;">cp0x.eth</span></a>
+            <!--
+                <a href="statements/0x6f9bb7e454f5b3eb2310343f0e99269dc2bb8a1d.pdf" target="_blank">
+                    <img src="images/pdf.png" alt="PDF" style="width:14px; height:14px; vertical-align:middle; margin-left:6px;" />
+                </a>
+            -->
+            </td>
+
+            <td data-value="6677622.1110000005"><span style="font-size: 0.85em;">6,677,622</span></td>
+            <td data-value="25"><span style="font-size: 0.85em;">25</span></td>
+            <td data-value="58.62"><span style="font-size: 0.85em; color: #0066ff;">58.62%</span></td>
+            <td data-value="1558497.1828816456"><span style="font-size: 0.85em;">1,558,497</span></td>
+            <td data-value="1099927.2712989834"><span style="font-size: 0.85em;">1,099,927</span></td>
+            <td data-value="2658424.454180629"><span style="font-size: 0.85em;">2,658,424</span></td>
+            <td style="color: inherit;"><span style="font-size: 0.85em;">No</span></td>
+            <td data-value="1.34"><span style="font-size: 0.85em;">1.34</span></td>
+            <td data-value="1.34"><span style="font-size: 0.85em;">Fair 🟡</span></td>
+        </tr>
+        
+        <tr>
+            
+            <td>
+                
+                <a target="_blank" href="https://thegraph.com/explorer/profile/0x735f422922bd4d459ea491f46e1bb9295b89f961?view=Overview&chain=arbitrum-one"><span style="font-size: 0.85em;">0x735f422922bd4d459ea491f46e1bb9295b89f961</span></a>
+            <!--
+                <a href="statements/0x735f422922bd4d459ea491f46e1bb9295b89f961.pdf" target="_blank">
+                    <img src="images/pdf.png" alt="PDF" style="width:14px; height:14px; vertical-align:middle; margin-left:6px;" />
+                </a>
+            -->
+            </td>
+
+            <td data-value="162028.0"><span style="font-size: 0.85em;">162,028</span></td>
+            <td data-value="1"><span style="font-size: 0.85em;">1</span></td>
+            <td data-value="0.00"><span style="font-size: 0.85em; color: #0066ff;">0.00%</span></td>
+            <td data-value="0.0"><span style="font-size: 0.85em;">0</span></td>
+            <td data-value="15274.204011856451"><span style="font-size: 0.85em;">15,274</span></td>
+            <td data-value="15274.204011856451"><span style="font-size: 0.85em;">15,274</span></td>
+            <td style="color: #c83349;"><span style="font-size: 0.85em;">Yes</span></td>
+            <td data-value="3.21"><span style="font-size: 0.85em;">3.21</span></td>
+            <td data-value="3.21"><span style="font-size: 0.85em;">Poor 🔴</span></td>
+        </tr>
+        
+        <tr>
+            
+            <td>
+                <img src='https://api.thegraph.com/ipfs/api/v0/cat?arg=QmTxVSyLq9ssPf15x8MCWTABzzdEzPK3RRYBLeVnG1HJtq' style='width:20px; height:20px; border-radius:50%; vertical-align:middle; margin-right:6px;' />
+                <a target="_blank" href="https://thegraph.com/explorer/profile/0x74dbb201ecc0b16934e68377bc13013883d9417b?view=Overview&chain=arbitrum-one"><span style="font-size: 0.85em;">rickydata-indexer.eth</span></a>
+            <!--
+                <a href="statements/0x74dbb201ecc0b16934e68377bc13013883d9417b.pdf" target="_blank">
+                    <img src="images/pdf.png" alt="PDF" style="width:14px; height:14px; vertical-align:middle; margin-left:6px;" />
+                </a>
+            -->
+            </td>
+
+            <td data-value="3118400.0"><span style="font-size: 0.85em;">3,118,400</span></td>
+            <td data-value="110"><span style="font-size: 0.85em;">110</span></td>
+            <td data-value="97.31"><span style="font-size: 0.85em; color: #0066ff;">97.31%</span></td>
+            <td data-value="172673.74567027655"><span style="font-size: 0.85em;">172,674</span></td>
+            <td data-value="4766.574706934471"><span style="font-size: 0.85em;">4,767</span></td>
+            <td data-value="177440.32037721103"><span style="font-size: 0.85em;">177,440</span></td>
+            <td style="color: inherit;"><span style="font-size: 0.85em;">No</span></td>
+            <td data-value="1.04"><span style="font-size: 0.85em;">1.04</span></td>
+            <td data-value="1.04"><span style="font-size: 0.85em;">Excellent 🟢</span></td>
+        </tr>
+        
+        <tr>
+            
+            <td>
+                <img src='https://api.thegraph.com/ipfs/api/v0/cat?arg=QmNzC3uz1MBGRaQXCp42QW4TZbRy4U1bfZKLmcWGSBeSZz' style='width:20px; height:20px; border-radius:50%; vertical-align:middle; margin-right:6px;' />
+                <a target="_blank" href="https://thegraph.com/explorer/profile/0x7bb834017672b1135466661d8dd69c5dd0b3bf51?view=Overview&chain=arbitrum-one"><span style="font-size: 0.85em;">dataservices.eth</span></a>
+            <!--
+                <a href="statements/0x7bb834017672b1135466661d8dd69c5dd0b3bf51.pdf" target="_blank">
+                    <img src="images/pdf.png" alt="PDF" style="width:14px; height:14px; vertical-align:middle; margin-left:6px;" />
+                </a>
+            -->
+            </td>
+
+            <td data-value="85511677.0"><span style="font-size: 0.85em;">85,511,677</span></td>
+            <td data-value="762"><span style="font-size: 0.85em;">762</span></td>
+            <td data-value="81.89"><span style="font-size: 0.85em; color: #0066ff;">81.89%</span></td>
+            <td data-value="12468340.680941653"><span style="font-size: 0.85em;">12,468,341</span></td>
+            <td data-value="2757169.1541496334"><span style="font-size: 0.85em;">2,757,169</span></td>
+            <td data-value="15225509.835091285"><span style="font-size: 0.85em;">15,225,510</span></td>
+            <td style="color: inherit;"><span style="font-size: 0.85em;">No</span></td>
+            <td data-value="1.04"><span style="font-size: 0.85em;">1.04</span></td>
+            <td data-value="1.04"><span style="font-size: 0.85em;">Excellent 🟢</span></td>
+        </tr>
+        
+        <tr>
+            
+            <td>
+                
+                <a target="_blank" href="https://thegraph.com/explorer/profile/0x8bbe94c2894f76406568dfb44e905dac4b7df699?view=Overview&chain=arbitrum-one"><span style="font-size: 0.85em;">0x8bbe94c2894f76406568dfb44e905dac4b7df699</span></a>
+            <!--
+                <a href="statements/0x8bbe94c2894f76406568dfb44e905dac4b7df699.pdf" target="_blank">
+                    <img src="images/pdf.png" alt="PDF" style="width:14px; height:14px; vertical-align:middle; margin-left:6px;" />
+                </a>
+            -->
+            </td>
+
+            <td data-value="99985.22301271939"><span style="font-size: 0.85em;">99,985</span></td>
+            <td data-value="56"><span style="font-size: 0.85em;">56</span></td>
+            <td data-value="0.00"><span style="font-size: 0.85em; color: #0066ff;">0.00%</span></td>
+            <td data-value="0.0"><span style="font-size: 0.85em;">0</span></td>
+            <td data-value="0.0"><span style="font-size: 0.85em;">0</span></td>
+            <td data-value="0.0"><span style="font-size: 0.85em;">0</span></td>
+            <td style="color: inherit;"><span style="font-size: 0.85em;">No</span></td>
+            <td data-value="1.01"><span style="font-size: 0.85em;">1.01</span></td>
+            <td data-value="1.01"><span style="font-size: 0.85em;">Excellent 🟢</span></td>
+        </tr>
+        
+        <tr>
+            
+            <td>
+                <img src='https://api.thegraph.com/ipfs/api/v0/cat?arg=QmSyQDb3LQgPTqNNyoKCdtdN6AiH6SsmswdRU2LpLkiFg1' style='width:20px; height:20px; border-radius:50%; vertical-align:middle; margin-right:6px;' />
+                <a target="_blank" href="https://thegraph.com/explorer/profile/0x8f689a83dd52eaa1d5ad6a40c46189b4a0d70b06?view=Overview&chain=arbitrum-one"><span style="font-size: 0.85em;">art3mis-cloud.eth</span></a>
+            <!--
+                <a href="statements/0x8f689a83dd52eaa1d5ad6a40c46189b4a0d70b06.pdf" target="_blank">
+                    <img src="images/pdf.png" alt="PDF" style="width:14px; height:14px; vertical-align:middle; margin-left:6px;" />
+                </a>
+            -->
+            </td>
+
+            <td data-value="505149.0"><span style="font-size: 0.85em;">505,149</span></td>
+            <td data-value="7"><span style="font-size: 0.85em;">7</span></td>
+            <td data-value="70.00"><span style="font-size: 0.85em; color: #0066ff;">70.00%</span></td>
+            <td data-value="67989.43603974453"><span style="font-size: 0.85em;">67,989</span></td>
+            <td data-value="29138.329731319092"><span style="font-size: 0.85em;">29,138</span></td>
+            <td data-value="97127.76577106363"><span style="font-size: 0.85em;">97,128</span></td>
+            <td style="color: #c83349;"><span style="font-size: 0.85em;">Yes</span></td>
+            <td data-value="1.78"><span style="font-size: 0.85em;">1.78</span></td>
+            <td data-value="1.78"><span style="font-size: 0.85em;">Fair 🟡</span></td>
+        </tr>
+        
+        <tr>
+            
+            <td>
+                <img src='https://api.thegraph.com/ipfs/api/v0/cat?arg=QmQ37jh6DVhwxpW3XGUgSY2qkzC894Le45aJaAr7hxwwL8' style='width:20px; height:20px; border-radius:50%; vertical-align:middle; margin-right:6px;' />
+                <a target="_blank" href="https://thegraph.com/explorer/profile/0x9082f497bdc512d08ffde50d6fce28e72c2addcf?view=Overview&chain=arbitrum-one"><span style="font-size: 0.85em;">holographic-indexer.eth</span></a>
+            <!--
+                <a href="statements/0x9082f497bdc512d08ffde50d6fce28e72c2addcf.pdf" target="_blank">
+                    <img src="images/pdf.png" alt="PDF" style="width:14px; height:14px; vertical-align:middle; margin-left:6px;" />
+                </a>
+            -->
+            </td>
+
+            <td data-value="5974408.3"><span style="font-size: 0.85em;">5,974,408</span></td>
+            <td data-value="114"><span style="font-size: 0.85em;">114</span></td>
+            <td data-value="0.00"><span style="font-size: 0.85em; color: #0066ff;">0.00%</span></td>
+            <td data-value="0.0"><span style="font-size: 0.85em;">0</span></td>
+            <td data-value="141651.97056872616"><span style="font-size: 0.85em;">141,652</span></td>
+            <td data-value="141651.97056872616"><span style="font-size: 0.85em;">141,652</span></td>
+            <td style="color: inherit;"><span style="font-size: 0.85em;">No</span></td>
+            <td data-value="1.06"><span style="font-size: 0.85em;">1.06</span></td>
+            <td data-value="1.06"><span style="font-size: 0.85em;">Excellent 🟢</span></td>
+        </tr>
+        
+        <tr>
+            
+            <td>
+                <img src='https://api.thegraph.com/ipfs/api/v0/cat?arg=QmPJ8z1LZZyNSz7LWfQUBBswkrLfaMoiv4owbABoGqoevX' style='width:20px; height:20px; border-radius:50%; vertical-align:middle; margin-right:6px;' />
+                <a target="_blank" href="https://thegraph.com/explorer/profile/0x918fcc24e6b7f5ec73b4cf766e2393d8fe707541?view=Overview&chain=arbitrum-one"><span style="font-size: 0.85em;">dacm.eth</span></a>
+            <!--
+                <a href="statements/0x918fcc24e6b7f5ec73b4cf766e2393d8fe707541.pdf" target="_blank">
+                    <img src="images/pdf.png" alt="PDF" style="width:14px; height:14px; vertical-align:middle; margin-left:6px;" />
+                </a>
+            -->
+            </td>
+
+            <td data-value="8223200.0"><span style="font-size: 0.85em;">8,223,200</span></td>
+            <td data-value="25"><span style="font-size: 0.85em;">25</span></td>
+            <td data-value="83.37"><span style="font-size: 0.85em; color: #0066ff;">83.37%</span></td>
+            <td data-value="2221602.5212306203"><span style="font-size: 0.85em;">2,221,603</span></td>
+            <td data-value="443003.92838986864"><span style="font-size: 0.85em;">443,004</span></td>
+            <td data-value="2664606.449620489"><span style="font-size: 0.85em;">2,664,606</span></td>
+            <td style="color: inherit;"><span style="font-size: 0.85em;">No</span></td>
+            <td data-value="1.42"><span style="font-size: 0.85em;">1.42</span></td>
+            <td data-value="1.42"><span style="font-size: 0.85em;">Fair 🟡</span></td>
+        </tr>
+        
+        <tr>
+            
+            <td>
+                
+                <a target="_blank" href="https://thegraph.com/explorer/profile/0x91f137715ef8e141d6a8074cbbbc53a0f76b09c5?view=Overview&chain=arbitrum-one"><span style="font-size: 0.85em;">chainodetech-arbitrum.eth</span></a>
+            <!--
+                <a href="statements/0x91f137715ef8e141d6a8074cbbbc53a0f76b09c5.pdf" target="_blank">
+                    <img src="images/pdf.png" alt="PDF" style="width:14px; height:14px; vertical-align:middle; margin-left:6px;" />
+                </a>
+            -->
+            </td>
+
+            <td data-value="3521470.9999999995"><span style="font-size: 0.85em;">3,521,471</span></td>
+            <td data-value="1"><span style="font-size: 0.85em;">1</span></td>
+            <td data-value="98.65"><span style="font-size: 0.85em; color: #0066ff;">98.65%</span></td>
+            <td data-value="440110.10861199757"><span style="font-size: 0.85em;">440,110</span></td>
+            <td data-value="6035.670782567714"><span style="font-size: 0.85em;">6,036</span></td>
+            <td data-value="446145.77939456527"><span style="font-size: 0.85em;">446,146</span></td>
+            <td style="color: #c83349;"><span style="font-size: 0.85em;">Yes</span></td>
+            <td data-value="7.24"><span style="font-size: 0.85em;">7.24</span></td>
+            <td data-value="7.24"><span style="font-size: 0.85em;">Poor 🔴</span></td>
+        </tr>
+        
+        <tr>
+            
+            <td>
+                <img src='https://api.thegraph.com/ipfs/api/v0/cat?arg=QmYmiEYF1rkNthNLdpi831SW97o2LGSeA7FfKGbhLgUTNQ' style='width:20px; height:20px; border-radius:50%; vertical-align:middle; margin-right:6px;' />
+                <a target="_blank" href="https://thegraph.com/explorer/profile/0x920fdeb00ee04dd72f62d8a8f80f13c82ef76c1e?view=Overview&chain=arbitrum-one"><span style="font-size: 0.85em;">braindexer.eth</span></a>
+            <!--
+                <a href="statements/0x920fdeb00ee04dd72f62d8a8f80f13c82ef76c1e.pdf" target="_blank">
+                    <img src="images/pdf.png" alt="PDF" style="width:14px; height:14px; vertical-align:middle; margin-left:6px;" />
+                </a>
+            -->
+            </td>
+
+            <td data-value="25416877.0"><span style="font-size: 0.85em;">25,416,877</span></td>
+            <td data-value="396"><span style="font-size: 0.85em;">396</span></td>
+            <td data-value="73.99"><span style="font-size: 0.85em; color: #0066ff;">73.99%</span></td>
+            <td data-value="2337734.193329335"><span style="font-size: 0.85em;">2,337,734</span></td>
+            <td data-value="821728.1286012188"><span style="font-size: 0.85em;">821,728</span></td>
+            <td data-value="3159462.321930554"><span style="font-size: 0.85em;">3,159,462</span></td>
+            <td style="color: inherit;"><span style="font-size: 0.85em;">No</span></td>
+            <td data-value="1.04"><span style="font-size: 0.85em;">1.04</span></td>
+            <td data-value="1.04"><span style="font-size: 0.85em;">Excellent 🟢</span></td>
+        </tr>
+        
+        <tr>
+            
+            <td>
+                <img src='https://api.thegraph.com/ipfs/api/v0/cat?arg=QmfYSx9KKg2Tab2itndWyNKxo1W4ujB4zTSMRNYzCwxFnY' style='width:20px; height:20px; border-radius:50%; vertical-align:middle; margin-right:6px;' />
+                <a target="_blank" href="https://thegraph.com/explorer/profile/0x958ad15ea21fb79b935524cf90c90276031bee20?view=Overview&chain=arbitrum-one"><span style="font-size: 0.85em;">hashkeycloud.eth</span></a>
+            <!--
+                <a href="statements/0x958ad15ea21fb79b935524cf90c90276031bee20.pdf" target="_blank">
+                    <img src="images/pdf.png" alt="PDF" style="width:14px; height:14px; vertical-align:middle; margin-left:6px;" />
+                </a>
+            -->
+            </td>
+
+            <td data-value="1484584.0"><span style="font-size: 0.85em;">1,484,584</span></td>
+            <td data-value="1"><span style="font-size: 0.85em;">1</span></td>
+            <td data-value="8.25"><span style="font-size: 0.85em; color: #0066ff;">8.25%</span></td>
+            <td data-value="10746.152992821939"><span style="font-size: 0.85em;">10,746</span></td>
+            <td data-value="119466.72388790743"><span style="font-size: 0.85em;">119,467</span></td>
+            <td data-value="130212.87688072937"><span style="font-size: 0.85em;">130,213</span></td>
+            <td style="color: #c83349;"><span style="font-size: 0.85em;">Yes</span></td>
+            <td data-value="4.67"><span style="font-size: 0.85em;">4.67</span></td>
+            <td data-value="4.67"><span style="font-size: 0.85em;">Poor 🔴</span></td>
+        </tr>
+        
+        <tr>
+            
+            <td>
+                
+                <a target="_blank" href="https://thegraph.com/explorer/profile/0x9da1017766bfeb2835db4f811516eea68996538b?view=Overview&chain=arbitrum-one"><span style="font-size: 0.85em;">ryabina.eth</span></a>
+            <!--
+                <a href="statements/0x9da1017766bfeb2835db4f811516eea68996538b.pdf" target="_blank">
+                    <img src="images/pdf.png" alt="PDF" style="width:14px; height:14px; vertical-align:middle; margin-left:6px;" />
+                </a>
+            -->
+            </td>
+
+            <td data-value="41154642.76499999"><span style="font-size: 0.85em;">41,154,643</span></td>
+            <td data-value="78"><span style="font-size: 0.85em;">78</span></td>
+            <td data-value="80.16"><span style="font-size: 0.85em; color: #0066ff;">80.16%</span></td>
+            <td data-value="6555740.708857288"><span style="font-size: 0.85em;">6,555,741</span></td>
+            <td data-value="1622427.304691971"><span style="font-size: 0.85em;">1,622,427</span></td>
+            <td data-value="8178168.013549259"><span style="font-size: 0.85em;">8,178,168</span></td>
+            <td style="color: inherit;"><span style="font-size: 0.85em;">No</span></td>
+            <td data-value="1.33"><span style="font-size: 0.85em;">1.33</span></td>
+            <td data-value="1.33"><span style="font-size: 0.85em;">Fair 🟡</span></td>
+        </tr>
+        
+        <tr>
+            
+            <td>
+                
+                <a target="_blank" href="https://thegraph.com/explorer/profile/0xa01b06b0e9feb016d5ab669ce89d059bc666e569?view=Overview&chain=arbitrum-one"><span style="font-size: 0.85em;">0xa01b06b0e9feb016d5ab669ce89d059bc666e569</span></a>
+            <!--
+                <a href="statements/0xa01b06b0e9feb016d5ab669ce89d059bc666e569.pdf" target="_blank">
+                    <img src="images/pdf.png" alt="PDF" style="width:14px; height:14px; vertical-align:middle; margin-left:6px;" />
+                </a>
+            -->
+            </td>
+
+            <td data-value="2935032.0"><span style="font-size: 0.85em;">2,935,032</span></td>
+            <td data-value="2"><span style="font-size: 0.85em;">2</span></td>
+            <td data-value="39.60"><span style="font-size: 0.85em; color: #0066ff;">39.60%</span></td>
+            <td data-value="180770.16386958683"><span style="font-size: 0.85em;">180,770</span></td>
+            <td data-value="275753.55350525246"><span style="font-size: 0.85em;">275,754</span></td>
+            <td data-value="456523.7173748393"><span style="font-size: 0.85em;">456,524</span></td>
+            <td style="color: #c83349;"><span style="font-size: 0.85em;">Yes</span></td>
+            <td data-value="4.45"><span style="font-size: 0.85em;">4.45</span></td>
+            <td data-value="4.45"><span style="font-size: 0.85em;">Poor 🔴</span></td>
+        </tr>
+        
+        <tr>
+            
+            <td>
+                
+                <a target="_blank" href="https://thegraph.com/explorer/profile/0xa181d0f242b3730f8a244cc94eda05faf17a43e8?view=Overview&chain=arbitrum-one"><span style="font-size: 0.85em;">0xa181d0f242b3730f8a244cc94eda05faf17a43e8</span></a>
+            <!--
+                <a href="statements/0xa181d0f242b3730f8a244cc94eda05faf17a43e8.pdf" target="_blank">
+                    <img src="images/pdf.png" alt="PDF" style="width:14px; height:14px; vertical-align:middle; margin-left:6px;" />
+                </a>
+            -->
+            </td>
+
+            <td data-value="422654.0"><span style="font-size: 0.85em;">422,654</span></td>
+            <td data-value="2"><span style="font-size: 0.85em;">2</span></td>
+            <td data-value="0.00"><span style="font-size: 0.85em; color: #0066ff;">0.00%</span></td>
+            <td data-value="0.0"><span style="font-size: 0.85em;">0</span></td>
+            <td data-value="43868.3034058746"><span style="font-size: 0.85em;">43,868</span></td>
+            <td data-value="43868.3034058746"><span style="font-size: 0.85em;">43,868</span></td>
+            <td style="color: #c83349;"><span style="font-size: 0.85em;">Yes</span></td>
+            <td data-value="3.13"><span style="font-size: 0.85em;">3.13</span></td>
+            <td data-value="3.13"><span style="font-size: 0.85em;">Poor 🔴</span></td>
+        </tr>
+        
+        <tr>
+            
+            <td>
+                
+                <a target="_blank" href="https://thegraph.com/explorer/profile/0xa28a99b0219a34142a9398a19460fcd69250a2b2?view=Overview&chain=arbitrum-one"><span style="font-size: 0.85em;">0xa28a99b0219a34142a9398a19460fcd69250a2b2</span></a>
+            <!--
+                <a href="statements/0xa28a99b0219a34142a9398a19460fcd69250a2b2.pdf" target="_blank">
+                    <img src="images/pdf.png" alt="PDF" style="width:14px; height:14px; vertical-align:middle; margin-left:6px;" />
+                </a>
+            -->
+            </td>
+
+            <td data-value="200204.1"><span style="font-size: 0.85em;">200,204</span></td>
+            <td data-value="4"><span style="font-size: 0.85em;">4</span></td>
+            <td data-value="0.00"><span style="font-size: 0.85em; color: #0066ff;">0.00%</span></td>
+            <td data-value="0.0"><span style="font-size: 0.85em;">0</span></td>
+            <td data-value="0.0"><span style="font-size: 0.85em;">0</span></td>
+            <td data-value="0.0"><span style="font-size: 0.85em;">0</span></td>
+            <td style="color: #c83349;"><span style="font-size: 0.85em;">Yes</span></td>
+            <td data-value="2.33"><span style="font-size: 0.85em;">2.33</span></td>
+            <td data-value="2.33"><span style="font-size: 0.85em;">Fair 🟡</span></td>
+        </tr>
+        
+        <tr>
+            
+            <td>
+                
+                <a target="_blank" href="https://thegraph.com/explorer/profile/0xa4d629ba2ffb3321008d8cec37cca077696bf24d?view=Overview&chain=arbitrum-one"><span style="font-size: 0.85em;">0xa4d629ba2ffb3321008d8cec37cca077696bf24d</span></a>
+            <!--
+                <a href="statements/0xa4d629ba2ffb3321008d8cec37cca077696bf24d.pdf" target="_blank">
+                    <img src="images/pdf.png" alt="PDF" style="width:14px; height:14px; vertical-align:middle; margin-left:6px;" />
+                </a>
+            -->
+            </td>
+
+            <td data-value="142000.0"><span style="font-size: 0.85em;">142,000</span></td>
+            <td data-value="88"><span style="font-size: 0.85em;">88</span></td>
+            <td data-value="0.00"><span style="font-size: 0.85em; color: #0066ff;">0.00%</span></td>
+            <td data-value="0.0"><span style="font-size: 0.85em;">0</span></td>
+            <td data-value="40214.81268998718"><span style="font-size: 0.85em;">40,215</span></td>
+            <td data-value="40214.81268998718"><span style="font-size: 0.85em;">40,215</span></td>
+            <td style="color: inherit;"><span style="font-size: 0.85em;">No</span></td>
+            <td data-value="1.13"><span style="font-size: 0.85em;">1.13</span></td>
+            <td data-value="1.13"><span style="font-size: 0.85em;">Excellent 🟢</span></td>
+        </tr>
+        
+        <tr>
+            
+            <td>
+                
+                <a target="_blank" href="https://thegraph.com/explorer/profile/0xa6ff993e0f6253f1b7f55c873577a2f0f0ceb325?view=Overview&chain=arbitrum-one"><span style="font-size: 0.85em;">0xa6ff993e0f6253f1b7f55c873577a2f0f0ceb325</span></a>
+            <!--
+                <a href="statements/0xa6ff993e0f6253f1b7f55c873577a2f0f0ceb325.pdf" target="_blank">
+                    <img src="images/pdf.png" alt="PDF" style="width:14px; height:14px; vertical-align:middle; margin-left:6px;" />
+                </a>
+            -->
+            </td>
+
+            <td data-value="8515900.0"><span style="font-size: 0.85em;">8,515,900</span></td>
+            <td data-value="216"><span style="font-size: 0.85em;">216</span></td>
+            <td data-value="0.00"><span style="font-size: 0.85em; color: #0066ff;">0.00%</span></td>
+            <td data-value="0.0"><span style="font-size: 0.85em;">0</span></td>
+            <td data-value="1086183.4308496558"><span style="font-size: 0.85em;">1,086,183</span></td>
+            <td data-value="1086183.4308496558"><span style="font-size: 0.85em;">1,086,183</span></td>
+            <td style="color: inherit;"><span style="font-size: 0.85em;">No</span></td>
+            <td data-value="1.05"><span style="font-size: 0.85em;">1.05</span></td>
+            <td data-value="1.05"><span style="font-size: 0.85em;">Excellent 🟢</span></td>
+        </tr>
+        
+        <tr>
+            
+            <td>
+                <img src='https://api.thegraph.com/ipfs/api/v0/cat?arg=QmTKPCwTix4mphGkQ3VjKRVAuctvUi4oo6F9JzGVEyP8gp' style='width:20px; height:20px; border-radius:50%; vertical-align:middle; margin-right:6px;' />
+                <a target="_blank" href="https://thegraph.com/explorer/profile/0xa9b5da22440dedd72535ec0525582ca0b63be5e1?view=Overview&chain=arbitrum-one"><span style="font-size: 0.85em;">pdp-indexer.eth</span></a>
+            <!--
+                <a href="statements/0xa9b5da22440dedd72535ec0525582ca0b63be5e1.pdf" target="_blank">
+                    <img src="images/pdf.png" alt="PDF" style="width:14px; height:14px; vertical-align:middle; margin-left:6px;" />
+                </a>
+            -->
+            </td>
+
+            <td data-value="115999.99999999999"><span style="font-size: 0.85em;">116,000</span></td>
+            <td data-value="1"><span style="font-size: 0.85em;">1</span></td>
+            <td data-value="48.00"><span style="font-size: 0.85em; color: #0066ff;">48.00%</span></td>
+            <td data-value="52805.390046154374"><span style="font-size: 0.85em;">52,805</span></td>
+            <td data-value="57214.53543476173"><span style="font-size: 0.85em;">57,215</span></td>
+            <td data-value="110019.9254809161"><span style="font-size: 0.85em;">110,020</span></td>
+            <td style="color: #c83349;"><span style="font-size: 0.85em;">Yes</span></td>
+            <td data-value="3.1"><span style="font-size: 0.85em;">3.10</span></td>
+            <td data-value="3.1"><span style="font-size: 0.85em;">Poor 🔴</span></td>
+        </tr>
+        
+        <tr>
+            
+            <td>
+                <img src='https://api.thegraph.com/ipfs/api/v0/cat?arg=QmWYdtct6Ma3rUaZV5JpxGf5qCY4cXHMqenf1pxCp7kSen' style='width:20px; height:20px; border-radius:50%; vertical-align:middle; margin-right:6px;' />
+                <a target="_blank" href="https://thegraph.com/explorer/profile/0xaa988dcb035518bc0e20082a3148a5d3dfd1776d?view=Overview&chain=arbitrum-one"><span style="font-size: 0.85em;">stake🦑squid-1.eth</span></a>
+            <!--
+                <a href="statements/0xaa988dcb035518bc0e20082a3148a5d3dfd1776d.pdf" target="_blank">
+                    <img src="images/pdf.png" alt="PDF" style="width:14px; height:14px; vertical-align:middle; margin-left:6px;" />
+                </a>
+            -->
+            </td>
+
+            <td data-value="44840143.0"><span style="font-size: 0.85em;">44,840,143</span></td>
+            <td data-value="485"><span style="font-size: 0.85em;">485</span></td>
+            <td data-value="71.95"><span style="font-size: 0.85em; color: #0066ff;">71.95%</span></td>
+            <td data-value="6151662.384654662"><span style="font-size: 0.85em;">6,151,662</span></td>
+            <td data-value="2397720.3405004144"><span style="font-size: 0.85em;">2,397,720</span></td>
+            <td data-value="8549382.725155076"><span style="font-size: 0.85em;">8,549,383</span></td>
+            <td style="color: inherit;"><span style="font-size: 0.85em;">No</span></td>
+            <td data-value="1.06"><span style="font-size: 0.85em;">1.06</span></td>
+            <td data-value="1.06"><span style="font-size: 0.85em;">Excellent 🟢</span></td>
+        </tr>
+        
+        <tr>
+            
+            <td>
+                <img src='https://api.thegraph.com/ipfs/api/v0/cat?arg=QmSiebU4x5uvwBnSZpaoUkiFa2oULv636zCyzHw6ycxNyz' style='width:20px; height:20px; border-radius:50%; vertical-align:middle; margin-right:6px;' />
+                <a target="_blank" href="https://thegraph.com/explorer/profile/0xaddd3e23599d2b7267067afbcd18830aefca640a?view=Overview&chain=arbitrum-one"><span style="font-size: 0.85em;">0xaddd3e23599d2b7267067afbcd18830aefca640a</span></a>
+            <!--
+                <a href="statements/0xaddd3e23599d2b7267067afbcd18830aefca640a.pdf" target="_blank">
+                    <img src="images/pdf.png" alt="PDF" style="width:14px; height:14px; vertical-align:middle; margin-left:6px;" />
+                </a>
+            -->
+            </td>
+
+            <td data-value="959176.0"><span style="font-size: 0.85em;">959,176</span></td>
+            <td data-value="1"><span style="font-size: 0.85em;">1</span></td>
+            <td data-value="59.36"><span style="font-size: 0.85em; color: #0066ff;">59.36%</span></td>
+            <td data-value="225919.24008454024"><span style="font-size: 0.85em;">225,919</span></td>
+            <td data-value="154683.47361331675"><span style="font-size: 0.85em;">154,683</span></td>
+            <td data-value="380602.713697857"><span style="font-size: 0.85em;">380,603</span></td>
+            <td style="color: #c83349;"><span style="font-size: 0.85em;">Yes</span></td>
+            <td data-value="5.25"><span style="font-size: 0.85em;">5.25</span></td>
+            <td data-value="5.25"><span style="font-size: 0.85em;">Poor 🔴</span></td>
+        </tr>
+        
+        <tr>
+            
+            <td>
+                <img src='https://api.thegraph.com/ipfs/api/v0/cat?arg=QmVZeG2yjcdGKXHwZBsq8fYHfEy6nvXs1HtLmys6GyTjg8' style='width:20px; height:20px; border-radius:50%; vertical-align:middle; margin-right:6px;' />
+                <a target="_blank" href="https://thegraph.com/explorer/profile/0xb4b4570df6f7fe320f10fdfb702dba7e35244550?view=Overview&chain=arbitrum-one"><span style="font-size: 0.85em;">nodeify.eth</span></a>
+            <!--
+                <a href="statements/0xb4b4570df6f7fe320f10fdfb702dba7e35244550.pdf" target="_blank">
+                    <img src="images/pdf.png" alt="PDF" style="width:14px; height:14px; vertical-align:middle; margin-left:6px;" />
+                </a>
+            -->
+            </td>
+
+            <td data-value="8891294.0"><span style="font-size: 0.85em;">8,891,294</span></td>
+            <td data-value="32"><span style="font-size: 0.85em;">32</span></td>
+            <td data-value="77.70"><span style="font-size: 0.85em; color: #0066ff;">77.70%</span></td>
+            <td data-value="1380101.9447158184"><span style="font-size: 0.85em;">1,380,102</span></td>
+            <td data-value="396020.63593407284"><span style="font-size: 0.85em;">396,021</span></td>
+            <td data-value="1776122.5806498912"><span style="font-size: 0.85em;">1,776,123</span></td>
+            <td style="color: inherit;"><span style="font-size: 0.85em;">No</span></td>
+            <td data-value="1.36"><span style="font-size: 0.85em;">1.36</span></td>
+            <td data-value="1.36"><span style="font-size: 0.85em;">Fair 🟡</span></td>
+        </tr>
+        
+        <tr>
+            
+            <td>
+                <img src='https://api.thegraph.com/ipfs/api/v0/cat?arg=QmV9ZoGCVtTu8ZUtxUg6ZExdX6HMTmUnHuTimpRApyasci' style='width:20px; height:20px; border-radius:50%; vertical-align:middle; margin-right:6px;' />
+                <a target="_blank" href="https://thegraph.com/explorer/profile/0xb54c7c9fa1a51300e6054b70ae9952c1fb2800b4?view=Overview&chain=arbitrum-one"><span style="font-size: 0.85em;">kukisglobal.eth</span></a>
+            <!--
+                <a href="statements/0xb54c7c9fa1a51300e6054b70ae9952c1fb2800b4.pdf" target="_blank">
+                    <img src="images/pdf.png" alt="PDF" style="width:14px; height:14px; vertical-align:middle; margin-left:6px;" />
+                </a>
+            -->
+            </td>
+
+            <td data-value="11469123.0"><span style="font-size: 0.85em;">11,469,123</span></td>
+            <td data-value="5"><span style="font-size: 0.85em;">5</span></td>
+            <td data-value="85.56"><span style="font-size: 0.85em; color: #0066ff;">85.56%</span></td>
+            <td data-value="1520767.0918291877"><span style="font-size: 0.85em;">1,520,767</span></td>
+            <td data-value="256628.23164264928"><span style="font-size: 0.85em;">256,628</span></td>
+            <td data-value="1777395.323471837"><span style="font-size: 0.85em;">1,777,395</span></td>
+            <td style="color: #c83349;"><span style="font-size: 0.85em;">Yes</span></td>
+            <td data-value="4.89"><span style="font-size: 0.85em;">4.89</span></td>
+            <td data-value="4.89"><span style="font-size: 0.85em;">Poor 🔴</span></td>
+        </tr>
+        
+        <tr>
+            
+            <td>
+                <img src='https://api.thegraph.com/ipfs/api/v0/cat?arg=QmNVU1D3LSLDDgahE9Et41sFcePqYzSDPeF8sFKoGh5vd2' style='width:20px; height:20px; border-radius:50%; vertical-align:middle; margin-right:6px;' />
+                <a target="_blank" href="https://thegraph.com/explorer/profile/0xb8ca929e2bd96548cabcabc56cfc9a5147cef0ff?view=Overview&chain=arbitrum-one"><span style="font-size: 0.85em;">waynewayner.eth</span></a>
+            <!--
+                <a href="statements/0xb8ca929e2bd96548cabcabc56cfc9a5147cef0ff.pdf" target="_blank">
+                    <img src="images/pdf.png" alt="PDF" style="width:14px; height:14px; vertical-align:middle; margin-left:6px;" />
+                </a>
+            -->
+            </td>
+
+            <td data-value="3429864.9999999995"><span style="font-size: 0.85em;">3,429,865</span></td>
+            <td data-value="14"><span style="font-size: 0.85em;">14</span></td>
+            <td data-value="58.85"><span style="font-size: 0.85em; color: #0066ff;">58.85%</span></td>
+            <td data-value="441631.79919017485"><span style="font-size: 0.85em;">441,632</span></td>
+            <td data-value="308772.0155679542"><span style="font-size: 0.85em;">308,772</span></td>
+            <td data-value="750403.8147581291"><span style="font-size: 0.85em;">750,404</span></td>
+            <td style="color: inherit;"><span style="font-size: 0.85em;">No</span></td>
+            <td data-value="1.31"><span style="font-size: 0.85em;">1.31</span></td>
+            <td data-value="1.31"><span style="font-size: 0.85em;">Fair 🟡</span></td>
+        </tr>
+        
+        <tr>
+            
+            <td>
+                
+                <a target="_blank" href="https://thegraph.com/explorer/profile/0xc55c63563efb36f7cc65ac3060c52987c6694b37?view=Overview&chain=arbitrum-one"><span style="font-size: 0.85em;">figment-prime.eth</span></a>
+            <!--
+                <a href="statements/0xc55c63563efb36f7cc65ac3060c52987c6694b37.pdf" target="_blank">
+                    <img src="images/pdf.png" alt="PDF" style="width:14px; height:14px; vertical-align:middle; margin-left:6px;" />
+                </a>
+            -->
+            </td>
+
+            <td data-value="29450254.9"><span style="font-size: 0.85em;">29,450,255</span></td>
+            <td data-value="19"><span style="font-size: 0.85em;">19</span></td>
+            <td data-value="79.65"><span style="font-size: 0.85em; color: #0066ff;">79.65%</span></td>
+            <td data-value="5466917.233551888"><span style="font-size: 0.85em;">5,466,917</span></td>
+            <td data-value="1396844.1500820792"><span style="font-size: 0.85em;">1,396,844</span></td>
+            <td data-value="6863761.383633967"><span style="font-size: 0.85em;">6,863,761</span></td>
+            <td style="color: inherit;"><span style="font-size: 0.85em;">No</span></td>
+            <td data-value="1.98"><span style="font-size: 0.85em;">1.98</span></td>
+            <td data-value="1.98"><span style="font-size: 0.85em;">Fair 🟡</span></td>
+        </tr>
+        
+        <tr>
+            
+            <td>
+                
+                <a target="_blank" href="https://thegraph.com/explorer/profile/0xc9014686f6336ad558b539565d5dff840b339082?view=Overview&chain=arbitrum-one"><span style="font-size: 0.85em;">rampdefigrt.eth</span></a>
+            <!--
+                <a href="statements/0xc9014686f6336ad558b539565d5dff840b339082.pdf" target="_blank">
+                    <img src="images/pdf.png" alt="PDF" style="width:14px; height:14px; vertical-align:middle; margin-left:6px;" />
+                </a>
+            -->
+            </td>
+
+            <td data-value="36368000.0"><span style="font-size: 0.85em;">36,368,000</span></td>
+            <td data-value="17"><span style="font-size: 0.85em;">17</span></td>
+            <td data-value="0.00"><span style="font-size: 0.85em; color: #0066ff;">0.00%</span></td>
+            <td data-value="0.0"><span style="font-size: 0.85em;">0</span></td>
+            <td data-value="6163266.5254105115"><span style="font-size: 0.85em;">6,163,267</span></td>
+            <td data-value="6163266.5254105115"><span style="font-size: 0.85em;">6,163,267</span></td>
+            <td style="color: inherit;"><span style="font-size: 0.85em;">No</span></td>
+            <td data-value="2.35"><span style="font-size: 0.85em;">2.35</span></td>
+            <td data-value="2.35"><span style="font-size: 0.85em;">Fair 🟡</span></td>
+        </tr>
+        
+        <tr>
+            
+            <td>
+                
+                <a target="_blank" href="https://thegraph.com/explorer/profile/0xcba919cf1ee9c537545975d9968718a09d20f071?view=Overview&chain=arbitrum-one"><span style="font-size: 0.85em;">0xcba919cf1ee9c537545975d9968718a09d20f071</span></a>
+            <!--
+                <a href="statements/0xcba919cf1ee9c537545975d9968718a09d20f071.pdf" target="_blank">
+                    <img src="images/pdf.png" alt="PDF" style="width:14px; height:14px; vertical-align:middle; margin-left:6px;" />
+                </a>
+            -->
+            </td>
+
+            <td data-value="3664759.0"><span style="font-size: 0.85em;">3,664,759</span></td>
+            <td data-value="1"><span style="font-size: 0.85em;">1</span></td>
+            <td data-value="0.00"><span style="font-size: 0.85em; color: #0066ff;">0.00%</span></td>
+            <td data-value="0.0"><span style="font-size: 0.85em;">0</span></td>
+            <td data-value="855479.8200057163"><span style="font-size: 0.85em;">855,480</span></td>
+            <td data-value="855479.8200057163"><span style="font-size: 0.85em;">855,480</span></td>
+            <td style="color: #c83349;"><span style="font-size: 0.85em;">Yes</span></td>
+            <td data-value="9.1"><span style="font-size: 0.85em;">9.10</span></td>
+            <td data-value="9.1"><span style="font-size: 0.85em;">Poor 🔴</span></td>
+        </tr>
+        
+        <tr>
+            
+            <td>
+                
+                <a target="_blank" href="https://thegraph.com/explorer/profile/0xd9819426c82e2b8fc58b9b62a78efe93f78077c6?view=Overview&chain=arbitrum-one"><span style="font-size: 0.85em;">0xd9819426c82e2b8fc58b9b62a78efe93f78077c6</span></a>
+            <!--
+                <a href="statements/0xd9819426c82e2b8fc58b9b62a78efe93f78077c6.pdf" target="_blank">
+                    <img src="images/pdf.png" alt="PDF" style="width:14px; height:14px; vertical-align:middle; margin-left:6px;" />
+                </a>
+            -->
+            </td>
+
+            <td data-value="61882425.0"><span style="font-size: 0.85em;">61,882,425</span></td>
+            <td data-value="245"><span style="font-size: 0.85em;">245</span></td>
+            <td data-value="0.00"><span style="font-size: 0.85em; color: #0066ff;">0.00%</span></td>
+            <td data-value="0.0"><span style="font-size: 0.85em;">0</span></td>
+            <td data-value="479834.98699539225"><span style="font-size: 0.85em;">479,835</span></td>
+            <td data-value="479834.98699539225"><span style="font-size: 0.85em;">479,835</span></td>
+            <td style="color: inherit;"><span style="font-size: 0.85em;">No</span></td>
+            <td data-value="1.08"><span style="font-size: 0.85em;">1.08</span></td>
+            <td data-value="1.08"><span style="font-size: 0.85em;">Excellent 🟢</span></td>
+        </tr>
+        
+        <tr>
+            
+            <td>
+                <img src='https://api.thegraph.com/ipfs/api/v0/cat?arg=QmNeV1pdETzBdzAsL39YRQyVeNwUrJsUbonhY5X92a89Z6' style='width:20px; height:20px; border-radius:50%; vertical-align:middle; margin-right:6px;' />
+                <a target="_blank" href="https://thegraph.com/explorer/profile/0xda20dde459c8d918f81566995d899a046d4d8503?view=Overview&chain=arbitrum-one"><span style="font-size: 0.85em;">dsrvlabs-indexer-01.eth</span></a>
+            <!--
+                <a href="statements/0xda20dde459c8d918f81566995d899a046d4d8503.pdf" target="_blank">
+                    <img src="images/pdf.png" alt="PDF" style="width:14px; height:14px; vertical-align:middle; margin-left:6px;" />
+                </a>
+            -->
+            </td>
+
+            <td data-value="1085200.0"><span style="font-size: 0.85em;">1,085,200</span></td>
+            <td data-value="13"><span style="font-size: 0.85em;">13</span></td>
+            <td data-value="61.46"><span style="font-size: 0.85em; color: #0066ff;">61.46%</span></td>
+            <td data-value="114438.57040262748"><span style="font-size: 0.85em;">114,439</span></td>
+            <td data-value="71764.19882142793"><span style="font-size: 0.85em;">71,764</span></td>
+            <td data-value="186202.7692240554"><span style="font-size: 0.85em;">186,203</span></td>
+            <td style="color: inherit;"><span style="font-size: 0.85em;">No</span></td>
+            <td data-value="1.12"><span style="font-size: 0.85em;">1.12</span></td>
+            <td data-value="1.12"><span style="font-size: 0.85em;">Excellent 🟢</span></td>
+        </tr>
+        
+        <tr>
+            
+            <td>
+                <img src='https://api.thegraph.com/ipfs/api/v0/cat?arg=QmdPDqs7xGepAqeKxxdnUx47bjtZQvyiGEN6tEYXNJy7SG' style='width:20px; height:20px; border-radius:50%; vertical-align:middle; margin-right:6px;' />
+                <a target="_blank" href="https://thegraph.com/explorer/profile/0xdc7daef4d0751a9f6ec28b06d6d9475b13eb0918?view=Overview&chain=arbitrum-one"><span style="font-size: 0.85em;">bitnordic.eth</span></a>
+            <!--
+                <a href="statements/0xdc7daef4d0751a9f6ec28b06d6d9475b13eb0918.pdf" target="_blank">
+                    <img src="images/pdf.png" alt="PDF" style="width:14px; height:14px; vertical-align:middle; margin-left:6px;" />
+                </a>
+            -->
+            </td>
+
+            <td data-value="4179913.65"><span style="font-size: 0.85em;">4,179,914</span></td>
+            <td data-value="12"><span style="font-size: 0.85em;">12</span></td>
+            <td data-value="68.65"><span style="font-size: 0.85em; color: #0066ff;">68.65%</span></td>
+            <td data-value="807049.0070008393"><span style="font-size: 0.85em;">807,049</span></td>
+            <td data-value="368598.2788780955"><span style="font-size: 0.85em;">368,598</span></td>
+            <td data-value="1175647.285878935"><span style="font-size: 0.85em;">1,175,647</span></td>
+            <td style="color: inherit;"><span style="font-size: 0.85em;">No</span></td>
+            <td data-value="1.44"><span style="font-size: 0.85em;">1.44</span></td>
+            <td data-value="1.44"><span style="font-size: 0.85em;">Fair 🟡</span></td>
+        </tr>
+        
+        <tr>
+            
+            <td>
+                
+                <a target="_blank" href="https://thegraph.com/explorer/profile/0xdeb712db301285ed483ef9e02dd08a1980f273f1?view=Overview&chain=arbitrum-one"><span style="font-size: 0.85em;">easy2stake-com.eth</span></a>
+            <!--
+                <a href="statements/0xdeb712db301285ed483ef9e02dd08a1980f273f1.pdf" target="_blank">
+                    <img src="images/pdf.png" alt="PDF" style="width:14px; height:14px; vertical-align:middle; margin-left:6px;" />
+                </a>
+            -->
+            </td>
+
+            <td data-value="457755.0"><span style="font-size: 0.85em;">457,755</span></td>
+            <td data-value="477"><span style="font-size: 0.85em;">477</span></td>
+            <td data-value="46.31"><span style="font-size: 0.85em; color: #0066ff;">46.31%</span></td>
+            <td data-value="235766.49458981032"><span style="font-size: 0.85em;">235,766</span></td>
+            <td data-value="273347.66782119026"><span style="font-size: 0.85em;">273,348</span></td>
+            <td data-value="509114.1624110006"><span style="font-size: 0.85em;">509,114</span></td>
+            <td style="color: inherit;"><span style="font-size: 0.85em;">No</span></td>
+            <td data-value="1.01"><span style="font-size: 0.85em;">1.01</span></td>
+            <td data-value="1.01"><span style="font-size: 0.85em;">Excellent 🟢</span></td>
+        </tr>
+        
+        <tr>
+            
+            <td>
+                <img src='https://api.thegraph.com/ipfs/api/v0/cat?arg=Qme3AVLfwuMZsFsLWWNbJzyJZcUeKJGaGk2hwWx6iQVfPj' style='width:20px; height:20px; border-radius:50%; vertical-align:middle; margin-right:6px;' />
+                <a target="_blank" href="https://thegraph.com/explorer/profile/0xdec965f0604125be05cd8a136c85d02ef344d61a?view=Overview&chain=arbitrum-one"><span style="font-size: 0.85em;">stakesquid-3.eth</span></a>
+            <!--
+                <a href="statements/0xdec965f0604125be05cd8a136c85d02ef344d61a.pdf" target="_blank">
+                    <img src="images/pdf.png" alt="PDF" style="width:14px; height:14px; vertical-align:middle; margin-left:6px;" />
+                </a>
+            -->
+            </td>
+
+            <td data-value="6144465.0"><span style="font-size: 0.85em;">6,144,465</span></td>
+            <td data-value="372"><span style="font-size: 0.85em;">372</span></td>
+            <td data-value="73.53"><span style="font-size: 0.85em; color: #0066ff;">73.53%</span></td>
+            <td data-value="1785790.757338869"><span style="font-size: 0.85em;">1,785,791</span></td>
+            <td data-value="643015.6380134939"><span style="font-size: 0.85em;">643,016</span></td>
+            <td data-value="2428806.3953523627"><span style="font-size: 0.85em;">2,428,806</span></td>
+            <td style="color: inherit;"><span style="font-size: 0.85em;">No</span></td>
+            <td data-value="1.03"><span style="font-size: 0.85em;">1.03</span></td>
+            <td data-value="1.03"><span style="font-size: 0.85em;">Excellent 🟢</span></td>
+        </tr>
+        
+        <tr>
+            
+            <td>
+                <img src='https://api.thegraph.com/ipfs/api/v0/cat?arg=Qmd2XkA6A2YGvmboe5ywYZ8caQToG8ubQfZyURoPuNw8wk' style='width:20px; height:20px; border-radius:50%; vertical-align:middle; margin-right:6px;' />
+                <a target="_blank" href="https://thegraph.com/explorer/profile/0xdecba5154aab37ae5e381a19f804f3af4d1bcbb5?view=Overview&chain=arbitrum-one"><span style="font-size: 0.85em;">0y.decisionbasis.eth</span></a>
+            <!--
+                <a href="statements/0xdecba5154aab37ae5e381a19f804f3af4d1bcbb5.pdf" target="_blank">
+                    <img src="images/pdf.png" alt="PDF" style="width:14px; height:14px; vertical-align:middle; margin-left:6px;" />
+                </a>
+            -->
+            </td>
+
+            <td data-value="34349532.0"><span style="font-size: 0.85em;">34,349,532</span></td>
+            <td data-value="212"><span style="font-size: 0.85em;">212</span></td>
+            <td data-value="76.72"><span style="font-size: 0.85em; color: #0066ff;">76.72%</span></td>
+            <td data-value="5632499.987582848"><span style="font-size: 0.85em;">5,632,500</span></td>
+            <td data-value="1709592.4815704457"><span style="font-size: 0.85em;">1,709,592</span></td>
+            <td data-value="7342092.469153294"><span style="font-size: 0.85em;">7,342,092</span></td>
+            <td style="color: inherit;"><span style="font-size: 0.85em;">No</span></td>
+            <td data-value="1.1"><span style="font-size: 0.85em;">1.10</span></td>
+            <td data-value="1.1"><span style="font-size: 0.85em;">Excellent 🟢</span></td>
+        </tr>
+        
+        <tr>
+            
+            <td>
+                <img src='https://api.thegraph.com/ipfs/api/v0/cat?arg=Qmep9GxPJStGzAc3uRLac38ddoGS1CWcZbiqkaz8FoeQ9n' style='width:20px; height:20px; border-radius:50%; vertical-align:middle; margin-right:6px;' />
+                <a target="_blank" href="https://thegraph.com/explorer/profile/0xe0ceec6daa59cc951f3f71d6fc4221e55ef6c386?view=Overview&chain=arbitrum-one"><span style="font-size: 0.85em;">arb.stake-machine.eth</span></a>
+            <!--
+                <a href="statements/0xe0ceec6daa59cc951f3f71d6fc4221e55ef6c386.pdf" target="_blank">
+                    <img src="images/pdf.png" alt="PDF" style="width:14px; height:14px; vertical-align:middle; margin-left:6px;" />
+                </a>
+            -->
+            </td>
+
+            <td data-value="32796600.0"><span style="font-size: 0.85em;">32,796,600</span></td>
+            <td data-value="26"><span style="font-size: 0.85em;">26</span></td>
+            <td data-value="80.35"><span style="font-size: 0.85em; color: #0066ff;">80.35%</span></td>
+            <td data-value="4668314.578029574"><span style="font-size: 0.85em;">4,668,315</span></td>
+            <td data-value="1141490.1694525878"><span style="font-size: 0.85em;">1,141,490</span></td>
+            <td data-value="5809804.747482162"><span style="font-size: 0.85em;">5,809,805</span></td>
+            <td style="color: inherit;"><span style="font-size: 0.85em;">No</span></td>
+            <td data-value="1.8"><span style="font-size: 0.85em;">1.80</span></td>
+            <td data-value="1.8"><span style="font-size: 0.85em;">Fair 🟡</span></td>
+        </tr>
+        
+        <tr>
+            
+            <td>
+                <img src='https://api.thegraph.com/ipfs/api/v0/cat?arg=QmNMxGdnk5sKKVwnasZPiDqcZ2dL6LUBFwGzCepTJwWdTn' style='width:20px; height:20px; border-radius:50%; vertical-align:middle; margin-right:6px;' />
+                <a target="_blank" href="https://thegraph.com/explorer/profile/0xe13840a2e92e0cb17a246609b432d0fa2e418774?view=Overview&chain=arbitrum-one"><span style="font-size: 0.85em;">lunanova-indexer.eth</span></a>
+            <!--
+                <a href="statements/0xe13840a2e92e0cb17a246609b432d0fa2e418774.pdf" target="_blank">
+                    <img src="images/pdf.png" alt="PDF" style="width:14px; height:14px; vertical-align:middle; margin-left:6px;" />
+                </a>
+            -->
+            </td>
+
+            <td data-value="19568096.58"><span style="font-size: 0.85em;">19,568,097</span></td>
+            <td data-value="418"><span style="font-size: 0.85em;">418</span></td>
+            <td data-value="64.39"><span style="font-size: 0.85em; color: #0066ff;">64.39%</span></td>
+            <td data-value="7405227.310700007"><span style="font-size: 0.85em;">7,405,227</span></td>
+            <td data-value="4096182.8791218433"><span style="font-size: 0.85em;">4,096,183</span></td>
+            <td data-value="11501410.18982185"><span style="font-size: 0.85em;">11,501,410</span></td>
+            <td style="color: inherit;"><span style="font-size: 0.85em;">No</span></td>
+            <td data-value="1.06"><span style="font-size: 0.85em;">1.06</span></td>
+            <td data-value="1.06"><span style="font-size: 0.85em;">Excellent 🟢</span></td>
+        </tr>
+        
+        <tr>
+            
+            <td>
+                
+                <a target="_blank" href="https://thegraph.com/explorer/profile/0xe48b586eeb81bde60f14b0b8d80ddd06c7a24720?view=Overview&chain=arbitrum-one"><span style="font-size: 0.85em;">0xe48b586eeb81bde60f14b0b8d80ddd06c7a24720</span></a>
+            <!--
+                <a href="statements/0xe48b586eeb81bde60f14b0b8d80ddd06c7a24720.pdf" target="_blank">
+                    <img src="images/pdf.png" alt="PDF" style="width:14px; height:14px; vertical-align:middle; margin-left:6px;" />
+                </a>
+            -->
+            </td>
+
+            <td data-value="11925097.000000002"><span style="font-size: 0.85em;">11,925,097</span></td>
+            <td data-value="188"><span style="font-size: 0.85em;">188</span></td>
+            <td data-value="0.00"><span style="font-size: 0.85em; color: #0066ff;">0.00%</span></td>
+            <td data-value="0.0"><span style="font-size: 0.85em;">0</span></td>
+            <td data-value="286858.573317293"><span style="font-size: 0.85em;">286,859</span></td>
+            <td data-value="286858.573317293"><span style="font-size: 0.85em;">286,859</span></td>
+            <td style="color: inherit;"><span style="font-size: 0.85em;">No</span></td>
+            <td data-value="1.08"><span style="font-size: 0.85em;">1.08</span></td>
+            <td data-value="1.08"><span style="font-size: 0.85em;">Excellent 🟢</span></td>
+        </tr>
+        
+        <tr>
+            
+            <td>
+                <img src='https://api.thegraph.com/ipfs/api/v0/cat?arg=QmeiTDjGd5YGGN8WT6WwmQE6c43tseiCqED7GWzeYtf7xf' style='width:20px; height:20px; border-radius:50%; vertical-align:middle; margin-right:6px;' />
+                <a target="_blank" href="https://thegraph.com/explorer/profile/0xe63e935fba572784d5aa40715e372e7948bbdb12?view=Overview&chain=arbitrum-one"><span style="font-size: 0.85em;">chorusone-thegraph.eth</span></a>
+            <!--
+                <a href="statements/0xe63e935fba572784d5aa40715e372e7948bbdb12.pdf" target="_blank">
+                    <img src="images/pdf.png" alt="PDF" style="width:14px; height:14px; vertical-align:middle; margin-left:6px;" />
+                </a>
+            -->
+            </td>
+
+            <td data-value="37918688.20439812"><span style="font-size: 0.85em;">37,918,688</span></td>
+            <td data-value="10"><span style="font-size: 0.85em;">10</span></td>
+            <td data-value="85.00"><span style="font-size: 0.85em; color: #0066ff;">85.00%</span></td>
+            <td data-value="3932885.910707954"><span style="font-size: 0.85em;">3,932,886</span></td>
+            <td data-value="694038.690124933"><span style="font-size: 0.85em;">694,039</span></td>
+            <td data-value="4626924.600832887"><span style="font-size: 0.85em;">4,626,925</span></td>
+            <td style="color: #c83349;"><span style="font-size: 0.85em;">Yes</span></td>
+            <td data-value="3.39"><span style="font-size: 0.85em;">3.39</span></td>
+            <td data-value="3.39"><span style="font-size: 0.85em;">Poor 🔴</span></td>
+        </tr>
+        
+        <tr>
+            
+            <td>
+                
+                <a target="_blank" href="https://thegraph.com/explorer/profile/0xe6de2325ef1aac1f058fae59d3c38a472f569846?view=Overview&chain=arbitrum-one"><span style="font-size: 0.85em;">0xe6de2325ef1aac1f058fae59d3c38a472f569846</span></a>
+            <!--
+                <a href="statements/0xe6de2325ef1aac1f058fae59d3c38a472f569846.pdf" target="_blank">
+                    <img src="images/pdf.png" alt="PDF" style="width:14px; height:14px; vertical-align:middle; margin-left:6px;" />
+                </a>
+            -->
+            </td>
+
+            <td data-value="14999009.0"><span style="font-size: 0.85em;">14,999,009</span></td>
+            <td data-value="257"><span style="font-size: 0.85em;">257</span></td>
+            <td data-value="0.00"><span style="font-size: 0.85em; color: #0066ff;">0.00%</span></td>
+            <td data-value="0.0"><span style="font-size: 0.85em;">0</span></td>
+            <td data-value="3046748.555547809"><span style="font-size: 0.85em;">3,046,749</span></td>
+            <td data-value="3046748.555547809"><span style="font-size: 0.85em;">3,046,749</span></td>
+            <td style="color: inherit;"><span style="font-size: 0.85em;">No</span></td>
+            <td data-value="1.08"><span style="font-size: 0.85em;">1.08</span></td>
+            <td data-value="1.08"><span style="font-size: 0.85em;">Excellent 🟢</span></td>
+        </tr>
+        
+        <tr>
+            
+            <td>
+                
+                <a target="_blank" href="https://thegraph.com/explorer/profile/0xe91273727203bcc827521fc8b0c762d435c3c5d0?view=Overview&chain=arbitrum-one"><span style="font-size: 0.85em;">0xe91273727203bcc827521fc8b0c762d435c3c5d0</span></a>
+            <!--
+                <a href="statements/0xe91273727203bcc827521fc8b0c762d435c3c5d0.pdf" target="_blank">
+                    <img src="images/pdf.png" alt="PDF" style="width:14px; height:14px; vertical-align:middle; margin-left:6px;" />
+                </a>
+            -->
+            </td>
+
+            <td data-value="72129782.0"><span style="font-size: 0.85em;">72,129,782</span></td>
+            <td data-value="117"><span style="font-size: 0.85em;">117</span></td>
+            <td data-value="0.00"><span style="font-size: 0.85em; color: #0066ff;">0.00%</span></td>
+            <td data-value="0.0"><span style="font-size: 0.85em;">0</span></td>
+            <td data-value="19189424.933634434"><span style="font-size: 0.85em;">19,189,425</span></td>
+            <td data-value="19189424.933634434"><span style="font-size: 0.85em;">19,189,425</span></td>
+            <td style="color: inherit;"><span style="font-size: 0.85em;">No</span></td>
+            <td data-value="1.2"><span style="font-size: 0.85em;">1.20</span></td>
+            <td data-value="1.2"><span style="font-size: 0.85em;">Excellent 🟢</span></td>
+        </tr>
+        
+        <tr>
+            
+            <td>
+                
+                <a target="_blank" href="https://thegraph.com/explorer/profile/0xe9e284277648fcdb09b8efc1832c73c09b5ecf59?view=Overview&chain=arbitrum-one"><span style="font-size: 0.85em;">0xe9e284277648fcdb09b8efc1832c73c09b5ecf59</span></a>
+            <!--
+                <a href="statements/0xe9e284277648fcdb09b8efc1832c73c09b5ecf59.pdf" target="_blank">
+                    <img src="images/pdf.png" alt="PDF" style="width:14px; height:14px; vertical-align:middle; margin-left:6px;" />
+                </a>
+            -->
+            </td>
+
+            <td data-value="78353077.0"><span style="font-size: 0.85em;">78,353,077</span></td>
+            <td data-value="223"><span style="font-size: 0.85em;">223</span></td>
+            <td data-value="79.45"><span style="font-size: 0.85em; color: #0066ff;">79.45%</span></td>
+            <td data-value="10781076.111729644"><span style="font-size: 0.85em;">10,781,076</span></td>
+            <td data-value="2788215.387861333"><span style="font-size: 0.85em;">2,788,215</span></td>
+            <td data-value="13569291.499590976"><span style="font-size: 0.85em;">13,569,291</span></td>
+            <td style="color: inherit;"><span style="font-size: 0.85em;">No</span></td>
+            <td data-value="1.11"><span style="font-size: 0.85em;">1.11</span></td>
+            <td data-value="1.11"><span style="font-size: 0.85em;">Excellent 🟢</span></td>
+        </tr>
+        
+        <tr>
+            
+            <td>
+                <img src='https://api.thegraph.com/ipfs/api/v0/cat?arg=Qmf5EqXtJ3SBe5q1HmmEzGEUPqTWLoEdmdS4wXT14RKA4R' style='width:20px; height:20px; border-radius:50%; vertical-align:middle; margin-right:6px;' />
+                <a target="_blank" href="https://thegraph.com/explorer/profile/0xeccdf8231326a9c5aad32df76a633aaa4c49b104?view=Overview&chain=arbitrum-one"><span style="font-size: 0.85em;">catapulta.eth</span></a>
+            <!--
+                <a href="statements/0xeccdf8231326a9c5aad32df76a633aaa4c49b104.pdf" target="_blank">
+                    <img src="images/pdf.png" alt="PDF" style="width:14px; height:14px; vertical-align:middle; margin-left:6px;" />
+                </a>
+            -->
+            </td>
+
+            <td data-value="3160000.0"><span style="font-size: 0.85em;">3,160,000</span></td>
+            <td data-value="28"><span style="font-size: 0.85em;">28</span></td>
+            <td data-value="56.87"><span style="font-size: 0.85em; color: #0066ff;">56.87%</span></td>
+            <td data-value="199449.1536913654"><span style="font-size: 0.85em;">199,449</span></td>
+            <td data-value="151248.41679591485"><span style="font-size: 0.85em;">151,248</span></td>
+            <td data-value="350697.57048728026"><span style="font-size: 0.85em;">350,698</span></td>
+            <td style="color: inherit;"><span style="font-size: 0.85em;">No</span></td>
+            <td data-value="1.16"><span style="font-size: 0.85em;">1.16</span></td>
+            <td data-value="1.16"><span style="font-size: 0.85em;">Excellent 🟢</span></td>
+        </tr>
+        
+        <tr>
+            
+            <td>
+                <img src='https://api.thegraph.com/ipfs/api/v0/cat?arg=QmcfnLUavDEGEvv1rRLZaK3epTx5i4DAyjSprQGGj4ijKf' style='width:20px; height:20px; border-radius:50%; vertical-align:middle; margin-right:6px;' />
+                <a target="_blank" href="https://thegraph.com/explorer/profile/0xedca8740873152ff30a2696add66d1ab41882beb?view=Overview&chain=arbitrum-one"><span style="font-size: 0.85em;">pinax.eth</span></a>
+            <!--
+                <a href="statements/0xedca8740873152ff30a2696add66d1ab41882beb.pdf" target="_blank">
+                    <img src="images/pdf.png" alt="PDF" style="width:14px; height:14px; vertical-align:middle; margin-left:6px;" />
+                </a>
+            -->
+            </td>
+
+            <td data-value="30816128.0"><span style="font-size: 0.85em;">30,816,128</span></td>
+            <td data-value="536"><span style="font-size: 0.85em;">536</span></td>
+            <td data-value="81.45"><span style="font-size: 0.85em; color: #0066ff;">81.45%</span></td>
+            <td data-value="4304803.185802168"><span style="font-size: 0.85em;">4,304,803</span></td>
+            <td data-value="980538.2435544437"><span style="font-size: 0.85em;">980,538</span></td>
+            <td data-value="5285341.429356612"><span style="font-size: 0.85em;">5,285,341</span></td>
+            <td style="color: inherit;"><span style="font-size: 0.85em;">No</span></td>
+            <td data-value="1.06"><span style="font-size: 0.85em;">1.06</span></td>
+            <td data-value="1.06"><span style="font-size: 0.85em;">Excellent 🟢</span></td>
+        </tr>
+        
+        <tr>
+            
+            <td>
+                <img src='https://api.thegraph.com/ipfs/api/v0/cat?arg=QmcXsc64rkHi9rAQPN61qP6UUxYyyACX9WQkPMVNSfzvfD' style='width:20px; height:20px; border-radius:50%; vertical-align:middle; margin-right:6px;' />
+                <a target="_blank" href="https://thegraph.com/explorer/profile/0xeeeee689aa442c607105f29f06d00d2f748776b2?view=Overview&chain=arbitrum-one"><span style="font-size: 0.85em;">grt.stakecn.eth</span></a>
+            <!--
+                <a href="statements/0xeeeee689aa442c607105f29f06d00d2f748776b2.pdf" target="_blank">
+                    <img src="images/pdf.png" alt="PDF" style="width:14px; height:14px; vertical-align:middle; margin-left:6px;" />
+                </a>
+            -->
+            </td>
+
+            <td data-value="2136260.0"><span style="font-size: 0.85em;">2,136,260</span></td>
+            <td data-value="1"><span style="font-size: 0.85em;">1</span></td>
+            <td data-value="0.56"><span style="font-size: 0.85em; color: #0066ff;">0.56%</span></td>
+            <td data-value="2559.076479862095"><span style="font-size: 0.85em;">2,559</span></td>
+            <td data-value="456093.83854205575"><span style="font-size: 0.85em;">456,094</span></td>
+            <td data-value="458652.91502191784"><span style="font-size: 0.85em;">458,653</span></td>
+            <td style="color: #c83349;"><span style="font-size: 0.85em;">Yes</span></td>
+            <td data-value="5.49"><span style="font-size: 0.85em;">5.49</span></td>
+            <td data-value="5.49"><span style="font-size: 0.85em;">Poor 🔴</span></td>
+        </tr>
+        
+        <tr>
+            
+            <td>
+                <img src='https://api.thegraph.com/ipfs/api/v0/cat?arg=QmNPkXetfavnymqPwvJ7W7SSNNEspbeDdzHXHyb5kTizgk' style='width:20px; height:20px; border-radius:50%; vertical-align:middle; margin-right:6px;' />
+                <a target="_blank" href="https://thegraph.com/explorer/profile/0xf00f7157fa8fd0420b87956d46058a16b2f23adc?view=Overview&chain=arbitrum-one"><span style="font-size: 0.85em;">p2p-org-booster.eth</span></a>
+            <!--
+                <a href="statements/0xf00f7157fa8fd0420b87956d46058a16b2f23adc.pdf" target="_blank">
+                    <img src="images/pdf.png" alt="PDF" style="width:14px; height:14px; vertical-align:middle; margin-left:6px;" />
+                </a>
+            -->
+            </td>
+
+            <td data-value="24043943.0"><span style="font-size: 0.85em;">24,043,943</span></td>
+            <td data-value="44"><span style="font-size: 0.85em;">44</span></td>
+            <td data-value="81.18"><span style="font-size: 0.85em; color: #0066ff;">81.18%</span></td>
+            <td data-value="3477557.9378285697"><span style="font-size: 0.85em;">3,477,558</span></td>
+            <td data-value="806085.0288932081"><span style="font-size: 0.85em;">806,085</span></td>
+            <td data-value="4283642.966721778"><span style="font-size: 0.85em;">4,283,643</span></td>
+            <td style="color: inherit;"><span style="font-size: 0.85em;">No</span></td>
+            <td data-value="1.34"><span style="font-size: 0.85em;">1.34</span></td>
+            <td data-value="1.34"><span style="font-size: 0.85em;">Fair 🟡</span></td>
+        </tr>
+        
+        <tr>
+            
+            <td>
+                <img src='https://api.thegraph.com/ipfs/api/v0/cat?arg=QmWqhirSmC1GcdYz61cqj5ahpfX9x7w8ED4rz6LikWcYF1' style='width:20px; height:20px; border-radius:50%; vertical-align:middle; margin-right:6px;' />
+                <a target="_blank" href="https://thegraph.com/explorer/profile/0xf0e33495afe697dbe32168bd0743ba32ebb978a3?view=Overview&chain=arbitrum-one"><span style="font-size: 0.85em;">blockonaut.eth</span></a>
+            <!--
+                <a href="statements/0xf0e33495afe697dbe32168bd0743ba32ebb978a3.pdf" target="_blank">
+                    <img src="images/pdf.png" alt="PDF" style="width:14px; height:14px; vertical-align:middle; margin-left:6px;" />
+                </a>
+            -->
+            </td>
+
+            <td data-value="311500.0"><span style="font-size: 0.85em;">311,500</span></td>
+            <td data-value="3"><span style="font-size: 0.85em;">3</span></td>
+            <td data-value="42.00"><span style="font-size: 0.85em; color: #0066ff;">42.00%</span></td>
+            <td data-value="14772.833179489728"><span style="font-size: 0.85em;">14,773</span></td>
+            <td data-value="20400.579152628667"><span style="font-size: 0.85em;">20,401</span></td>
+            <td data-value="35173.412332118394"><span style="font-size: 0.85em;">35,173</span></td>
+            <td style="color: #c83349;"><span style="font-size: 0.85em;">Yes</span></td>
+            <td data-value="2.66"><span style="font-size: 0.85em;">2.66</span></td>
+            <td data-value="2.66"><span style="font-size: 0.85em;">Poor 🔴</span></td>
+        </tr>
+        
+        <tr>
+            
+            <td>
+                <img src='https://api.thegraph.com/ipfs/api/v0/cat?arg=QmTqxLqBfqBwALif91Gk1gj1KWt4iaY1vaSyavspXPWcgj' style='width:20px; height:20px; border-radius:50%; vertical-align:middle; margin-right:6px;' />
+                <a target="_blank" href="https://thegraph.com/explorer/profile/0xf57dcd881ebd1d81df99194abdfa90f9e0e92f11?view=Overview&chain=arbitrum-one"><span style="font-size: 0.85em;">0xf57dcd881ebd1d81df99194abdfa90f9e0e92f11</span></a>
+            <!--
+                <a href="statements/0xf57dcd881ebd1d81df99194abdfa90f9e0e92f11.pdf" target="_blank">
+                    <img src="images/pdf.png" alt="PDF" style="width:14px; height:14px; vertical-align:middle; margin-left:6px;" />
+                </a>
+            -->
+            </td>
+
+            <td data-value="9884089.0"><span style="font-size: 0.85em;">9,884,089</span></td>
+            <td data-value="33"><span style="font-size: 0.85em;">33</span></td>
+            <td data-value="17.64"><span style="font-size: 0.85em; color: #0066ff;">17.64%</span></td>
+            <td data-value="458875.04635047494"><span style="font-size: 0.85em;">458,875</span></td>
+            <td data-value="2142214.3564702845"><span style="font-size: 0.85em;">2,142,214</span></td>
+            <td data-value="2601089.4028207595"><span style="font-size: 0.85em;">2,601,089</span></td>
+            <td style="color: inherit;"><span style="font-size: 0.85em;">No</span></td>
+            <td data-value="1.38"><span style="font-size: 0.85em;">1.38</span></td>
+            <td data-value="1.38"><span style="font-size: 0.85em;">Fair 🟡</span></td>
+        </tr>
+        
+        <tr>
+            
+            <td>
+                <img src='https://api.thegraph.com/ipfs/api/v0/cat?arg=QmZsUSxm9Z7XhtapgS4NAAn1rZRKuaaLwBxG6ph2cDsnUn' style='width:20px; height:20px; border-radius:50%; vertical-align:middle; margin-right:6px;' />
+                <a target="_blank" href="https://thegraph.com/explorer/profile/0xf671c6b83f44ead14ca1c5f4a629f1b9b18c8f29?view=Overview&chain=arbitrum-one"><span style="font-size: 0.85em;">capitanbeto.eth</span></a>
+            <!--
+                <a href="statements/0xf671c6b83f44ead14ca1c5f4a629f1b9b18c8f29.pdf" target="_blank">
+                    <img src="images/pdf.png" alt="PDF" style="width:14px; height:14px; vertical-align:middle; margin-left:6px;" />
+                </a>
+            -->
+            </td>
+
+            <td data-value="340637.0"><span style="font-size: 0.85em;">340,637</span></td>
+            <td data-value="6"><span style="font-size: 0.85em;">6</span></td>
+            <td data-value="23.42"><span style="font-size: 0.85em; color: #0066ff;">23.42%</span></td>
+            <td data-value="6425.1273471925015"><span style="font-size: 0.85em;">6,425</span></td>
+            <td data-value="21012.601866017747"><span style="font-size: 0.85em;">21,013</span></td>
+            <td data-value="27437.72921321025"><span style="font-size: 0.85em;">27,438</span></td>
+            <td style="color: #c83349;"><span style="font-size: 0.85em;">Yes</span></td>
+            <td data-value="1.94"><span style="font-size: 0.85em;">1.94</span></td>
+            <td data-value="1.94"><span style="font-size: 0.85em;">Fair 🟡</span></td>
+        </tr>
+        
+        <tr>
+            
+            <td>
+                
+                <a target="_blank" href="https://thegraph.com/explorer/profile/0xf7793bf9561c32ffbac603ce572fa55643f9cf72?view=Overview&chain=arbitrum-one"><span style="font-size: 0.85em;">0xf7793bf9561c32ffbac603ce572fa55643f9cf72</span></a>
+            <!--
+                <a href="statements/0xf7793bf9561c32ffbac603ce572fa55643f9cf72.pdf" target="_blank">
+                    <img src="images/pdf.png" alt="PDF" style="width:14px; height:14px; vertical-align:middle; margin-left:6px;" />
+                </a>
+            -->
+            </td>
+
+            <td data-value="7976000.0"><span style="font-size: 0.85em;">7,976,000</span></td>
+            <td data-value="4"><span style="font-size: 0.85em;">4</span></td>
+            <td data-value="0.00"><span style="font-size: 0.85em; color: #0066ff;">0.00%</span></td>
+            <td data-value="0.0"><span style="font-size: 0.85em;">0</span></td>
+            <td data-value="2794380.7005286072"><span style="font-size: 0.85em;">2,794,381</span></td>
+            <td data-value="2794380.7005286072"><span style="font-size: 0.85em;">2,794,381</span></td>
+            <td style="color: #c83349;"><span style="font-size: 0.85em;">Yes</span></td>
+            <td data-value="4.71"><span style="font-size: 0.85em;">4.71</span></td>
+            <td data-value="4.71"><span style="font-size: 0.85em;">Poor 🔴</span></td>
+        </tr>
+        
+        <tr>
+            
+            <td>
+                
+                <a target="_blank" href="https://thegraph.com/explorer/profile/0xf9123292b4d958c53aaad8c5df0138ee0e62944b?view=Overview&chain=arbitrum-one"><span style="font-size: 0.85em;">figment-prime-2.eth</span></a>
+            <!--
+                <a href="statements/0xf9123292b4d958c53aaad8c5df0138ee0e62944b.pdf" target="_blank">
+                    <img src="images/pdf.png" alt="PDF" style="width:14px; height:14px; vertical-align:middle; margin-left:6px;" />
+                </a>
+            -->
+            </td>
+
+            <td data-value="160993758.0"><span style="font-size: 0.85em;">160,993,758</span></td>
+            <td data-value="18"><span style="font-size: 0.85em;">18</span></td>
+            <td data-value="79.00"><span style="font-size: 0.85em; color: #0066ff;">79.00%</span></td>
+            <td data-value="13413701.050528208"><span style="font-size: 0.85em;">13,413,701</span></td>
+            <td data-value="3565667.367861929"><span style="font-size: 0.85em;">3,565,667</span></td>
+            <td data-value="16979368.418390136"><span style="font-size: 0.85em;">16,979,368</span></td>
+            <td style="color: inherit;"><span style="font-size: 0.85em;">No</span></td>
+            <td data-value="3.81"><span style="font-size: 0.85em;">3.81</span></td>
+            <td data-value="3.81"><span style="font-size: 0.85em;">Poor 🔴</span></td>
+        </tr>
+        
+        <tr>
+            
+            <td>
+                <img src='https://api.thegraph.com/ipfs/api/v0/cat?arg=QmeyxSkxpgCRVvKB8R5NcdqrgkukPFDKYhChx8dUYkqgaB' style='width:20px; height:20px; border-radius:50%; vertical-align:middle; margin-right:6px;' />
+                <a target="_blank" href="https://thegraph.com/explorer/profile/0xf92f430dd8567b0d466358c79594ab58d919a6d4?view=Overview&chain=arbitrum-one"><span style="font-size: 0.85em;">ellipfra-indexer.eth</span></a>
+            <!--
+                <a href="statements/0xf92f430dd8567b0d466358c79594ab58d919a6d4.pdf" target="_blank">
+                    <img src="images/pdf.png" alt="PDF" style="width:14px; height:14px; vertical-align:middle; margin-left:6px;" />
+                </a>
+            -->
+            </td>
+
+            <td data-value="92938453.0"><span style="font-size: 0.85em;">92,938,453</span></td>
+            <td data-value="839"><span style="font-size: 0.85em;">839</span></td>
+            <td data-value="79.51"><span style="font-size: 0.85em; color: #0066ff;">79.51%</span></td>
+            <td data-value="16732255.074492749"><span style="font-size: 0.85em;">16,732,255</span></td>
+            <td data-value="4312148.325450193"><span style="font-size: 0.85em;">4,312,148</span></td>
+            <td data-value="21044403.399942942"><span style="font-size: 0.85em;">21,044,403</span></td>
+            <td style="color: inherit;"><span style="font-size: 0.85em;">No</span></td>
+            <td data-value="1.06"><span style="font-size: 0.85em;">1.06</span></td>
+            <td data-value="1.06"><span style="font-size: 0.85em;">Excellent 🟢</span></td>
+        </tr>
+        
+        <tr>
+            
+            <td>
+                
+                <a target="_blank" href="https://thegraph.com/explorer/profile/0xfb168335f5a3868a03696904ed38fa95fd167c0e?view=Overview&chain=arbitrum-one"><span style="font-size: 0.85em;">validatrium.eth</span></a>
+            <!--
+                <a href="statements/0xfb168335f5a3868a03696904ed38fa95fd167c0e.pdf" target="_blank">
+                    <img src="images/pdf.png" alt="PDF" style="width:14px; height:14px; vertical-align:middle; margin-left:6px;" />
+                </a>
+            -->
+            </td>
+
+            <td data-value="110470.0"><span style="font-size: 0.85em;">110,470</span></td>
+            <td data-value="1"><span style="font-size: 0.85em;">1</span></td>
+            <td data-value="0.00"><span style="font-size: 0.85em; color: #0066ff;">0.00%</span></td>
+            <td data-value="0.0"><span style="font-size: 0.85em;">0</span></td>
+            <td data-value="10846.999063429004"><span style="font-size: 0.85em;">10,847</span></td>
+            <td data-value="10846.999063429004"><span style="font-size: 0.85em;">10,847</span></td>
+            <td style="color: #c83349;"><span style="font-size: 0.85em;">Yes</span></td>
+            <td data-value="3.08"><span style="font-size: 0.85em;">3.08</span></td>
+            <td data-value="3.08"><span style="font-size: 0.85em;">Poor 🔴</span></td>
+        </tr>
+        
+        <tr>
+            
+            <td>
+                <img src='https://api.thegraph.com/ipfs/api/v0/cat?arg=QmUvcJDne75w59GTUoKzaTr47NaohWyNnbEeCCr8FKkPAo' style='width:20px; height:20px; border-radius:50%; vertical-align:middle; margin-right:6px;' />
+                <a target="_blank" href="https://thegraph.com/explorer/profile/0xfc842f81490dcb37e82d416b2d28327dfb24ba9a?view=Overview&chain=arbitrum-one"><span style="font-size: 0.85em;">grassets-tech-1.eth</span></a>
+            <!--
+                <a href="statements/0xfc842f81490dcb37e82d416b2d28327dfb24ba9a.pdf" target="_blank">
+                    <img src="images/pdf.png" alt="PDF" style="width:14px; height:14px; vertical-align:middle; margin-left:6px;" />
+                </a>
+            -->
+            </td>
+
+            <td data-value="31068884.0"><span style="font-size: 0.85em;">31,068,884</span></td>
+            <td data-value="112"><span style="font-size: 0.85em;">112</span></td>
+            <td data-value="69.57"><span style="font-size: 0.85em; color: #0066ff;">69.57%</span></td>
+            <td data-value="4115687.4199443227"><span style="font-size: 0.85em;">4,115,687</span></td>
+            <td data-value="1800235.5951943758"><span style="font-size: 0.85em;">1,800,236</span></td>
+            <td data-value="5915923.015138699"><span style="font-size: 0.85em;">5,915,923</span></td>
+            <td style="color: inherit;"><span style="font-size: 0.85em;">No</span></td>
+            <td data-value="1.18"><span style="font-size: 0.85em;">1.18</span></td>
+            <td data-value="1.18"><span style="font-size: 0.85em;">Excellent 🟢</span></td>
+        </tr>
+        
+        <tr>
+            
+            <td>
+                <img src='https://api.thegraph.com/ipfs/api/v0/cat?arg=QmQauWpDHF9oc3Nth2HcdtYGknMPShrPbABhVzQ3HmQZbX' style='width:20px; height:20px; border-radius:50%; vertical-align:middle; margin-right:6px;' />
+                <a target="_blank" href="https://thegraph.com/explorer/profile/0xfeff9093f6b32d0e5cddba743b06a1fedb87c004?view=Overview&chain=arbitrum-one"><span style="font-size: 0.85em;">p-ops2.eth</span></a>
+            <!--
+                <a href="statements/0xfeff9093f6b32d0e5cddba743b06a1fedb87c004.pdf" target="_blank">
+                    <img src="images/pdf.png" alt="PDF" style="width:14px; height:14px; vertical-align:middle; margin-left:6px;" />
+                </a>
+            -->
+            </td>
+
+            <td data-value="20804382.000000004"><span style="font-size: 0.85em;">20,804,382</span></td>
+            <td data-value="58"><span style="font-size: 0.85em;">58</span></td>
+            <td data-value="75.31"><span style="font-size: 0.85em; color: #0066ff;">75.31%</span></td>
+            <td data-value="6094558.225678035"><span style="font-size: 0.85em;">6,094,558</span></td>
+            <td data-value="1998055.7232825242"><span style="font-size: 0.85em;">1,998,056</span></td>
+            <td data-value="8092613.948960559"><span style="font-size: 0.85em;">8,092,614</span></td>
+            <td style="color: inherit;"><span style="font-size: 0.85em;">No</span></td>
+            <td data-value="1.24"><span style="font-size: 0.85em;">1.24</span></td>
+            <td data-value="1.24"><span style="font-size: 0.85em;">Excellent 🟢</span></td>
+        </tr>
+        
+        </table>
+        </div>
+
+        <hr class="footer-divider">
+        <div class="footer">
+            ©<script>document.write(new Date().getFullYear())</script> 
+            <a href="https://graphtools.pro">Graph Tools Pro</a> :: Made with ❤️ by 
+            <a href="https://x.com/graphtronauts_c" target="_blank">Graphtronauts</a>
+            for <a href="https://x.com/graphprotocol" target="_blank">The Graph</a> ecosystem 👨‍🚀
+            <div style="margin-top: 8px;">
+                <span style="font-size: 0.8rem;">For Info: <a href="https://x.com/pdiomede" target="_blank">@pdiomede</a> & <a href="https://x.com/PaulBarba12" target="_blank">@PaulBarba12</a></span>
+            </div>
+        </div>
+
+        <script>
+
+            document.addEventListener('DOMContentLoaded', () => {
+                // Automatic sorting by Performance column (10th column, index 9)
+                const table = document.querySelector('table');
+                const rows = Array.from(table.querySelectorAll('tr:nth-child(n+2)'));
+                rows.sort((a, b) => {
+                    const aVal = parseFloat(a.children[9].getAttribute('data-value') || 0);
+                    const bVal = parseFloat(b.children[9].getAttribute('data-value') || 0);
+                    return aVal - bVal;
+                });
+                rows.forEach(row => table.appendChild(row));
+                table.querySelector('th:nth-child(10)').classList.add('sorted-column');
+                table.querySelector('th:nth-child(10)').setAttribute('data-sort-direction', 'asc');
+
+                // Theme toggle logic
+                const toggle = document.querySelector('input[type="checkbox"]');
+                const htmlEl = document.documentElement;
+                toggle.checked = true;
+                htmlEl.classList.add('dark-mode');
+
+                toggle.addEventListener('change', () => {
+                    htmlEl.classList.toggle('light-mode');
+                    htmlEl.classList.toggle('dark-mode');
+                    document.body.classList.toggle('light-mode');
+                    document.body.classList.toggle('dark-mode');
+                });
+
+                document.querySelectorAll('th').forEach((header, columnIndex) => {
+                    header.addEventListener('click', () => {
+                        const table = header.closest('table');
+                        const rows = Array.from(table.querySelectorAll('tr:nth-child(n+2)'));
+                        // Updated numericColumns to include all columns that should sort numerically
+                        const numericColumns = [1, 2, 3, 4, 5, 6, 8, 9];
+                        const isNumeric = numericColumns.includes(columnIndex);
+                        const currentDirection = header.getAttribute('data-sort-direction');
+                        const newDirection = currentDirection === 'asc' ? 'desc' : 'asc';
+                        table.querySelectorAll('th').forEach(th => {
+                            th.removeAttribute('data-sort-direction');
+                            th.classList.remove('sorted-column');
+                        });
+                        header.setAttribute('data-sort-direction', newDirection);
+                        header.classList.add('sorted-column');
+                        rows.sort((a, b) => {
+                            let aVal = a.children[columnIndex].getAttribute('data-value') || a.children[columnIndex].textContent.trim();
+                            let bVal = b.children[columnIndex].getAttribute('data-value') || b.children[columnIndex].textContent.trim();
+                            // Special handling for Underserving column ("Yes"/"No")
+                            if (columnIndex === 7) {
+                                aVal = aVal === "Yes" ? 1 : 0;
+                                bVal = bVal === "Yes" ? 1 : 0;
+                                aVal = Number(aVal);
+                                bVal = Number(bVal);
+                            } else if (isNumeric) {
+                                aVal = parseFloat(aVal.replace(/,/g, '')) || 0;
+                                bVal = parseFloat(bVal.replace(/,/g, '')) || 0;
+                            }
+                            if (aVal < bVal) return newDirection === 'asc' ? -1 : 1;
+                            if (aVal > bVal) return newDirection === 'asc' ? 1 : -1;
+                            return 0;
+                        });
+                        rows.forEach(row => table.appendChild(row));
+                    });
+                });
+                const searchBox = document.getElementById('searchBox');
+                searchBox.addEventListener('input', () => {
+                    const query = searchBox.value.toLowerCase();
+                    const rows = document.querySelectorAll('table tr:nth-child(n+2)');
+                    rows.forEach(row => {
+                        const text = row.textContent.toLowerCase();
+                        row.style.display = text.includes(query) ? '' : 'none';
+                    });
+                });
+            });
+
+            function downloadCSV() {
+                const link = document.createElement('a');
+                link.href = 'indexers_output.csv';
+                link.download = 'indexers_output.csv';
+                document.body.appendChild(link);
+                link.click();
+                document.body.removeChild(link);
+            }
+
+            function filterByFlag(flag) {
+                const rows = document.querySelectorAll('table tr:nth-child(n+2)');
+                rows.forEach(row => {
+                    const performanceCell = row.children[9];  // 9th column (Performance)
+                    const flagText = performanceCell.textContent.trim();
+                    if (flag === 'All') {
+                        row.style.display = '';
+                    } else {
+                        row.style.display = flagText.startsWith(flag) ? '' : 'none';
+                    }
+                });
+
+                // Update active class on buttons
+                document.querySelectorAll('.filter-button').forEach(btn => {
+                    btn.classList.remove('active-filter');
+                });
+                if (flag !== 'All') {
+                    document.querySelectorAll('.filter-button').forEach(btn => {
+                        if (btn.textContent.includes(flag)) {
+                            btn.classList.add('active-filter');
+                        }
+                    });
+                }
+            }
+        
+        </script>
+
+    </body>
+
+    </html>
+
+    

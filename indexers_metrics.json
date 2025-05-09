@@ -1,0 +1,1052 @@
+{
+  "0x0058223c6617cca7ce76fc929ec9724cd43d4542": {
+    "name": null,
+    "avatar_url": "https://api.thegraph.com/ipfs/api/v0/cat?arg=QmdYKDtquMu1mMXCAbPT9GKqYBDrmZbCNvHGMf86z2ChUJ",
+    "total_stake": 2999743.2255855203,
+    "allocated_stake": 5200651.0,
+    "query_fees_earned": 16087.21698451243,
+    "indexing_rewards": 1112547.3829188053,
+    "total_rewards": 2402216.396501812,
+    "delegator_rewards": 1289669.0135830066
+  },
+  "0x01f17c392614c7ea586e7272ed348efee21b90a3": {
+    "name": null,
+    "avatar_url": "https://api.thegraph.com/ipfs/api/v0/cat?arg=QmVARwoQwcnF8RFRJohirJy6nHKNsRXSNXcGuskefHCZG3",
+    "total_stake": 3420000.0,
+    "allocated_stake": 8112350.0,
+    "query_fees_earned": 932.5563690435876,
+    "indexing_rewards": 1951210.041502468,
+    "total_rewards": 2501551.3352595745,
+    "delegator_rewards": 550341.2937571064
+  },
+  "0x089f78d8cf0a5ae1b7a581b1910a73f8cb3e4774": {
+    "name": null,
+    "avatar_url": "https://api.thegraph.com/ipfs/api/v0/cat?arg=QmXhGmdGC5sxb9b3p5JTzFqq9iUC7CKPTa7oPXpQ8CTjnk",
+    "total_stake": 2356551.4812143072,
+    "allocated_stake": 30132926.0,
+    "query_fees_earned": 17232.966963804287,
+    "indexing_rewards": 1034811.2282959012,
+    "total_rewards": 6258482.228478044,
+    "delegator_rewards": 5223671.0001821425
+  },
+  "0x0b9d582b7fdd387ba13ad7f453d49af255a8ed5e": {
+    "name": null,
+    "avatar_url": "https://api.thegraph.com/ipfs/api/v0/cat?arg=QmWNp5bTnYsEdXZiig2AUVDbF7GmeurzjFFjwU8sbLy7ey",
+    "total_stake": 636120.0241284744,
+    "allocated_stake": 3616693.0,
+    "query_fees_earned": 2706.8696547465715,
+    "indexing_rewards": 178897.45864057497,
+    "total_rewards": 903145.1609844327,
+    "delegator_rewards": 724247.7023438576
+  },
+  "0x0fd8fd1dc8162148cb9413062fe6c6b144335dbf": {
+    "name": null,
+    "avatar_url": "https://api.thegraph.com/ipfs/api/v0/cat?arg=QmUoehEc4z2RTgu86jmtWeNGg9yu6DfbbdRQma8vxPwZvS",
+    "total_stake": 5715200.949837176,
+    "allocated_stake": 37259575.589999996,
+    "query_fees_earned": 37706.267408680025,
+    "indexing_rewards": 4375951.594791951,
+    "total_rewards": 17643903.223860946,
+    "delegator_rewards": 13267951.629068995
+  },
+  "0x1254cecc9da2b8c8ea40d3bc702ad7c17c9de7ad": {
+    "name": null,
+    "avatar_url": null,
+    "total_stake": 99999.99999999999,
+    "allocated_stake": 0.0,
+    "query_fees_earned": 0.0,
+    "indexing_rewards": 0.0,
+    "total_rewards": 0.0,
+    "delegator_rewards": 0.0
+  },
+  "0x17def1a43a323c711c7a32101ecf41e58eff54a2": {
+    "name": null,
+    "avatar_url": null,
+    "total_stake": 1575336.833854131,
+    "allocated_stake": 4777600.0,
+    "query_fees_earned": 603.1251715716353,
+    "indexing_rewards": 1504770.8025199668,
+    "total_rewards": 1504770.8025199668,
+    "delegator_rewards": 0.0
+  },
+  "0x19a4fe7d0c76490cca77b45580846cdb38b9a406": {
+    "name": null,
+    "avatar_url": null,
+    "total_stake": 146595.94950613886,
+    "allocated_stake": 0.0,
+    "query_fees_earned": 0.0,
+    "indexing_rewards": 12776.064869521268,
+    "total_rewards": 12776.064869521268,
+    "delegator_rewards": 0.0
+  },
+  "0x1b7e0068ca1d7929c8c56408d766e1510e54d98d": {
+    "name": null,
+    "avatar_url": "https://api.thegraph.com/ipfs/api/v0/cat?arg=QmZvsLvd86CExcnEmG2HYfs4hA7vBeCrTAJ4mPQRYpUfjy",
+    "total_stake": 4983635.290948178,
+    "allocated_stake": 59020639.0,
+    "query_fees_earned": 553222.1626816314,
+    "indexing_rewards": 4762893.222549416,
+    "total_rewards": 13407596.224210884,
+    "delegator_rewards": 8644703.001661468
+  },
+  "0x1b92e4cba0f82c85c1298af861247849988c788c": {
+    "name": null,
+    "avatar_url": "https://api.thegraph.com/ipfs/api/v0/cat?arg=QmXgN5NKFMxY8qGLMdBMWUfQy1SkNW7wzek4tE9AmXvpQu",
+    "total_stake": 759898.9774835192,
+    "allocated_stake": 2640661.0,
+    "query_fees_earned": 15589.09412872318,
+    "indexing_rewards": 289724.0152139723,
+    "total_rewards": 1214144.2112668224,
+    "delegator_rewards": 924420.1960528502
+  },
+  "0x2121bc6437100fc21d19a9eea30898419e020afa": {
+    "name": null,
+    "avatar_url": null,
+    "total_stake": 100007.25649032062,
+    "allocated_stake": 0.0,
+    "query_fees_earned": 0.0,
+    "indexing_rewards": 0.0,
+    "total_rewards": 0.0,
+    "delegator_rewards": 0.0
+  },
+  "0x269ebeee083ce6f70486a67dc8036a889bf322a9": {
+    "name": null,
+    "avatar_url": "https://api.thegraph.com/ipfs/api/v0/cat?arg=QmfFJp96i9AsfiUJTEQ4PwYALBDNnK2qxZoVu3HrXXhrQw",
+    "total_stake": 100526.53551100811,
+    "allocated_stake": 746314.0,
+    "query_fees_earned": 10.140691382079828,
+    "indexing_rewards": 12490.830627428943,
+    "total_rewards": 125440.37102066494,
+    "delegator_rewards": 112949.54039323599
+  },
+  "0x2b3c7d1ef5fdfc0557934019c531d3e70d6200ae": {
+    "name": null,
+    "avatar_url": null,
+    "total_stake": 123573300.0,
+    "allocated_stake": 123576131.0,
+    "query_fees_earned": 5614.265847830156,
+    "indexing_rewards": 21892769.12784013,
+    "total_rewards": 21892769.12784013,
+    "delegator_rewards": 0.0
+  },
+  "0x2e15f3f0d37b191c33ee06e953c8cce4c493b47a": {
+    "name": null,
+    "avatar_url": "https://api.thegraph.com/ipfs/api/v0/cat?arg=QmcHcmJTkEFt7P6Duw3ZYr7sLDDCAUE8aEAE12561kBA8R",
+    "total_stake": 3116489.922737643,
+    "allocated_stake": 4843535.0,
+    "query_fees_earned": 0.03885258235252989,
+    "indexing_rewards": 383203.76932083914,
+    "total_rewards": 728721.5098078144,
+    "delegator_rewards": 345517.74048697535
+  },
+  "0x2e8d26e9b0d280738728e71c37bf05e70a636238": {
+    "name": null,
+    "avatar_url": "https://api.thegraph.com/ipfs/api/v0/cat?arg=QmPEnVeRvuPtjqarKhRFEfStPzrsreKoR3N7gXQS9SGkxw",
+    "total_stake": 1924870.8746406173,
+    "allocated_stake": 5283999.999999999,
+    "query_fees_earned": 31.797481219016163,
+    "indexing_rewards": 456427.64881604235,
+    "total_rewards": 857750.0427513169,
+    "delegator_rewards": 401322.39393527457
+  },
+  "0x2f09092aacd80196fc984908c5a9a7ab3ee4f1ce": {
+    "name": null,
+    "avatar_url": "https://api.thegraph.com/ipfs/api/v0/cat?arg=QmQXXj2rYSeTup6MDZNzchjauXaGTXtmrqTL9gJD6FNAvT",
+    "total_stake": 36735725.616492935,
+    "allocated_stake": 249854393.0,
+    "query_fees_earned": 8829.378335659932,
+    "indexing_rewards": 9940560.208855538,
+    "total_rewards": 49588142.70872774,
+    "delegator_rewards": 39647582.4998722
+  },
+  "0x326c584e0f0eab1f1f83c93cc6ae1acc0feba0bc": {
+    "name": null,
+    "avatar_url": "https://api.thegraph.com/ipfs/api/v0/cat?arg=QmTMvpL7D2qRfHM3Kn3KaTTxEVLvsUkkG3YLGTNJvseSqu",
+    "total_stake": 2478150.004617527,
+    "allocated_stake": 36980028.0,
+    "query_fees_earned": 18978.7389934669,
+    "indexing_rewards": 926643.3247178181,
+    "total_rewards": 5428167.576427026,
+    "delegator_rewards": 4501524.251709208
+  },
+  "0x32bbd16a94ebb289edceebe77f35acc82664157b": {
+    "name": null,
+    "avatar_url": null,
+    "total_stake": 1054317.9929767775,
+    "allocated_stake": 15436000.0,
+    "query_fees_earned": 393.30433796319426,
+    "indexing_rewards": 2517734.4502966898,
+    "total_rewards": 2517734.4502966898,
+    "delegator_rewards": 0.0
+  },
+  "0x345c9a221e4caa15f78fb8078c441745de48a225": {
+    "name": null,
+    "avatar_url": "https://api.thegraph.com/ipfs/api/v0/cat?arg=QmPQcUtUYBNizkQkN7rcVZduRjWaWLb4Wsrs6YwoeqkiLc",
+    "total_stake": 1033986.7711881195,
+    "allocated_stake": 8457043.0,
+    "query_fees_earned": 3899.916265254285,
+    "indexing_rewards": 352738.41814475966,
+    "total_rewards": 1785346.9239931728,
+    "delegator_rewards": 1432608.505848413
+  },
+  "0x35917c0eb91d2e21bef40940d028940484230c06": {
+    "name": null,
+    "avatar_url": "https://api.thegraph.com/ipfs/api/v0/cat?arg=QmcEaBoxbdXD2ogUQZJfdbPMEiWRDChqfHziroYaFzXWjJ",
+    "total_stake": 18574383.407068696,
+    "allocated_stake": 27272070.0,
+    "query_fees_earned": 1752410.0724905985,
+    "indexing_rewards": 6330258.363735486,
+    "total_rewards": 8192519.557971899,
+    "delegator_rewards": 1862261.1942364136
+  },
+  "0x3717cef8020bddee7a18f4efb2bfa88fefdcb1bc": {
+    "name": null,
+    "avatar_url": "https://api.thegraph.com/ipfs/api/v0/cat?arg=QmdFKawEFPYzDVwZrXyJcyaYyCZd6PP9N5NCuTi2XmLJMD",
+    "total_stake": 100769.06916971809,
+    "allocated_stake": 3840.0,
+    "query_fees_earned": 388.8653088533649,
+    "indexing_rewards": 945.6266230451054,
+    "total_rewards": 945.6266230451054,
+    "delegator_rewards": 0.0
+  },
+  "0x3863a65ce278a240f9aa2a4b4a48493be59e6139": {
+    "name": null,
+    "avatar_url": null,
+    "total_stake": 120752.7911769959,
+    "allocated_stake": 12241.0,
+    "query_fees_earned": 1162.9322793864415,
+    "indexing_rewards": 651.5021603000763,
+    "total_rewards": 13030.043206001526,
+    "delegator_rewards": 12378.541045701448
+  },
+  "0x38f412c8d6346a17a53ff9ceecd2e01acecd27c0": {
+    "name": null,
+    "avatar_url": "https://api.thegraph.com/ipfs/api/v0/cat?arg=QmVfCRgSLQiQEVwD1Bj47RRpLBQqeSu5UXZFCSsr9LS1qj",
+    "total_stake": 15394618.55067275,
+    "allocated_stake": 34579335.2,
+    "query_fees_earned": 18188.005147671665,
+    "indexing_rewards": 3386395.7612302173,
+    "total_rewards": 6607888.599076514,
+    "delegator_rewards": 3221492.837846298
+  },
+  "0x3b9ba748691f135b71582dc3292e5e3ed7e13341": {
+    "name": null,
+    "avatar_url": null,
+    "total_stake": 455140.7251445716,
+    "allocated_stake": 2740645.0,
+    "query_fees_earned": 3514.6579880430104,
+    "indexing_rewards": 145785.72343643152,
+    "total_rewards": 415226.0708349389,
+    "delegator_rewards": 269440.3473985074
+  },
+  "0x3e1536fc83cd5bed83a521a26034ff3e59c6a7c4": {
+    "name": null,
+    "avatar_url": "https://api.thegraph.com/ipfs/api/v0/cat?arg=QmSQ7DQvFhqNP8SkzmyinWucumzFE6ivRhg4jP8WMTsyu3",
+    "total_stake": 412464.4975276609,
+    "allocated_stake": 3707130.0,
+    "query_fees_earned": 4208.329219035786,
+    "indexing_rewards": 188227.2459656194,
+    "total_rewards": 884580.8444353888,
+    "delegator_rewards": 696353.5984697693
+  },
+  "0x3f74870f80ff7449fe4c6ff257da5fa72734c970": {
+    "name": null,
+    "avatar_url": "https://api.thegraph.com/ipfs/api/v0/cat?arg=Qmc5x4ZTDUf67GZPyNJa1TGLAugVhYADHAfaiVLmatKdcA",
+    "total_stake": 5816489.005190246,
+    "allocated_stake": 9326933.0,
+    "query_fees_earned": 29556.66815070078,
+    "indexing_rewards": 2307809.6882314263,
+    "total_rewards": 4965010.692274375,
+    "delegator_rewards": 2657201.004042948
+  },
+  "0x40a8acdebaf6c0ae0ef04ad375b0869f885c8d82": {
+    "name": null,
+    "avatar_url": null,
+    "total_stake": 101137.44005273208,
+    "allocated_stake": 0.0,
+    "query_fees_earned": 0.0,
+    "indexing_rewards": 0.0,
+    "total_rewards": 0.0,
+    "delegator_rewards": 0.0
+  },
+  "0x4207df52f7ff229364899b21e9c4ad36d3d42981": {
+    "name": null,
+    "avatar_url": "https://api.thegraph.com/ipfs/api/v0/cat?arg=QmXJ3suvVjsTr1sJVE9GwDiuJGPMjgaNkm4XFkAaezc83x",
+    "total_stake": 214042.95280280025,
+    "allocated_stake": 463999.99999999994,
+    "query_fees_earned": 0.0,
+    "indexing_rewards": 53211.59800904026,
+    "total_rewards": 109205.3316621581,
+    "delegator_rewards": 55993.73365311784
+  },
+  "0x474e571ab6dd77489ec3c7ddf9cbc893fcba684c": {
+    "name": null,
+    "avatar_url": null,
+    "total_stake": 287812.4769605705,
+    "allocated_stake": 1596429.9999999998,
+    "query_fees_earned": 0.0,
+    "indexing_rewards": 2801.647635885215,
+    "total_rewards": 104825.8236772141,
+    "delegator_rewards": 102024.17604132887
+  },
+  "0x4d67938e9b07681526fe0345a45b770bba88c659": {
+    "name": null,
+    "avatar_url": "https://api.thegraph.com/ipfs/api/v0/cat?arg=QmXTBvGkDjCo2JW3yeZxia2cGwV8rq7UuY9nfLATDVhHv7",
+    "total_stake": 372100.00730100536,
+    "allocated_stake": 1758397.0,
+    "query_fees_earned": 28.32157385907396,
+    "indexing_rewards": 171184.44017807016,
+    "total_rewards": 652288.2901607404,
+    "delegator_rewards": 481103.8499826702
+  },
+  "0x4e5c87772c29381bcabc58c3f182b6633b5a274a": {
+    "name": null,
+    "avatar_url": "https://api.thegraph.com/ipfs/api/v0/cat?arg=QmVK8MRiVVhs6VPYjHvU6NosF5yLb8Cs6a37sLC9ibQhAs",
+    "total_stake": 9645169.99999,
+    "allocated_stake": 124053500.0,
+    "query_fees_earned": 227083.86412690554,
+    "indexing_rewards": 6173780.140581117,
+    "total_rewards": 23015609.887775764,
+    "delegator_rewards": 16841829.747194644
+  },
+  "0x51637a35f7f054c98ed51904de939b9561d37885": {
+    "name": null,
+    "avatar_url": "https://api.thegraph.com/ipfs/api/v0/cat?arg=Qmd6iUYuHyPBT4xDQAnKH4UmjwnDhwdjJh6xLsiid3foD1",
+    "total_stake": 290000.0,
+    "allocated_stake": 2674100.0,
+    "query_fees_earned": 1046.3048557815505,
+    "indexing_rewards": 178783.0602305349,
+    "total_rewards": 1001822.7277946776,
+    "delegator_rewards": 823039.6675641426
+  },
+  "0x53dbbc9d916b1840a2c4c26b150ba2e13f36e10f": {
+    "name": null,
+    "avatar_url": "https://api.thegraph.com/ipfs/api/v0/cat?arg=QmcjGuXG1bsenjpu7te3GjzPAgsDL7cbH5K5xn1oXEHS3b",
+    "total_stake": 424071.9505683082,
+    "allocated_stake": 2184479.0,
+    "query_fees_earned": 106954.01557084093,
+    "indexing_rewards": 384848.80577475333,
+    "total_rewards": 1084964.7086702394,
+    "delegator_rewards": 700115.9028954862
+  },
+  "0x550c1f4814a85aa10f5f061ca8c45e2ee9620226": {
+    "name": null,
+    "avatar_url": "https://api.thegraph.com/ipfs/api/v0/cat?arg=QmQYHkFma7DQxWiCAkgFHNyVBVCJCvuPrVDgTbQH8jXMtP",
+    "total_stake": 114693.11091265302,
+    "allocated_stake": 444504.0,
+    "query_fees_earned": 7378.296865338938,
+    "indexing_rewards": 66654.56025372303,
+    "total_rewards": 197809.35535482015,
+    "delegator_rewards": 131154.79510109712
+  },
+  "0x594f52d3fccda979bb036bf14ea43a9d6f307f35": {
+    "name": null,
+    "avatar_url": null,
+    "total_stake": 102626.0193085553,
+    "allocated_stake": 0.0,
+    "query_fees_earned": 0.0,
+    "indexing_rewards": 0.0,
+    "total_rewards": 0.0,
+    "delegator_rewards": 0.0
+  },
+  "0x59749d1fa9635cd0413aeff5ee295490a7e87f54": {
+    "name": null,
+    "avatar_url": null,
+    "total_stake": 375091.52289288375,
+    "allocated_stake": 4751707.0,
+    "query_fees_earned": 0.0,
+    "indexing_rewards": 251310.34873930473,
+    "total_rewards": 1094918.4863592703,
+    "delegator_rewards": 843608.1376199656
+  },
+  "0x5af569b692b0598721461027dbbecde74d465d99": {
+    "name": null,
+    "avatar_url": null,
+    "total_stake": 4039161.3796750694,
+    "allocated_stake": 3461000.0,
+    "query_fees_earned": 0.0,
+    "indexing_rewards": 0.0,
+    "total_rewards": 0.0,
+    "delegator_rewards": 0.0
+  },
+  "0x5b3c8f7245dfbd9bea22d9c4b975df60a638e5a3": {
+    "name": null,
+    "avatar_url": "https://api.thegraph.com/ipfs/api/v0/cat?arg=QmPXffPATdwqBh5rmYbSJftWrMHLhev3irfsQqBXF43V3i",
+    "total_stake": 5350000.0,
+    "allocated_stake": 5638800.0,
+    "query_fees_earned": 1150.864331014646,
+    "indexing_rewards": 1498900.162862872,
+    "total_rewards": 1692509.429959611,
+    "delegator_rewards": 193609.26709673868
+  },
+  "0x5ddee9720e17aad28febb55643cd8ab50c51c60b": {
+    "name": null,
+    "avatar_url": "https://api.thegraph.com/ipfs/api/v0/cat?arg=QmUhximWcwSEZRyAMf7goH6aBrztLq9mjADcYsEU38URcm",
+    "total_stake": 2080659.7844026012,
+    "allocated_stake": 6145725.0,
+    "query_fees_earned": 1485.5826075678076,
+    "indexing_rewards": 550338.4181663091,
+    "total_rewards": 1922011.127821405,
+    "delegator_rewards": 1371672.709655096
+  },
+  "0x600f2b53719e1dbacf340572b31a9df9921b82fa": {
+    "name": null,
+    "avatar_url": "https://api.thegraph.com/ipfs/api/v0/cat?arg=QmX88qTPDh3rutSah1vczfG2ZzGEEKz1idvB7vByW8NvNH",
+    "total_stake": 900000.0,
+    "allocated_stake": 1558549.0,
+    "query_fees_earned": 422.1492477845618,
+    "indexing_rewards": 366652.50518674747,
+    "total_rewards": 366652.50518674747,
+    "delegator_rewards": 0.0
+  },
+  "0x60df13b7a598772e992f9365fba5ed6e1529e79a": {
+    "name": null,
+    "avatar_url": null,
+    "total_stake": 133947.35491380066,
+    "allocated_stake": 0.0,
+    "query_fees_earned": 0.0,
+    "indexing_rewards": 0.0,
+    "total_rewards": 0.0,
+    "delegator_rewards": 0.0
+  },
+  "0x63c9dc729ba7a22bb8605216b24a34b902e5fe94": {
+    "name": null,
+    "avatar_url": "https://api.thegraph.com/ipfs/api/v0/cat?arg=QmccgzLqMEw3irXPPUwooSbNNz74eo7qoiazEMpysKrtkQ",
+    "total_stake": 11461185.30426737,
+    "allocated_stake": 170552174.0,
+    "query_fees_earned": 12272.149669957334,
+    "indexing_rewards": 9941958.160324859,
+    "total_rewards": 29271635.296179883,
+    "delegator_rewards": 19329677.135855027
+  },
+  "0x6f3ce93a09f30f18d728d2364268b5fe9444b89e": {
+    "name": null,
+    "avatar_url": null,
+    "total_stake": 2002591.2545522628,
+    "allocated_stake": 24890649.0,
+    "query_fees_earned": 1409.3957825640712,
+    "indexing_rewards": 5695604.868884446,
+    "total_rewards": 5695604.868884446,
+    "delegator_rewards": 0.0
+  },
+  "0x6f8a032b4b1ee622ef2f0fc091bdbb98cfae81a3": {
+    "name": null,
+    "avatar_url": "https://api.thegraph.com/ipfs/api/v0/cat?arg=QmWtvuWVqLWguaVJNCeWNwydPuSFxY352DNXhTyC1Z6GWG",
+    "total_stake": 10000498.902996749,
+    "allocated_stake": 12191518.4,
+    "query_fees_earned": 9596.73634050321,
+    "indexing_rewards": 1782033.5713640694,
+    "total_rewards": 2091722.9106765506,
+    "delegator_rewards": 309689.33931248105
+  },
+  "0x6f9bb7e454f5b3eb2310343f0e99269dc2bb8a1d": {
+    "name": null,
+    "avatar_url": null,
+    "total_stake": 3611876.1784856166,
+    "allocated_stake": 6677622.1110000005,
+    "query_fees_earned": 15554.56335924485,
+    "indexing_rewards": 1099927.2712989834,
+    "total_rewards": 2658424.454180629,
+    "delegator_rewards": 1558497.1828816454
+  },
+  "0x735f422922bd4d459ea491f46e1bb9295b89f961": {
+    "name": null,
+    "avatar_url": null,
+    "total_stake": 161678.34372752954,
+    "allocated_stake": 161678.0,
+    "query_fees_earned": 38.26164001488376,
+    "indexing_rewards": 14924.125962681162,
+    "total_rewards": 14924.125962681162,
+    "delegator_rewards": 0.0
+  },
+  "0x74dbb201ecc0b16934e68377bc13013883d9417b": {
+    "name": null,
+    "avatar_url": "https://api.thegraph.com/ipfs/api/v0/cat?arg=QmTxVSyLq9ssPf15x8MCWTABzzdEzPK3RRYBLeVnG1HJtq",
+    "total_stake": 296177.03724591323,
+    "allocated_stake": 2788600.0,
+    "query_fees_earned": 10782.369677086366,
+    "indexing_rewards": 4766.574706934471,
+    "total_rewards": 171008.03889460184,
+    "delegator_rewards": 166241.46418766738
+  },
+  "0x7bb834017672b1135466661d8dd69c5dd0b3bf51": {
+    "name": null,
+    "avatar_url": "https://api.thegraph.com/ipfs/api/v0/cat?arg=QmNzC3uz1MBGRaQXCp42QW4TZbRy4U1bfZKLmcWGSBeSZz",
+    "total_stake": 5241361.482347663,
+    "allocated_stake": 85462622.0,
+    "query_fees_earned": 143539.2893509665,
+    "indexing_rewards": 2746567.053085344,
+    "total_rewards": 15166804.956551481,
+    "delegator_rewards": 12420237.903466137
+  },
+  "0x7c1023ffa995a37ddb3963206e17dbd58a1b64c1": {
+    "name": null,
+    "avatar_url": null,
+    "total_stake": 658916.002448413,
+    "allocated_stake": 0.0,
+    "query_fees_earned": 770.4178986227685,
+    "indexing_rewards": 20212.27871666299,
+    "total_rewards": 20212.27871666299,
+    "delegator_rewards": 0.0
+  },
+  "0x8bbe94c2894f76406568dfb44e905dac4b7df699": {
+    "name": null,
+    "avatar_url": null,
+    "total_stake": 99999.99999999999,
+    "allocated_stake": 99985.22301271939,
+    "query_fees_earned": 0.0,
+    "indexing_rewards": 0.0,
+    "total_rewards": 0.0,
+    "delegator_rewards": 0.0
+  },
+  "0x8d632dfc2454d624910fe982e85a5b15d2ae93c5": {
+    "name": null,
+    "avatar_url": "https://api.thegraph.com/ipfs/api/v0/cat?arg=QmXcuvC5qm4TNnjSANrKksUhwKb9EJp1u7tgkKpyCMZPac",
+    "total_stake": 592226.6383356128,
+    "allocated_stake": 0.0,
+    "query_fees_earned": 0.0,
+    "indexing_rewards": 41218.506664819215,
+    "total_rewards": 137062.1188787345,
+    "delegator_rewards": 95843.6122139153
+  },
+  "0x8f689a83dd52eaa1d5ad6a40c46189b4a0d70b06": {
+    "name": null,
+    "avatar_url": "https://api.thegraph.com/ipfs/api/v0/cat?arg=QmSyQDb3LQgPTqNNyoKCdtdN6AiH6SsmswdRU2LpLkiFg1",
+    "total_stake": 190423.45261894696,
+    "allocated_stake": 405149.0,
+    "query_fees_earned": 84.43200010680421,
+    "indexing_rewards": 29138.329731319092,
+    "total_rewards": 97127.76577106363,
+    "delegator_rewards": 67989.43603974454
+  },
+  "0x9082f497bdc512d08ffde50d6fce28e72c2addcf": {
+    "name": null,
+    "avatar_url": "https://api.thegraph.com/ipfs/api/v0/cat?arg=QmQ37jh6DVhwxpW3XGUgSY2qkzC894Le45aJaAr7hxwwL8",
+    "total_stake": 402470.57669282664,
+    "allocated_stake": 5974429.9,
+    "query_fees_earned": 310.2402453794809,
+    "indexing_rewards": 136657.4250590515,
+    "total_rewards": 136657.4250590515,
+    "delegator_rewards": 0.0
+  },
+  "0x918fcc24e6b7f5ec73b4cf766e2393d8fe707541": {
+    "name": null,
+    "avatar_url": "https://api.thegraph.com/ipfs/api/v0/cat?arg=QmPJ8z1LZZyNSz7LWfQUBBswkrLfaMoiv4owbABoGqoevX",
+    "total_stake": 1825493.1540260885,
+    "allocated_stake": 8185200.0,
+    "query_fees_earned": 5553.9790860620205,
+    "indexing_rewards": 435257.80260384135,
+    "total_rewards": 2625875.8206903525,
+    "delegator_rewards": 2190618.018086511
+  },
+  "0x91f137715ef8e141d6a8074cbbbc53a0f76b09c5": {
+    "name": null,
+    "avatar_url": null,
+    "total_stake": 306035.6707825677,
+    "allocated_stake": 3521470.9999999995,
+    "query_fees_earned": 1248.5807810201281,
+    "indexing_rewards": 6035.670782567714,
+    "total_rewards": 446145.77939456527,
+    "delegator_rewards": 440110.10861199757
+  },
+  "0x920fdeb00ee04dd72f62d8a8f80f13c82ef76c1e": {
+    "name": null,
+    "avatar_url": "https://api.thegraph.com/ipfs/api/v0/cat?arg=QmYmiEYF1rkNthNLdpi831SW97o2LGSeA7FfKGbhLgUTNQ",
+    "total_stake": 2309513.8648630986,
+    "allocated_stake": 25516877.0,
+    "query_fees_earned": 32217.061628970325,
+    "indexing_rewards": 821728.1286012188,
+    "total_rewards": 3159462.321930554,
+    "delegator_rewards": 2337734.1933293357
+  },
+  "0x958ad15ea21fb79b935524cf90c90276031bee20": {
+    "name": null,
+    "avatar_url": "https://api.thegraph.com/ipfs/api/v0/cat?arg=QmfYSx9KKg2Tab2itndWyNKxo1W4ujB4zTSMRNYzCwxFnY",
+    "total_stake": 1350197.0985990148,
+    "allocated_stake": 1484584.0,
+    "query_fees_earned": 24.160573040359935,
+    "indexing_rewards": 119466.72388790743,
+    "total_rewards": 130212.87688072937,
+    "delegator_rewards": 10746.152992821928
+  },
+  "0x9611663c4057cbfc9d2589a04fcac24dbd38612d": {
+    "name": null,
+    "avatar_url": null,
+    "total_stake": 99999.99999999999,
+    "allocated_stake": 0.0,
+    "query_fees_earned": 0.0,
+    "indexing_rewards": 0.0,
+    "total_rewards": 0.0,
+    "delegator_rewards": 0.0
+  },
+  "0x9da1017766bfeb2835db4f811516eea68996538b": {
+    "name": null,
+    "avatar_url": null,
+    "total_stake": 2697941.564184171,
+    "allocated_stake": 41154642.76499999,
+    "query_fees_earned": 8370.266026978437,
+    "indexing_rewards": 1622427.304691971,
+    "total_rewards": 8178168.013549259,
+    "delegator_rewards": 6555740.708857287
+  },
+  "0xa01b06b0e9feb016d5ab669ce89d059bc666e569": {
+    "name": null,
+    "avatar_url": null,
+    "total_stake": 582227.3579462069,
+    "allocated_stake": 2935032.0,
+    "query_fees_earned": 0.0,
+    "indexing_rewards": 275753.55350525246,
+    "total_rewards": 456523.7173748393,
+    "delegator_rewards": 180770.1638695868
+  },
+  "0xa181d0f242b3730f8a244cc94eda05faf17a43e8": {
+    "name": null,
+    "avatar_url": null,
+    "total_stake": 179711.72731615457,
+    "allocated_stake": 422654.0,
+    "query_fees_earned": 27.71948997998546,
+    "indexing_rewards": 43868.3034058746,
+    "total_rewards": 43868.3034058746,
+    "delegator_rewards": 0.0
+  },
+  "0xa28a99b0219a34142a9398a19460fcd69250a2b2": {
+    "name": null,
+    "avatar_url": null,
+    "total_stake": 300000.0,
+    "allocated_stake": 200204.1,
+    "query_fees_earned": 0.0,
+    "indexing_rewards": 0.0,
+    "total_rewards": 0.0,
+    "delegator_rewards": 0.0
+  },
+  "0xa4d629ba2ffb3321008d8cec37cca077696bf24d": {
+    "name": null,
+    "avatar_url": null,
+    "total_stake": 144816.33497218188,
+    "allocated_stake": 141000.0,
+    "query_fees_earned": 5998.228655946613,
+    "indexing_rewards": 39004.391965413284,
+    "total_rewards": 39004.391965413284,
+    "delegator_rewards": 0.0
+  },
+  "0xa6ff993e0f6253f1b7f55c873577a2f0f0ceb325": {
+    "name": null,
+    "avatar_url": null,
+    "total_stake": 8515900.469147101,
+    "allocated_stake": 8515900.0,
+    "query_fees_earned": 8276.26342987238,
+    "indexing_rewards": 1071976.2295123944,
+    "total_rewards": 1071976.2295123944,
+    "delegator_rewards": 0.0
+  },
+  "0xa9b5da22440dedd72535ec0525582ca0b63be5e1": {
+    "name": null,
+    "avatar_url": "https://api.thegraph.com/ipfs/api/v0/cat?arg=QmTKPCwTix4mphGkQ3VjKRVAuctvUi4oo6F9JzGVEyP8gp",
+    "total_stake": 100361.17247168842,
+    "allocated_stake": 115999.99999999999,
+    "query_fees_earned": 277.44353895972495,
+    "indexing_rewards": 55884.15454120588,
+    "total_rewards": 108689.54458736024,
+    "delegator_rewards": 52805.390046154374
+  },
+  "0xaa988dcb035518bc0e20082a3148a5d3dfd1776d": {
+    "name": null,
+    "avatar_url": "https://api.thegraph.com/ipfs/api/v0/cat?arg=QmWYdtct6Ma3rUaZV5JpxGf5qCY4cXHMqenf1pxCp7kSen",
+    "total_stake": 8484583.345381359,
+    "allocated_stake": 44840143.0,
+    "query_fees_earned": 34940.02775629716,
+    "indexing_rewards": 2397720.3405004144,
+    "total_rewards": 8549382.725155076,
+    "delegator_rewards": 6151662.384654662
+  },
+  "0xaddd3e23599d2b7267067afbcd18830aefca640a": {
+    "name": null,
+    "avatar_url": "https://api.thegraph.com/ipfs/api/v0/cat?arg=QmSiebU4x5uvwBnSZpaoUkiFa2oULv636zCyzHw6ycxNyz",
+    "total_stake": 538865.5848910016,
+    "allocated_stake": 959176.0,
+    "query_fees_earned": 11456.883183513984,
+    "indexing_rewards": 154683.47361331675,
+    "total_rewards": 380602.713697857,
+    "delegator_rewards": 225919.24008454022
+  },
+  "0xae9bfdf9eeec808f4f3f6f455cb1968445cc6f2f": {
+    "name": null,
+    "avatar_url": "https://api.thegraph.com/ipfs/api/v0/cat?arg=QmQhNHFBqVzJmtikUEsfWth6pN3fpWmtm8xzVdhdQVXwUU",
+    "total_stake": 711802.8482821066,
+    "allocated_stake": 0.0,
+    "query_fees_earned": 0.07868081065092672,
+    "indexing_rewards": 1029202.5178680437,
+    "total_rewards": 1169548.3157591408,
+    "delegator_rewards": 140345.79789109688
+  },
+  "0xb4b4570df6f7fe320f10fdfb702dba7e35244550": {
+    "name": null,
+    "avatar_url": "https://api.thegraph.com/ipfs/api/v0/cat?arg=QmVZeG2yjcdGKXHwZBsq8fYHfEy6nvXs1HtLmys6GyTjg8",
+    "total_stake": 1063781.3722183183,
+    "allocated_stake": 8846190.0,
+    "query_fees_earned": 41366.402138638114,
+    "indexing_rewards": 383167.7060854016,
+    "total_rewards": 1718527.189701414,
+    "delegator_rewards": 1335359.4836160124
+  },
+  "0xb54c7c9fa1a51300e6054b70ae9952c1fb2800b4": {
+    "name": null,
+    "avatar_url": "https://api.thegraph.com/ipfs/api/v0/cat?arg=QmV9ZoGCVtTu8ZUtxUg6ZExdX6HMTmUnHuTimpRApyasci",
+    "total_stake": 806255.4841905583,
+    "allocated_stake": 11469123.0,
+    "query_fees_earned": 0.0,
+    "indexing_rewards": 256628.23164264928,
+    "total_rewards": 1777395.323471837,
+    "delegator_rewards": 1520767.0918291877
+  },
+  "0xb8ca929e2bd96548cabcabc56cfc9a5147cef0ff": {
+    "name": null,
+    "avatar_url": "https://api.thegraph.com/ipfs/api/v0/cat?arg=QmNVU1D3LSLDDgahE9Et41sFcePqYzSDPeF8sFKoGh5vd2",
+    "total_stake": 230000.0,
+    "allocated_stake": 3397327.0000000005,
+    "query_fees_earned": 0.0,
+    "indexing_rewards": 300637.74489536084,
+    "total_rewards": 709732.4613951622,
+    "delegator_rewards": 409094.7164998013
+  },
+  "0xbdfb5ee5a2abf4fc7bb1bd1221067aef7f9de491": {
+    "name": null,
+    "avatar_url": "https://api.thegraph.com/ipfs/api/v0/cat?arg=QmSTePs8Kh2SMtjJNhrkqTXYYWdWQeYWa6no7cAL4uMA8C",
+    "total_stake": 99999.99999999999,
+    "allocated_stake": 63515.72,
+    "query_fees_earned": 98089.8998724263,
+    "indexing_rewards": 108.59350328958395,
+    "total_rewards": 108.59350328958395,
+    "delegator_rewards": 0.0
+  },
+  "0xc55c63563efb36f7cc65ac3060c52987c6694b37": {
+    "name": null,
+    "avatar_url": null,
+    "total_stake": 9486656.16670822,
+    "allocated_stake": 29450254.9,
+    "query_fees_earned": 6802.402092629886,
+    "indexing_rewards": 1396844.1500820792,
+    "total_rewards": 6863761.383633967,
+    "delegator_rewards": 5466917.233551888
+  },
+  "0xc9014686f6336ad558b539565d5dff840b339082": {
+    "name": null,
+    "avatar_url": null,
+    "total_stake": 2434300.054641867,
+    "allocated_stake": 36368000.0,
+    "query_fees_earned": 5718.793031216789,
+    "indexing_rewards": 6083939.169478986,
+    "total_rewards": 6083939.169478986,
+    "delegator_rewards": 0.0
+  },
+  "0xcba919cf1ee9c537545975d9968718a09d20f071": {
+    "name": null,
+    "avatar_url": null,
+    "total_stake": 500000.0,
+    "allocated_stake": 3664759.0,
+    "query_fees_earned": 2235.8208255475115,
+    "indexing_rewards": 855479.8200057163,
+    "total_rewards": 855479.8200057163,
+    "delegator_rewards": 0.0
+  },
+  "0xd9819426c82e2b8fc58b9b62a78efe93f78077c6": {
+    "name": null,
+    "avatar_url": null,
+    "total_stake": 61736141.02717066,
+    "allocated_stake": 61735866.0,
+    "query_fees_earned": 998.4645836094439,
+    "indexing_rewards": 333830.3484662236,
+    "total_rewards": 333830.3484662236,
+    "delegator_rewards": 0.0
+  },
+  "0xda20dde459c8d918f81566995d899a046d4d8503": {
+    "name": null,
+    "avatar_url": "https://api.thegraph.com/ipfs/api/v0/cat?arg=QmNeV1pdETzBdzAsL39YRQyVeNwUrJsUbonhY5X92a89Z6",
+    "total_stake": 341167.1234318696,
+    "allocated_stake": 1095200.0,
+    "query_fees_earned": 6818.737370874955,
+    "indexing_rewards": 71755.74754331402,
+    "total_rewards": 186178.6227151585,
+    "delegator_rewards": 114422.87517184448
+  },
+  "0xdc7daef4d0751a9f6ec28b06d6d9475b13eb0918": {
+    "name": null,
+    "avatar_url": "https://api.thegraph.com/ipfs/api/v0/cat?arg=QmdPDqs7xGepAqeKxxdnUx47bjtZQvyiGEN6tEYXNJy7SG",
+    "total_stake": 1534436.9321728162,
+    "allocated_stake": 4179913.65,
+    "query_fees_earned": 3096.3861341256106,
+    "indexing_rewards": 348263.3834320528,
+    "total_rewards": 1127068.9403317713,
+    "delegator_rewards": 778805.5568997185
+  },
+  "0xdeb712db301285ed483ef9e02dd08a1980f273f1": {
+    "name": null,
+    "avatar_url": null,
+    "total_stake": 100002.71072818749,
+    "allocated_stake": 457755.0,
+    "query_fees_earned": 1248.133469075122,
+    "indexing_rewards": 273347.66782119026,
+    "total_rewards": 509114.1624110006,
+    "delegator_rewards": 235766.49458981032
+  },
+  "0xdec965f0604125be05cd8a136c85d02ef344d61a": {
+    "name": null,
+    "avatar_url": "https://api.thegraph.com/ipfs/api/v0/cat?arg=Qme3AVLfwuMZsFsLWWNbJzyJZcUeKJGaGk2hwWx6iQVfPj",
+    "total_stake": 771109.0760677316,
+    "allocated_stake": 6144465.0,
+    "query_fees_earned": 22620.74792857072,
+    "indexing_rewards": 643015.6380134939,
+    "total_rewards": 2428806.3953523627,
+    "delegator_rewards": 1785790.7573388685
+  },
+  "0xdecba5154aab37ae5e381a19f804f3af4d1bcbb5": {
+    "name": null,
+    "avatar_url": "https://api.thegraph.com/ipfs/api/v0/cat?arg=Qmd2XkA6A2YGvmboe5ywYZ8caQToG8ubQfZyURoPuNw8wk",
+    "total_stake": 5042162.739726522,
+    "allocated_stake": 34335676.0,
+    "query_fees_earned": 10801.685318354588,
+    "indexing_rewards": 1704624.3741766696,
+    "total_rewards": 7323268.247534796,
+    "delegator_rewards": 5618643.873358126
+  },
+  "0xe0ceec6daa59cc951f3f71d6fc4221e55ef6c386": {
+    "name": null,
+    "avatar_url": "https://api.thegraph.com/ipfs/api/v0/cat?arg=Qmep9GxPJStGzAc3uRLac38ddoGS1CWcZbiqkaz8FoeQ9n",
+    "total_stake": 3337813.5548946117,
+    "allocated_stake": 32122941.000000004,
+    "query_fees_earned": 3272.6566676385664,
+    "indexing_rewards": 1081313.7048911583,
+    "total_rewards": 5508922.424675014,
+    "delegator_rewards": 4427608.719783855
+  },
+  "0xe13840a2e92e0cb17a246609b432d0fa2e418774": {
+    "name": null,
+    "avatar_url": "https://api.thegraph.com/ipfs/api/v0/cat?arg=QmNMxGdnk5sKKVwnasZPiDqcZ2dL6LUBFwGzCepTJwWdTn",
+    "total_stake": 6654021.053013504,
+    "allocated_stake": 19562374.19,
+    "query_fees_earned": 15728.590173429679,
+    "indexing_rewards": 4095890.747755137,
+    "total_rewards": 11500719.571933657,
+    "delegator_rewards": 7404828.824178521
+  },
+  "0xe19baa3de2e54ccb7a5c4454ebb588376319e407": {
+    "name": null,
+    "avatar_url": null,
+    "total_stake": 125000.0,
+    "allocated_stake": 0.0,
+    "query_fees_earned": 0.0,
+    "indexing_rewards": 0.0,
+    "total_rewards": 0.0,
+    "delegator_rewards": 0.0
+  },
+  "0xe48b586eeb81bde60f14b0b8d80ddd06c7a24720": {
+    "name": null,
+    "avatar_url": null,
+    "total_stake": 11473277.53882039,
+    "allocated_stake": 11473277.0,
+    "query_fees_earned": 1835.0574039461656,
+    "indexing_rewards": 281428.45459070447,
+    "total_rewards": 281428.45459070447,
+    "delegator_rewards": 0.0
+  },
+  "0xe63e935fba572784d5aa40715e372e7948bbdb12": {
+    "name": null,
+    "avatar_url": "https://api.thegraph.com/ipfs/api/v0/cat?arg=QmeiTDjGd5YGGN8WT6WwmQE6c43tseiCqED7GWzeYtf7xf",
+    "total_stake": 3950107.9226898933,
+    "allocated_stake": 37817095.656431004,
+    "query_fees_earned": 752.3576685926165,
+    "indexing_rewards": 676129.1702110977,
+    "total_rewards": 4507527.801407318,
+    "delegator_rewards": 3831398.63119622
+  },
+  "0xe6de2325ef1aac1f058fae59d3c38a472f569846": {
+    "name": null,
+    "avatar_url": null,
+    "total_stake": 14999004.0,
+    "allocated_stake": 14999009.0,
+    "query_fees_earned": 8425.768093800452,
+    "indexing_rewards": 3009965.498108964,
+    "total_rewards": 3009965.498108964,
+    "delegator_rewards": 0.0
+  },
+  "0xe91273727203bcc827521fc8b0c762d435c3c5d0": {
+    "name": null,
+    "avatar_url": null,
+    "total_stake": 70726010.38900395,
+    "allocated_stake": 70726002.0,
+    "query_fees_earned": 5300.819245365367,
+    "indexing_rewards": 18969653.079635065,
+    "total_rewards": 18969653.079635065,
+    "delegator_rewards": 0.0
+  },
+  "0xe9e284277648fcdb09b8efc1832c73c09b5ecf59": {
+    "name": null,
+    "avatar_url": null,
+    "total_stake": 5120105.611710288,
+    "allocated_stake": 78104133.0,
+    "query_fees_earned": 12953.492919499678,
+    "indexing_rewards": 2723165.8392917304,
+    "total_rewards": 13255799.699255545,
+    "delegator_rewards": 10532633.859963814
+  },
+  "0xeccdf8231326a9c5aad32df76a633aaa4c49b104": {
+    "name": null,
+    "avatar_url": "https://api.thegraph.com/ipfs/api/v0/cat?arg=Qmf5EqXtJ3SBe5q1HmmEzGEUPqTWLoEdmdS4wXT14RKA4R",
+    "total_stake": 300000.0004014074,
+    "allocated_stake": 2811450.0,
+    "query_fees_earned": 24369.224455080104,
+    "indexing_rewards": 148714.3407938852,
+    "total_rewards": 342250.6504805148,
+    "delegator_rewards": 193536.3096866296
+  },
+  "0xedca8740873152ff30a2696add66d1ab41882beb": {
+    "name": null,
+    "avatar_url": "https://api.thegraph.com/ipfs/api/v0/cat?arg=QmcfnLUavDEGEvv1rRLZaK3epTx5i4DAyjSprQGGj4ijKf",
+    "total_stake": 2580000.0,
+    "allocated_stake": 30457617.0,
+    "query_fees_earned": 268974.2165792868,
+    "indexing_rewards": 956622.7875947764,
+    "total_rewards": 5149650.8990889955,
+    "delegator_rewards": 4193028.11149422
+  },
+  "0xeeeee689aa442c607105f29f06d00d2f748776b2": {
+    "name": null,
+    "avatar_url": "https://api.thegraph.com/ipfs/api/v0/cat?arg=QmcXsc64rkHi9rAQPN61qP6UUxYyyACX9WQkPMVNSfzvfD",
+    "total_stake": 1350526.5239538834,
+    "allocated_stake": 2136260.0,
+    "query_fees_earned": 0.0,
+    "indexing_rewards": 440068.5369538803,
+    "total_rewards": 442627.61343374243,
+    "delegator_rewards": 2559.0764798621126
+  },
+  "0xf00f7157fa8fd0420b87956d46058a16b2f23adc": {
+    "name": null,
+    "avatar_url": "https://api.thegraph.com/ipfs/api/v0/cat?arg=QmNPkXetfavnymqPwvJ7W7SSNNEspbeDdzHXHyb5kTizgk",
+    "total_stake": 1811330.4812465534,
+    "allocated_stake": 23907921.0,
+    "query_fees_earned": 7029.568085722368,
+    "indexing_rewards": 805270.9916988458,
+    "total_rewards": 4279056.841683117,
+    "delegator_rewards": 3473785.849984271
+  },
+  "0xf03e9a7e40f09772c3c368b9de14c6d7370717b9": {
+    "name": null,
+    "avatar_url": null,
+    "total_stake": 353843.50766711717,
+    "allocated_stake": 0.0,
+    "query_fees_earned": 0.0,
+    "indexing_rewards": 40647.026391211715,
+    "total_rewards": 40647.026391211715,
+    "delegator_rewards": 0.0
+  },
+  "0xf0e33495afe697dbe32168bd0743ba32ebb978a3": {
+    "name": null,
+    "avatar_url": "https://api.thegraph.com/ipfs/api/v0/cat?arg=QmWqhirSmC1GcdYz61cqj5ahpfX9x7w8ED4rz6LikWcYF1",
+    "total_stake": 172677.28816789668,
+    "allocated_stake": 311500.0,
+    "query_fees_earned": 19.14944035269772,
+    "indexing_rewards": 20400.579152628667,
+    "total_rewards": 35173.412332118394,
+    "delegator_rewards": 14772.833179489724
+  },
+  "0xf435dee64819590c1a3f5913822e1c04afebe695": {
+    "name": null,
+    "avatar_url": "https://api.thegraph.com/ipfs/api/v0/cat?arg=QmY5zWBnxUPMf2fJFRkfKnZRsR7D4PT79LBe7Mb3ubRtbT",
+    "total_stake": 101649.90385690115,
+    "allocated_stake": 0.0,
+    "query_fees_earned": 5189.972123929242,
+    "indexing_rewards": 41671.190844150486,
+    "total_rewards": 138903.96948050163,
+    "delegator_rewards": 97232.77863635114
+  },
+  "0xf57dcd881ebd1d81df99194abdfa90f9e0e92f11": {
+    "name": null,
+    "avatar_url": "https://api.thegraph.com/ipfs/api/v0/cat?arg=QmTqxLqBfqBwALif91Gk1gj1KWt4iaY1vaSyavspXPWcgj",
+    "total_stake": 3918763.608132269,
+    "allocated_stake": 9884089.0,
+    "query_fees_earned": 6758.824343553375,
+    "indexing_rewards": 2136404.920472896,
+    "total_rewards": 2595279.96682337,
+    "delegator_rewards": 458875.04635047435
+  },
+  "0xf671c6b83f44ead14ca1c5f4a629f1b9b18c8f29": {
+    "name": null,
+    "avatar_url": "https://api.thegraph.com/ipfs/api/v0/cat?arg=QmZsUSxm9Z7XhtapgS4NAAn1rZRKuaaLwBxG6ph2cDsnUn",
+    "total_stake": 260626.56143947155,
+    "allocated_stake": 340637.0,
+    "query_fees_earned": 0.0,
+    "indexing_rewards": 21012.601866017747,
+    "total_rewards": 27437.72921321025,
+    "delegator_rewards": 6425.1273471925015
+  },
+  "0xf6a9bad58e74b5165dc31ef24be4377b192f274a": {
+    "name": null,
+    "avatar_url": null,
+    "total_stake": 916351.7177403003,
+    "allocated_stake": 0.0,
+    "query_fees_earned": 0.0,
+    "indexing_rewards": 93198.2288448219,
+    "total_rewards": 93198.2288448219,
+    "delegator_rewards": 0.0
+  },
+  "0xf7793bf9561c32ffbac603ce572fa55643f9cf72": {
+    "name": null,
+    "avatar_url": null,
+    "total_stake": 3143233.317058123,
+    "allocated_stake": 7976000.0,
+    "query_fees_earned": 4230.6425616885535,
+    "indexing_rewards": 2794380.7005286072,
+    "total_rewards": 2794380.7005286072,
+    "delegator_rewards": 0.0
+  },
+  "0xf9123292b4d958c53aaad8c5df0138ee0e62944b": {
+    "name": null,
+    "avatar_url": null,
+    "total_stake": 15265907.241798267,
+    "allocated_stake": 160993758.0,
+    "query_fees_earned": 3299.6254930098225,
+    "indexing_rewards": 3565667.367861929,
+    "total_rewards": 16979368.418390136,
+    "delegator_rewards": 13413701.050528208
+  },
+  "0xf92f430dd8567b0d466358c79594ab58d919a6d4": {
+    "name": null,
+    "avatar_url": "https://api.thegraph.com/ipfs/api/v0/cat?arg=QmeyxSkxpgCRVvKB8R5NcdqrgkukPFDKYhChx8dUYkqgaB",
+    "total_stake": 6100862.233516111,
+    "allocated_stake": 92665956.99999999,
+    "query_fees_earned": 891102.2084948728,
+    "indexing_rewards": 4254184.947771298,
+    "total_rewards": 20799832.186107945,
+    "delegator_rewards": 16545647.238336645
+  },
+  "0xfb168335f5a3868a03696904ed38fa95fd167c0e": {
+    "name": null,
+    "avatar_url": null,
+    "total_stake": 108494.4256171716,
+    "allocated_stake": 110470.0,
+    "query_fees_earned": 0.000448896393643591,
+    "indexing_rewards": 10846.999063429004,
+    "total_rewards": 10846.999063429004,
+    "delegator_rewards": 0.0
+  },
+  "0xfc842f81490dcb37e82d416b2d28327dfb24ba9a": {
+    "name": null,
+    "avatar_url": "https://api.thegraph.com/ipfs/api/v0/cat?arg=QmUvcJDne75w59GTUoKzaTr47NaohWyNnbEeCCr8FKkPAo",
+    "total_stake": 3031930.117329169,
+    "allocated_stake": 30978255.0,
+    "query_fees_earned": 24851.91335845555,
+    "indexing_rewards": 1765369.9220000603,
+    "total_rewards": 5790821.92725095,
+    "delegator_rewards": 4025452.0052508893
+  },
+  "0xfeff9093f6b32d0e5cddba743b06a1fedb87c004": {
+    "name": null,
+    "avatar_url": "https://api.thegraph.com/ipfs/api/v0/cat?arg=QmQauWpDHF9oc3Nth2HcdtYGknMPShrPbABhVzQ3HmQZbX",
+    "total_stake": 2675210.8223115657,
+    "allocated_stake": 22694255.0,
+    "query_fees_earned": 106676.87349932172,
+    "indexing_rewards": 1942281.258677548,
+    "total_rewards": 7926123.009841228,
+    "delegator_rewards": 5983841.75116368
+  }
+}

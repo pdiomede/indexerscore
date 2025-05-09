@@ -1,0 +1,13 @@
+/bin/bash: /Users/pdiomede/Documents/_coding/indexer-metrics/run_fetch_metrics.sh: Operation not permitted
+Traceback (most recent call last):
+  File "/Users/pdiomede/Documents/_coding/indexer-metrics/fetch_indexers_metrics.py", line 4, in <module>
+    import requests
+ModuleNotFoundError: No module named 'requests'
+Traceback (most recent call last):
+  File "/Users/pdiomede/Documents/_coding/indexer-metrics/fetch_indexers_metrics.py", line 4, in <module>
+    import requests
+ModuleNotFoundError: No module named 'requests'
+Traceback (most recent call last):
+  File "/Users/pdiomede/Documents/_coding/indexer-metrics/fetch_indexers_metrics.py", line 4, in <module>
+    import requests
+ModuleNotFoundError: No module named 'requests'

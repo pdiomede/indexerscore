@@ -1,0 +1,105 @@
+[2025-04-04 08:20:34 UTC] ⚙️  Fetching data from subgraph...
+[2025-04-04 08:20:34 UTC] (Excluding the Upgrade Indexer)
+[2025-04-04 08:20:38 UTC] ✔️ Adjusted total indexer count to exclude Upgrade Indexer: 158
+[2025-04-04 08:20:51 UTC] Fetched 87 indexers
+[2025-04-04 08:20:51 UTC] 📊 Indexer Stats:
+[2025-04-04 08:20:51 UTC] Total Indexers: 158
+[2025-04-04 08:20:51 UTC] Active Indexers with staked GRT: 96
+[2025-04-04 08:20:51 UTC] Allocated Indexers: 87
+[2025-04-04 08:20:51 UTC] Small Active Indexers: 16 with less than 1000000.0 GRT staked
+[2025-04-04 08:20:51 UTC] Medium Active Indexers: 43 with more than 1000000.0 and less than 20000000.0 GRT staked
+[2025-04-04 08:20:51 UTC] Large Active Indexers: 28 with more than 20000000.0 GRT staked
+[2025-04-04 08:20:51 UTC] Performance Categories — Excellent: 34, Fair: 24, Poor: 29
+[2025-04-04 08:20:51 UTC] ✅ Saved CSV file: reports/indexers_output.csv
+[2025-04-04 08:20:51 UTC] ✅ Saved simple indexers HTML table: reports/index.html
+[2025-04-04 08:20:51 UTC] ✅ Saved HTML documentation file: reports/docs.html
+[2025-04-04 08:22:44 UTC] ⚙️  Fetching data from subgraph...
+[2025-04-04 08:22:44 UTC] (Excluding the Upgrade Indexer)
+[2025-04-04 08:22:48 UTC] ✔️ Adjusted total indexer count to exclude Upgrade Indexer: 158
+[2025-04-04 08:23:06 UTC] Fetched 87 indexers
+[2025-04-04 08:23:06 UTC] 📊 Indexer Stats:
+[2025-04-04 08:23:06 UTC] Total Indexers: 158
+[2025-04-04 08:23:06 UTC] Active Indexers with staked GRT: 96
+[2025-04-04 08:23:06 UTC] Allocated Indexers: 87
+[2025-04-04 08:23:06 UTC] Small Active Indexers: 16 with less than 1000000.0 GRT staked
+[2025-04-04 08:23:06 UTC] Medium Active Indexers: 43 with more than 1000000.0 and less than 20000000.0 GRT staked
+[2025-04-04 08:23:06 UTC] Large Active Indexers: 28 with more than 20000000.0 GRT staked
+[2025-04-04 08:23:06 UTC] Performance Categories — Excellent: 34, Fair: 24, Poor: 29
+[2025-04-04 08:23:06 UTC] ✅ Saved CSV file: reports/indexers_output.csv
+[2025-04-04 08:23:06 UTC] ✅ Saved simple indexers HTML table: reports/index.html
+[2025-04-04 08:23:06 UTC] ✅ Saved HTML documentation file: reports/docs.html
+[2025-04-04 08:26:00 UTC] ⚙️  Fetching data from subgraph...
+[2025-04-04 08:26:00 UTC] (Excluding the Upgrade Indexer)
+[2025-04-04 08:26:04 UTC] ✔️ Adjusted total indexer count to exclude Upgrade Indexer: 158
+[2025-04-04 08:26:16 UTC] Fetched 87 indexers
+[2025-04-04 08:26:16 UTC] 📊 Indexer Stats:
+[2025-04-04 08:26:16 UTC] Total Indexers: 158
+[2025-04-04 08:26:16 UTC] Active Indexers with staked GRT: 96
+[2025-04-04 08:26:16 UTC] Allocated Indexers: 87
+[2025-04-04 08:26:16 UTC] Small Active Indexers: 16 with less than 1000000.0 GRT staked
+[2025-04-04 08:26:16 UTC] Medium Active Indexers: 43 with more than 1000000.0 and less than 20000000.0 GRT staked
+[2025-04-04 08:26:16 UTC] Large Active Indexers: 28 with more than 20000000.0 GRT staked
+[2025-04-04 08:26:16 UTC] Performance Categories — Excellent: 34, Fair: 24, Poor: 29
+[2025-04-04 08:26:16 UTC] ✅ Saved CSV file: reports/indexers_output.csv
+[2025-04-04 08:26:16 UTC] ✅ Saved simple indexers HTML table: reports/index.html
+[2025-04-04 08:26:16 UTC] ✅ Saved HTML documentation file: reports/docs.html
+[2025-04-04 08:28:22 UTC] ⚙️  Fetching data from subgraph...
+[2025-04-04 08:28:22 UTC] (Excluding the Upgrade Indexer)
+[2025-04-04 08:28:25 UTC] ✔️ Adjusted total indexer count to exclude Upgrade Indexer: 158
+[2025-04-04 08:28:38 UTC] Fetched 87 indexers
+[2025-04-04 08:28:38 UTC] 📊 Indexer Stats:
+[2025-04-04 08:28:38 UTC] Total Indexers: 158
+[2025-04-04 08:28:38 UTC] Active Indexers with staked GRT: 96
+[2025-04-04 08:28:38 UTC] Allocated Indexers: 87
+[2025-04-04 08:28:38 UTC] Small Active Indexers: 16 with less than 1000000.0 GRT staked
+[2025-04-04 08:28:38 UTC] Medium Active Indexers: 43 with more than 1000000.0 and less than 20000000.0 GRT staked
+[2025-04-04 08:28:38 UTC] Large Active Indexers: 28 with more than 20000000.0 GRT staked
+[2025-04-04 08:28:38 UTC] Performance Categories — Excellent: 34, Fair: 24, Poor: 29
+[2025-04-04 08:28:38 UTC] ✅ Saved CSV file: reports/indexers_output.csv
+[2025-04-04 08:28:38 UTC] ✅ Saved simple indexers HTML table: reports/index.html
+[2025-04-04 08:28:38 UTC] ✅ Saved HTML documentation file: reports/docs.html
+[2025-04-04 11:07:38 UTC] ⚙️  Fetching data from subgraph...
+[2025-04-04 11:07:38 UTC] (Excluding the Upgrade Indexer)
+[2025-04-04 11:07:42 UTC] ✔️ Adjusted total indexer count to exclude Upgrade Indexer: 158
+[2025-04-04 11:08:00 UTC] Fetched 87 indexers
+[2025-04-04 11:08:00 UTC] 📊 Indexer Stats:
+[2025-04-04 11:08:00 UTC] Total Indexers: 158
+[2025-04-04 11:08:00 UTC] Active Indexers with staked GRT: 96
+[2025-04-04 11:08:00 UTC] Allocated Indexers: 87
+[2025-04-04 11:08:00 UTC] Small Active Indexers: 16 with less than 1000000.0 GRT staked
+[2025-04-04 11:08:00 UTC] Medium Active Indexers: 43 with more than 1000000.0 and less than 20000000.0 GRT staked
+[2025-04-04 11:08:00 UTC] Large Active Indexers: 28 with more than 20000000.0 GRT staked
+[2025-04-04 11:08:00 UTC] Performance Categories — Excellent: 34, Fair: 24, Poor: 29
+[2025-04-04 11:08:00 UTC] ✅ Saved CSV file: reports/indexers_output.csv
+[2025-04-04 11:08:00 UTC] ✅ Saved simple indexers HTML table: reports/index.html
+[2025-04-04 11:08:00 UTC] ✅ Saved HTML documentation file: reports/docs.html
+[2025-04-04 11:10:29 UTC] ⚙️  Fetching data from subgraph...
+[2025-04-04 11:10:29 UTC] (Excluding the Upgrade Indexer)
+[2025-04-04 11:10:33 UTC] ✔️ Adjusted total indexer count to exclude Upgrade Indexer: 158
+[2025-04-04 11:10:53 UTC] Fetched 87 indexers
+[2025-04-04 11:10:53 UTC] 📊 Indexer Stats:
+[2025-04-04 11:10:53 UTC] Total Indexers: 158
+[2025-04-04 11:10:53 UTC] Active Indexers with staked GRT: 96
+[2025-04-04 11:10:53 UTC] Allocated Indexers: 87
+[2025-04-04 11:10:53 UTC] Small Active Indexers: 16 with less than 1000000.0 GRT staked
+[2025-04-04 11:10:53 UTC] Medium Active Indexers: 43 with more than 1000000.0 and less than 20000000.0 GRT staked
+[2025-04-04 11:10:53 UTC] Large Active Indexers: 28 with more than 20000000.0 GRT staked
+[2025-04-04 11:10:53 UTC] Performance Categories — Excellent: 34, Fair: 24, Poor: 29
+[2025-04-04 11:10:53 UTC] ✅ Saved CSV file: reports/indexers_output.csv
+[2025-04-04 11:10:53 UTC] ✅ Saved simple indexers HTML table: reports/index.html
+[2025-04-04 11:10:53 UTC] ✅ Saved HTML documentation file: reports/docs.html
+[2025-04-04 11:12:18 UTC] ⚙️  Fetching data from subgraph...
+[2025-04-04 11:12:18 UTC] (Excluding the Upgrade Indexer)
+[2025-04-04 11:12:22 UTC] ✔️ Adjusted total indexer count to exclude Upgrade Indexer: 158
+[2025-04-04 11:12:40 UTC] Fetched 87 indexers
+[2025-04-04 11:12:40 UTC] 📊 Indexer Stats:
+[2025-04-04 11:12:40 UTC] Total Indexers: 158
+[2025-04-04 11:12:40 UTC] Active Indexers with staked GRT: 96
+[2025-04-04 11:12:40 UTC] Allocated Indexers: 87
+[2025-04-04 11:12:40 UTC] Small Active Indexers: 16 with less than 1000000.0 GRT staked
+[2025-04-04 11:12:40 UTC] Medium Active Indexers: 43 with more than 1000000.0 and less than 20000000.0 GRT staked
+[2025-04-04 11:12:40 UTC] Large Active Indexers: 28 with more than 20000000.0 GRT staked
+[2025-04-04 11:12:40 UTC] Performance Categories — Excellent: 34, Fair: 24, Poor: 29
+[2025-04-04 11:12:40 UTC] ✅ Saved CSV file: reports/indexers_output.csv
+[2025-04-04 11:12:40 UTC] ✅ Saved simple indexers HTML table: reports/index.html
+[2025-04-04 11:12:40 UTC] ✅ Saved HTML documentation file: reports/docs.html

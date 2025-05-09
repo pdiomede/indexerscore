@@ -1,0 +1,655 @@
+[2025-04-01 07:20:57 UTC] ⚙️  Fetching data from subgraph...
+[2025-04-01 07:21:13 UTC] Fetched 88 indexers
+[2025-04-01 07:21:13 UTC] 📊 Indexer Stats:
+[2025-04-01 07:21:13 UTC] Total Indexers: 103
+[2025-04-01 07:21:13 UTC] Active Indexers with staked GRT: 97
+[2025-04-01 07:21:13 UTC] Allocated Indexers: 88
+[2025-04-01 07:21:13 UTC] Small Active Indexers: 17 with less than 1000000.0 GRT staked
+[2025-04-01 07:21:13 UTC] Medium Active Indexers: 43 with more than 1000000.0 and less than 20000000.0 GRT staked
+[2025-04-01 07:21:13 UTC] Large Active Indexers: 28 with more than 20000000.0 GRT staked
+[2025-04-01 07:21:13 UTC] Indexer 0x0058223c6617cca7ce76fc929ec9724cd43d4542: final_score=1.28, performance_flag=Fair 🟡
+[2025-04-01 07:21:13 UTC] Indexer 0x01f17c392614c7ea586e7272ed348efee21b90a3: Applied penalty of 1.00 for serving 5 subgraphs (threshold: 10.0). New final_score=4.96
+[2025-04-01 07:21:13 UTC] Indexer 0x01f17c392614c7ea586e7272ed348efee21b90a3: final_score=4.96, performance_flag=Poor 🔴
+[2025-04-01 07:21:13 UTC] Indexer 0x089f78d8cf0a5ae1b7a581b1910a73f8cb3e4774: final_score=1.86, performance_flag=Fair 🟡
+[2025-04-01 07:21:13 UTC] Indexer 0x0b9d582b7fdd387ba13ad7f453d49af255a8ed5e: Applied penalty of 1.00 for serving 5 subgraphs (threshold: 10.0). New final_score=3.0
+[2025-04-01 07:21:13 UTC] Indexer 0x0b9d582b7fdd387ba13ad7f453d49af255a8ed5e: final_score=3.0, performance_flag=Poor 🔴
+[2025-04-01 07:21:13 UTC] Indexer 0x0fd8fd1dc8162148cb9413062fe6c6b144335dbf: final_score=1.44, performance_flag=Fair 🟡
+[2025-04-01 07:21:13 UTC] Indexer 0x17def1a43a323c711c7a32101ecf41e58eff54a2: Applied penalty of 1.80 for serving 1 subgraphs (threshold: 10.0). New final_score=8.82
+[2025-04-01 07:21:13 UTC] Indexer 0x17def1a43a323c711c7a32101ecf41e58eff54a2: final_score=8.82, performance_flag=Poor 🔴
+[2025-04-01 07:21:13 UTC] Indexer 0x1b7e0068ca1d7929c8c56408d766e1510e54d98d: final_score=1.11, performance_flag=Excellent 🟢
+[2025-04-01 07:21:13 UTC] Indexer 0x1b92e4cba0f82c85c1298af861247849988c788c: final_score=1.11, performance_flag=Excellent 🟢
+[2025-04-01 07:21:13 UTC] Indexer 0x269ebeee083ce6f70486a67dc8036a889bf322a9: Applied penalty of 1.00 for serving 5 subgraphs (threshold: 10.0). New final_score=2.44
+[2025-04-01 07:21:13 UTC] Indexer 0x269ebeee083ce6f70486a67dc8036a889bf322a9: final_score=2.44, performance_flag=Fair 🟡
+[2025-04-01 07:21:13 UTC] Indexer 0x2b3c7d1ef5fdfc0557934019c531d3e70d6200ae: final_score=1.31, performance_flag=Fair 🟡
+[2025-04-01 07:21:13 UTC] Indexer 0x2e15f3f0d37b191c33ee06e953c8cce4c493b47a: Applied penalty of 1.20 for serving 4 subgraphs (threshold: 10.0). New final_score=3.72
+[2025-04-01 07:21:13 UTC] Indexer 0x2e15f3f0d37b191c33ee06e953c8cce4c493b47a: final_score=3.72, performance_flag=Poor 🔴
+[2025-04-01 07:21:13 UTC] Indexer 0x2e8d26e9b0d280738728e71c37bf05e70a636238: Applied penalty of 1.20 for serving 4 subgraphs (threshold: 10.0). New final_score=3.82
+[2025-04-01 07:21:13 UTC] Indexer 0x2e8d26e9b0d280738728e71c37bf05e70a636238: final_score=3.82, performance_flag=Poor 🔴
+[2025-04-01 07:21:13 UTC] Indexer 0x2f09092aacd80196fc984908c5a9a7ab3ee4f1ce: final_score=2.57, performance_flag=Poor 🔴
+[2025-04-01 07:21:13 UTC] Indexer 0x326c584e0f0eab1f1f83c93cc6ae1acc0feba0bc: final_score=1.05, performance_flag=Excellent 🟢
+[2025-04-01 07:21:13 UTC] Indexer 0x32bbd16a94ebb289edceebe77f35acc82664157b: Applied penalty of 1.80 for serving 1 subgraphs (threshold: 10.0). New final_score=9.1
+[2025-04-01 07:21:13 UTC] Indexer 0x32bbd16a94ebb289edceebe77f35acc82664157b: final_score=9.1, performance_flag=Poor 🔴
+[2025-04-01 07:21:13 UTC] Indexer 0x345c9a221e4caa15f78fb8078c441745de48a225: final_score=1.34, performance_flag=Fair 🟡
+[2025-04-01 07:21:13 UTC] Indexer 0x35917c0eb91d2e21bef40940d028940484230c06: final_score=1.18, performance_flag=Excellent 🟢
+[2025-04-01 07:21:13 UTC] Indexer 0x3717cef8020bddee7a18f4efb2bfa88fefdcb1bc: final_score=1.24, performance_flag=Excellent 🟢
+[2025-04-01 07:21:13 UTC] Indexer 0x3863a65ce278a240f9aa2a4b4a48493be59e6139: final_score=1.24, performance_flag=Excellent 🟢
+[2025-04-01 07:21:13 UTC] Indexer 0x38f412c8d6346a17a53ff9ceecd2e01acecd27c0: final_score=1.14, performance_flag=Excellent 🟢
+[2025-04-01 07:21:13 UTC] Indexer 0x3b9ba748691f135b71582dc3292e5e3ed7e13341: final_score=1.07, performance_flag=Excellent 🟢
+[2025-04-01 07:21:13 UTC] Indexer 0x3e1536fc83cd5bed83a521a26034ff3e59c6a7c4: final_score=1.04, performance_flag=Excellent 🟢
+[2025-04-01 07:21:13 UTC] Indexer 0x3f74870f80ff7449fe4c6ff257da5fa72734c970: final_score=1.04, performance_flag=Excellent 🟢
+[2025-04-01 07:21:13 UTC] Indexer 0x4207df52f7ff229364899b21e9c4ad36d3d42981: Applied penalty of 1.80 for serving 1 subgraphs (threshold: 10.0). New final_score=3.92
+[2025-04-01 07:21:13 UTC] Indexer 0x4207df52f7ff229364899b21e9c4ad36d3d42981: final_score=3.92, performance_flag=Poor 🔴
+[2025-04-01 07:21:13 UTC] Indexer 0x474e571ab6dd77489ec3c7ddf9cbc893fcba684c: Applied penalty of 1.80 for serving 1 subgraphs (threshold: 10.0). New final_score=4.81
+[2025-04-01 07:21:13 UTC] Indexer 0x474e571ab6dd77489ec3c7ddf9cbc893fcba684c: final_score=4.81, performance_flag=Poor 🔴
+[2025-04-01 07:21:13 UTC] Indexer 0x4d67938e9b07681526fe0345a45b770bba88c659: Applied penalty of 1.80 for serving 1 subgraphs (threshold: 10.0). New final_score=4.96
+[2025-04-01 07:21:13 UTC] Indexer 0x4d67938e9b07681526fe0345a45b770bba88c659: final_score=4.96, performance_flag=Poor 🔴
+[2025-04-01 07:21:13 UTC] Indexer 0x4e5c87772c29381bcabc58c3f182b6633b5a274a: final_score=1.24, performance_flag=Excellent 🟢
+[2025-04-01 07:21:13 UTC] Indexer 0x51637a35f7f054c98ed51904de939b9561d37885: final_score=1.21, performance_flag=Excellent 🟢
+[2025-04-01 07:21:13 UTC] Indexer 0x53dbbc9d916b1840a2c4c26b150ba2e13f36e10f: final_score=1.15, performance_flag=Excellent 🟢
+[2025-04-01 07:21:13 UTC] Indexer 0x550c1f4814a85aa10f5f061ca8c45e2ee9620226: Applied penalty of 1.80 for serving 1 subgraphs (threshold: 10.0). New final_score=3.27
+[2025-04-01 07:21:13 UTC] Indexer 0x550c1f4814a85aa10f5f061ca8c45e2ee9620226: final_score=3.27, performance_flag=Poor 🔴
+[2025-04-01 07:21:13 UTC] Indexer 0x59749d1fa9635cd0413aeff5ee295490a7e87f54: final_score=1.5, performance_flag=Fair 🟡
+[2025-04-01 07:21:13 UTC] Indexer 0x5b3c8f7245dfbd9bea22d9c4b975df60a638e5a3: final_score=1.48, performance_flag=Fair 🟡
+[2025-04-01 07:21:13 UTC] Indexer 0x5ddee9720e17aad28febb55643cd8ab50c51c60b: final_score=1.73, performance_flag=Fair 🟡
+[2025-04-01 07:21:13 UTC] Indexer 0x600f2b53719e1dbacf340572b31a9df9921b82fa: Applied penalty of 1.60 for serving 2 subgraphs (threshold: 10.0). New final_score=3.58
+[2025-04-01 07:21:13 UTC] Indexer 0x600f2b53719e1dbacf340572b31a9df9921b82fa: final_score=3.58, performance_flag=Poor 🔴
+[2025-04-01 07:21:13 UTC] Indexer 0x63c9dc729ba7a22bb8605216b24a34b902e5fe94: final_score=1.45, performance_flag=Fair 🟡
+[2025-04-01 07:21:13 UTC] Indexer 0x6f3ce93a09f30f18d728d2364268b5fe9444b89e: final_score=1.06, performance_flag=Excellent 🟢
+[2025-04-01 07:21:13 UTC] Indexer 0x6f8a032b4b1ee622ef2f0fc091bdbb98cfae81a3: final_score=2.09, performance_flag=Fair 🟡
+[2025-04-01 07:21:13 UTC] Indexer 0x6f9bb7e454f5b3eb2310343f0e99269dc2bb8a1d: final_score=1.12, performance_flag=Excellent 🟢
+[2025-04-01 07:21:13 UTC] Indexer 0x735f422922bd4d459ea491f46e1bb9295b89f961: Applied penalty of 1.80 for serving 1 subgraphs (threshold: 10.0). New final_score=3.2
+[2025-04-01 07:21:13 UTC] Indexer 0x735f422922bd4d459ea491f46e1bb9295b89f961: final_score=3.2, performance_flag=Poor 🔴
+[2025-04-01 07:21:13 UTC] Indexer 0x74dbb201ecc0b16934e68377bc13013883d9417b: final_score=1.02, performance_flag=Excellent 🟢
+[2025-04-01 07:21:13 UTC] Indexer 0x7bb834017672b1135466661d8dd69c5dd0b3bf51: final_score=1.08, performance_flag=Excellent 🟢
+[2025-04-01 07:21:13 UTC] Indexer 0x7c1023ffa995a37ddb3963206e17dbd58a1b64c1: Applied penalty of 1.40 for serving 3 subgraphs (threshold: 10.0). New final_score=2.92
+[2025-04-01 07:21:13 UTC] Indexer 0x7c1023ffa995a37ddb3963206e17dbd58a1b64c1: final_score=2.92, performance_flag=Poor 🔴
+[2025-04-01 07:21:13 UTC] Indexer 0x8f689a83dd52eaa1d5ad6a40c46189b4a0d70b06: Applied penalty of 0.80 for serving 6 subgraphs (threshold: 10.0). New final_score=1.97
+[2025-04-01 07:21:13 UTC] Indexer 0x8f689a83dd52eaa1d5ad6a40c46189b4a0d70b06: final_score=1.97, performance_flag=Fair 🟡
+[2025-04-01 07:21:13 UTC] Indexer 0x9082f497bdc512d08ffde50d6fce28e72c2addcf: final_score=1.13, performance_flag=Excellent 🟢
+[2025-04-01 07:21:13 UTC] Indexer 0x918fcc24e6b7f5ec73b4cf766e2393d8fe707541: final_score=1.37, performance_flag=Fair 🟡
+[2025-04-01 07:21:13 UTC] Indexer 0x91f137715ef8e141d6a8074cbbbc53a0f76b09c5: Applied penalty of 1.80 for serving 1 subgraphs (threshold: 10.0). New final_score=7.2
+[2025-04-01 07:21:13 UTC] Indexer 0x91f137715ef8e141d6a8074cbbbc53a0f76b09c5: final_score=7.2, performance_flag=Poor 🔴
+[2025-04-01 07:21:13 UTC] Indexer 0x920fdeb00ee04dd72f62d8a8f80f13c82ef76c1e: final_score=1.04, performance_flag=Excellent 🟢
+[2025-04-01 07:21:13 UTC] Indexer 0x958ad15ea21fb79b935524cf90c90276031bee20: Applied penalty of 1.80 for serving 1 subgraphs (threshold: 10.0). New final_score=4.65
+[2025-04-01 07:21:13 UTC] Indexer 0x958ad15ea21fb79b935524cf90c90276031bee20: final_score=4.65, performance_flag=Poor 🔴
+[2025-04-01 07:21:13 UTC] Indexer 0x9da1017766bfeb2835db4f811516eea68996538b: final_score=1.24, performance_flag=Excellent 🟢
+[2025-04-01 07:21:13 UTC] Indexer 0xa01b06b0e9feb016d5ab669ce89d059bc666e569: Applied penalty of 1.60 for serving 2 subgraphs (threshold: 10.0). New final_score=4.42
+[2025-04-01 07:21:13 UTC] Indexer 0xa01b06b0e9feb016d5ab669ce89d059bc666e569: final_score=4.42, performance_flag=Poor 🔴
+[2025-04-01 07:21:13 UTC] Indexer 0xa181d0f242b3730f8a244cc94eda05faf17a43e8: Applied penalty of 1.80 for serving 1 subgraphs (threshold: 10.0). New final_score=3.86
+[2025-04-01 07:21:13 UTC] Indexer 0xa181d0f242b3730f8a244cc94eda05faf17a43e8: final_score=3.86, performance_flag=Poor 🔴
+[2025-04-01 07:21:13 UTC] Indexer 0xa28a99b0219a34142a9398a19460fcd69250a2b2: Applied penalty of 1.20 for serving 4 subgraphs (threshold: 10.0). New final_score=2.33
+[2025-04-01 07:21:13 UTC] Indexer 0xa28a99b0219a34142a9398a19460fcd69250a2b2: final_score=2.33, performance_flag=Fair 🟡
+[2025-04-01 07:21:13 UTC] Indexer 0xa4d629ba2ffb3321008d8cec37cca077696bf24d: final_score=1.21, performance_flag=Excellent 🟢
+[2025-04-01 07:21:13 UTC] Indexer 0xa6ff993e0f6253f1b7f55c873577a2f0f0ceb325: final_score=1.28, performance_flag=Fair 🟡
+[2025-04-01 07:21:13 UTC] Indexer 0xa9b5da22440dedd72535ec0525582ca0b63be5e1: Applied penalty of 1.80 for serving 1 subgraphs (threshold: 10.0). New final_score=3.09
+[2025-04-01 07:21:13 UTC] Indexer 0xa9b5da22440dedd72535ec0525582ca0b63be5e1: final_score=3.09, performance_flag=Poor 🔴
+[2025-04-01 07:21:13 UTC] Indexer 0xaa988dcb035518bc0e20082a3148a5d3dfd1776d: final_score=1.06, performance_flag=Excellent 🟢
+[2025-04-01 07:21:13 UTC] Indexer 0xaddd3e23599d2b7267067afbcd18830aefca640a: Applied penalty of 1.80 for serving 1 subgraphs (threshold: 10.0). New final_score=5.24
+[2025-04-01 07:21:13 UTC] Indexer 0xaddd3e23599d2b7267067afbcd18830aefca640a: final_score=5.24, performance_flag=Poor 🔴
+[2025-04-01 07:21:13 UTC] Indexer 0xb4b4570df6f7fe320f10fdfb702dba7e35244550: final_score=1.33, performance_flag=Fair 🟡
+[2025-04-01 07:21:13 UTC] Indexer 0xb54c7c9fa1a51300e6054b70ae9952c1fb2800b4: Applied penalty of 1.00 for serving 5 subgraphs (threshold: 10.0). New final_score=4.87
+[2025-04-01 07:21:13 UTC] Indexer 0xb54c7c9fa1a51300e6054b70ae9952c1fb2800b4: final_score=4.87, performance_flag=Poor 🔴
+[2025-04-01 07:21:13 UTC] Indexer 0xb8ca929e2bd96548cabcabc56cfc9a5147cef0ff: Applied penalty of 0.20 for serving 9 subgraphs (threshold: 10.0). New final_score=1.67
+[2025-04-01 07:21:13 UTC] Indexer 0xb8ca929e2bd96548cabcabc56cfc9a5147cef0ff: final_score=1.67, performance_flag=Fair 🟡
+[2025-04-01 07:21:13 UTC] Indexer 0xbdfb5ee5a2abf4fc7bb1bd1221067aef7f9de491: final_score=3.7, performance_flag=Poor 🔴
+[2025-04-01 07:21:13 UTC] Indexer 0xc55c63563efb36f7cc65ac3060c52987c6694b37: final_score=2.3, performance_flag=Fair 🟡
+[2025-04-01 07:21:13 UTC] Indexer 0xc9014686f6336ad558b539565d5dff840b339082: final_score=2.35, performance_flag=Fair 🟡
+[2025-04-01 07:21:13 UTC] Indexer 0xcba919cf1ee9c537545975d9968718a09d20f071: Applied penalty of 1.80 for serving 1 subgraphs (threshold: 10.0). New final_score=7.42
+[2025-04-01 07:21:13 UTC] Indexer 0xcba919cf1ee9c537545975d9968718a09d20f071: final_score=7.42, performance_flag=Poor 🔴
+[2025-04-01 07:21:13 UTC] Indexer 0xda20dde459c8d918f81566995d899a046d4d8503: final_score=1.14, performance_flag=Excellent 🟢
+[2025-04-01 07:21:13 UTC] Indexer 0xdc7daef4d0751a9f6ec28b06d6d9475b13eb0918: final_score=1.46, performance_flag=Fair 🟡
+[2025-04-01 07:21:13 UTC] Indexer 0xdeb712db301285ed483ef9e02dd08a1980f273f1: Applied penalty of 1.60 for serving 2 subgraphs (threshold: 10.0). New final_score=3.12
+[2025-04-01 07:21:13 UTC] Indexer 0xdeb712db301285ed483ef9e02dd08a1980f273f1: final_score=3.12, performance_flag=Poor 🔴
+[2025-04-01 07:21:13 UTC] Indexer 0xdec965f0604125be05cd8a136c85d02ef344d61a: final_score=1.03, performance_flag=Excellent 🟢
+[2025-04-01 07:21:13 UTC] Indexer 0xdecba5154aab37ae5e381a19f804f3af4d1bcbb5: final_score=1.11, performance_flag=Excellent 🟢
+[2025-04-01 07:21:13 UTC] Indexer 0xe0ceec6daa59cc951f3f71d6fc4221e55ef6c386: final_score=1.68, performance_flag=Fair 🟡
+[2025-04-01 07:21:13 UTC] Indexer 0xe13840a2e92e0cb17a246609b432d0fa2e418774: final_score=1.04, performance_flag=Excellent 🟢
+[2025-04-01 07:21:13 UTC] Indexer 0xe48b586eeb81bde60f14b0b8d80ddd06c7a24720: Applied penalty of 1.40 for serving 3 subgraphs (threshold: 10.0). New final_score=6.61
+[2025-04-01 07:21:13 UTC] Indexer 0xe48b586eeb81bde60f14b0b8d80ddd06c7a24720: final_score=6.61, performance_flag=Poor 🔴
+[2025-04-01 07:21:13 UTC] Indexer 0xe63e935fba572784d5aa40715e372e7948bbdb12: final_score=3.16, performance_flag=Poor 🔴
+[2025-04-01 07:21:13 UTC] Indexer 0xe6de2325ef1aac1f058fae59d3c38a472f569846: final_score=1.1, performance_flag=Excellent 🟢
+[2025-04-01 07:21:13 UTC] Indexer 0xe91273727203bcc827521fc8b0c762d435c3c5d0: final_score=1.22, performance_flag=Excellent 🟢
+[2025-04-01 07:21:13 UTC] Indexer 0xe9e284277648fcdb09b8efc1832c73c09b5ecf59: final_score=1.19, performance_flag=Excellent 🟢
+[2025-04-01 07:21:13 UTC] Indexer 0xeccdf8231326a9c5aad32df76a633aaa4c49b104: final_score=1.11, performance_flag=Excellent 🟢
+[2025-04-01 07:21:13 UTC] Indexer 0xedca8740873152ff30a2696add66d1ab41882beb: final_score=1.06, performance_flag=Excellent 🟢
+[2025-04-01 07:21:13 UTC] Indexer 0xeeeee689aa442c607105f29f06d00d2f748776b2: Applied penalty of 1.80 for serving 1 subgraphs (threshold: 10.0). New final_score=5.49
+[2025-04-01 07:21:13 UTC] Indexer 0xeeeee689aa442c607105f29f06d00d2f748776b2: final_score=5.49, performance_flag=Poor 🔴
+[2025-04-01 07:21:13 UTC] Indexer 0xf00f7157fa8fd0420b87956d46058a16b2f23adc: final_score=1.25, performance_flag=Excellent 🟢
+[2025-04-01 07:21:13 UTC] Indexer 0xf0e33495afe697dbe32168bd0743ba32ebb978a3: Applied penalty of 1.40 for serving 3 subgraphs (threshold: 10.0). New final_score=2.66
+[2025-04-01 07:21:13 UTC] Indexer 0xf0e33495afe697dbe32168bd0743ba32ebb978a3: final_score=2.66, performance_flag=Poor 🔴
+[2025-04-01 07:21:13 UTC] Indexer 0xf57dcd881ebd1d81df99194abdfa90f9e0e92f11: final_score=1.44, performance_flag=Fair 🟡
+[2025-04-01 07:21:13 UTC] Indexer 0xf671c6b83f44ead14ca1c5f4a629f1b9b18c8f29: Applied penalty of 0.80 for serving 6 subgraphs (threshold: 10.0). New final_score=1.94
+[2025-04-01 07:21:13 UTC] Indexer 0xf671c6b83f44ead14ca1c5f4a629f1b9b18c8f29: final_score=1.94, performance_flag=Fair 🟡
+[2025-04-01 07:21:13 UTC] Indexer 0xf7793bf9561c32ffbac603ce572fa55643f9cf72: Applied penalty of 1.20 for serving 4 subgraphs (threshold: 10.0). New final_score=4.68
+[2025-04-01 07:21:13 UTC] Indexer 0xf7793bf9561c32ffbac603ce572fa55643f9cf72: final_score=4.68, performance_flag=Poor 🔴
+[2025-04-01 07:21:13 UTC] Indexer 0xf9123292b4d958c53aaad8c5df0138ee0e62944b: final_score=6.91, performance_flag=Poor 🔴
+[2025-04-01 07:21:13 UTC] Indexer 0xf92f430dd8567b0d466358c79594ab58d919a6d4: final_score=1.11, performance_flag=Excellent 🟢
+[2025-04-01 07:21:13 UTC] Indexer 0xfc842f81490dcb37e82d416b2d28327dfb24ba9a: final_score=1.21, performance_flag=Excellent 🟢
+[2025-04-01 07:21:13 UTC] Indexer 0xfeff9093f6b32d0e5cddba743b06a1fedb87c004: final_score=1.32, performance_flag=Fair 🟡
+[2025-04-01 07:21:13 UTC] ✅ Saved CSV file: reports/indexers_output.csv
+[2025-04-01 07:21:13 UTC] ✅ Saved simple indexers HTML table: reports/index.html
+[2025-04-01 07:21:13 UTC] ✅ Saved HTML documentation file: reports/docs.html
+[2025-04-01 07:22:28 UTC] ⚙️  Fetching data from subgraph...
+[2025-04-01 07:22:44 UTC] Fetched 88 indexers
+[2025-04-01 07:22:44 UTC] 📊 Indexer Stats:
+[2025-04-01 07:22:44 UTC] Total Indexers: 103
+[2025-04-01 07:22:44 UTC] Active Indexers with staked GRT: 97
+[2025-04-01 07:22:44 UTC] Allocated Indexers: 88
+[2025-04-01 07:22:44 UTC] Small Active Indexers: 17 with less than 1000000.0 GRT staked
+[2025-04-01 07:22:44 UTC] Medium Active Indexers: 43 with more than 1000000.0 and less than 20000000.0 GRT staked
+[2025-04-01 07:22:44 UTC] Large Active Indexers: 28 with more than 20000000.0 GRT staked
+[2025-04-01 07:22:44 UTC] Indexer 0x0058223c6617cca7ce76fc929ec9724cd43d4542: final_score=1.28, performance_flag=Fair 🟡
+[2025-04-01 07:22:44 UTC] Indexer 0x01f17c392614c7ea586e7272ed348efee21b90a3: Applied penalty of 1.00 for serving 5 subgraphs (threshold: 10.0). New final_score=4.96
+[2025-04-01 07:22:44 UTC] Indexer 0x01f17c392614c7ea586e7272ed348efee21b90a3: final_score=4.96, performance_flag=Poor 🔴
+[2025-04-01 07:22:44 UTC] Indexer 0x089f78d8cf0a5ae1b7a581b1910a73f8cb3e4774: final_score=1.86, performance_flag=Fair 🟡
+[2025-04-01 07:22:44 UTC] Indexer 0x0b9d582b7fdd387ba13ad7f453d49af255a8ed5e: Applied penalty of 1.00 for serving 5 subgraphs (threshold: 10.0). New final_score=3.0
+[2025-04-01 07:22:44 UTC] Indexer 0x0b9d582b7fdd387ba13ad7f453d49af255a8ed5e: final_score=3.0, performance_flag=Poor 🔴
+[2025-04-01 07:22:44 UTC] Indexer 0x0fd8fd1dc8162148cb9413062fe6c6b144335dbf: final_score=1.44, performance_flag=Fair 🟡
+[2025-04-01 07:22:44 UTC] Indexer 0x17def1a43a323c711c7a32101ecf41e58eff54a2: Applied penalty of 1.80 for serving 1 subgraphs (threshold: 10.0). New final_score=8.82
+[2025-04-01 07:22:44 UTC] Indexer 0x17def1a43a323c711c7a32101ecf41e58eff54a2: final_score=8.82, performance_flag=Poor 🔴
+[2025-04-01 07:22:44 UTC] Indexer 0x1b7e0068ca1d7929c8c56408d766e1510e54d98d: final_score=1.11, performance_flag=Excellent 🟢
+[2025-04-01 07:22:44 UTC] Indexer 0x1b92e4cba0f82c85c1298af861247849988c788c: final_score=1.11, performance_flag=Excellent 🟢
+[2025-04-01 07:22:44 UTC] Indexer 0x269ebeee083ce6f70486a67dc8036a889bf322a9: Applied penalty of 1.00 for serving 5 subgraphs (threshold: 10.0). New final_score=2.44
+[2025-04-01 07:22:44 UTC] Indexer 0x269ebeee083ce6f70486a67dc8036a889bf322a9: final_score=2.44, performance_flag=Fair 🟡
+[2025-04-01 07:22:44 UTC] Indexer 0x2b3c7d1ef5fdfc0557934019c531d3e70d6200ae: final_score=1.31, performance_flag=Fair 🟡
+[2025-04-01 07:22:44 UTC] Indexer 0x2e15f3f0d37b191c33ee06e953c8cce4c493b47a: Applied penalty of 1.20 for serving 4 subgraphs (threshold: 10.0). New final_score=3.72
+[2025-04-01 07:22:44 UTC] Indexer 0x2e15f3f0d37b191c33ee06e953c8cce4c493b47a: final_score=3.72, performance_flag=Poor 🔴
+[2025-04-01 07:22:44 UTC] Indexer 0x2e8d26e9b0d280738728e71c37bf05e70a636238: Applied penalty of 1.20 for serving 4 subgraphs (threshold: 10.0). New final_score=3.82
+[2025-04-01 07:22:44 UTC] Indexer 0x2e8d26e9b0d280738728e71c37bf05e70a636238: final_score=3.82, performance_flag=Poor 🔴
+[2025-04-01 07:22:44 UTC] Indexer 0x2f09092aacd80196fc984908c5a9a7ab3ee4f1ce: final_score=2.57, performance_flag=Poor 🔴
+[2025-04-01 07:22:44 UTC] Indexer 0x326c584e0f0eab1f1f83c93cc6ae1acc0feba0bc: final_score=1.05, performance_flag=Excellent 🟢
+[2025-04-01 07:22:44 UTC] Indexer 0x32bbd16a94ebb289edceebe77f35acc82664157b: Applied penalty of 1.80 for serving 1 subgraphs (threshold: 10.0). New final_score=9.1
+[2025-04-01 07:22:44 UTC] Indexer 0x32bbd16a94ebb289edceebe77f35acc82664157b: final_score=9.1, performance_flag=Poor 🔴
+[2025-04-01 07:22:44 UTC] Indexer 0x345c9a221e4caa15f78fb8078c441745de48a225: final_score=1.34, performance_flag=Fair 🟡
+[2025-04-01 07:22:44 UTC] Indexer 0x35917c0eb91d2e21bef40940d028940484230c06: final_score=1.18, performance_flag=Excellent 🟢
+[2025-04-01 07:22:44 UTC] Indexer 0x3717cef8020bddee7a18f4efb2bfa88fefdcb1bc: final_score=1.24, performance_flag=Excellent 🟢
+[2025-04-01 07:22:44 UTC] Indexer 0x3863a65ce278a240f9aa2a4b4a48493be59e6139: final_score=1.24, performance_flag=Excellent 🟢
+[2025-04-01 07:22:44 UTC] Indexer 0x38f412c8d6346a17a53ff9ceecd2e01acecd27c0: final_score=1.14, performance_flag=Excellent 🟢
+[2025-04-01 07:22:44 UTC] Indexer 0x3b9ba748691f135b71582dc3292e5e3ed7e13341: final_score=1.07, performance_flag=Excellent 🟢
+[2025-04-01 07:22:44 UTC] Indexer 0x3e1536fc83cd5bed83a521a26034ff3e59c6a7c4: final_score=1.04, performance_flag=Excellent 🟢
+[2025-04-01 07:22:44 UTC] Indexer 0x3f74870f80ff7449fe4c6ff257da5fa72734c970: final_score=1.04, performance_flag=Excellent 🟢
+[2025-04-01 07:22:44 UTC] Indexer 0x4207df52f7ff229364899b21e9c4ad36d3d42981: Applied penalty of 1.80 for serving 1 subgraphs (threshold: 10.0). New final_score=3.92
+[2025-04-01 07:22:44 UTC] Indexer 0x4207df52f7ff229364899b21e9c4ad36d3d42981: final_score=3.92, performance_flag=Poor 🔴
+[2025-04-01 07:22:44 UTC] Indexer 0x474e571ab6dd77489ec3c7ddf9cbc893fcba684c: Applied penalty of 1.80 for serving 1 subgraphs (threshold: 10.0). New final_score=4.81
+[2025-04-01 07:22:44 UTC] Indexer 0x474e571ab6dd77489ec3c7ddf9cbc893fcba684c: final_score=4.81, performance_flag=Poor 🔴
+[2025-04-01 07:22:44 UTC] Indexer 0x4d67938e9b07681526fe0345a45b770bba88c659: Applied penalty of 1.80 for serving 1 subgraphs (threshold: 10.0). New final_score=4.96
+[2025-04-01 07:22:44 UTC] Indexer 0x4d67938e9b07681526fe0345a45b770bba88c659: final_score=4.96, performance_flag=Poor 🔴
+[2025-04-01 07:22:44 UTC] Indexer 0x4e5c87772c29381bcabc58c3f182b6633b5a274a: final_score=1.24, performance_flag=Excellent 🟢
+[2025-04-01 07:22:44 UTC] Indexer 0x51637a35f7f054c98ed51904de939b9561d37885: final_score=1.21, performance_flag=Excellent 🟢
+[2025-04-01 07:22:44 UTC] Indexer 0x53dbbc9d916b1840a2c4c26b150ba2e13f36e10f: final_score=1.15, performance_flag=Excellent 🟢
+[2025-04-01 07:22:44 UTC] Indexer 0x550c1f4814a85aa10f5f061ca8c45e2ee9620226: Applied penalty of 1.80 for serving 1 subgraphs (threshold: 10.0). New final_score=3.27
+[2025-04-01 07:22:44 UTC] Indexer 0x550c1f4814a85aa10f5f061ca8c45e2ee9620226: final_score=3.27, performance_flag=Poor 🔴
+[2025-04-01 07:22:44 UTC] Indexer 0x59749d1fa9635cd0413aeff5ee295490a7e87f54: final_score=1.5, performance_flag=Fair 🟡
+[2025-04-01 07:22:44 UTC] Indexer 0x5b3c8f7245dfbd9bea22d9c4b975df60a638e5a3: final_score=1.48, performance_flag=Fair 🟡
+[2025-04-01 07:22:44 UTC] Indexer 0x5ddee9720e17aad28febb55643cd8ab50c51c60b: final_score=1.73, performance_flag=Fair 🟡
+[2025-04-01 07:22:44 UTC] Indexer 0x600f2b53719e1dbacf340572b31a9df9921b82fa: Applied penalty of 1.60 for serving 2 subgraphs (threshold: 10.0). New final_score=3.58
+[2025-04-01 07:22:44 UTC] Indexer 0x600f2b53719e1dbacf340572b31a9df9921b82fa: final_score=3.58, performance_flag=Poor 🔴
+[2025-04-01 07:22:44 UTC] Indexer 0x63c9dc729ba7a22bb8605216b24a34b902e5fe94: final_score=1.45, performance_flag=Fair 🟡
+[2025-04-01 07:22:44 UTC] Indexer 0x6f3ce93a09f30f18d728d2364268b5fe9444b89e: final_score=1.06, performance_flag=Excellent 🟢
+[2025-04-01 07:22:44 UTC] Indexer 0x6f8a032b4b1ee622ef2f0fc091bdbb98cfae81a3: final_score=2.09, performance_flag=Fair 🟡
+[2025-04-01 07:22:44 UTC] Indexer 0x6f9bb7e454f5b3eb2310343f0e99269dc2bb8a1d: final_score=1.12, performance_flag=Excellent 🟢
+[2025-04-01 07:22:44 UTC] Indexer 0x735f422922bd4d459ea491f46e1bb9295b89f961: Applied penalty of 1.80 for serving 1 subgraphs (threshold: 10.0). New final_score=3.2
+[2025-04-01 07:22:44 UTC] Indexer 0x735f422922bd4d459ea491f46e1bb9295b89f961: final_score=3.2, performance_flag=Poor 🔴
+[2025-04-01 07:22:44 UTC] Indexer 0x74dbb201ecc0b16934e68377bc13013883d9417b: final_score=1.02, performance_flag=Excellent 🟢
+[2025-04-01 07:22:44 UTC] Indexer 0x7bb834017672b1135466661d8dd69c5dd0b3bf51: final_score=1.08, performance_flag=Excellent 🟢
+[2025-04-01 07:22:44 UTC] Indexer 0x7c1023ffa995a37ddb3963206e17dbd58a1b64c1: Applied penalty of 1.40 for serving 3 subgraphs (threshold: 10.0). New final_score=2.92
+[2025-04-01 07:22:44 UTC] Indexer 0x7c1023ffa995a37ddb3963206e17dbd58a1b64c1: final_score=2.92, performance_flag=Poor 🔴
+[2025-04-01 07:22:44 UTC] Indexer 0x8f689a83dd52eaa1d5ad6a40c46189b4a0d70b06: Applied penalty of 0.80 for serving 6 subgraphs (threshold: 10.0). New final_score=1.97
+[2025-04-01 07:22:44 UTC] Indexer 0x8f689a83dd52eaa1d5ad6a40c46189b4a0d70b06: final_score=1.97, performance_flag=Fair 🟡
+[2025-04-01 07:22:44 UTC] Indexer 0x9082f497bdc512d08ffde50d6fce28e72c2addcf: final_score=1.13, performance_flag=Excellent 🟢
+[2025-04-01 07:22:44 UTC] Indexer 0x918fcc24e6b7f5ec73b4cf766e2393d8fe707541: final_score=1.37, performance_flag=Fair 🟡
+[2025-04-01 07:22:44 UTC] Indexer 0x91f137715ef8e141d6a8074cbbbc53a0f76b09c5: Applied penalty of 1.80 for serving 1 subgraphs (threshold: 10.0). New final_score=7.2
+[2025-04-01 07:22:44 UTC] Indexer 0x91f137715ef8e141d6a8074cbbbc53a0f76b09c5: final_score=7.2, performance_flag=Poor 🔴
+[2025-04-01 07:22:44 UTC] Indexer 0x920fdeb00ee04dd72f62d8a8f80f13c82ef76c1e: final_score=1.04, performance_flag=Excellent 🟢
+[2025-04-01 07:22:44 UTC] Indexer 0x958ad15ea21fb79b935524cf90c90276031bee20: Applied penalty of 1.80 for serving 1 subgraphs (threshold: 10.0). New final_score=4.65
+[2025-04-01 07:22:44 UTC] Indexer 0x958ad15ea21fb79b935524cf90c90276031bee20: final_score=4.65, performance_flag=Poor 🔴
+[2025-04-01 07:22:44 UTC] Indexer 0x9da1017766bfeb2835db4f811516eea68996538b: final_score=1.24, performance_flag=Excellent 🟢
+[2025-04-01 07:22:44 UTC] Indexer 0xa01b06b0e9feb016d5ab669ce89d059bc666e569: Applied penalty of 1.60 for serving 2 subgraphs (threshold: 10.0). New final_score=4.42
+[2025-04-01 07:22:44 UTC] Indexer 0xa01b06b0e9feb016d5ab669ce89d059bc666e569: final_score=4.42, performance_flag=Poor 🔴
+[2025-04-01 07:22:44 UTC] Indexer 0xa181d0f242b3730f8a244cc94eda05faf17a43e8: Applied penalty of 1.80 for serving 1 subgraphs (threshold: 10.0). New final_score=3.86
+[2025-04-01 07:22:44 UTC] Indexer 0xa181d0f242b3730f8a244cc94eda05faf17a43e8: final_score=3.86, performance_flag=Poor 🔴
+[2025-04-01 07:22:44 UTC] Indexer 0xa28a99b0219a34142a9398a19460fcd69250a2b2: Applied penalty of 1.20 for serving 4 subgraphs (threshold: 10.0). New final_score=2.33
+[2025-04-01 07:22:44 UTC] Indexer 0xa28a99b0219a34142a9398a19460fcd69250a2b2: final_score=2.33, performance_flag=Fair 🟡
+[2025-04-01 07:22:44 UTC] Indexer 0xa4d629ba2ffb3321008d8cec37cca077696bf24d: final_score=1.21, performance_flag=Excellent 🟢
+[2025-04-01 07:22:44 UTC] Indexer 0xa6ff993e0f6253f1b7f55c873577a2f0f0ceb325: final_score=1.28, performance_flag=Fair 🟡
+[2025-04-01 07:22:44 UTC] Indexer 0xa9b5da22440dedd72535ec0525582ca0b63be5e1: Applied penalty of 1.80 for serving 1 subgraphs (threshold: 10.0). New final_score=3.09
+[2025-04-01 07:22:44 UTC] Indexer 0xa9b5da22440dedd72535ec0525582ca0b63be5e1: final_score=3.09, performance_flag=Poor 🔴
+[2025-04-01 07:22:44 UTC] Indexer 0xaa988dcb035518bc0e20082a3148a5d3dfd1776d: final_score=1.06, performance_flag=Excellent 🟢
+[2025-04-01 07:22:44 UTC] Indexer 0xaddd3e23599d2b7267067afbcd18830aefca640a: Applied penalty of 1.80 for serving 1 subgraphs (threshold: 10.0). New final_score=5.24
+[2025-04-01 07:22:44 UTC] Indexer 0xaddd3e23599d2b7267067afbcd18830aefca640a: final_score=5.24, performance_flag=Poor 🔴
+[2025-04-01 07:22:44 UTC] Indexer 0xb4b4570df6f7fe320f10fdfb702dba7e35244550: final_score=1.33, performance_flag=Fair 🟡
+[2025-04-01 07:22:44 UTC] Indexer 0xb54c7c9fa1a51300e6054b70ae9952c1fb2800b4: Applied penalty of 1.00 for serving 5 subgraphs (threshold: 10.0). New final_score=4.87
+[2025-04-01 07:22:44 UTC] Indexer 0xb54c7c9fa1a51300e6054b70ae9952c1fb2800b4: final_score=4.87, performance_flag=Poor 🔴
+[2025-04-01 07:22:44 UTC] Indexer 0xb8ca929e2bd96548cabcabc56cfc9a5147cef0ff: Applied penalty of 0.20 for serving 9 subgraphs (threshold: 10.0). New final_score=1.67
+[2025-04-01 07:22:44 UTC] Indexer 0xb8ca929e2bd96548cabcabc56cfc9a5147cef0ff: final_score=1.67, performance_flag=Fair 🟡
+[2025-04-01 07:22:44 UTC] Indexer 0xbdfb5ee5a2abf4fc7bb1bd1221067aef7f9de491: final_score=3.7, performance_flag=Poor 🔴
+[2025-04-01 07:22:44 UTC] Indexer 0xc55c63563efb36f7cc65ac3060c52987c6694b37: final_score=2.3, performance_flag=Fair 🟡
+[2025-04-01 07:22:44 UTC] Indexer 0xc9014686f6336ad558b539565d5dff840b339082: final_score=2.35, performance_flag=Fair 🟡
+[2025-04-01 07:22:44 UTC] Indexer 0xcba919cf1ee9c537545975d9968718a09d20f071: Applied penalty of 1.80 for serving 1 subgraphs (threshold: 10.0). New final_score=7.42
+[2025-04-01 07:22:44 UTC] Indexer 0xcba919cf1ee9c537545975d9968718a09d20f071: final_score=7.42, performance_flag=Poor 🔴
+[2025-04-01 07:22:44 UTC] Indexer 0xda20dde459c8d918f81566995d899a046d4d8503: final_score=1.14, performance_flag=Excellent 🟢
+[2025-04-01 07:22:44 UTC] Indexer 0xdc7daef4d0751a9f6ec28b06d6d9475b13eb0918: final_score=1.46, performance_flag=Fair 🟡
+[2025-04-01 07:22:44 UTC] Indexer 0xdeb712db301285ed483ef9e02dd08a1980f273f1: Applied penalty of 1.60 for serving 2 subgraphs (threshold: 10.0). New final_score=3.12
+[2025-04-01 07:22:44 UTC] Indexer 0xdeb712db301285ed483ef9e02dd08a1980f273f1: final_score=3.12, performance_flag=Poor 🔴
+[2025-04-01 07:22:44 UTC] Indexer 0xdec965f0604125be05cd8a136c85d02ef344d61a: final_score=1.03, performance_flag=Excellent 🟢
+[2025-04-01 07:22:44 UTC] Indexer 0xdecba5154aab37ae5e381a19f804f3af4d1bcbb5: final_score=1.11, performance_flag=Excellent 🟢
+[2025-04-01 07:22:44 UTC] Indexer 0xe0ceec6daa59cc951f3f71d6fc4221e55ef6c386: final_score=1.68, performance_flag=Fair 🟡
+[2025-04-01 07:22:44 UTC] Indexer 0xe13840a2e92e0cb17a246609b432d0fa2e418774: final_score=1.04, performance_flag=Excellent 🟢
+[2025-04-01 07:22:44 UTC] Indexer 0xe48b586eeb81bde60f14b0b8d80ddd06c7a24720: Applied penalty of 1.40 for serving 3 subgraphs (threshold: 10.0). New final_score=6.61
+[2025-04-01 07:22:44 UTC] Indexer 0xe48b586eeb81bde60f14b0b8d80ddd06c7a24720: final_score=6.61, performance_flag=Poor 🔴
+[2025-04-01 07:22:44 UTC] Indexer 0xe63e935fba572784d5aa40715e372e7948bbdb12: final_score=3.16, performance_flag=Poor 🔴
+[2025-04-01 07:22:44 UTC] Indexer 0xe6de2325ef1aac1f058fae59d3c38a472f569846: final_score=1.1, performance_flag=Excellent 🟢
+[2025-04-01 07:22:44 UTC] Indexer 0xe91273727203bcc827521fc8b0c762d435c3c5d0: final_score=1.22, performance_flag=Excellent 🟢
+[2025-04-01 07:22:44 UTC] Indexer 0xe9e284277648fcdb09b8efc1832c73c09b5ecf59: final_score=1.19, performance_flag=Excellent 🟢
+[2025-04-01 07:22:44 UTC] Indexer 0xeccdf8231326a9c5aad32df76a633aaa4c49b104: final_score=1.11, performance_flag=Excellent 🟢
+[2025-04-01 07:22:44 UTC] Indexer 0xedca8740873152ff30a2696add66d1ab41882beb: final_score=1.06, performance_flag=Excellent 🟢
+[2025-04-01 07:22:44 UTC] Indexer 0xeeeee689aa442c607105f29f06d00d2f748776b2: Applied penalty of 1.80 for serving 1 subgraphs (threshold: 10.0). New final_score=5.49
+[2025-04-01 07:22:44 UTC] Indexer 0xeeeee689aa442c607105f29f06d00d2f748776b2: final_score=5.49, performance_flag=Poor 🔴
+[2025-04-01 07:22:44 UTC] Indexer 0xf00f7157fa8fd0420b87956d46058a16b2f23adc: final_score=1.25, performance_flag=Excellent 🟢
+[2025-04-01 07:22:44 UTC] Indexer 0xf0e33495afe697dbe32168bd0743ba32ebb978a3: Applied penalty of 1.40 for serving 3 subgraphs (threshold: 10.0). New final_score=2.66
+[2025-04-01 07:22:44 UTC] Indexer 0xf0e33495afe697dbe32168bd0743ba32ebb978a3: final_score=2.66, performance_flag=Poor 🔴
+[2025-04-01 07:22:44 UTC] Indexer 0xf57dcd881ebd1d81df99194abdfa90f9e0e92f11: final_score=1.44, performance_flag=Fair 🟡
+[2025-04-01 07:22:44 UTC] Indexer 0xf671c6b83f44ead14ca1c5f4a629f1b9b18c8f29: Applied penalty of 0.80 for serving 6 subgraphs (threshold: 10.0). New final_score=1.94
+[2025-04-01 07:22:44 UTC] Indexer 0xf671c6b83f44ead14ca1c5f4a629f1b9b18c8f29: final_score=1.94, performance_flag=Fair 🟡
+[2025-04-01 07:22:44 UTC] Indexer 0xf7793bf9561c32ffbac603ce572fa55643f9cf72: Applied penalty of 1.20 for serving 4 subgraphs (threshold: 10.0). New final_score=4.68
+[2025-04-01 07:22:44 UTC] Indexer 0xf7793bf9561c32ffbac603ce572fa55643f9cf72: final_score=4.68, performance_flag=Poor 🔴
+[2025-04-01 07:22:44 UTC] Indexer 0xf9123292b4d958c53aaad8c5df0138ee0e62944b: final_score=6.91, performance_flag=Poor 🔴
+[2025-04-01 07:22:44 UTC] Indexer 0xf92f430dd8567b0d466358c79594ab58d919a6d4: final_score=1.11, performance_flag=Excellent 🟢
+[2025-04-01 07:22:44 UTC] Indexer 0xfc842f81490dcb37e82d416b2d28327dfb24ba9a: final_score=1.21, performance_flag=Excellent 🟢
+[2025-04-01 07:22:44 UTC] Indexer 0xfeff9093f6b32d0e5cddba743b06a1fedb87c004: final_score=1.32, performance_flag=Fair 🟡
+[2025-04-01 07:22:44 UTC] ✅ Saved CSV file: reports/indexers_output.csv
+[2025-04-01 07:22:44 UTC] ✅ Saved simple indexers HTML table: reports/index.html
+[2025-04-01 07:22:44 UTC] ✅ Saved HTML documentation file: reports/docs.html
+[2025-04-01 07:25:44 UTC] ⚙️  Fetching data from subgraph...
+[2025-04-01 07:26:08 UTC] Fetched 88 indexers
+[2025-04-01 07:26:08 UTC] 📊 Indexer Stats:
+[2025-04-01 07:26:08 UTC] Total Indexers: 103
+[2025-04-01 07:26:08 UTC] Active Indexers with staked GRT: 97
+[2025-04-01 07:26:08 UTC] Allocated Indexers: 88
+[2025-04-01 07:26:08 UTC] Small Active Indexers: 17 with less than 1000000.0 GRT staked
+[2025-04-01 07:26:08 UTC] Medium Active Indexers: 43 with more than 1000000.0 and less than 20000000.0 GRT staked
+[2025-04-01 07:26:08 UTC] Large Active Indexers: 28 with more than 20000000.0 GRT staked
+[2025-04-01 07:26:08 UTC] Indexer 0x0058223c6617cca7ce76fc929ec9724cd43d4542: final_score=1.28, performance_flag=Fair 🟡
+[2025-04-01 07:26:08 UTC] Indexer 0x01f17c392614c7ea586e7272ed348efee21b90a3: Applied penalty of 1.00 for serving 5 subgraphs (threshold: 10.0). New final_score=4.96
+[2025-04-01 07:26:08 UTC] Indexer 0x01f17c392614c7ea586e7272ed348efee21b90a3: final_score=4.96, performance_flag=Poor 🔴
+[2025-04-01 07:26:08 UTC] Indexer 0x089f78d8cf0a5ae1b7a581b1910a73f8cb3e4774: final_score=1.86, performance_flag=Fair 🟡
+[2025-04-01 07:26:08 UTC] Indexer 0x0b9d582b7fdd387ba13ad7f453d49af255a8ed5e: Applied penalty of 1.00 for serving 5 subgraphs (threshold: 10.0). New final_score=3.0
+[2025-04-01 07:26:08 UTC] Indexer 0x0b9d582b7fdd387ba13ad7f453d49af255a8ed5e: final_score=3.0, performance_flag=Poor 🔴
+[2025-04-01 07:26:08 UTC] Indexer 0x0fd8fd1dc8162148cb9413062fe6c6b144335dbf: final_score=1.44, performance_flag=Fair 🟡
+[2025-04-01 07:26:08 UTC] Indexer 0x17def1a43a323c711c7a32101ecf41e58eff54a2: Applied penalty of 1.80 for serving 1 subgraphs (threshold: 10.0). New final_score=8.82
+[2025-04-01 07:26:08 UTC] Indexer 0x17def1a43a323c711c7a32101ecf41e58eff54a2: final_score=8.82, performance_flag=Poor 🔴
+[2025-04-01 07:26:08 UTC] Indexer 0x1b7e0068ca1d7929c8c56408d766e1510e54d98d: final_score=1.11, performance_flag=Excellent 🟢
+[2025-04-01 07:26:08 UTC] Indexer 0x1b92e4cba0f82c85c1298af861247849988c788c: final_score=1.11, performance_flag=Excellent 🟢
+[2025-04-01 07:26:08 UTC] Indexer 0x269ebeee083ce6f70486a67dc8036a889bf322a9: Applied penalty of 1.00 for serving 5 subgraphs (threshold: 10.0). New final_score=2.44
+[2025-04-01 07:26:08 UTC] Indexer 0x269ebeee083ce6f70486a67dc8036a889bf322a9: final_score=2.44, performance_flag=Fair 🟡
+[2025-04-01 07:26:08 UTC] Indexer 0x2b3c7d1ef5fdfc0557934019c531d3e70d6200ae: final_score=1.31, performance_flag=Fair 🟡
+[2025-04-01 07:26:08 UTC] Indexer 0x2e15f3f0d37b191c33ee06e953c8cce4c493b47a: Applied penalty of 1.20 for serving 4 subgraphs (threshold: 10.0). New final_score=3.72
+[2025-04-01 07:26:08 UTC] Indexer 0x2e15f3f0d37b191c33ee06e953c8cce4c493b47a: final_score=3.72, performance_flag=Poor 🔴
+[2025-04-01 07:26:08 UTC] Indexer 0x2e8d26e9b0d280738728e71c37bf05e70a636238: Applied penalty of 1.20 for serving 4 subgraphs (threshold: 10.0). New final_score=3.82
+[2025-04-01 07:26:08 UTC] Indexer 0x2e8d26e9b0d280738728e71c37bf05e70a636238: final_score=3.82, performance_flag=Poor 🔴
+[2025-04-01 07:26:08 UTC] Indexer 0x2f09092aacd80196fc984908c5a9a7ab3ee4f1ce: final_score=2.57, performance_flag=Poor 🔴
+[2025-04-01 07:26:08 UTC] Indexer 0x326c584e0f0eab1f1f83c93cc6ae1acc0feba0bc: final_score=1.05, performance_flag=Excellent 🟢
+[2025-04-01 07:26:08 UTC] Indexer 0x32bbd16a94ebb289edceebe77f35acc82664157b: Applied penalty of 1.80 for serving 1 subgraphs (threshold: 10.0). New final_score=9.1
+[2025-04-01 07:26:08 UTC] Indexer 0x32bbd16a94ebb289edceebe77f35acc82664157b: final_score=9.1, performance_flag=Poor 🔴
+[2025-04-01 07:26:08 UTC] Indexer 0x345c9a221e4caa15f78fb8078c441745de48a225: final_score=1.34, performance_flag=Fair 🟡
+[2025-04-01 07:26:08 UTC] Indexer 0x35917c0eb91d2e21bef40940d028940484230c06: final_score=1.18, performance_flag=Excellent 🟢
+[2025-04-01 07:26:08 UTC] Indexer 0x3717cef8020bddee7a18f4efb2bfa88fefdcb1bc: final_score=1.24, performance_flag=Excellent 🟢
+[2025-04-01 07:26:08 UTC] Indexer 0x3863a65ce278a240f9aa2a4b4a48493be59e6139: final_score=1.24, performance_flag=Excellent 🟢
+[2025-04-01 07:26:08 UTC] Indexer 0x38f412c8d6346a17a53ff9ceecd2e01acecd27c0: final_score=1.14, performance_flag=Excellent 🟢
+[2025-04-01 07:26:08 UTC] Indexer 0x3b9ba748691f135b71582dc3292e5e3ed7e13341: final_score=1.07, performance_flag=Excellent 🟢
+[2025-04-01 07:26:08 UTC] Indexer 0x3e1536fc83cd5bed83a521a26034ff3e59c6a7c4: final_score=1.04, performance_flag=Excellent 🟢
+[2025-04-01 07:26:08 UTC] Indexer 0x3f74870f80ff7449fe4c6ff257da5fa72734c970: final_score=1.04, performance_flag=Excellent 🟢
+[2025-04-01 07:26:08 UTC] Indexer 0x4207df52f7ff229364899b21e9c4ad36d3d42981: Applied penalty of 1.80 for serving 1 subgraphs (threshold: 10.0). New final_score=3.92
+[2025-04-01 07:26:08 UTC] Indexer 0x4207df52f7ff229364899b21e9c4ad36d3d42981: final_score=3.92, performance_flag=Poor 🔴
+[2025-04-01 07:26:08 UTC] Indexer 0x474e571ab6dd77489ec3c7ddf9cbc893fcba684c: Applied penalty of 1.80 for serving 1 subgraphs (threshold: 10.0). New final_score=4.81
+[2025-04-01 07:26:08 UTC] Indexer 0x474e571ab6dd77489ec3c7ddf9cbc893fcba684c: final_score=4.81, performance_flag=Poor 🔴
+[2025-04-01 07:26:08 UTC] Indexer 0x4d67938e9b07681526fe0345a45b770bba88c659: Applied penalty of 1.80 for serving 1 subgraphs (threshold: 10.0). New final_score=4.96
+[2025-04-01 07:26:08 UTC] Indexer 0x4d67938e9b07681526fe0345a45b770bba88c659: final_score=4.96, performance_flag=Poor 🔴
+[2025-04-01 07:26:08 UTC] Indexer 0x4e5c87772c29381bcabc58c3f182b6633b5a274a: final_score=1.24, performance_flag=Excellent 🟢
+[2025-04-01 07:26:08 UTC] Indexer 0x51637a35f7f054c98ed51904de939b9561d37885: final_score=1.21, performance_flag=Excellent 🟢
+[2025-04-01 07:26:08 UTC] Indexer 0x53dbbc9d916b1840a2c4c26b150ba2e13f36e10f: final_score=1.15, performance_flag=Excellent 🟢
+[2025-04-01 07:26:08 UTC] Indexer 0x550c1f4814a85aa10f5f061ca8c45e2ee9620226: Applied penalty of 1.80 for serving 1 subgraphs (threshold: 10.0). New final_score=3.27
+[2025-04-01 07:26:08 UTC] Indexer 0x550c1f4814a85aa10f5f061ca8c45e2ee9620226: final_score=3.27, performance_flag=Poor 🔴
+[2025-04-01 07:26:08 UTC] Indexer 0x59749d1fa9635cd0413aeff5ee295490a7e87f54: final_score=1.5, performance_flag=Fair 🟡
+[2025-04-01 07:26:08 UTC] Indexer 0x5b3c8f7245dfbd9bea22d9c4b975df60a638e5a3: final_score=1.48, performance_flag=Fair 🟡
+[2025-04-01 07:26:08 UTC] Indexer 0x5ddee9720e17aad28febb55643cd8ab50c51c60b: final_score=1.73, performance_flag=Fair 🟡
+[2025-04-01 07:26:08 UTC] Indexer 0x600f2b53719e1dbacf340572b31a9df9921b82fa: Applied penalty of 1.60 for serving 2 subgraphs (threshold: 10.0). New final_score=3.58
+[2025-04-01 07:26:08 UTC] Indexer 0x600f2b53719e1dbacf340572b31a9df9921b82fa: final_score=3.58, performance_flag=Poor 🔴
+[2025-04-01 07:26:08 UTC] Indexer 0x63c9dc729ba7a22bb8605216b24a34b902e5fe94: final_score=1.45, performance_flag=Fair 🟡
+[2025-04-01 07:26:08 UTC] Indexer 0x6f3ce93a09f30f18d728d2364268b5fe9444b89e: final_score=1.06, performance_flag=Excellent 🟢
+[2025-04-01 07:26:08 UTC] Indexer 0x6f8a032b4b1ee622ef2f0fc091bdbb98cfae81a3: final_score=2.09, performance_flag=Fair 🟡
+[2025-04-01 07:26:08 UTC] Indexer 0x6f9bb7e454f5b3eb2310343f0e99269dc2bb8a1d: final_score=1.12, performance_flag=Excellent 🟢
+[2025-04-01 07:26:08 UTC] Indexer 0x735f422922bd4d459ea491f46e1bb9295b89f961: Applied penalty of 1.80 for serving 1 subgraphs (threshold: 10.0). New final_score=3.2
+[2025-04-01 07:26:08 UTC] Indexer 0x735f422922bd4d459ea491f46e1bb9295b89f961: final_score=3.2, performance_flag=Poor 🔴
+[2025-04-01 07:26:08 UTC] Indexer 0x74dbb201ecc0b16934e68377bc13013883d9417b: final_score=1.02, performance_flag=Excellent 🟢
+[2025-04-01 07:26:08 UTC] Indexer 0x7bb834017672b1135466661d8dd69c5dd0b3bf51: final_score=1.08, performance_flag=Excellent 🟢
+[2025-04-01 07:26:08 UTC] Indexer 0x7c1023ffa995a37ddb3963206e17dbd58a1b64c1: Applied penalty of 1.40 for serving 3 subgraphs (threshold: 10.0). New final_score=2.92
+[2025-04-01 07:26:08 UTC] Indexer 0x7c1023ffa995a37ddb3963206e17dbd58a1b64c1: final_score=2.92, performance_flag=Poor 🔴
+[2025-04-01 07:26:08 UTC] Indexer 0x8f689a83dd52eaa1d5ad6a40c46189b4a0d70b06: Applied penalty of 0.80 for serving 6 subgraphs (threshold: 10.0). New final_score=1.97
+[2025-04-01 07:26:08 UTC] Indexer 0x8f689a83dd52eaa1d5ad6a40c46189b4a0d70b06: final_score=1.97, performance_flag=Fair 🟡
+[2025-04-01 07:26:08 UTC] Indexer 0x9082f497bdc512d08ffde50d6fce28e72c2addcf: final_score=1.13, performance_flag=Excellent 🟢
+[2025-04-01 07:26:08 UTC] Indexer 0x918fcc24e6b7f5ec73b4cf766e2393d8fe707541: final_score=1.37, performance_flag=Fair 🟡
+[2025-04-01 07:26:08 UTC] Indexer 0x91f137715ef8e141d6a8074cbbbc53a0f76b09c5: Applied penalty of 1.80 for serving 1 subgraphs (threshold: 10.0). New final_score=7.2
+[2025-04-01 07:26:08 UTC] Indexer 0x91f137715ef8e141d6a8074cbbbc53a0f76b09c5: final_score=7.2, performance_flag=Poor 🔴
+[2025-04-01 07:26:08 UTC] Indexer 0x920fdeb00ee04dd72f62d8a8f80f13c82ef76c1e: final_score=1.04, performance_flag=Excellent 🟢
+[2025-04-01 07:26:08 UTC] Indexer 0x958ad15ea21fb79b935524cf90c90276031bee20: Applied penalty of 1.80 for serving 1 subgraphs (threshold: 10.0). New final_score=4.65
+[2025-04-01 07:26:08 UTC] Indexer 0x958ad15ea21fb79b935524cf90c90276031bee20: final_score=4.65, performance_flag=Poor 🔴
+[2025-04-01 07:26:08 UTC] Indexer 0x9da1017766bfeb2835db4f811516eea68996538b: final_score=1.24, performance_flag=Excellent 🟢
+[2025-04-01 07:26:08 UTC] Indexer 0xa01b06b0e9feb016d5ab669ce89d059bc666e569: Applied penalty of 1.60 for serving 2 subgraphs (threshold: 10.0). New final_score=4.42
+[2025-04-01 07:26:08 UTC] Indexer 0xa01b06b0e9feb016d5ab669ce89d059bc666e569: final_score=4.42, performance_flag=Poor 🔴
+[2025-04-01 07:26:08 UTC] Indexer 0xa181d0f242b3730f8a244cc94eda05faf17a43e8: Applied penalty of 1.80 for serving 1 subgraphs (threshold: 10.0). New final_score=3.86
+[2025-04-01 07:26:08 UTC] Indexer 0xa181d0f242b3730f8a244cc94eda05faf17a43e8: final_score=3.86, performance_flag=Poor 🔴
+[2025-04-01 07:26:08 UTC] Indexer 0xa28a99b0219a34142a9398a19460fcd69250a2b2: Applied penalty of 1.20 for serving 4 subgraphs (threshold: 10.0). New final_score=2.33
+[2025-04-01 07:26:08 UTC] Indexer 0xa28a99b0219a34142a9398a19460fcd69250a2b2: final_score=2.33, performance_flag=Fair 🟡
+[2025-04-01 07:26:08 UTC] Indexer 0xa4d629ba2ffb3321008d8cec37cca077696bf24d: final_score=1.21, performance_flag=Excellent 🟢
+[2025-04-01 07:26:08 UTC] Indexer 0xa6ff993e0f6253f1b7f55c873577a2f0f0ceb325: final_score=1.28, performance_flag=Fair 🟡
+[2025-04-01 07:26:08 UTC] Indexer 0xa9b5da22440dedd72535ec0525582ca0b63be5e1: Applied penalty of 1.80 for serving 1 subgraphs (threshold: 10.0). New final_score=3.09
+[2025-04-01 07:26:08 UTC] Indexer 0xa9b5da22440dedd72535ec0525582ca0b63be5e1: final_score=3.09, performance_flag=Poor 🔴
+[2025-04-01 07:26:08 UTC] Indexer 0xaa988dcb035518bc0e20082a3148a5d3dfd1776d: final_score=1.06, performance_flag=Excellent 🟢
+[2025-04-01 07:26:08 UTC] Indexer 0xaddd3e23599d2b7267067afbcd18830aefca640a: Applied penalty of 1.80 for serving 1 subgraphs (threshold: 10.0). New final_score=5.24
+[2025-04-01 07:26:08 UTC] Indexer 0xaddd3e23599d2b7267067afbcd18830aefca640a: final_score=5.24, performance_flag=Poor 🔴
+[2025-04-01 07:26:08 UTC] Indexer 0xb4b4570df6f7fe320f10fdfb702dba7e35244550: final_score=1.33, performance_flag=Fair 🟡
+[2025-04-01 07:26:08 UTC] Indexer 0xb54c7c9fa1a51300e6054b70ae9952c1fb2800b4: Applied penalty of 1.00 for serving 5 subgraphs (threshold: 10.0). New final_score=4.87
+[2025-04-01 07:26:08 UTC] Indexer 0xb54c7c9fa1a51300e6054b70ae9952c1fb2800b4: final_score=4.87, performance_flag=Poor 🔴
+[2025-04-01 07:26:08 UTC] Indexer 0xb8ca929e2bd96548cabcabc56cfc9a5147cef0ff: Applied penalty of 0.20 for serving 9 subgraphs (threshold: 10.0). New final_score=1.67
+[2025-04-01 07:26:08 UTC] Indexer 0xb8ca929e2bd96548cabcabc56cfc9a5147cef0ff: final_score=1.67, performance_flag=Fair 🟡
+[2025-04-01 07:26:08 UTC] Indexer 0xbdfb5ee5a2abf4fc7bb1bd1221067aef7f9de491: final_score=3.7, performance_flag=Poor 🔴
+[2025-04-01 07:26:08 UTC] Indexer 0xc55c63563efb36f7cc65ac3060c52987c6694b37: final_score=2.3, performance_flag=Fair 🟡
+[2025-04-01 07:26:08 UTC] Indexer 0xc9014686f6336ad558b539565d5dff840b339082: final_score=2.35, performance_flag=Fair 🟡
+[2025-04-01 07:26:08 UTC] Indexer 0xcba919cf1ee9c537545975d9968718a09d20f071: Applied penalty of 1.80 for serving 1 subgraphs (threshold: 10.0). New final_score=7.42
+[2025-04-01 07:26:08 UTC] Indexer 0xcba919cf1ee9c537545975d9968718a09d20f071: final_score=7.42, performance_flag=Poor 🔴
+[2025-04-01 07:26:08 UTC] Indexer 0xda20dde459c8d918f81566995d899a046d4d8503: final_score=1.14, performance_flag=Excellent 🟢
+[2025-04-01 07:26:08 UTC] Indexer 0xdc7daef4d0751a9f6ec28b06d6d9475b13eb0918: final_score=1.46, performance_flag=Fair 🟡
+[2025-04-01 07:26:08 UTC] Indexer 0xdeb712db301285ed483ef9e02dd08a1980f273f1: Applied penalty of 1.60 for serving 2 subgraphs (threshold: 10.0). New final_score=3.12
+[2025-04-01 07:26:08 UTC] Indexer 0xdeb712db301285ed483ef9e02dd08a1980f273f1: final_score=3.12, performance_flag=Poor 🔴
+[2025-04-01 07:26:08 UTC] Indexer 0xdec965f0604125be05cd8a136c85d02ef344d61a: final_score=1.03, performance_flag=Excellent 🟢
+[2025-04-01 07:26:08 UTC] Indexer 0xdecba5154aab37ae5e381a19f804f3af4d1bcbb5: final_score=1.11, performance_flag=Excellent 🟢
+[2025-04-01 07:26:08 UTC] Indexer 0xe0ceec6daa59cc951f3f71d6fc4221e55ef6c386: final_score=1.68, performance_flag=Fair 🟡
+[2025-04-01 07:26:08 UTC] Indexer 0xe13840a2e92e0cb17a246609b432d0fa2e418774: final_score=1.04, performance_flag=Excellent 🟢
+[2025-04-01 07:26:08 UTC] Indexer 0xe48b586eeb81bde60f14b0b8d80ddd06c7a24720: Applied penalty of 1.40 for serving 3 subgraphs (threshold: 10.0). New final_score=6.61
+[2025-04-01 07:26:08 UTC] Indexer 0xe48b586eeb81bde60f14b0b8d80ddd06c7a24720: final_score=6.61, performance_flag=Poor 🔴
+[2025-04-01 07:26:08 UTC] Indexer 0xe63e935fba572784d5aa40715e372e7948bbdb12: final_score=3.16, performance_flag=Poor 🔴
+[2025-04-01 07:26:08 UTC] Indexer 0xe6de2325ef1aac1f058fae59d3c38a472f569846: final_score=1.1, performance_flag=Excellent 🟢
+[2025-04-01 07:26:08 UTC] Indexer 0xe91273727203bcc827521fc8b0c762d435c3c5d0: final_score=1.22, performance_flag=Excellent 🟢
+[2025-04-01 07:26:08 UTC] Indexer 0xe9e284277648fcdb09b8efc1832c73c09b5ecf59: final_score=1.19, performance_flag=Excellent 🟢
+[2025-04-01 07:26:08 UTC] Indexer 0xeccdf8231326a9c5aad32df76a633aaa4c49b104: final_score=1.11, performance_flag=Excellent 🟢
+[2025-04-01 07:26:08 UTC] Indexer 0xedca8740873152ff30a2696add66d1ab41882beb: final_score=1.06, performance_flag=Excellent 🟢
+[2025-04-01 07:26:08 UTC] Indexer 0xeeeee689aa442c607105f29f06d00d2f748776b2: Applied penalty of 1.80 for serving 1 subgraphs (threshold: 10.0). New final_score=5.49
+[2025-04-01 07:26:08 UTC] Indexer 0xeeeee689aa442c607105f29f06d00d2f748776b2: final_score=5.49, performance_flag=Poor 🔴
+[2025-04-01 07:26:08 UTC] Indexer 0xf00f7157fa8fd0420b87956d46058a16b2f23adc: final_score=1.25, performance_flag=Excellent 🟢
+[2025-04-01 07:26:08 UTC] Indexer 0xf0e33495afe697dbe32168bd0743ba32ebb978a3: Applied penalty of 1.40 for serving 3 subgraphs (threshold: 10.0). New final_score=2.66
+[2025-04-01 07:26:08 UTC] Indexer 0xf0e33495afe697dbe32168bd0743ba32ebb978a3: final_score=2.66, performance_flag=Poor 🔴
+[2025-04-01 07:26:08 UTC] Indexer 0xf57dcd881ebd1d81df99194abdfa90f9e0e92f11: final_score=1.44, performance_flag=Fair 🟡
+[2025-04-01 07:26:08 UTC] Indexer 0xf671c6b83f44ead14ca1c5f4a629f1b9b18c8f29: Applied penalty of 0.80 for serving 6 subgraphs (threshold: 10.0). New final_score=1.94
+[2025-04-01 07:26:08 UTC] Indexer 0xf671c6b83f44ead14ca1c5f4a629f1b9b18c8f29: final_score=1.94, performance_flag=Fair 🟡
+[2025-04-01 07:26:08 UTC] Indexer 0xf7793bf9561c32ffbac603ce572fa55643f9cf72: Applied penalty of 1.20 for serving 4 subgraphs (threshold: 10.0). New final_score=4.68
+[2025-04-01 07:26:08 UTC] Indexer 0xf7793bf9561c32ffbac603ce572fa55643f9cf72: final_score=4.68, performance_flag=Poor 🔴
+[2025-04-01 07:26:08 UTC] Indexer 0xf9123292b4d958c53aaad8c5df0138ee0e62944b: final_score=6.91, performance_flag=Poor 🔴
+[2025-04-01 07:26:08 UTC] Indexer 0xf92f430dd8567b0d466358c79594ab58d919a6d4: final_score=1.11, performance_flag=Excellent 🟢
+[2025-04-01 07:26:08 UTC] Indexer 0xfc842f81490dcb37e82d416b2d28327dfb24ba9a: final_score=1.21, performance_flag=Excellent 🟢
+[2025-04-01 07:26:08 UTC] Indexer 0xfeff9093f6b32d0e5cddba743b06a1fedb87c004: final_score=1.32, performance_flag=Fair 🟡
+[2025-04-01 07:26:08 UTC] ✅ Saved CSV file: reports/indexers_output.csv
+[2025-04-01 07:26:08 UTC] ✅ Saved simple indexers HTML table: reports/index.html
+[2025-04-01 07:26:08 UTC] ✅ Saved HTML documentation file: reports/docs.html
+[2025-04-01 07:26:37 UTC] ⚙️  Fetching data from subgraph...
+[2025-04-01 07:26:56 UTC] Fetched 88 indexers
+[2025-04-01 07:26:56 UTC] 📊 Indexer Stats:
+[2025-04-01 07:26:56 UTC] Total Indexers: 103
+[2025-04-01 07:26:56 UTC] Active Indexers with staked GRT: 97
+[2025-04-01 07:26:56 UTC] Allocated Indexers: 88
+[2025-04-01 07:26:56 UTC] Small Active Indexers: 17 with less than 1000000.0 GRT staked
+[2025-04-01 07:26:56 UTC] Medium Active Indexers: 43 with more than 1000000.0 and less than 20000000.0 GRT staked
+[2025-04-01 07:26:56 UTC] Large Active Indexers: 28 with more than 20000000.0 GRT staked
+[2025-04-01 07:26:56 UTC] Indexer 0x0058223c6617cca7ce76fc929ec9724cd43d4542: final_score=1.28, performance_flag=Fair 🟡
+[2025-04-01 07:26:57 UTC] Indexer 0x01f17c392614c7ea586e7272ed348efee21b90a3: Applied penalty of 1.00 for serving 5 subgraphs (threshold: 10.0). New final_score=4.96
+[2025-04-01 07:26:57 UTC] Indexer 0x01f17c392614c7ea586e7272ed348efee21b90a3: final_score=4.96, performance_flag=Poor 🔴
+[2025-04-01 07:26:57 UTC] Indexer 0x089f78d8cf0a5ae1b7a581b1910a73f8cb3e4774: final_score=1.86, performance_flag=Fair 🟡
+[2025-04-01 07:26:57 UTC] Indexer 0x0b9d582b7fdd387ba13ad7f453d49af255a8ed5e: Applied penalty of 1.00 for serving 5 subgraphs (threshold: 10.0). New final_score=3.0
+[2025-04-01 07:26:57 UTC] Indexer 0x0b9d582b7fdd387ba13ad7f453d49af255a8ed5e: final_score=3.0, performance_flag=Poor 🔴
+[2025-04-01 07:26:57 UTC] Indexer 0x0fd8fd1dc8162148cb9413062fe6c6b144335dbf: final_score=1.44, performance_flag=Fair 🟡
+[2025-04-01 07:26:57 UTC] Indexer 0x17def1a43a323c711c7a32101ecf41e58eff54a2: Applied penalty of 1.80 for serving 1 subgraphs (threshold: 10.0). New final_score=8.82
+[2025-04-01 07:26:57 UTC] Indexer 0x17def1a43a323c711c7a32101ecf41e58eff54a2: final_score=8.82, performance_flag=Poor 🔴
+[2025-04-01 07:26:57 UTC] Indexer 0x1b7e0068ca1d7929c8c56408d766e1510e54d98d: final_score=1.11, performance_flag=Excellent 🟢
+[2025-04-01 07:26:57 UTC] Indexer 0x1b92e4cba0f82c85c1298af861247849988c788c: final_score=1.11, performance_flag=Excellent 🟢
+[2025-04-01 07:26:57 UTC] Indexer 0x269ebeee083ce6f70486a67dc8036a889bf322a9: Applied penalty of 1.00 for serving 5 subgraphs (threshold: 10.0). New final_score=2.44
+[2025-04-01 07:26:57 UTC] Indexer 0x269ebeee083ce6f70486a67dc8036a889bf322a9: final_score=2.44, performance_flag=Fair 🟡
+[2025-04-01 07:26:57 UTC] Indexer 0x2b3c7d1ef5fdfc0557934019c531d3e70d6200ae: final_score=1.31, performance_flag=Fair 🟡
+[2025-04-01 07:26:57 UTC] Indexer 0x2e15f3f0d37b191c33ee06e953c8cce4c493b47a: Applied penalty of 1.20 for serving 4 subgraphs (threshold: 10.0). New final_score=3.72
+[2025-04-01 07:26:57 UTC] Indexer 0x2e15f3f0d37b191c33ee06e953c8cce4c493b47a: final_score=3.72, performance_flag=Poor 🔴
+[2025-04-01 07:26:57 UTC] Indexer 0x2e8d26e9b0d280738728e71c37bf05e70a636238: Applied penalty of 1.20 for serving 4 subgraphs (threshold: 10.0). New final_score=3.82
+[2025-04-01 07:26:57 UTC] Indexer 0x2e8d26e9b0d280738728e71c37bf05e70a636238: final_score=3.82, performance_flag=Poor 🔴
+[2025-04-01 07:26:57 UTC] Indexer 0x2f09092aacd80196fc984908c5a9a7ab3ee4f1ce: final_score=2.57, performance_flag=Poor 🔴
+[2025-04-01 07:26:57 UTC] Indexer 0x326c584e0f0eab1f1f83c93cc6ae1acc0feba0bc: final_score=1.05, performance_flag=Excellent 🟢
+[2025-04-01 07:26:57 UTC] Indexer 0x32bbd16a94ebb289edceebe77f35acc82664157b: Applied penalty of 1.80 for serving 1 subgraphs (threshold: 10.0). New final_score=9.1
+[2025-04-01 07:26:57 UTC] Indexer 0x32bbd16a94ebb289edceebe77f35acc82664157b: final_score=9.1, performance_flag=Poor 🔴
+[2025-04-01 07:26:57 UTC] Indexer 0x345c9a221e4caa15f78fb8078c441745de48a225: final_score=1.34, performance_flag=Fair 🟡
+[2025-04-01 07:26:57 UTC] Indexer 0x35917c0eb91d2e21bef40940d028940484230c06: final_score=1.18, performance_flag=Excellent 🟢
+[2025-04-01 07:26:57 UTC] Indexer 0x3717cef8020bddee7a18f4efb2bfa88fefdcb1bc: final_score=1.24, performance_flag=Excellent 🟢
+[2025-04-01 07:26:57 UTC] Indexer 0x3863a65ce278a240f9aa2a4b4a48493be59e6139: final_score=1.24, performance_flag=Excellent 🟢
+[2025-04-01 07:26:57 UTC] Indexer 0x38f412c8d6346a17a53ff9ceecd2e01acecd27c0: final_score=1.14, performance_flag=Excellent 🟢
+[2025-04-01 07:26:57 UTC] Indexer 0x3b9ba748691f135b71582dc3292e5e3ed7e13341: final_score=1.07, performance_flag=Excellent 🟢
+[2025-04-01 07:26:57 UTC] Indexer 0x3e1536fc83cd5bed83a521a26034ff3e59c6a7c4: final_score=1.04, performance_flag=Excellent 🟢
+[2025-04-01 07:26:57 UTC] Indexer 0x3f74870f80ff7449fe4c6ff257da5fa72734c970: final_score=1.04, performance_flag=Excellent 🟢
+[2025-04-01 07:26:57 UTC] Indexer 0x4207df52f7ff229364899b21e9c4ad36d3d42981: Applied penalty of 1.80 for serving 1 subgraphs (threshold: 10.0). New final_score=3.92
+[2025-04-01 07:26:57 UTC] Indexer 0x4207df52f7ff229364899b21e9c4ad36d3d42981: final_score=3.92, performance_flag=Poor 🔴
+[2025-04-01 07:26:57 UTC] Indexer 0x474e571ab6dd77489ec3c7ddf9cbc893fcba684c: Applied penalty of 1.80 for serving 1 subgraphs (threshold: 10.0). New final_score=4.81
+[2025-04-01 07:26:57 UTC] Indexer 0x474e571ab6dd77489ec3c7ddf9cbc893fcba684c: final_score=4.81, performance_flag=Poor 🔴
+[2025-04-01 07:26:57 UTC] Indexer 0x4d67938e9b07681526fe0345a45b770bba88c659: Applied penalty of 1.80 for serving 1 subgraphs (threshold: 10.0). New final_score=4.96
+[2025-04-01 07:26:57 UTC] Indexer 0x4d67938e9b07681526fe0345a45b770bba88c659: final_score=4.96, performance_flag=Poor 🔴
+[2025-04-01 07:26:57 UTC] Indexer 0x4e5c87772c29381bcabc58c3f182b6633b5a274a: final_score=1.24, performance_flag=Excellent 🟢
+[2025-04-01 07:26:57 UTC] Indexer 0x51637a35f7f054c98ed51904de939b9561d37885: final_score=1.21, performance_flag=Excellent 🟢
+[2025-04-01 07:26:57 UTC] Indexer 0x53dbbc9d916b1840a2c4c26b150ba2e13f36e10f: final_score=1.15, performance_flag=Excellent 🟢
+[2025-04-01 07:26:57 UTC] Indexer 0x550c1f4814a85aa10f5f061ca8c45e2ee9620226: Applied penalty of 1.80 for serving 1 subgraphs (threshold: 10.0). New final_score=3.27
+[2025-04-01 07:26:57 UTC] Indexer 0x550c1f4814a85aa10f5f061ca8c45e2ee9620226: final_score=3.27, performance_flag=Poor 🔴
+[2025-04-01 07:26:57 UTC] Indexer 0x59749d1fa9635cd0413aeff5ee295490a7e87f54: final_score=1.5, performance_flag=Fair 🟡
+[2025-04-01 07:26:57 UTC] Indexer 0x5b3c8f7245dfbd9bea22d9c4b975df60a638e5a3: final_score=1.48, performance_flag=Fair 🟡
+[2025-04-01 07:26:57 UTC] Indexer 0x5ddee9720e17aad28febb55643cd8ab50c51c60b: final_score=1.73, performance_flag=Fair 🟡
+[2025-04-01 07:26:57 UTC] Indexer 0x600f2b53719e1dbacf340572b31a9df9921b82fa: Applied penalty of 1.60 for serving 2 subgraphs (threshold: 10.0). New final_score=3.58
+[2025-04-01 07:26:57 UTC] Indexer 0x600f2b53719e1dbacf340572b31a9df9921b82fa: final_score=3.58, performance_flag=Poor 🔴
+[2025-04-01 07:26:57 UTC] Indexer 0x63c9dc729ba7a22bb8605216b24a34b902e5fe94: final_score=1.45, performance_flag=Fair 🟡
+[2025-04-01 07:26:57 UTC] Indexer 0x6f3ce93a09f30f18d728d2364268b5fe9444b89e: final_score=1.06, performance_flag=Excellent 🟢
+[2025-04-01 07:26:57 UTC] Indexer 0x6f8a032b4b1ee622ef2f0fc091bdbb98cfae81a3: final_score=2.09, performance_flag=Fair 🟡
+[2025-04-01 07:26:57 UTC] Indexer 0x6f9bb7e454f5b3eb2310343f0e99269dc2bb8a1d: final_score=1.12, performance_flag=Excellent 🟢
+[2025-04-01 07:26:57 UTC] Indexer 0x735f422922bd4d459ea491f46e1bb9295b89f961: Applied penalty of 1.80 for serving 1 subgraphs (threshold: 10.0). New final_score=3.2
+[2025-04-01 07:26:57 UTC] Indexer 0x735f422922bd4d459ea491f46e1bb9295b89f961: final_score=3.2, performance_flag=Poor 🔴
+[2025-04-01 07:26:57 UTC] Indexer 0x74dbb201ecc0b16934e68377bc13013883d9417b: final_score=1.02, performance_flag=Excellent 🟢
+[2025-04-01 07:26:57 UTC] Indexer 0x7bb834017672b1135466661d8dd69c5dd0b3bf51: final_score=1.08, performance_flag=Excellent 🟢
+[2025-04-01 07:26:57 UTC] Indexer 0x7c1023ffa995a37ddb3963206e17dbd58a1b64c1: Applied penalty of 1.40 for serving 3 subgraphs (threshold: 10.0). New final_score=2.92
+[2025-04-01 07:26:57 UTC] Indexer 0x7c1023ffa995a37ddb3963206e17dbd58a1b64c1: final_score=2.92, performance_flag=Poor 🔴
+[2025-04-01 07:26:57 UTC] Indexer 0x8f689a83dd52eaa1d5ad6a40c46189b4a0d70b06: Applied penalty of 0.80 for serving 6 subgraphs (threshold: 10.0). New final_score=1.97
+[2025-04-01 07:26:57 UTC] Indexer 0x8f689a83dd52eaa1d5ad6a40c46189b4a0d70b06: final_score=1.97, performance_flag=Fair 🟡
+[2025-04-01 07:26:57 UTC] Indexer 0x9082f497bdc512d08ffde50d6fce28e72c2addcf: final_score=1.13, performance_flag=Excellent 🟢
+[2025-04-01 07:26:57 UTC] Indexer 0x918fcc24e6b7f5ec73b4cf766e2393d8fe707541: final_score=1.37, performance_flag=Fair 🟡
+[2025-04-01 07:26:57 UTC] Indexer 0x91f137715ef8e141d6a8074cbbbc53a0f76b09c5: Applied penalty of 1.80 for serving 1 subgraphs (threshold: 10.0). New final_score=7.2
+[2025-04-01 07:26:57 UTC] Indexer 0x91f137715ef8e141d6a8074cbbbc53a0f76b09c5: final_score=7.2, performance_flag=Poor 🔴
+[2025-04-01 07:26:57 UTC] Indexer 0x920fdeb00ee04dd72f62d8a8f80f13c82ef76c1e: final_score=1.04, performance_flag=Excellent 🟢
+[2025-04-01 07:26:57 UTC] Indexer 0x958ad15ea21fb79b935524cf90c90276031bee20: Applied penalty of 1.80 for serving 1 subgraphs (threshold: 10.0). New final_score=4.65
+[2025-04-01 07:26:57 UTC] Indexer 0x958ad15ea21fb79b935524cf90c90276031bee20: final_score=4.65, performance_flag=Poor 🔴
+[2025-04-01 07:26:57 UTC] Indexer 0x9da1017766bfeb2835db4f811516eea68996538b: final_score=1.24, performance_flag=Excellent 🟢
+[2025-04-01 07:26:57 UTC] Indexer 0xa01b06b0e9feb016d5ab669ce89d059bc666e569: Applied penalty of 1.60 for serving 2 subgraphs (threshold: 10.0). New final_score=4.42
+[2025-04-01 07:26:57 UTC] Indexer 0xa01b06b0e9feb016d5ab669ce89d059bc666e569: final_score=4.42, performance_flag=Poor 🔴
+[2025-04-01 07:26:57 UTC] Indexer 0xa181d0f242b3730f8a244cc94eda05faf17a43e8: Applied penalty of 1.80 for serving 1 subgraphs (threshold: 10.0). New final_score=3.86
+[2025-04-01 07:26:57 UTC] Indexer 0xa181d0f242b3730f8a244cc94eda05faf17a43e8: final_score=3.86, performance_flag=Poor 🔴
+[2025-04-01 07:26:57 UTC] Indexer 0xa28a99b0219a34142a9398a19460fcd69250a2b2: Applied penalty of 1.20 for serving 4 subgraphs (threshold: 10.0). New final_score=2.33
+[2025-04-01 07:26:57 UTC] Indexer 0xa28a99b0219a34142a9398a19460fcd69250a2b2: final_score=2.33, performance_flag=Fair 🟡
+[2025-04-01 07:26:57 UTC] Indexer 0xa4d629ba2ffb3321008d8cec37cca077696bf24d: final_score=1.21, performance_flag=Excellent 🟢
+[2025-04-01 07:26:57 UTC] Indexer 0xa6ff993e0f6253f1b7f55c873577a2f0f0ceb325: final_score=1.28, performance_flag=Fair 🟡
+[2025-04-01 07:26:57 UTC] Indexer 0xa9b5da22440dedd72535ec0525582ca0b63be5e1: Applied penalty of 1.80 for serving 1 subgraphs (threshold: 10.0). New final_score=3.09
+[2025-04-01 07:26:57 UTC] Indexer 0xa9b5da22440dedd72535ec0525582ca0b63be5e1: final_score=3.09, performance_flag=Poor 🔴
+[2025-04-01 07:26:57 UTC] Indexer 0xaa988dcb035518bc0e20082a3148a5d3dfd1776d: final_score=1.06, performance_flag=Excellent 🟢
+[2025-04-01 07:26:57 UTC] Indexer 0xaddd3e23599d2b7267067afbcd18830aefca640a: Applied penalty of 1.80 for serving 1 subgraphs (threshold: 10.0). New final_score=5.24
+[2025-04-01 07:26:57 UTC] Indexer 0xaddd3e23599d2b7267067afbcd18830aefca640a: final_score=5.24, performance_flag=Poor 🔴
+[2025-04-01 07:26:57 UTC] Indexer 0xb4b4570df6f7fe320f10fdfb702dba7e35244550: final_score=1.33, performance_flag=Fair 🟡
+[2025-04-01 07:26:57 UTC] Indexer 0xb54c7c9fa1a51300e6054b70ae9952c1fb2800b4: Applied penalty of 1.00 for serving 5 subgraphs (threshold: 10.0). New final_score=4.87
+[2025-04-01 07:26:57 UTC] Indexer 0xb54c7c9fa1a51300e6054b70ae9952c1fb2800b4: final_score=4.87, performance_flag=Poor 🔴
+[2025-04-01 07:26:57 UTC] Indexer 0xb8ca929e2bd96548cabcabc56cfc9a5147cef0ff: Applied penalty of 0.20 for serving 9 subgraphs (threshold: 10.0). New final_score=1.67
+[2025-04-01 07:26:57 UTC] Indexer 0xb8ca929e2bd96548cabcabc56cfc9a5147cef0ff: final_score=1.67, performance_flag=Fair 🟡
+[2025-04-01 07:26:57 UTC] Indexer 0xbdfb5ee5a2abf4fc7bb1bd1221067aef7f9de491: final_score=3.7, performance_flag=Poor 🔴
+[2025-04-01 07:26:57 UTC] Indexer 0xc55c63563efb36f7cc65ac3060c52987c6694b37: final_score=2.3, performance_flag=Fair 🟡
+[2025-04-01 07:26:57 UTC] Indexer 0xc9014686f6336ad558b539565d5dff840b339082: final_score=2.35, performance_flag=Fair 🟡
+[2025-04-01 07:26:57 UTC] Indexer 0xcba919cf1ee9c537545975d9968718a09d20f071: Applied penalty of 1.80 for serving 1 subgraphs (threshold: 10.0). New final_score=7.42
+[2025-04-01 07:26:57 UTC] Indexer 0xcba919cf1ee9c537545975d9968718a09d20f071: final_score=7.42, performance_flag=Poor 🔴
+[2025-04-01 07:26:57 UTC] Indexer 0xda20dde459c8d918f81566995d899a046d4d8503: final_score=1.14, performance_flag=Excellent 🟢
+[2025-04-01 07:26:57 UTC] Indexer 0xdc7daef4d0751a9f6ec28b06d6d9475b13eb0918: final_score=1.46, performance_flag=Fair 🟡
+[2025-04-01 07:26:57 UTC] Indexer 0xdeb712db301285ed483ef9e02dd08a1980f273f1: Applied penalty of 1.60 for serving 2 subgraphs (threshold: 10.0). New final_score=3.12
+[2025-04-01 07:26:57 UTC] Indexer 0xdeb712db301285ed483ef9e02dd08a1980f273f1: final_score=3.12, performance_flag=Poor 🔴
+[2025-04-01 07:26:57 UTC] Indexer 0xdec965f0604125be05cd8a136c85d02ef344d61a: final_score=1.03, performance_flag=Excellent 🟢
+[2025-04-01 07:26:57 UTC] Indexer 0xdecba5154aab37ae5e381a19f804f3af4d1bcbb5: final_score=1.11, performance_flag=Excellent 🟢
+[2025-04-01 07:26:57 UTC] Indexer 0xe0ceec6daa59cc951f3f71d6fc4221e55ef6c386: final_score=1.68, performance_flag=Fair 🟡
+[2025-04-01 07:26:57 UTC] Indexer 0xe13840a2e92e0cb17a246609b432d0fa2e418774: final_score=1.04, performance_flag=Excellent 🟢
+[2025-04-01 07:26:57 UTC] Indexer 0xe48b586eeb81bde60f14b0b8d80ddd06c7a24720: Applied penalty of 1.40 for serving 3 subgraphs (threshold: 10.0). New final_score=6.61
+[2025-04-01 07:26:57 UTC] Indexer 0xe48b586eeb81bde60f14b0b8d80ddd06c7a24720: final_score=6.61, performance_flag=Poor 🔴
+[2025-04-01 07:26:57 UTC] Indexer 0xe63e935fba572784d5aa40715e372e7948bbdb12: final_score=3.16, performance_flag=Poor 🔴
+[2025-04-01 07:26:57 UTC] Indexer 0xe6de2325ef1aac1f058fae59d3c38a472f569846: final_score=1.1, performance_flag=Excellent 🟢
+[2025-04-01 07:26:57 UTC] Indexer 0xe91273727203bcc827521fc8b0c762d435c3c5d0: final_score=1.22, performance_flag=Excellent 🟢
+[2025-04-01 07:26:57 UTC] Indexer 0xe9e284277648fcdb09b8efc1832c73c09b5ecf59: final_score=1.19, performance_flag=Excellent 🟢
+[2025-04-01 07:26:57 UTC] Indexer 0xeccdf8231326a9c5aad32df76a633aaa4c49b104: final_score=1.11, performance_flag=Excellent 🟢
+[2025-04-01 07:26:57 UTC] Indexer 0xedca8740873152ff30a2696add66d1ab41882beb: final_score=1.06, performance_flag=Excellent 🟢
+[2025-04-01 07:26:57 UTC] Indexer 0xeeeee689aa442c607105f29f06d00d2f748776b2: Applied penalty of 1.80 for serving 1 subgraphs (threshold: 10.0). New final_score=5.49
+[2025-04-01 07:26:57 UTC] Indexer 0xeeeee689aa442c607105f29f06d00d2f748776b2: final_score=5.49, performance_flag=Poor 🔴
+[2025-04-01 07:26:57 UTC] Indexer 0xf00f7157fa8fd0420b87956d46058a16b2f23adc: final_score=1.25, performance_flag=Excellent 🟢
+[2025-04-01 07:26:57 UTC] Indexer 0xf0e33495afe697dbe32168bd0743ba32ebb978a3: Applied penalty of 1.40 for serving 3 subgraphs (threshold: 10.0). New final_score=2.66
+[2025-04-01 07:26:57 UTC] Indexer 0xf0e33495afe697dbe32168bd0743ba32ebb978a3: final_score=2.66, performance_flag=Poor 🔴
+[2025-04-01 07:26:57 UTC] Indexer 0xf57dcd881ebd1d81df99194abdfa90f9e0e92f11: final_score=1.44, performance_flag=Fair 🟡
+[2025-04-01 07:26:57 UTC] Indexer 0xf671c6b83f44ead14ca1c5f4a629f1b9b18c8f29: Applied penalty of 0.80 for serving 6 subgraphs (threshold: 10.0). New final_score=1.94
+[2025-04-01 07:26:57 UTC] Indexer 0xf671c6b83f44ead14ca1c5f4a629f1b9b18c8f29: final_score=1.94, performance_flag=Fair 🟡
+[2025-04-01 07:26:57 UTC] Indexer 0xf7793bf9561c32ffbac603ce572fa55643f9cf72: Applied penalty of 1.20 for serving 4 subgraphs (threshold: 10.0). New final_score=4.68
+[2025-04-01 07:26:57 UTC] Indexer 0xf7793bf9561c32ffbac603ce572fa55643f9cf72: final_score=4.68, performance_flag=Poor 🔴
+[2025-04-01 07:26:57 UTC] Indexer 0xf9123292b4d958c53aaad8c5df0138ee0e62944b: final_score=6.91, performance_flag=Poor 🔴
+[2025-04-01 07:26:57 UTC] Indexer 0xf92f430dd8567b0d466358c79594ab58d919a6d4: final_score=1.11, performance_flag=Excellent 🟢
+[2025-04-01 07:26:57 UTC] Indexer 0xfc842f81490dcb37e82d416b2d28327dfb24ba9a: final_score=1.21, performance_flag=Excellent 🟢
+[2025-04-01 07:26:57 UTC] Indexer 0xfeff9093f6b32d0e5cddba743b06a1fedb87c004: final_score=1.32, performance_flag=Fair 🟡
+[2025-04-01 07:26:57 UTC] ✅ Saved CSV file: reports/indexers_output.csv
+[2025-04-01 07:26:57 UTC] ✅ Saved simple indexers HTML table: reports/index.html
+[2025-04-01 07:26:57 UTC] ✅ Saved HTML documentation file: reports/docs.html
+[2025-04-01 07:28:24 UTC] ⚙️  Fetching data from subgraph...
+[2025-04-01 07:28:46 UTC] Fetched 88 indexers
+[2025-04-01 07:28:46 UTC] 📊 Indexer Stats:
+[2025-04-01 07:28:46 UTC] Total Indexers: 103
+[2025-04-01 07:28:46 UTC] Active Indexers with staked GRT: 97
+[2025-04-01 07:28:46 UTC] Allocated Indexers: 88
+[2025-04-01 07:28:46 UTC] Small Active Indexers: 17 with less than 1000000.0 GRT staked
+[2025-04-01 07:28:46 UTC] Medium Active Indexers: 43 with more than 1000000.0 and less than 20000000.0 GRT staked
+[2025-04-01 07:28:46 UTC] Large Active Indexers: 28 with more than 20000000.0 GRT staked
+[2025-04-01 07:28:46 UTC] Indexer 0x0058223c6617cca7ce76fc929ec9724cd43d4542: final_score=1.28, performance_flag=Fair 🟡
+[2025-04-01 07:28:46 UTC] Indexer 0x01f17c392614c7ea586e7272ed348efee21b90a3: Applied penalty of 1.00 for serving 5 subgraphs (threshold: 10.0). New final_score=4.96
+[2025-04-01 07:28:46 UTC] Indexer 0x01f17c392614c7ea586e7272ed348efee21b90a3: final_score=4.96, performance_flag=Poor 🔴
+[2025-04-01 07:28:46 UTC] Indexer 0x089f78d8cf0a5ae1b7a581b1910a73f8cb3e4774: final_score=1.86, performance_flag=Fair 🟡
+[2025-04-01 07:28:46 UTC] Indexer 0x0b9d582b7fdd387ba13ad7f453d49af255a8ed5e: Applied penalty of 1.00 for serving 5 subgraphs (threshold: 10.0). New final_score=3.0
+[2025-04-01 07:28:46 UTC] Indexer 0x0b9d582b7fdd387ba13ad7f453d49af255a8ed5e: final_score=3.0, performance_flag=Poor 🔴
+[2025-04-01 07:28:46 UTC] Indexer 0x0fd8fd1dc8162148cb9413062fe6c6b144335dbf: final_score=1.44, performance_flag=Fair 🟡
+[2025-04-01 07:28:46 UTC] Indexer 0x17def1a43a323c711c7a32101ecf41e58eff54a2: Applied penalty of 1.80 for serving 1 subgraphs (threshold: 10.0). New final_score=8.82
+[2025-04-01 07:28:46 UTC] Indexer 0x17def1a43a323c711c7a32101ecf41e58eff54a2: final_score=8.82, performance_flag=Poor 🔴
+[2025-04-01 07:28:46 UTC] Indexer 0x1b7e0068ca1d7929c8c56408d766e1510e54d98d: final_score=1.11, performance_flag=Excellent 🟢
+[2025-04-01 07:28:46 UTC] Indexer 0x1b92e4cba0f82c85c1298af861247849988c788c: final_score=1.11, performance_flag=Excellent 🟢
+[2025-04-01 07:28:46 UTC] Indexer 0x269ebeee083ce6f70486a67dc8036a889bf322a9: Applied penalty of 1.00 for serving 5 subgraphs (threshold: 10.0). New final_score=2.44
+[2025-04-01 07:28:46 UTC] Indexer 0x269ebeee083ce6f70486a67dc8036a889bf322a9: final_score=2.44, performance_flag=Fair 🟡
+[2025-04-01 07:28:46 UTC] Indexer 0x2b3c7d1ef5fdfc0557934019c531d3e70d6200ae: final_score=1.31, performance_flag=Fair 🟡
+[2025-04-01 07:28:46 UTC] Indexer 0x2e15f3f0d37b191c33ee06e953c8cce4c493b47a: Applied penalty of 1.20 for serving 4 subgraphs (threshold: 10.0). New final_score=3.72
+[2025-04-01 07:28:46 UTC] Indexer 0x2e15f3f0d37b191c33ee06e953c8cce4c493b47a: final_score=3.72, performance_flag=Poor 🔴
+[2025-04-01 07:28:46 UTC] Indexer 0x2e8d26e9b0d280738728e71c37bf05e70a636238: Applied penalty of 1.20 for serving 4 subgraphs (threshold: 10.0). New final_score=3.82
+[2025-04-01 07:28:46 UTC] Indexer 0x2e8d26e9b0d280738728e71c37bf05e70a636238: final_score=3.82, performance_flag=Poor 🔴
+[2025-04-01 07:28:46 UTC] Indexer 0x2f09092aacd80196fc984908c5a9a7ab3ee4f1ce: final_score=2.57, performance_flag=Poor 🔴
+[2025-04-01 07:28:46 UTC] Indexer 0x326c584e0f0eab1f1f83c93cc6ae1acc0feba0bc: final_score=1.05, performance_flag=Excellent 🟢
+[2025-04-01 07:28:46 UTC] Indexer 0x32bbd16a94ebb289edceebe77f35acc82664157b: Applied penalty of 1.80 for serving 1 subgraphs (threshold: 10.0). New final_score=9.1
+[2025-04-01 07:28:46 UTC] Indexer 0x32bbd16a94ebb289edceebe77f35acc82664157b: final_score=9.1, performance_flag=Poor 🔴
+[2025-04-01 07:28:46 UTC] Indexer 0x345c9a221e4caa15f78fb8078c441745de48a225: final_score=1.34, performance_flag=Fair 🟡
+[2025-04-01 07:28:46 UTC] Indexer 0x35917c0eb91d2e21bef40940d028940484230c06: final_score=1.18, performance_flag=Excellent 🟢
+[2025-04-01 07:28:46 UTC] Indexer 0x3717cef8020bddee7a18f4efb2bfa88fefdcb1bc: final_score=1.24, performance_flag=Excellent 🟢
+[2025-04-01 07:28:46 UTC] Indexer 0x3863a65ce278a240f9aa2a4b4a48493be59e6139: final_score=1.24, performance_flag=Excellent 🟢
+[2025-04-01 07:28:46 UTC] Indexer 0x38f412c8d6346a17a53ff9ceecd2e01acecd27c0: final_score=1.14, performance_flag=Excellent 🟢
+[2025-04-01 07:28:46 UTC] Indexer 0x3b9ba748691f135b71582dc3292e5e3ed7e13341: final_score=1.07, performance_flag=Excellent 🟢
+[2025-04-01 07:28:46 UTC] Indexer 0x3e1536fc83cd5bed83a521a26034ff3e59c6a7c4: final_score=1.04, performance_flag=Excellent 🟢
+[2025-04-01 07:28:46 UTC] Indexer 0x3f74870f80ff7449fe4c6ff257da5fa72734c970: final_score=1.04, performance_flag=Excellent 🟢
+[2025-04-01 07:28:46 UTC] Indexer 0x4207df52f7ff229364899b21e9c4ad36d3d42981: Applied penalty of 1.80 for serving 1 subgraphs (threshold: 10.0). New final_score=3.92
+[2025-04-01 07:28:46 UTC] Indexer 0x4207df52f7ff229364899b21e9c4ad36d3d42981: final_score=3.92, performance_flag=Poor 🔴
+[2025-04-01 07:28:46 UTC] Indexer 0x474e571ab6dd77489ec3c7ddf9cbc893fcba684c: Applied penalty of 1.80 for serving 1 subgraphs (threshold: 10.0). New final_score=4.81
+[2025-04-01 07:28:46 UTC] Indexer 0x474e571ab6dd77489ec3c7ddf9cbc893fcba684c: final_score=4.81, performance_flag=Poor 🔴
+[2025-04-01 07:28:46 UTC] Indexer 0x4d67938e9b07681526fe0345a45b770bba88c659: Applied penalty of 1.80 for serving 1 subgraphs (threshold: 10.0). New final_score=4.96
+[2025-04-01 07:28:46 UTC] Indexer 0x4d67938e9b07681526fe0345a45b770bba88c659: final_score=4.96, performance_flag=Poor 🔴
+[2025-04-01 07:28:46 UTC] Indexer 0x4e5c87772c29381bcabc58c3f182b6633b5a274a: final_score=1.24, performance_flag=Excellent 🟢
+[2025-04-01 07:28:46 UTC] Indexer 0x51637a35f7f054c98ed51904de939b9561d37885: final_score=1.21, performance_flag=Excellent 🟢
+[2025-04-01 07:28:46 UTC] Indexer 0x53dbbc9d916b1840a2c4c26b150ba2e13f36e10f: final_score=1.15, performance_flag=Excellent 🟢
+[2025-04-01 07:28:46 UTC] Indexer 0x550c1f4814a85aa10f5f061ca8c45e2ee9620226: Applied penalty of 1.80 for serving 1 subgraphs (threshold: 10.0). New final_score=3.27
+[2025-04-01 07:28:46 UTC] Indexer 0x550c1f4814a85aa10f5f061ca8c45e2ee9620226: final_score=3.27, performance_flag=Poor 🔴
+[2025-04-01 07:28:46 UTC] Indexer 0x59749d1fa9635cd0413aeff5ee295490a7e87f54: final_score=1.5, performance_flag=Fair 🟡
+[2025-04-01 07:28:46 UTC] Indexer 0x5b3c8f7245dfbd9bea22d9c4b975df60a638e5a3: final_score=1.48, performance_flag=Fair 🟡
+[2025-04-01 07:28:46 UTC] Indexer 0x5ddee9720e17aad28febb55643cd8ab50c51c60b: final_score=1.73, performance_flag=Fair 🟡
+[2025-04-01 07:28:46 UTC] Indexer 0x600f2b53719e1dbacf340572b31a9df9921b82fa: Applied penalty of 1.60 for serving 2 subgraphs (threshold: 10.0). New final_score=3.58
+[2025-04-01 07:28:46 UTC] Indexer 0x600f2b53719e1dbacf340572b31a9df9921b82fa: final_score=3.58, performance_flag=Poor 🔴
+[2025-04-01 07:28:46 UTC] Indexer 0x63c9dc729ba7a22bb8605216b24a34b902e5fe94: final_score=1.45, performance_flag=Fair 🟡
+[2025-04-01 07:28:46 UTC] Indexer 0x6f3ce93a09f30f18d728d2364268b5fe9444b89e: final_score=1.06, performance_flag=Excellent 🟢
+[2025-04-01 07:28:46 UTC] Indexer 0x6f8a032b4b1ee622ef2f0fc091bdbb98cfae81a3: final_score=2.09, performance_flag=Fair 🟡
+[2025-04-01 07:28:46 UTC] Indexer 0x6f9bb7e454f5b3eb2310343f0e99269dc2bb8a1d: final_score=1.12, performance_flag=Excellent 🟢
+[2025-04-01 07:28:46 UTC] Indexer 0x735f422922bd4d459ea491f46e1bb9295b89f961: Applied penalty of 1.80 for serving 1 subgraphs (threshold: 10.0). New final_score=3.2
+[2025-04-01 07:28:46 UTC] Indexer 0x735f422922bd4d459ea491f46e1bb9295b89f961: final_score=3.2, performance_flag=Poor 🔴
+[2025-04-01 07:28:46 UTC] Indexer 0x74dbb201ecc0b16934e68377bc13013883d9417b: final_score=1.02, performance_flag=Excellent 🟢
+[2025-04-01 07:28:46 UTC] Indexer 0x7bb834017672b1135466661d8dd69c5dd0b3bf51: final_score=1.08, performance_flag=Excellent 🟢
+[2025-04-01 07:28:46 UTC] Indexer 0x7c1023ffa995a37ddb3963206e17dbd58a1b64c1: Applied penalty of 1.40 for serving 3 subgraphs (threshold: 10.0). New final_score=2.92
+[2025-04-01 07:28:46 UTC] Indexer 0x7c1023ffa995a37ddb3963206e17dbd58a1b64c1: final_score=2.92, performance_flag=Poor 🔴
+[2025-04-01 07:28:46 UTC] Indexer 0x8f689a83dd52eaa1d5ad6a40c46189b4a0d70b06: Applied penalty of 0.80 for serving 6 subgraphs (threshold: 10.0). New final_score=1.97
+[2025-04-01 07:28:46 UTC] Indexer 0x8f689a83dd52eaa1d5ad6a40c46189b4a0d70b06: final_score=1.97, performance_flag=Fair 🟡
+[2025-04-01 07:28:46 UTC] Indexer 0x9082f497bdc512d08ffde50d6fce28e72c2addcf: final_score=1.13, performance_flag=Excellent 🟢
+[2025-04-01 07:28:46 UTC] Indexer 0x918fcc24e6b7f5ec73b4cf766e2393d8fe707541: final_score=1.37, performance_flag=Fair 🟡
+[2025-04-01 07:28:46 UTC] Indexer 0x91f137715ef8e141d6a8074cbbbc53a0f76b09c5: Applied penalty of 1.80 for serving 1 subgraphs (threshold: 10.0). New final_score=7.2
+[2025-04-01 07:28:46 UTC] Indexer 0x91f137715ef8e141d6a8074cbbbc53a0f76b09c5: final_score=7.2, performance_flag=Poor 🔴
+[2025-04-01 07:28:46 UTC] Indexer 0x920fdeb00ee04dd72f62d8a8f80f13c82ef76c1e: final_score=1.04, performance_flag=Excellent 🟢
+[2025-04-01 07:28:46 UTC] Indexer 0x958ad15ea21fb79b935524cf90c90276031bee20: Applied penalty of 1.80 for serving 1 subgraphs (threshold: 10.0). New final_score=4.65
+[2025-04-01 07:28:46 UTC] Indexer 0x958ad15ea21fb79b935524cf90c90276031bee20: final_score=4.65, performance_flag=Poor 🔴
+[2025-04-01 07:28:46 UTC] Indexer 0x9da1017766bfeb2835db4f811516eea68996538b: final_score=1.24, performance_flag=Excellent 🟢
+[2025-04-01 07:28:46 UTC] Indexer 0xa01b06b0e9feb016d5ab669ce89d059bc666e569: Applied penalty of 1.60 for serving 2 subgraphs (threshold: 10.0). New final_score=4.42
+[2025-04-01 07:28:46 UTC] Indexer 0xa01b06b0e9feb016d5ab669ce89d059bc666e569: final_score=4.42, performance_flag=Poor 🔴
+[2025-04-01 07:28:46 UTC] Indexer 0xa181d0f242b3730f8a244cc94eda05faf17a43e8: Applied penalty of 1.80 for serving 1 subgraphs (threshold: 10.0). New final_score=3.86
+[2025-04-01 07:28:46 UTC] Indexer 0xa181d0f242b3730f8a244cc94eda05faf17a43e8: final_score=3.86, performance_flag=Poor 🔴
+[2025-04-01 07:28:46 UTC] Indexer 0xa28a99b0219a34142a9398a19460fcd69250a2b2: Applied penalty of 1.20 for serving 4 subgraphs (threshold: 10.0). New final_score=2.33
+[2025-04-01 07:28:46 UTC] Indexer 0xa28a99b0219a34142a9398a19460fcd69250a2b2: final_score=2.33, performance_flag=Fair 🟡
+[2025-04-01 07:28:46 UTC] Indexer 0xa4d629ba2ffb3321008d8cec37cca077696bf24d: final_score=1.21, performance_flag=Excellent 🟢
+[2025-04-01 07:28:46 UTC] Indexer 0xa6ff993e0f6253f1b7f55c873577a2f0f0ceb325: final_score=1.28, performance_flag=Fair 🟡
+[2025-04-01 07:28:46 UTC] Indexer 0xa9b5da22440dedd72535ec0525582ca0b63be5e1: Applied penalty of 1.80 for serving 1 subgraphs (threshold: 10.0). New final_score=3.09
+[2025-04-01 07:28:46 UTC] Indexer 0xa9b5da22440dedd72535ec0525582ca0b63be5e1: final_score=3.09, performance_flag=Poor 🔴
+[2025-04-01 07:28:46 UTC] Indexer 0xaa988dcb035518bc0e20082a3148a5d3dfd1776d: final_score=1.06, performance_flag=Excellent 🟢
+[2025-04-01 07:28:46 UTC] Indexer 0xaddd3e23599d2b7267067afbcd18830aefca640a: Applied penalty of 1.80 for serving 1 subgraphs (threshold: 10.0). New final_score=5.24
+[2025-04-01 07:28:46 UTC] Indexer 0xaddd3e23599d2b7267067afbcd18830aefca640a: final_score=5.24, performance_flag=Poor 🔴
+[2025-04-01 07:28:46 UTC] Indexer 0xb4b4570df6f7fe320f10fdfb702dba7e35244550: final_score=1.33, performance_flag=Fair 🟡
+[2025-04-01 07:28:46 UTC] Indexer 0xb54c7c9fa1a51300e6054b70ae9952c1fb2800b4: Applied penalty of 1.00 for serving 5 subgraphs (threshold: 10.0). New final_score=4.87
+[2025-04-01 07:28:46 UTC] Indexer 0xb54c7c9fa1a51300e6054b70ae9952c1fb2800b4: final_score=4.87, performance_flag=Poor 🔴
+[2025-04-01 07:28:46 UTC] Indexer 0xb8ca929e2bd96548cabcabc56cfc9a5147cef0ff: Applied penalty of 0.20 for serving 9 subgraphs (threshold: 10.0). New final_score=1.67
+[2025-04-01 07:28:46 UTC] Indexer 0xb8ca929e2bd96548cabcabc56cfc9a5147cef0ff: final_score=1.67, performance_flag=Fair 🟡
+[2025-04-01 07:28:46 UTC] Indexer 0xbdfb5ee5a2abf4fc7bb1bd1221067aef7f9de491: final_score=3.7, performance_flag=Poor 🔴
+[2025-04-01 07:28:46 UTC] Indexer 0xc55c63563efb36f7cc65ac3060c52987c6694b37: final_score=2.3, performance_flag=Fair 🟡
+[2025-04-01 07:28:46 UTC] Indexer 0xc9014686f6336ad558b539565d5dff840b339082: final_score=2.35, performance_flag=Fair 🟡
+[2025-04-01 07:28:46 UTC] Indexer 0xcba919cf1ee9c537545975d9968718a09d20f071: Applied penalty of 1.80 for serving 1 subgraphs (threshold: 10.0). New final_score=7.42
+[2025-04-01 07:28:46 UTC] Indexer 0xcba919cf1ee9c537545975d9968718a09d20f071: final_score=7.42, performance_flag=Poor 🔴
+[2025-04-01 07:28:46 UTC] Indexer 0xda20dde459c8d918f81566995d899a046d4d8503: final_score=1.14, performance_flag=Excellent 🟢
+[2025-04-01 07:28:46 UTC] Indexer 0xdc7daef4d0751a9f6ec28b06d6d9475b13eb0918: final_score=1.46, performance_flag=Fair 🟡
+[2025-04-01 07:28:46 UTC] Indexer 0xdeb712db301285ed483ef9e02dd08a1980f273f1: Applied penalty of 1.60 for serving 2 subgraphs (threshold: 10.0). New final_score=3.12
+[2025-04-01 07:28:46 UTC] Indexer 0xdeb712db301285ed483ef9e02dd08a1980f273f1: final_score=3.12, performance_flag=Poor 🔴
+[2025-04-01 07:28:46 UTC] Indexer 0xdec965f0604125be05cd8a136c85d02ef344d61a: final_score=1.03, performance_flag=Excellent 🟢
+[2025-04-01 07:28:46 UTC] Indexer 0xdecba5154aab37ae5e381a19f804f3af4d1bcbb5: final_score=1.11, performance_flag=Excellent 🟢
+[2025-04-01 07:28:46 UTC] Indexer 0xe0ceec6daa59cc951f3f71d6fc4221e55ef6c386: final_score=1.68, performance_flag=Fair 🟡
+[2025-04-01 07:28:46 UTC] Indexer 0xe13840a2e92e0cb17a246609b432d0fa2e418774: final_score=1.04, performance_flag=Excellent 🟢
+[2025-04-01 07:28:46 UTC] Indexer 0xe48b586eeb81bde60f14b0b8d80ddd06c7a24720: Applied penalty of 1.40 for serving 3 subgraphs (threshold: 10.0). New final_score=6.61
+[2025-04-01 07:28:46 UTC] Indexer 0xe48b586eeb81bde60f14b0b8d80ddd06c7a24720: final_score=6.61, performance_flag=Poor 🔴
+[2025-04-01 07:28:46 UTC] Indexer 0xe63e935fba572784d5aa40715e372e7948bbdb12: final_score=3.16, performance_flag=Poor 🔴
+[2025-04-01 07:28:46 UTC] Indexer 0xe6de2325ef1aac1f058fae59d3c38a472f569846: final_score=1.1, performance_flag=Excellent 🟢
+[2025-04-01 07:28:46 UTC] Indexer 0xe91273727203bcc827521fc8b0c762d435c3c5d0: final_score=1.22, performance_flag=Excellent 🟢
+[2025-04-01 07:28:46 UTC] Indexer 0xe9e284277648fcdb09b8efc1832c73c09b5ecf59: final_score=1.19, performance_flag=Excellent 🟢
+[2025-04-01 07:28:46 UTC] Indexer 0xeccdf8231326a9c5aad32df76a633aaa4c49b104: final_score=1.11, performance_flag=Excellent 🟢
+[2025-04-01 07:28:46 UTC] Indexer 0xedca8740873152ff30a2696add66d1ab41882beb: final_score=1.06, performance_flag=Excellent 🟢
+[2025-04-01 07:28:46 UTC] Indexer 0xeeeee689aa442c607105f29f06d00d2f748776b2: Applied penalty of 1.80 for serving 1 subgraphs (threshold: 10.0). New final_score=5.49
+[2025-04-01 07:28:46 UTC] Indexer 0xeeeee689aa442c607105f29f06d00d2f748776b2: final_score=5.49, performance_flag=Poor 🔴
+[2025-04-01 07:28:46 UTC] Indexer 0xf00f7157fa8fd0420b87956d46058a16b2f23adc: final_score=1.25, performance_flag=Excellent 🟢
+[2025-04-01 07:28:46 UTC] Indexer 0xf0e33495afe697dbe32168bd0743ba32ebb978a3: Applied penalty of 1.40 for serving 3 subgraphs (threshold: 10.0). New final_score=2.66
+[2025-04-01 07:28:46 UTC] Indexer 0xf0e33495afe697dbe32168bd0743ba32ebb978a3: final_score=2.66, performance_flag=Poor 🔴
+[2025-04-01 07:28:46 UTC] Indexer 0xf57dcd881ebd1d81df99194abdfa90f9e0e92f11: final_score=1.44, performance_flag=Fair 🟡
+[2025-04-01 07:28:46 UTC] Indexer 0xf671c6b83f44ead14ca1c5f4a629f1b9b18c8f29: Applied penalty of 0.80 for serving 6 subgraphs (threshold: 10.0). New final_score=1.94
+[2025-04-01 07:28:46 UTC] Indexer 0xf671c6b83f44ead14ca1c5f4a629f1b9b18c8f29: final_score=1.94, performance_flag=Fair 🟡
+[2025-04-01 07:28:46 UTC] Indexer 0xf7793bf9561c32ffbac603ce572fa55643f9cf72: Applied penalty of 1.20 for serving 4 subgraphs (threshold: 10.0). New final_score=4.68
+[2025-04-01 07:28:46 UTC] Indexer 0xf7793bf9561c32ffbac603ce572fa55643f9cf72: final_score=4.68, performance_flag=Poor 🔴
+[2025-04-01 07:28:46 UTC] Indexer 0xf9123292b4d958c53aaad8c5df0138ee0e62944b: final_score=6.91, performance_flag=Poor 🔴
+[2025-04-01 07:28:46 UTC] Indexer 0xf92f430dd8567b0d466358c79594ab58d919a6d4: final_score=1.11, performance_flag=Excellent 🟢
+[2025-04-01 07:28:46 UTC] Indexer 0xfc842f81490dcb37e82d416b2d28327dfb24ba9a: final_score=1.21, performance_flag=Excellent 🟢
+[2025-04-01 07:28:46 UTC] Indexer 0xfeff9093f6b32d0e5cddba743b06a1fedb87c004: final_score=1.32, performance_flag=Fair 🟡
+[2025-04-01 07:28:46 UTC] ✅ Saved CSV file: reports/indexers_output.csv
+[2025-04-01 07:28:46 UTC] ✅ Saved simple indexers HTML table: reports/index.html
+[2025-04-01 07:28:46 UTC] ✅ Saved HTML documentation file: reports/docs.html

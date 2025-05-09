@@ -1,0 +1,848 @@
+[2025-04-30 18:44:22 UTC] ⚙️  Fetching data from subgraph...
+[2025-04-30 18:44:22 UTC] (Excluding the Upgrade Indexer)
+[2025-04-30 18:44:26 UTC] ✔️ Adjusted total indexer count to exclude Upgrade Indexer: 161
+[2025-04-30 18:44:26 UTC] 🔍 Fetched ENS for 0x0058223c6617cca7ce76fc929ec9724cd43d4542: grassets-tech-2.eth
+[2025-04-30 18:44:26 UTC] 🔍 Fetched ENS for 0x01f17c392614c7ea586e7272ed348efee21b90a3: oraclegen-indexer.eth
+[2025-04-30 18:44:27 UTC] 🔍 Fetched ENS for 0x089f78d8cf0a5ae1b7a581b1910a73f8cb3e4774: darksiders-team.eth
+[2025-04-30 18:44:27 UTC] 🔍 Fetched ENS for 0x0b9d582b7fdd387ba13ad7f453d49af255a8ed5e: dapplooker-indexer.eth
+[2025-04-30 18:44:27 UTC] 🔍 Fetched ENS for 0x0fd8fd1dc8162148cb9413062fe6c6b144335dbf: a1.protofire.eth
+[2025-04-30 18:44:27 UTC] 🔍 Fetched ENS for 0x17def1a43a323c711c7a32101ecf41e58eff54a2: rampdefi4.eth
+[2025-04-30 18:44:28 UTC] 🔍 Fetched ENS for 0x1b7e0068ca1d7929c8c56408d766e1510e54d98d: suntzu-indexer-arb.eth
+[2025-04-30 18:44:28 UTC] 🔍 Fetched ENS for 0x1b92e4cba0f82c85c1298af861247849988c788c: vincenttaglia-indexer.eth
+[2025-04-30 18:44:28 UTC] 🔍 Fetched ENS for 0x269ebeee083ce6f70486a67dc8036a889bf322a9: thomasblock.eth
+[2025-04-30 18:44:28 UTC] 🔍 Fetched ENS for 0x2b3c7d1ef5fdfc0557934019c531d3e70d6200ae: no ENS
+[2025-04-30 18:44:29 UTC] 🔍 Fetched ENS for 0x2e15f3f0d37b191c33ee06e953c8cce4c493b47a: ai.swiftstaking.eth
+[2025-04-30 18:44:29 UTC] 🔍 Fetched ENS for 0x2e8d26e9b0d280738728e71c37bf05e70a636238: moonli.eth
+[2025-04-30 18:44:29 UTC] 🔍 Fetched ENS for 0x2f09092aacd80196fc984908c5a9a7ab3ee4f1ce: p2p-org-arbitrum.eth
+[2025-04-30 18:44:29 UTC] 🔍 Fetched ENS for 0x326c584e0f0eab1f1f83c93cc6ae1acc0feba0bc: graphtronauts-arbitrum.eth
+[2025-04-30 18:44:30 UTC] 🔍 Fetched ENS for 0x32bbd16a94ebb289edceebe77f35acc82664157b: rampdefi3.eth
+[2025-04-30 18:44:30 UTC] 🔍 Fetched ENS for 0x345c9a221e4caa15f78fb8078c441745de48a225: 0xfury.eth
+[2025-04-30 18:44:30 UTC] 🔍 Fetched ENS for 0x35917c0eb91d2e21bef40940d028940484230c06: streamingfastindexer.eth
+[2025-04-30 18:44:31 UTC] 🔍 Fetched ENS for 0x3717cef8020bddee7a18f4efb2bfa88fefdcb1bc: pinax2.eth
+[2025-04-30 18:44:31 UTC] 🔍 Fetched ENS for 0x3863a65ce278a240f9aa2a4b4a48493be59e6139: indexer.nftx.eth
+[2025-04-30 18:44:31 UTC] 🔍 Fetched ENS for 0x38f412c8d6346a17a53ff9ceecd2e01acecd27c0: graphops.eth
+[2025-04-30 18:44:31 UTC] 🔍 Fetched ENS for 0x3b9ba748691f135b71582dc3292e5e3ed7e13341: no ENS
+[2025-04-30 18:44:32 UTC] 🔍 Fetched ENS for 0x3e1536fc83cd5bed83a521a26034ff3e59c6a7c4: differential-graph.eth
+[2025-04-30 18:44:32 UTC] 🔍 Fetched ENS for 0x3f74870f80ff7449fe4c6ff257da5fa72734c970: stake🦑squid-2.eth
+[2025-04-30 18:44:32 UTC] 🔍 Fetched ENS for 0x4207df52f7ff229364899b21e9c4ad36d3d42981: lux8-net.eth
+[2025-04-30 18:44:32 UTC] 🔍 Fetched ENS for 0x474e571ab6dd77489ec3c7ddf9cbc893fcba684c: allnodescom.eth
+[2025-04-30 18:44:32 UTC] 🔍 Fetched ENS for 0x4d67938e9b07681526fe0345a45b770bba88c659: 4block-team.eth
+[2025-04-30 18:44:33 UTC] 🔍 Fetched ENS for 0x4e5c87772c29381bcabc58c3f182b6633b5a274a: indexer.datanexus.eth
+[2025-04-30 18:44:33 UTC] 🔍 Fetched ENS for 0x51637a35f7f054c98ed51904de939b9561d37885: kolbin.eth
+[2025-04-30 18:44:33 UTC] 🔍 Fetched ENS for 0x53dbbc9d916b1840a2c4c26b150ba2e13f36e10f: thoalt-indexer.eth
+[2025-04-30 18:44:34 UTC] 🔍 Fetched ENS for 0x550c1f4814a85aa10f5f061ca8c45e2ee9620226: experimental.infradao.eth
+[2025-04-30 18:44:34 UTC] 🔍 Fetched ENS for 0x59749d1fa9635cd0413aeff5ee295490a7e87f54: no ENS
+[2025-04-30 18:44:34 UTC] 🔍 Fetched ENS for 0x5af569b692b0598721461027dbbecde74d465d99: no ENS
+[2025-04-30 18:44:35 UTC] 🔍 Fetched ENS for 0x5b3c8f7245dfbd9bea22d9c4b975df60a638e5a3: thegraph.mind-heart-soul.eth
+[2025-04-30 18:44:35 UTC] 🔍 Fetched ENS for 0x5ddee9720e17aad28febb55643cd8ab50c51c60b: maplenodes.eth
+[2025-04-30 18:44:35 UTC] 🔍 Fetched ENS for 0x600f2b53719e1dbacf340572b31a9df9921b82fa: no ENS
+[2025-04-30 18:44:35 UTC] 🔍 Fetched ENS for 0x63c9dc729ba7a22bb8605216b24a34b902e5fe94: infradao.eth
+[2025-04-30 18:44:36 UTC] 🔍 Fetched ENS for 0x6f3ce93a09f30f18d728d2364268b5fe9444b89e: no ENS
+[2025-04-30 18:44:36 UTC] 🔍 Fetched ENS for 0x6f8a032b4b1ee622ef2f0fc091bdbb98cfae81a3: indexer.semiotic.eth
+[2025-04-30 18:44:36 UTC] 🔍 Fetched ENS for 0x6f9bb7e454f5b3eb2310343f0e99269dc2bb8a1d: cp0x.eth
+[2025-04-30 18:44:36 UTC] 🔍 Fetched ENS for 0x735f422922bd4d459ea491f46e1bb9295b89f961: no ENS
+[2025-04-30 18:44:37 UTC] 🔍 Fetched ENS for 0x74dbb201ecc0b16934e68377bc13013883d9417b: rickydata-indexer.eth
+[2025-04-30 18:44:37 UTC] 🔍 Fetched ENS for 0x7bb834017672b1135466661d8dd69c5dd0b3bf51: dataservices.eth
+[2025-04-30 18:44:37 UTC] 🔍 Fetched ENS for 0x8bbe94c2894f76406568dfb44e905dac4b7df699: no ENS
+[2025-04-30 18:44:37 UTC] 🔍 Fetched ENS for 0x8f689a83dd52eaa1d5ad6a40c46189b4a0d70b06: art3mis-cloud.eth
+[2025-04-30 18:44:38 UTC] 🔍 Fetched ENS for 0x9082f497bdc512d08ffde50d6fce28e72c2addcf: holographic-indexer.eth
+[2025-04-30 18:44:38 UTC] 🔍 Fetched ENS for 0x918fcc24e6b7f5ec73b4cf766e2393d8fe707541: dacm.eth
+[2025-04-30 18:44:38 UTC] 🔍 Fetched ENS for 0x91f137715ef8e141d6a8074cbbbc53a0f76b09c5: chainodetech-arbitrum.eth
+[2025-04-30 18:44:38 UTC] 🔍 Fetched ENS for 0x920fdeb00ee04dd72f62d8a8f80f13c82ef76c1e: braindexer.eth
+[2025-04-30 18:44:39 UTC] 🔍 Fetched ENS for 0x958ad15ea21fb79b935524cf90c90276031bee20: hashkeycloud.eth
+[2025-04-30 18:44:39 UTC] 🔍 Fetched ENS for 0x9da1017766bfeb2835db4f811516eea68996538b: ryabina.eth
+[2025-04-30 18:44:39 UTC] 🔍 Fetched ENS for 0xa01b06b0e9feb016d5ab669ce89d059bc666e569: no ENS
+[2025-04-30 18:44:39 UTC] 🔍 Fetched ENS for 0xa181d0f242b3730f8a244cc94eda05faf17a43e8: no ENS
+[2025-04-30 18:44:40 UTC] 🔍 Fetched ENS for 0xa28a99b0219a34142a9398a19460fcd69250a2b2: no ENS
+[2025-04-30 18:44:40 UTC] 🔍 Fetched ENS for 0xa4d629ba2ffb3321008d8cec37cca077696bf24d: no ENS
+[2025-04-30 18:44:40 UTC] 🔍 Fetched ENS for 0xa6ff993e0f6253f1b7f55c873577a2f0f0ceb325: no ENS
+[2025-04-30 18:44:40 UTC] 🔍 Fetched ENS for 0xa9b5da22440dedd72535ec0525582ca0b63be5e1: pdp-indexer.eth
+[2025-04-30 18:44:41 UTC] 🔍 Fetched ENS for 0xaa988dcb035518bc0e20082a3148a5d3dfd1776d: stake🦑squid-1.eth
+[2025-04-30 18:44:41 UTC] 🔍 Fetched ENS for 0xaddd3e23599d2b7267067afbcd18830aefca640a: no ENS
+[2025-04-30 18:44:41 UTC] 🔍 Fetched ENS for 0xb4b4570df6f7fe320f10fdfb702dba7e35244550: nodeify.eth
+[2025-04-30 18:44:41 UTC] 🔍 Fetched ENS for 0xb54c7c9fa1a51300e6054b70ae9952c1fb2800b4: kukisglobal.eth
+[2025-04-30 18:44:42 UTC] 🔍 Fetched ENS for 0xb8ca929e2bd96548cabcabc56cfc9a5147cef0ff: waynewayner.eth
+[2025-04-30 18:44:42 UTC] 🔍 Fetched ENS for 0xc55c63563efb36f7cc65ac3060c52987c6694b37: figment-prime.eth
+[2025-04-30 18:44:42 UTC] 🔍 Fetched ENS for 0xc9014686f6336ad558b539565d5dff840b339082: rampdefigrt.eth
+[2025-04-30 18:44:42 UTC] 🔍 Fetched ENS for 0xcba919cf1ee9c537545975d9968718a09d20f071: no ENS
+[2025-04-30 18:44:43 UTC] 🔍 Fetched ENS for 0xd9819426c82e2b8fc58b9b62a78efe93f78077c6: no ENS
+[2025-04-30 18:44:43 UTC] 🔍 Fetched ENS for 0xda20dde459c8d918f81566995d899a046d4d8503: dsrvlabs-indexer-01.eth
+[2025-04-30 18:44:43 UTC] 🔍 Fetched ENS for 0xdc7daef4d0751a9f6ec28b06d6d9475b13eb0918: bitnordic.eth
+[2025-04-30 18:44:44 UTC] 🔍 Fetched ENS for 0xdeb712db301285ed483ef9e02dd08a1980f273f1: easy2stake-com.eth
+[2025-04-30 18:44:44 UTC] 🔍 Fetched ENS for 0xdec965f0604125be05cd8a136c85d02ef344d61a: stakesquid-3.eth
+[2025-04-30 18:44:44 UTC] 🔍 Fetched ENS for 0xdecba5154aab37ae5e381a19f804f3af4d1bcbb5: 0y.decisionbasis.eth
+[2025-04-30 18:44:45 UTC] 🔍 Fetched ENS for 0xe0ceec6daa59cc951f3f71d6fc4221e55ef6c386: arb.stake-machine.eth
+[2025-04-30 18:44:45 UTC] 🔍 Fetched ENS for 0xe13840a2e92e0cb17a246609b432d0fa2e418774: lunanova-indexer.eth
+[2025-04-30 18:44:46 UTC] 🔍 Fetched ENS for 0xe48b586eeb81bde60f14b0b8d80ddd06c7a24720: no ENS
+[2025-04-30 18:44:46 UTC] 🔍 Fetched ENS for 0xe63e935fba572784d5aa40715e372e7948bbdb12: chorusone-thegraph.eth
+[2025-04-30 18:44:46 UTC] 🔍 Fetched ENS for 0xe6de2325ef1aac1f058fae59d3c38a472f569846: no ENS
+[2025-04-30 18:44:47 UTC] 🔍 Fetched ENS for 0xe91273727203bcc827521fc8b0c762d435c3c5d0: no ENS
+[2025-04-30 18:44:47 UTC] 🔍 Fetched ENS for 0xe9e284277648fcdb09b8efc1832c73c09b5ecf59: no ENS
+[2025-04-30 18:44:47 UTC] 🔍 Fetched ENS for 0xeccdf8231326a9c5aad32df76a633aaa4c49b104: catapulta.eth
+[2025-04-30 18:44:48 UTC] 🔍 Fetched ENS for 0xedca8740873152ff30a2696add66d1ab41882beb: pinax.eth
+[2025-04-30 18:44:48 UTC] 🔍 Fetched ENS for 0xeeeee689aa442c607105f29f06d00d2f748776b2: grt.stakecn.eth
+[2025-04-30 18:44:48 UTC] 🔍 Fetched ENS for 0xf00f7157fa8fd0420b87956d46058a16b2f23adc: p2p-org-booster.eth
+[2025-04-30 18:44:48 UTC] 🔍 Fetched ENS for 0xf0e33495afe697dbe32168bd0743ba32ebb978a3: blockonaut.eth
+[2025-04-30 18:44:49 UTC] 🔍 Fetched ENS for 0xf57dcd881ebd1d81df99194abdfa90f9e0e92f11: no ENS
+[2025-04-30 18:44:49 UTC] 🔍 Fetched ENS for 0xf671c6b83f44ead14ca1c5f4a629f1b9b18c8f29: capitanbeto.eth
+[2025-04-30 18:44:50 UTC] 🔍 Fetched ENS for 0xf7793bf9561c32ffbac603ce572fa55643f9cf72: no ENS
+[2025-04-30 18:44:50 UTC] 🔍 Fetched ENS for 0xf9123292b4d958c53aaad8c5df0138ee0e62944b: figment-prime-2.eth
+[2025-04-30 18:44:51 UTC] 🔍 Fetched ENS for 0xf92f430dd8567b0d466358c79594ab58d919a6d4: ellipfra-indexer.eth
+[2025-04-30 18:44:51 UTC] 🔍 Fetched ENS for 0xfb168335f5a3868a03696904ed38fa95fd167c0e: validatrium.eth
+[2025-04-30 18:44:51 UTC] 🔍 Fetched ENS for 0xfc842f81490dcb37e82d416b2d28327dfb24ba9a: grassets-tech-1.eth
+[2025-04-30 18:44:51 UTC] 🔍 Fetched ENS for 0xfeff9093f6b32d0e5cddba743b06a1fedb87c004: p-ops2.eth
+[2025-04-30 18:44:51 UTC] Fetched 90 indexers
+[2025-04-30 18:44:51 UTC] 📊 Indexer Stats:
+[2025-04-30 18:44:51 UTC] Total Indexers: 161
+[2025-04-30 18:44:51 UTC] Active Indexers with staked GRT: 98
+[2025-04-30 18:44:51 UTC] Allocated Indexers: 90
+[2025-04-30 18:44:51 UTC] Small Active Indexers: 17 with less than 1000000.0 GRT staked
+[2025-04-30 18:44:51 UTC] Medium Active Indexers: 44 with more than 1000000.0 and less than 20000000.0 GRT staked
+[2025-04-30 18:44:51 UTC] Large Active Indexers: 18 with more than 20000000.0 and less than 50000000.0 GRT staked
+[2025-04-30 18:44:51 UTC] Mega Active Indexers: 11 with more than 50000000.0 GRT staked
+[2025-04-30 18:44:51 UTC] Performance Categories — Excellent: 37, Fair: 26, Poor: 27
+[2025-04-30 18:44:51 UTC] ✅ Saved CSV file: reports/indexers_output.csv
+[2025-04-30 18:44:51 UTC] ✅ Saved simple indexers HTML table: reports/index.html
+[2025-04-30 18:44:51 UTC] ✅ Saved HTML documentation file: reports/docs.html
+[2025-04-30 18:48:37 UTC] ⚙️  Fetching data from subgraph...
+[2025-04-30 18:48:37 UTC] (Excluding the Upgrade Indexer)
+[2025-04-30 18:48:37 UTC] ✔️ Adjusted total indexer count to exclude Upgrade Indexer: 161
+[2025-04-30 18:48:37 UTC] 🧠 Using cached ENS for 0x0058223c6617cca7ce76fc929ec9724cd43d4542: grassets-tech-2.eth
+[2025-04-30 18:48:37 UTC] 🧠 Using cached ENS for 0x01f17c392614c7ea586e7272ed348efee21b90a3: oraclegen-indexer.eth
+[2025-04-30 18:48:37 UTC] 🧠 Using cached ENS for 0x089f78d8cf0a5ae1b7a581b1910a73f8cb3e4774: darksiders-team.eth
+[2025-04-30 18:48:37 UTC] 🧠 Using cached ENS for 0x0b9d582b7fdd387ba13ad7f453d49af255a8ed5e: dapplooker-indexer.eth
+[2025-04-30 18:48:37 UTC] 🧠 Using cached ENS for 0x0fd8fd1dc8162148cb9413062fe6c6b144335dbf: a1.protofire.eth
+[2025-04-30 18:48:37 UTC] 🧠 Using cached ENS for 0x17def1a43a323c711c7a32101ecf41e58eff54a2: rampdefi4.eth
+[2025-04-30 18:48:37 UTC] 🧠 Using cached ENS for 0x1b7e0068ca1d7929c8c56408d766e1510e54d98d: suntzu-indexer-arb.eth
+[2025-04-30 18:48:37 UTC] 🧠 Using cached ENS for 0x1b92e4cba0f82c85c1298af861247849988c788c: vincenttaglia-indexer.eth
+[2025-04-30 18:48:37 UTC] 🧠 Using cached ENS for 0x269ebeee083ce6f70486a67dc8036a889bf322a9: thomasblock.eth
+[2025-04-30 18:48:37 UTC] 🧠 Using cached ENS for 0x2b3c7d1ef5fdfc0557934019c531d3e70d6200ae: no ENS
+[2025-04-30 18:48:37 UTC] 🧠 Using cached ENS for 0x2e15f3f0d37b191c33ee06e953c8cce4c493b47a: ai.swiftstaking.eth
+[2025-04-30 18:48:37 UTC] 🧠 Using cached ENS for 0x2e8d26e9b0d280738728e71c37bf05e70a636238: moonli.eth
+[2025-04-30 18:48:37 UTC] 🧠 Using cached ENS for 0x2f09092aacd80196fc984908c5a9a7ab3ee4f1ce: p2p-org-arbitrum.eth
+[2025-04-30 18:48:37 UTC] 🧠 Using cached ENS for 0x326c584e0f0eab1f1f83c93cc6ae1acc0feba0bc: graphtronauts-arbitrum.eth
+[2025-04-30 18:48:37 UTC] 🧠 Using cached ENS for 0x32bbd16a94ebb289edceebe77f35acc82664157b: rampdefi3.eth
+[2025-04-30 18:48:37 UTC] 🧠 Using cached ENS for 0x345c9a221e4caa15f78fb8078c441745de48a225: 0xfury.eth
+[2025-04-30 18:48:37 UTC] 🧠 Using cached ENS for 0x35917c0eb91d2e21bef40940d028940484230c06: streamingfastindexer.eth
+[2025-04-30 18:48:37 UTC] 🧠 Using cached ENS for 0x3717cef8020bddee7a18f4efb2bfa88fefdcb1bc: pinax2.eth
+[2025-04-30 18:48:37 UTC] 🧠 Using cached ENS for 0x3863a65ce278a240f9aa2a4b4a48493be59e6139: indexer.nftx.eth
+[2025-04-30 18:48:37 UTC] 🧠 Using cached ENS for 0x38f412c8d6346a17a53ff9ceecd2e01acecd27c0: graphops.eth
+[2025-04-30 18:48:37 UTC] 🧠 Using cached ENS for 0x3b9ba748691f135b71582dc3292e5e3ed7e13341: no ENS
+[2025-04-30 18:48:37 UTC] 🧠 Using cached ENS for 0x3e1536fc83cd5bed83a521a26034ff3e59c6a7c4: differential-graph.eth
+[2025-04-30 18:48:37 UTC] 🧠 Using cached ENS for 0x3f74870f80ff7449fe4c6ff257da5fa72734c970: stake🦑squid-2.eth
+[2025-04-30 18:48:37 UTC] 🧠 Using cached ENS for 0x4207df52f7ff229364899b21e9c4ad36d3d42981: lux8-net.eth
+[2025-04-30 18:48:37 UTC] 🧠 Using cached ENS for 0x474e571ab6dd77489ec3c7ddf9cbc893fcba684c: allnodescom.eth
+[2025-04-30 18:48:37 UTC] 🧠 Using cached ENS for 0x4d67938e9b07681526fe0345a45b770bba88c659: 4block-team.eth
+[2025-04-30 18:48:37 UTC] 🧠 Using cached ENS for 0x4e5c87772c29381bcabc58c3f182b6633b5a274a: indexer.datanexus.eth
+[2025-04-30 18:48:37 UTC] 🧠 Using cached ENS for 0x51637a35f7f054c98ed51904de939b9561d37885: kolbin.eth
+[2025-04-30 18:48:37 UTC] 🧠 Using cached ENS for 0x53dbbc9d916b1840a2c4c26b150ba2e13f36e10f: thoalt-indexer.eth
+[2025-04-30 18:48:37 UTC] 🧠 Using cached ENS for 0x550c1f4814a85aa10f5f061ca8c45e2ee9620226: experimental.infradao.eth
+[2025-04-30 18:48:37 UTC] 🧠 Using cached ENS for 0x59749d1fa9635cd0413aeff5ee295490a7e87f54: no ENS
+[2025-04-30 18:48:37 UTC] 🧠 Using cached ENS for 0x5af569b692b0598721461027dbbecde74d465d99: no ENS
+[2025-04-30 18:48:37 UTC] 🧠 Using cached ENS for 0x5b3c8f7245dfbd9bea22d9c4b975df60a638e5a3: thegraph.mind-heart-soul.eth
+[2025-04-30 18:48:37 UTC] 🧠 Using cached ENS for 0x5ddee9720e17aad28febb55643cd8ab50c51c60b: maplenodes.eth
+[2025-04-30 18:48:37 UTC] 🧠 Using cached ENS for 0x600f2b53719e1dbacf340572b31a9df9921b82fa: no ENS
+[2025-04-30 18:48:37 UTC] 🧠 Using cached ENS for 0x63c9dc729ba7a22bb8605216b24a34b902e5fe94: infradao.eth
+[2025-04-30 18:48:37 UTC] 🧠 Using cached ENS for 0x6f3ce93a09f30f18d728d2364268b5fe9444b89e: no ENS
+[2025-04-30 18:48:37 UTC] 🧠 Using cached ENS for 0x6f8a032b4b1ee622ef2f0fc091bdbb98cfae81a3: indexer.semiotic.eth
+[2025-04-30 18:48:37 UTC] 🧠 Using cached ENS for 0x6f9bb7e454f5b3eb2310343f0e99269dc2bb8a1d: cp0x.eth
+[2025-04-30 18:48:37 UTC] 🧠 Using cached ENS for 0x735f422922bd4d459ea491f46e1bb9295b89f961: no ENS
+[2025-04-30 18:48:37 UTC] 🧠 Using cached ENS for 0x74dbb201ecc0b16934e68377bc13013883d9417b: rickydata-indexer.eth
+[2025-04-30 18:48:37 UTC] 🧠 Using cached ENS for 0x7bb834017672b1135466661d8dd69c5dd0b3bf51: dataservices.eth
+[2025-04-30 18:48:37 UTC] 🧠 Using cached ENS for 0x8bbe94c2894f76406568dfb44e905dac4b7df699: no ENS
+[2025-04-30 18:48:37 UTC] 🧠 Using cached ENS for 0x8f689a83dd52eaa1d5ad6a40c46189b4a0d70b06: art3mis-cloud.eth
+[2025-04-30 18:48:37 UTC] 🧠 Using cached ENS for 0x9082f497bdc512d08ffde50d6fce28e72c2addcf: holographic-indexer.eth
+[2025-04-30 18:48:37 UTC] 🧠 Using cached ENS for 0x918fcc24e6b7f5ec73b4cf766e2393d8fe707541: dacm.eth
+[2025-04-30 18:48:37 UTC] 🧠 Using cached ENS for 0x91f137715ef8e141d6a8074cbbbc53a0f76b09c5: chainodetech-arbitrum.eth
+[2025-04-30 18:48:37 UTC] 🧠 Using cached ENS for 0x920fdeb00ee04dd72f62d8a8f80f13c82ef76c1e: braindexer.eth
+[2025-04-30 18:48:37 UTC] 🧠 Using cached ENS for 0x958ad15ea21fb79b935524cf90c90276031bee20: hashkeycloud.eth
+[2025-04-30 18:48:37 UTC] 🧠 Using cached ENS for 0x9da1017766bfeb2835db4f811516eea68996538b: ryabina.eth
+[2025-04-30 18:48:37 UTC] 🧠 Using cached ENS for 0xa01b06b0e9feb016d5ab669ce89d059bc666e569: no ENS
+[2025-04-30 18:48:37 UTC] 🧠 Using cached ENS for 0xa181d0f242b3730f8a244cc94eda05faf17a43e8: no ENS
+[2025-04-30 18:48:37 UTC] 🧠 Using cached ENS for 0xa28a99b0219a34142a9398a19460fcd69250a2b2: no ENS
+[2025-04-30 18:48:37 UTC] 🧠 Using cached ENS for 0xa4d629ba2ffb3321008d8cec37cca077696bf24d: no ENS
+[2025-04-30 18:48:37 UTC] 🧠 Using cached ENS for 0xa6ff993e0f6253f1b7f55c873577a2f0f0ceb325: no ENS
+[2025-04-30 18:48:37 UTC] 🧠 Using cached ENS for 0xa9b5da22440dedd72535ec0525582ca0b63be5e1: pdp-indexer.eth
+[2025-04-30 18:48:37 UTC] 🧠 Using cached ENS for 0xaa988dcb035518bc0e20082a3148a5d3dfd1776d: stake🦑squid-1.eth
+[2025-04-30 18:48:37 UTC] 🧠 Using cached ENS for 0xaddd3e23599d2b7267067afbcd18830aefca640a: no ENS
+[2025-04-30 18:48:37 UTC] 🧠 Using cached ENS for 0xb4b4570df6f7fe320f10fdfb702dba7e35244550: nodeify.eth
+[2025-04-30 18:48:37 UTC] 🧠 Using cached ENS for 0xb54c7c9fa1a51300e6054b70ae9952c1fb2800b4: kukisglobal.eth
+[2025-04-30 18:48:37 UTC] 🧠 Using cached ENS for 0xb8ca929e2bd96548cabcabc56cfc9a5147cef0ff: waynewayner.eth
+[2025-04-30 18:48:37 UTC] 🧠 Using cached ENS for 0xc55c63563efb36f7cc65ac3060c52987c6694b37: figment-prime.eth
+[2025-04-30 18:48:37 UTC] 🧠 Using cached ENS for 0xc9014686f6336ad558b539565d5dff840b339082: rampdefigrt.eth
+[2025-04-30 18:48:37 UTC] 🧠 Using cached ENS for 0xcba919cf1ee9c537545975d9968718a09d20f071: no ENS
+[2025-04-30 18:48:37 UTC] 🧠 Using cached ENS for 0xd9819426c82e2b8fc58b9b62a78efe93f78077c6: no ENS
+[2025-04-30 18:48:38 UTC] 🧠 Using cached ENS for 0xda20dde459c8d918f81566995d899a046d4d8503: dsrvlabs-indexer-01.eth
+[2025-04-30 18:48:38 UTC] 🧠 Using cached ENS for 0xdc7daef4d0751a9f6ec28b06d6d9475b13eb0918: bitnordic.eth
+[2025-04-30 18:48:38 UTC] 🧠 Using cached ENS for 0xdeb712db301285ed483ef9e02dd08a1980f273f1: easy2stake-com.eth
+[2025-04-30 18:48:38 UTC] 🧠 Using cached ENS for 0xdec965f0604125be05cd8a136c85d02ef344d61a: stakesquid-3.eth
+[2025-04-30 18:48:38 UTC] 🧠 Using cached ENS for 0xdecba5154aab37ae5e381a19f804f3af4d1bcbb5: 0y.decisionbasis.eth
+[2025-04-30 18:48:38 UTC] 🧠 Using cached ENS for 0xe0ceec6daa59cc951f3f71d6fc4221e55ef6c386: arb.stake-machine.eth
+[2025-04-30 18:48:38 UTC] 🧠 Using cached ENS for 0xe13840a2e92e0cb17a246609b432d0fa2e418774: lunanova-indexer.eth
+[2025-04-30 18:48:38 UTC] 🧠 Using cached ENS for 0xe48b586eeb81bde60f14b0b8d80ddd06c7a24720: no ENS
+[2025-04-30 18:48:38 UTC] 🧠 Using cached ENS for 0xe63e935fba572784d5aa40715e372e7948bbdb12: chorusone-thegraph.eth
+[2025-04-30 18:48:38 UTC] 🧠 Using cached ENS for 0xe6de2325ef1aac1f058fae59d3c38a472f569846: no ENS
+[2025-04-30 18:48:38 UTC] 🧠 Using cached ENS for 0xe91273727203bcc827521fc8b0c762d435c3c5d0: no ENS
+[2025-04-30 18:48:38 UTC] 🧠 Using cached ENS for 0xe9e284277648fcdb09b8efc1832c73c09b5ecf59: no ENS
+[2025-04-30 18:48:38 UTC] 🧠 Using cached ENS for 0xeccdf8231326a9c5aad32df76a633aaa4c49b104: catapulta.eth
+[2025-04-30 18:48:38 UTC] 🧠 Using cached ENS for 0xedca8740873152ff30a2696add66d1ab41882beb: pinax.eth
+[2025-04-30 18:48:38 UTC] 🧠 Using cached ENS for 0xeeeee689aa442c607105f29f06d00d2f748776b2: grt.stakecn.eth
+[2025-04-30 18:48:38 UTC] 🧠 Using cached ENS for 0xf00f7157fa8fd0420b87956d46058a16b2f23adc: p2p-org-booster.eth
+[2025-04-30 18:48:38 UTC] 🧠 Using cached ENS for 0xf0e33495afe697dbe32168bd0743ba32ebb978a3: blockonaut.eth
+[2025-04-30 18:48:38 UTC] 🧠 Using cached ENS for 0xf57dcd881ebd1d81df99194abdfa90f9e0e92f11: no ENS
+[2025-04-30 18:48:38 UTC] 🧠 Using cached ENS for 0xf671c6b83f44ead14ca1c5f4a629f1b9b18c8f29: capitanbeto.eth
+[2025-04-30 18:48:38 UTC] 🧠 Using cached ENS for 0xf7793bf9561c32ffbac603ce572fa55643f9cf72: no ENS
+[2025-04-30 18:48:38 UTC] 🧠 Using cached ENS for 0xf9123292b4d958c53aaad8c5df0138ee0e62944b: figment-prime-2.eth
+[2025-04-30 18:48:38 UTC] 🧠 Using cached ENS for 0xf92f430dd8567b0d466358c79594ab58d919a6d4: ellipfra-indexer.eth
+[2025-04-30 18:48:38 UTC] 🧠 Using cached ENS for 0xfb168335f5a3868a03696904ed38fa95fd167c0e: validatrium.eth
+[2025-04-30 18:48:38 UTC] 🧠 Using cached ENS for 0xfc842f81490dcb37e82d416b2d28327dfb24ba9a: grassets-tech-1.eth
+[2025-04-30 18:48:38 UTC] 🧠 Using cached ENS for 0xfeff9093f6b32d0e5cddba743b06a1fedb87c004: p-ops2.eth
+[2025-04-30 18:48:38 UTC] Fetched 90 indexers
+[2025-04-30 18:48:38 UTC] 📊 Indexer Stats:
+[2025-04-30 18:48:38 UTC] Total Indexers: 161
+[2025-04-30 18:48:38 UTC] Active Indexers with staked GRT: 98
+[2025-04-30 18:48:38 UTC] Allocated Indexers: 90
+[2025-04-30 18:48:38 UTC] Small Active Indexers: 17 with less than 1000000.0 GRT staked
+[2025-04-30 18:48:38 UTC] Medium Active Indexers: 44 with more than 1000000.0 and less than 20000000.0 GRT staked
+[2025-04-30 18:48:38 UTC] Large Active Indexers: 18 with more than 20000000.0 and less than 50000000.0 GRT staked
+[2025-04-30 18:48:38 UTC] Mega Active Indexers: 11 with more than 50000000.0 GRT staked
+[2025-04-30 18:48:38 UTC] Performance Categories — Excellent: 37, Fair: 26, Poor: 27
+[2025-04-30 18:48:38 UTC] ✅ Saved CSV file: reports/indexers_output.csv
+[2025-04-30 18:48:38 UTC] ✅ Saved simple indexers HTML table: reports/index.html
+[2025-04-30 18:48:38 UTC] ✅ Saved HTML documentation file: reports/docs.html
+[2025-04-30 18:51:49 UTC] ⚙️  Fetching data from subgraph...
+[2025-04-30 18:51:49 UTC] (Excluding the Upgrade Indexer)
+[2025-04-30 18:51:53 UTC] ✔️ Adjusted total indexer count to exclude Upgrade Indexer: 161
+[2025-04-30 18:51:53 UTC] 🧠 Using cached ENS for 0x0058223c6617cca7ce76fc929ec9724cd43d4542: grassets-tech-2.eth
+[2025-04-30 18:51:53 UTC] 🧠 Using cached ENS for 0x01f17c392614c7ea586e7272ed348efee21b90a3: oraclegen-indexer.eth
+[2025-04-30 18:51:53 UTC] 🧠 Using cached ENS for 0x089f78d8cf0a5ae1b7a581b1910a73f8cb3e4774: darksiders-team.eth
+[2025-04-30 18:51:53 UTC] 🧠 Using cached ENS for 0x0b9d582b7fdd387ba13ad7f453d49af255a8ed5e: dapplooker-indexer.eth
+[2025-04-30 18:51:53 UTC] 🧠 Using cached ENS for 0x0fd8fd1dc8162148cb9413062fe6c6b144335dbf: a1.protofire.eth
+[2025-04-30 18:51:53 UTC] 🧠 Using cached ENS for 0x17def1a43a323c711c7a32101ecf41e58eff54a2: rampdefi4.eth
+[2025-04-30 18:51:53 UTC] 🧠 Using cached ENS for 0x1b7e0068ca1d7929c8c56408d766e1510e54d98d: suntzu-indexer-arb.eth
+[2025-04-30 18:51:53 UTC] 🧠 Using cached ENS for 0x1b92e4cba0f82c85c1298af861247849988c788c: vincenttaglia-indexer.eth
+[2025-04-30 18:51:53 UTC] 🧠 Using cached ENS for 0x269ebeee083ce6f70486a67dc8036a889bf322a9: thomasblock.eth
+[2025-04-30 18:51:53 UTC] 🧠 Using cached ENS for 0x2b3c7d1ef5fdfc0557934019c531d3e70d6200ae: no ENS
+[2025-04-30 18:51:53 UTC] 🧠 Using cached ENS for 0x2e15f3f0d37b191c33ee06e953c8cce4c493b47a: ai.swiftstaking.eth
+[2025-04-30 18:51:53 UTC] 🧠 Using cached ENS for 0x2e8d26e9b0d280738728e71c37bf05e70a636238: moonli.eth
+[2025-04-30 18:51:53 UTC] 🧠 Using cached ENS for 0x2f09092aacd80196fc984908c5a9a7ab3ee4f1ce: p2p-org-arbitrum.eth
+[2025-04-30 18:51:53 UTC] 🧠 Using cached ENS for 0x326c584e0f0eab1f1f83c93cc6ae1acc0feba0bc: graphtronauts-arbitrum.eth
+[2025-04-30 18:51:53 UTC] 🧠 Using cached ENS for 0x32bbd16a94ebb289edceebe77f35acc82664157b: rampdefi3.eth
+[2025-04-30 18:51:53 UTC] 🧠 Using cached ENS for 0x345c9a221e4caa15f78fb8078c441745de48a225: 0xfury.eth
+[2025-04-30 18:51:53 UTC] 🧠 Using cached ENS for 0x35917c0eb91d2e21bef40940d028940484230c06: streamingfastindexer.eth
+[2025-04-30 18:51:53 UTC] 🧠 Using cached ENS for 0x3717cef8020bddee7a18f4efb2bfa88fefdcb1bc: pinax2.eth
+[2025-04-30 18:51:53 UTC] 🧠 Using cached ENS for 0x3863a65ce278a240f9aa2a4b4a48493be59e6139: indexer.nftx.eth
+[2025-04-30 18:51:53 UTC] 🧠 Using cached ENS for 0x38f412c8d6346a17a53ff9ceecd2e01acecd27c0: graphops.eth
+[2025-04-30 18:51:53 UTC] 🧠 Using cached ENS for 0x3b9ba748691f135b71582dc3292e5e3ed7e13341: no ENS
+[2025-04-30 18:51:53 UTC] 🧠 Using cached ENS for 0x3e1536fc83cd5bed83a521a26034ff3e59c6a7c4: differential-graph.eth
+[2025-04-30 18:51:53 UTC] 🧠 Using cached ENS for 0x3f74870f80ff7449fe4c6ff257da5fa72734c970: stake🦑squid-2.eth
+[2025-04-30 18:51:53 UTC] 🧠 Using cached ENS for 0x4207df52f7ff229364899b21e9c4ad36d3d42981: lux8-net.eth
+[2025-04-30 18:51:53 UTC] 🧠 Using cached ENS for 0x474e571ab6dd77489ec3c7ddf9cbc893fcba684c: allnodescom.eth
+[2025-04-30 18:51:53 UTC] 🧠 Using cached ENS for 0x4d67938e9b07681526fe0345a45b770bba88c659: 4block-team.eth
+[2025-04-30 18:51:53 UTC] 🧠 Using cached ENS for 0x4e5c87772c29381bcabc58c3f182b6633b5a274a: indexer.datanexus.eth
+[2025-04-30 18:51:53 UTC] 🧠 Using cached ENS for 0x51637a35f7f054c98ed51904de939b9561d37885: kolbin.eth
+[2025-04-30 18:51:53 UTC] 🧠 Using cached ENS for 0x53dbbc9d916b1840a2c4c26b150ba2e13f36e10f: thoalt-indexer.eth
+[2025-04-30 18:51:53 UTC] 🧠 Using cached ENS for 0x550c1f4814a85aa10f5f061ca8c45e2ee9620226: experimental.infradao.eth
+[2025-04-30 18:51:53 UTC] 🧠 Using cached ENS for 0x59749d1fa9635cd0413aeff5ee295490a7e87f54: no ENS
+[2025-04-30 18:51:53 UTC] 🧠 Using cached ENS for 0x5af569b692b0598721461027dbbecde74d465d99: no ENS
+[2025-04-30 18:51:53 UTC] 🧠 Using cached ENS for 0x5b3c8f7245dfbd9bea22d9c4b975df60a638e5a3: thegraph.mind-heart-soul.eth
+[2025-04-30 18:51:53 UTC] 🧠 Using cached ENS for 0x5ddee9720e17aad28febb55643cd8ab50c51c60b: maplenodes.eth
+[2025-04-30 18:51:53 UTC] 🧠 Using cached ENS for 0x600f2b53719e1dbacf340572b31a9df9921b82fa: no ENS
+[2025-04-30 18:51:53 UTC] 🧠 Using cached ENS for 0x63c9dc729ba7a22bb8605216b24a34b902e5fe94: infradao.eth
+[2025-04-30 18:51:53 UTC] 🧠 Using cached ENS for 0x6f3ce93a09f30f18d728d2364268b5fe9444b89e: no ENS
+[2025-04-30 18:51:53 UTC] 🧠 Using cached ENS for 0x6f8a032b4b1ee622ef2f0fc091bdbb98cfae81a3: indexer.semiotic.eth
+[2025-04-30 18:51:53 UTC] 🧠 Using cached ENS for 0x6f9bb7e454f5b3eb2310343f0e99269dc2bb8a1d: cp0x.eth
+[2025-04-30 18:51:53 UTC] 🧠 Using cached ENS for 0x735f422922bd4d459ea491f46e1bb9295b89f961: no ENS
+[2025-04-30 18:51:53 UTC] 🧠 Using cached ENS for 0x74dbb201ecc0b16934e68377bc13013883d9417b: rickydata-indexer.eth
+[2025-04-30 18:51:53 UTC] 🧠 Using cached ENS for 0x7bb834017672b1135466661d8dd69c5dd0b3bf51: dataservices.eth
+[2025-04-30 18:51:53 UTC] 🧠 Using cached ENS for 0x8bbe94c2894f76406568dfb44e905dac4b7df699: no ENS
+[2025-04-30 18:51:53 UTC] 🧠 Using cached ENS for 0x8f689a83dd52eaa1d5ad6a40c46189b4a0d70b06: art3mis-cloud.eth
+[2025-04-30 18:51:53 UTC] 🧠 Using cached ENS for 0x9082f497bdc512d08ffde50d6fce28e72c2addcf: holographic-indexer.eth
+[2025-04-30 18:51:53 UTC] 🧠 Using cached ENS for 0x918fcc24e6b7f5ec73b4cf766e2393d8fe707541: dacm.eth
+[2025-04-30 18:51:53 UTC] 🧠 Using cached ENS for 0x91f137715ef8e141d6a8074cbbbc53a0f76b09c5: chainodetech-arbitrum.eth
+[2025-04-30 18:51:53 UTC] 🧠 Using cached ENS for 0x920fdeb00ee04dd72f62d8a8f80f13c82ef76c1e: braindexer.eth
+[2025-04-30 18:51:53 UTC] 🧠 Using cached ENS for 0x958ad15ea21fb79b935524cf90c90276031bee20: hashkeycloud.eth
+[2025-04-30 18:51:53 UTC] 🧠 Using cached ENS for 0x9da1017766bfeb2835db4f811516eea68996538b: ryabina.eth
+[2025-04-30 18:51:53 UTC] 🧠 Using cached ENS for 0xa01b06b0e9feb016d5ab669ce89d059bc666e569: no ENS
+[2025-04-30 18:51:53 UTC] 🧠 Using cached ENS for 0xa181d0f242b3730f8a244cc94eda05faf17a43e8: no ENS
+[2025-04-30 18:51:53 UTC] 🧠 Using cached ENS for 0xa28a99b0219a34142a9398a19460fcd69250a2b2: no ENS
+[2025-04-30 18:51:53 UTC] 🧠 Using cached ENS for 0xa4d629ba2ffb3321008d8cec37cca077696bf24d: no ENS
+[2025-04-30 18:51:53 UTC] 🧠 Using cached ENS for 0xa6ff993e0f6253f1b7f55c873577a2f0f0ceb325: no ENS
+[2025-04-30 18:51:53 UTC] 🧠 Using cached ENS for 0xa9b5da22440dedd72535ec0525582ca0b63be5e1: pdp-indexer.eth
+[2025-04-30 18:51:53 UTC] 🧠 Using cached ENS for 0xaa988dcb035518bc0e20082a3148a5d3dfd1776d: stake🦑squid-1.eth
+[2025-04-30 18:51:53 UTC] 🧠 Using cached ENS for 0xaddd3e23599d2b7267067afbcd18830aefca640a: no ENS
+[2025-04-30 18:51:53 UTC] 🧠 Using cached ENS for 0xb4b4570df6f7fe320f10fdfb702dba7e35244550: nodeify.eth
+[2025-04-30 18:51:53 UTC] 🧠 Using cached ENS for 0xb54c7c9fa1a51300e6054b70ae9952c1fb2800b4: kukisglobal.eth
+[2025-04-30 18:51:53 UTC] 🧠 Using cached ENS for 0xb8ca929e2bd96548cabcabc56cfc9a5147cef0ff: waynewayner.eth
+[2025-04-30 18:51:53 UTC] 🧠 Using cached ENS for 0xc55c63563efb36f7cc65ac3060c52987c6694b37: figment-prime.eth
+[2025-04-30 18:51:53 UTC] 🧠 Using cached ENS for 0xc9014686f6336ad558b539565d5dff840b339082: rampdefigrt.eth
+[2025-04-30 18:51:53 UTC] 🧠 Using cached ENS for 0xcba919cf1ee9c537545975d9968718a09d20f071: no ENS
+[2025-04-30 18:51:53 UTC] 🧠 Using cached ENS for 0xd9819426c82e2b8fc58b9b62a78efe93f78077c6: no ENS
+[2025-04-30 18:51:53 UTC] 🧠 Using cached ENS for 0xda20dde459c8d918f81566995d899a046d4d8503: dsrvlabs-indexer-01.eth
+[2025-04-30 18:51:53 UTC] 🧠 Using cached ENS for 0xdc7daef4d0751a9f6ec28b06d6d9475b13eb0918: bitnordic.eth
+[2025-04-30 18:51:53 UTC] 🧠 Using cached ENS for 0xdeb712db301285ed483ef9e02dd08a1980f273f1: easy2stake-com.eth
+[2025-04-30 18:51:53 UTC] 🧠 Using cached ENS for 0xdec965f0604125be05cd8a136c85d02ef344d61a: stakesquid-3.eth
+[2025-04-30 18:51:53 UTC] 🧠 Using cached ENS for 0xdecba5154aab37ae5e381a19f804f3af4d1bcbb5: 0y.decisionbasis.eth
+[2025-04-30 18:51:53 UTC] 🧠 Using cached ENS for 0xe0ceec6daa59cc951f3f71d6fc4221e55ef6c386: arb.stake-machine.eth
+[2025-04-30 18:51:53 UTC] 🧠 Using cached ENS for 0xe13840a2e92e0cb17a246609b432d0fa2e418774: lunanova-indexer.eth
+[2025-04-30 18:51:53 UTC] 🧠 Using cached ENS for 0xe48b586eeb81bde60f14b0b8d80ddd06c7a24720: no ENS
+[2025-04-30 18:51:53 UTC] 🧠 Using cached ENS for 0xe63e935fba572784d5aa40715e372e7948bbdb12: chorusone-thegraph.eth
+[2025-04-30 18:51:53 UTC] 🧠 Using cached ENS for 0xe6de2325ef1aac1f058fae59d3c38a472f569846: no ENS
+[2025-04-30 18:51:53 UTC] 🧠 Using cached ENS for 0xe91273727203bcc827521fc8b0c762d435c3c5d0: no ENS
+[2025-04-30 18:51:53 UTC] 🧠 Using cached ENS for 0xe9e284277648fcdb09b8efc1832c73c09b5ecf59: no ENS
+[2025-04-30 18:51:53 UTC] 🧠 Using cached ENS for 0xeccdf8231326a9c5aad32df76a633aaa4c49b104: catapulta.eth
+[2025-04-30 18:51:53 UTC] 🧠 Using cached ENS for 0xedca8740873152ff30a2696add66d1ab41882beb: pinax.eth
+[2025-04-30 18:51:53 UTC] 🧠 Using cached ENS for 0xeeeee689aa442c607105f29f06d00d2f748776b2: grt.stakecn.eth
+[2025-04-30 18:51:53 UTC] 🧠 Using cached ENS for 0xf00f7157fa8fd0420b87956d46058a16b2f23adc: p2p-org-booster.eth
+[2025-04-30 18:51:53 UTC] 🧠 Using cached ENS for 0xf0e33495afe697dbe32168bd0743ba32ebb978a3: blockonaut.eth
+[2025-04-30 18:51:53 UTC] 🧠 Using cached ENS for 0xf57dcd881ebd1d81df99194abdfa90f9e0e92f11: no ENS
+[2025-04-30 18:51:53 UTC] 🧠 Using cached ENS for 0xf671c6b83f44ead14ca1c5f4a629f1b9b18c8f29: capitanbeto.eth
+[2025-04-30 18:51:53 UTC] 🧠 Using cached ENS for 0xf7793bf9561c32ffbac603ce572fa55643f9cf72: no ENS
+[2025-04-30 18:51:53 UTC] 🧠 Using cached ENS for 0xf9123292b4d958c53aaad8c5df0138ee0e62944b: figment-prime-2.eth
+[2025-04-30 18:51:53 UTC] 🧠 Using cached ENS for 0xf92f430dd8567b0d466358c79594ab58d919a6d4: ellipfra-indexer.eth
+[2025-04-30 18:51:53 UTC] 🧠 Using cached ENS for 0xfb168335f5a3868a03696904ed38fa95fd167c0e: validatrium.eth
+[2025-04-30 18:51:53 UTC] 🧠 Using cached ENS for 0xfc842f81490dcb37e82d416b2d28327dfb24ba9a: grassets-tech-1.eth
+[2025-04-30 18:51:53 UTC] 🧠 Using cached ENS for 0xfeff9093f6b32d0e5cddba743b06a1fedb87c004: p-ops2.eth
+[2025-04-30 18:51:53 UTC] Fetched 90 indexers
+[2025-04-30 18:51:53 UTC] 📊 Indexer Stats:
+[2025-04-30 18:51:53 UTC] Total Indexers: 161
+[2025-04-30 18:51:53 UTC] Active Indexers with staked GRT: 98
+[2025-04-30 18:51:53 UTC] Allocated Indexers: 90
+[2025-04-30 18:51:53 UTC] Small Active Indexers: 17 with less than 1000000.0 GRT staked
+[2025-04-30 18:51:53 UTC] Medium Active Indexers: 44 with more than 1000000.0 and less than 20000000.0 GRT staked
+[2025-04-30 18:51:53 UTC] Large Active Indexers: 18 with more than 20000000.0 and less than 50000000.0 GRT staked
+[2025-04-30 18:51:53 UTC] Mega Active Indexers: 11 with more than 50000000.0 GRT staked
+[2025-04-30 18:51:53 UTC] Performance Categories — Excellent: 37, Fair: 26, Poor: 27
+[2025-04-30 18:51:53 UTC] ✅ Saved CSV file: reports/indexers_output.csv
+[2025-04-30 18:51:53 UTC] ✅ Saved simple indexers HTML table: reports/index.html
+[2025-04-30 18:51:53 UTC] ✅ Saved HTML documentation file: reports/docs.html
+[2025-04-30 18:53:50 UTC] ⚙️  Fetching data from subgraph...
+[2025-04-30 18:53:50 UTC] (Excluding the Upgrade Indexer)
+[2025-04-30 18:53:54 UTC] ✔️ Adjusted total indexer count to exclude Upgrade Indexer: 161
+[2025-04-30 18:53:54 UTC] 🧠 Using cached ENS for 0x0058223c6617cca7ce76fc929ec9724cd43d4542: grassets-tech-2.eth
+[2025-04-30 18:53:54 UTC] 🧠 Using cached ENS for 0x01f17c392614c7ea586e7272ed348efee21b90a3: oraclegen-indexer.eth
+[2025-04-30 18:53:54 UTC] 🧠 Using cached ENS for 0x089f78d8cf0a5ae1b7a581b1910a73f8cb3e4774: darksiders-team.eth
+[2025-04-30 18:53:54 UTC] 🧠 Using cached ENS for 0x0b9d582b7fdd387ba13ad7f453d49af255a8ed5e: dapplooker-indexer.eth
+[2025-04-30 18:53:54 UTC] 🧠 Using cached ENS for 0x0fd8fd1dc8162148cb9413062fe6c6b144335dbf: a1.protofire.eth
+[2025-04-30 18:53:54 UTC] 🧠 Using cached ENS for 0x17def1a43a323c711c7a32101ecf41e58eff54a2: rampdefi4.eth
+[2025-04-30 18:53:54 UTC] 🧠 Using cached ENS for 0x1b7e0068ca1d7929c8c56408d766e1510e54d98d: suntzu-indexer-arb.eth
+[2025-04-30 18:53:54 UTC] 🧠 Using cached ENS for 0x1b92e4cba0f82c85c1298af861247849988c788c: vincenttaglia-indexer.eth
+[2025-04-30 18:53:54 UTC] 🧠 Using cached ENS for 0x269ebeee083ce6f70486a67dc8036a889bf322a9: thomasblock.eth
+[2025-04-30 18:53:54 UTC] 🧠 Using cached ENS for 0x2b3c7d1ef5fdfc0557934019c531d3e70d6200ae: no ENS
+[2025-04-30 18:53:54 UTC] 🧠 Using cached ENS for 0x2e15f3f0d37b191c33ee06e953c8cce4c493b47a: ai.swiftstaking.eth
+[2025-04-30 18:53:54 UTC] 🧠 Using cached ENS for 0x2e8d26e9b0d280738728e71c37bf05e70a636238: moonli.eth
+[2025-04-30 18:53:54 UTC] 🧠 Using cached ENS for 0x2f09092aacd80196fc984908c5a9a7ab3ee4f1ce: p2p-org-arbitrum.eth
+[2025-04-30 18:53:54 UTC] 🧠 Using cached ENS for 0x326c584e0f0eab1f1f83c93cc6ae1acc0feba0bc: graphtronauts-arbitrum.eth
+[2025-04-30 18:53:54 UTC] 🧠 Using cached ENS for 0x32bbd16a94ebb289edceebe77f35acc82664157b: rampdefi3.eth
+[2025-04-30 18:53:54 UTC] 🧠 Using cached ENS for 0x345c9a221e4caa15f78fb8078c441745de48a225: 0xfury.eth
+[2025-04-30 18:53:54 UTC] 🧠 Using cached ENS for 0x35917c0eb91d2e21bef40940d028940484230c06: streamingfastindexer.eth
+[2025-04-30 18:53:54 UTC] 🧠 Using cached ENS for 0x3717cef8020bddee7a18f4efb2bfa88fefdcb1bc: pinax2.eth
+[2025-04-30 18:53:54 UTC] 🧠 Using cached ENS for 0x3863a65ce278a240f9aa2a4b4a48493be59e6139: indexer.nftx.eth
+[2025-04-30 18:53:54 UTC] 🧠 Using cached ENS for 0x38f412c8d6346a17a53ff9ceecd2e01acecd27c0: graphops.eth
+[2025-04-30 18:53:54 UTC] 🧠 Using cached ENS for 0x3b9ba748691f135b71582dc3292e5e3ed7e13341: no ENS
+[2025-04-30 18:53:54 UTC] 🧠 Using cached ENS for 0x3e1536fc83cd5bed83a521a26034ff3e59c6a7c4: differential-graph.eth
+[2025-04-30 18:53:54 UTC] 🧠 Using cached ENS for 0x3f74870f80ff7449fe4c6ff257da5fa72734c970: stake🦑squid-2.eth
+[2025-04-30 18:53:54 UTC] 🧠 Using cached ENS for 0x4207df52f7ff229364899b21e9c4ad36d3d42981: lux8-net.eth
+[2025-04-30 18:53:54 UTC] 🧠 Using cached ENS for 0x474e571ab6dd77489ec3c7ddf9cbc893fcba684c: allnodescom.eth
+[2025-04-30 18:53:54 UTC] 🧠 Using cached ENS for 0x4d67938e9b07681526fe0345a45b770bba88c659: 4block-team.eth
+[2025-04-30 18:53:54 UTC] 🧠 Using cached ENS for 0x4e5c87772c29381bcabc58c3f182b6633b5a274a: indexer.datanexus.eth
+[2025-04-30 18:53:54 UTC] 🧠 Using cached ENS for 0x51637a35f7f054c98ed51904de939b9561d37885: kolbin.eth
+[2025-04-30 18:53:54 UTC] 🧠 Using cached ENS for 0x53dbbc9d916b1840a2c4c26b150ba2e13f36e10f: thoalt-indexer.eth
+[2025-04-30 18:53:54 UTC] 🧠 Using cached ENS for 0x550c1f4814a85aa10f5f061ca8c45e2ee9620226: experimental.infradao.eth
+[2025-04-30 18:53:54 UTC] 🧠 Using cached ENS for 0x59749d1fa9635cd0413aeff5ee295490a7e87f54: no ENS
+[2025-04-30 18:53:54 UTC] 🧠 Using cached ENS for 0x5af569b692b0598721461027dbbecde74d465d99: no ENS
+[2025-04-30 18:53:54 UTC] 🧠 Using cached ENS for 0x5b3c8f7245dfbd9bea22d9c4b975df60a638e5a3: thegraph.mind-heart-soul.eth
+[2025-04-30 18:53:54 UTC] 🧠 Using cached ENS for 0x5ddee9720e17aad28febb55643cd8ab50c51c60b: maplenodes.eth
+[2025-04-30 18:53:54 UTC] 🧠 Using cached ENS for 0x600f2b53719e1dbacf340572b31a9df9921b82fa: no ENS
+[2025-04-30 18:53:54 UTC] 🧠 Using cached ENS for 0x63c9dc729ba7a22bb8605216b24a34b902e5fe94: infradao.eth
+[2025-04-30 18:53:54 UTC] 🧠 Using cached ENS for 0x6f3ce93a09f30f18d728d2364268b5fe9444b89e: no ENS
+[2025-04-30 18:53:54 UTC] 🧠 Using cached ENS for 0x6f8a032b4b1ee622ef2f0fc091bdbb98cfae81a3: indexer.semiotic.eth
+[2025-04-30 18:53:54 UTC] 🧠 Using cached ENS for 0x6f9bb7e454f5b3eb2310343f0e99269dc2bb8a1d: cp0x.eth
+[2025-04-30 18:53:54 UTC] 🧠 Using cached ENS for 0x735f422922bd4d459ea491f46e1bb9295b89f961: no ENS
+[2025-04-30 18:53:54 UTC] 🧠 Using cached ENS for 0x74dbb201ecc0b16934e68377bc13013883d9417b: rickydata-indexer.eth
+[2025-04-30 18:53:54 UTC] 🧠 Using cached ENS for 0x7bb834017672b1135466661d8dd69c5dd0b3bf51: dataservices.eth
+[2025-04-30 18:53:54 UTC] 🧠 Using cached ENS for 0x8bbe94c2894f76406568dfb44e905dac4b7df699: no ENS
+[2025-04-30 18:53:54 UTC] 🧠 Using cached ENS for 0x8f689a83dd52eaa1d5ad6a40c46189b4a0d70b06: art3mis-cloud.eth
+[2025-04-30 18:53:54 UTC] 🧠 Using cached ENS for 0x9082f497bdc512d08ffde50d6fce28e72c2addcf: holographic-indexer.eth
+[2025-04-30 18:53:54 UTC] 🧠 Using cached ENS for 0x918fcc24e6b7f5ec73b4cf766e2393d8fe707541: dacm.eth
+[2025-04-30 18:53:54 UTC] 🧠 Using cached ENS for 0x91f137715ef8e141d6a8074cbbbc53a0f76b09c5: chainodetech-arbitrum.eth
+[2025-04-30 18:53:54 UTC] 🧠 Using cached ENS for 0x920fdeb00ee04dd72f62d8a8f80f13c82ef76c1e: braindexer.eth
+[2025-04-30 18:53:54 UTC] 🧠 Using cached ENS for 0x958ad15ea21fb79b935524cf90c90276031bee20: hashkeycloud.eth
+[2025-04-30 18:53:54 UTC] 🧠 Using cached ENS for 0x9da1017766bfeb2835db4f811516eea68996538b: ryabina.eth
+[2025-04-30 18:53:54 UTC] 🧠 Using cached ENS for 0xa01b06b0e9feb016d5ab669ce89d059bc666e569: no ENS
+[2025-04-30 18:53:54 UTC] 🧠 Using cached ENS for 0xa181d0f242b3730f8a244cc94eda05faf17a43e8: no ENS
+[2025-04-30 18:53:54 UTC] 🧠 Using cached ENS for 0xa28a99b0219a34142a9398a19460fcd69250a2b2: no ENS
+[2025-04-30 18:53:54 UTC] 🧠 Using cached ENS for 0xa4d629ba2ffb3321008d8cec37cca077696bf24d: no ENS
+[2025-04-30 18:53:54 UTC] 🧠 Using cached ENS for 0xa6ff993e0f6253f1b7f55c873577a2f0f0ceb325: no ENS
+[2025-04-30 18:53:54 UTC] 🧠 Using cached ENS for 0xa9b5da22440dedd72535ec0525582ca0b63be5e1: pdp-indexer.eth
+[2025-04-30 18:53:54 UTC] 🧠 Using cached ENS for 0xaa988dcb035518bc0e20082a3148a5d3dfd1776d: stake🦑squid-1.eth
+[2025-04-30 18:53:54 UTC] 🧠 Using cached ENS for 0xaddd3e23599d2b7267067afbcd18830aefca640a: no ENS
+[2025-04-30 18:53:54 UTC] 🧠 Using cached ENS for 0xb4b4570df6f7fe320f10fdfb702dba7e35244550: nodeify.eth
+[2025-04-30 18:53:54 UTC] 🧠 Using cached ENS for 0xb54c7c9fa1a51300e6054b70ae9952c1fb2800b4: kukisglobal.eth
+[2025-04-30 18:53:54 UTC] 🧠 Using cached ENS for 0xb8ca929e2bd96548cabcabc56cfc9a5147cef0ff: waynewayner.eth
+[2025-04-30 18:53:54 UTC] 🧠 Using cached ENS for 0xc55c63563efb36f7cc65ac3060c52987c6694b37: figment-prime.eth
+[2025-04-30 18:53:54 UTC] 🧠 Using cached ENS for 0xc9014686f6336ad558b539565d5dff840b339082: rampdefigrt.eth
+[2025-04-30 18:53:54 UTC] 🧠 Using cached ENS for 0xcba919cf1ee9c537545975d9968718a09d20f071: no ENS
+[2025-04-30 18:53:54 UTC] 🧠 Using cached ENS for 0xd9819426c82e2b8fc58b9b62a78efe93f78077c6: no ENS
+[2025-04-30 18:53:54 UTC] 🧠 Using cached ENS for 0xda20dde459c8d918f81566995d899a046d4d8503: dsrvlabs-indexer-01.eth
+[2025-04-30 18:53:54 UTC] 🧠 Using cached ENS for 0xdc7daef4d0751a9f6ec28b06d6d9475b13eb0918: bitnordic.eth
+[2025-04-30 18:53:54 UTC] 🧠 Using cached ENS for 0xdeb712db301285ed483ef9e02dd08a1980f273f1: easy2stake-com.eth
+[2025-04-30 18:53:54 UTC] 🧠 Using cached ENS for 0xdec965f0604125be05cd8a136c85d02ef344d61a: stakesquid-3.eth
+[2025-04-30 18:53:54 UTC] 🧠 Using cached ENS for 0xdecba5154aab37ae5e381a19f804f3af4d1bcbb5: 0y.decisionbasis.eth
+[2025-04-30 18:53:54 UTC] 🧠 Using cached ENS for 0xe0ceec6daa59cc951f3f71d6fc4221e55ef6c386: arb.stake-machine.eth
+[2025-04-30 18:53:54 UTC] 🧠 Using cached ENS for 0xe13840a2e92e0cb17a246609b432d0fa2e418774: lunanova-indexer.eth
+[2025-04-30 18:53:54 UTC] 🧠 Using cached ENS for 0xe48b586eeb81bde60f14b0b8d80ddd06c7a24720: no ENS
+[2025-04-30 18:53:54 UTC] 🧠 Using cached ENS for 0xe63e935fba572784d5aa40715e372e7948bbdb12: chorusone-thegraph.eth
+[2025-04-30 18:53:54 UTC] 🧠 Using cached ENS for 0xe6de2325ef1aac1f058fae59d3c38a472f569846: no ENS
+[2025-04-30 18:53:54 UTC] 🧠 Using cached ENS for 0xe91273727203bcc827521fc8b0c762d435c3c5d0: no ENS
+[2025-04-30 18:53:54 UTC] 🧠 Using cached ENS for 0xe9e284277648fcdb09b8efc1832c73c09b5ecf59: no ENS
+[2025-04-30 18:53:54 UTC] 🧠 Using cached ENS for 0xeccdf8231326a9c5aad32df76a633aaa4c49b104: catapulta.eth
+[2025-04-30 18:53:54 UTC] 🧠 Using cached ENS for 0xedca8740873152ff30a2696add66d1ab41882beb: pinax.eth
+[2025-04-30 18:53:54 UTC] 🧠 Using cached ENS for 0xeeeee689aa442c607105f29f06d00d2f748776b2: grt.stakecn.eth
+[2025-04-30 18:53:54 UTC] 🧠 Using cached ENS for 0xf00f7157fa8fd0420b87956d46058a16b2f23adc: p2p-org-booster.eth
+[2025-04-30 18:53:54 UTC] 🧠 Using cached ENS for 0xf0e33495afe697dbe32168bd0743ba32ebb978a3: blockonaut.eth
+[2025-04-30 18:53:54 UTC] 🧠 Using cached ENS for 0xf57dcd881ebd1d81df99194abdfa90f9e0e92f11: no ENS
+[2025-04-30 18:53:54 UTC] 🧠 Using cached ENS for 0xf671c6b83f44ead14ca1c5f4a629f1b9b18c8f29: capitanbeto.eth
+[2025-04-30 18:53:54 UTC] 🧠 Using cached ENS for 0xf7793bf9561c32ffbac603ce572fa55643f9cf72: no ENS
+[2025-04-30 18:53:54 UTC] 🧠 Using cached ENS for 0xf9123292b4d958c53aaad8c5df0138ee0e62944b: figment-prime-2.eth
+[2025-04-30 18:53:54 UTC] 🧠 Using cached ENS for 0xf92f430dd8567b0d466358c79594ab58d919a6d4: ellipfra-indexer.eth
+[2025-04-30 18:53:54 UTC] 🧠 Using cached ENS for 0xfb168335f5a3868a03696904ed38fa95fd167c0e: validatrium.eth
+[2025-04-30 18:53:54 UTC] 🧠 Using cached ENS for 0xfc842f81490dcb37e82d416b2d28327dfb24ba9a: grassets-tech-1.eth
+[2025-04-30 18:53:54 UTC] 🧠 Using cached ENS for 0xfeff9093f6b32d0e5cddba743b06a1fedb87c004: p-ops2.eth
+[2025-04-30 18:53:54 UTC] Fetched 90 indexers
+[2025-04-30 18:53:54 UTC] 📊 Indexer Stats:
+[2025-04-30 18:53:54 UTC] Total Indexers: 161
+[2025-04-30 18:53:54 UTC] Active Indexers with staked GRT: 98
+[2025-04-30 18:53:54 UTC] Allocated Indexers: 90
+[2025-04-30 18:53:54 UTC] Small Active Indexers: 17 with less than 1000000.0 GRT staked
+[2025-04-30 18:53:54 UTC] Medium Active Indexers: 44 with more than 1000000.0 and less than 20000000.0 GRT staked
+[2025-04-30 18:53:54 UTC] Large Active Indexers: 18 with more than 20000000.0 and less than 50000000.0 GRT staked
+[2025-04-30 18:53:54 UTC] Mega Active Indexers: 11 with more than 50000000.0 GRT staked
+[2025-04-30 18:53:54 UTC] Performance Categories — Excellent: 37, Fair: 26, Poor: 27
+[2025-04-30 18:53:54 UTC] ✅ Saved CSV file: reports/indexers_output.csv
+[2025-04-30 18:53:54 UTC] ✅ Saved simple indexers HTML table: reports/index.html
+[2025-04-30 18:53:54 UTC] ✅ Saved HTML documentation file: reports/docs.html
+[2025-04-30 18:55:35 UTC] ⚙️  Fetching data from subgraph...
+[2025-04-30 18:55:35 UTC] (Excluding the Upgrade Indexer)
+[2025-04-30 18:55:39 UTC] ✔️ Adjusted total indexer count to exclude Upgrade Indexer: 161
+[2025-04-30 18:55:39 UTC] 🧠 Using cached ENS for 0x0058223c6617cca7ce76fc929ec9724cd43d4542: grassets-tech-2.eth
+[2025-04-30 18:55:39 UTC] 🧠 Using cached ENS for 0x01f17c392614c7ea586e7272ed348efee21b90a3: oraclegen-indexer.eth
+[2025-04-30 18:55:39 UTC] 🧠 Using cached ENS for 0x089f78d8cf0a5ae1b7a581b1910a73f8cb3e4774: darksiders-team.eth
+[2025-04-30 18:55:39 UTC] 🧠 Using cached ENS for 0x0b9d582b7fdd387ba13ad7f453d49af255a8ed5e: dapplooker-indexer.eth
+[2025-04-30 18:55:39 UTC] 🧠 Using cached ENS for 0x0fd8fd1dc8162148cb9413062fe6c6b144335dbf: a1.protofire.eth
+[2025-04-30 18:55:39 UTC] 🧠 Using cached ENS for 0x17def1a43a323c711c7a32101ecf41e58eff54a2: rampdefi4.eth
+[2025-04-30 18:55:39 UTC] 🧠 Using cached ENS for 0x1b7e0068ca1d7929c8c56408d766e1510e54d98d: suntzu-indexer-arb.eth
+[2025-04-30 18:55:39 UTC] 🧠 Using cached ENS for 0x1b92e4cba0f82c85c1298af861247849988c788c: vincenttaglia-indexer.eth
+[2025-04-30 18:55:39 UTC] 🧠 Using cached ENS for 0x269ebeee083ce6f70486a67dc8036a889bf322a9: thomasblock.eth
+[2025-04-30 18:55:39 UTC] 🧠 Using cached ENS for 0x2b3c7d1ef5fdfc0557934019c531d3e70d6200ae: no ENS
+[2025-04-30 18:55:39 UTC] 🧠 Using cached ENS for 0x2e15f3f0d37b191c33ee06e953c8cce4c493b47a: ai.swiftstaking.eth
+[2025-04-30 18:55:39 UTC] 🧠 Using cached ENS for 0x2e8d26e9b0d280738728e71c37bf05e70a636238: moonli.eth
+[2025-04-30 18:55:39 UTC] 🧠 Using cached ENS for 0x2f09092aacd80196fc984908c5a9a7ab3ee4f1ce: p2p-org-arbitrum.eth
+[2025-04-30 18:55:39 UTC] 🧠 Using cached ENS for 0x326c584e0f0eab1f1f83c93cc6ae1acc0feba0bc: graphtronauts-arbitrum.eth
+[2025-04-30 18:55:39 UTC] 🧠 Using cached ENS for 0x32bbd16a94ebb289edceebe77f35acc82664157b: rampdefi3.eth
+[2025-04-30 18:55:39 UTC] 🧠 Using cached ENS for 0x345c9a221e4caa15f78fb8078c441745de48a225: 0xfury.eth
+[2025-04-30 18:55:39 UTC] 🧠 Using cached ENS for 0x35917c0eb91d2e21bef40940d028940484230c06: streamingfastindexer.eth
+[2025-04-30 18:55:39 UTC] 🧠 Using cached ENS for 0x3717cef8020bddee7a18f4efb2bfa88fefdcb1bc: pinax2.eth
+[2025-04-30 18:55:39 UTC] 🧠 Using cached ENS for 0x3863a65ce278a240f9aa2a4b4a48493be59e6139: indexer.nftx.eth
+[2025-04-30 18:55:39 UTC] 🧠 Using cached ENS for 0x38f412c8d6346a17a53ff9ceecd2e01acecd27c0: graphops.eth
+[2025-04-30 18:55:39 UTC] 🧠 Using cached ENS for 0x3b9ba748691f135b71582dc3292e5e3ed7e13341: no ENS
+[2025-04-30 18:55:39 UTC] 🧠 Using cached ENS for 0x3e1536fc83cd5bed83a521a26034ff3e59c6a7c4: differential-graph.eth
+[2025-04-30 18:55:39 UTC] 🧠 Using cached ENS for 0x3f74870f80ff7449fe4c6ff257da5fa72734c970: stake🦑squid-2.eth
+[2025-04-30 18:55:39 UTC] 🧠 Using cached ENS for 0x4207df52f7ff229364899b21e9c4ad36d3d42981: lux8-net.eth
+[2025-04-30 18:55:39 UTC] 🧠 Using cached ENS for 0x474e571ab6dd77489ec3c7ddf9cbc893fcba684c: allnodescom.eth
+[2025-04-30 18:55:39 UTC] 🧠 Using cached ENS for 0x4d67938e9b07681526fe0345a45b770bba88c659: 4block-team.eth
+[2025-04-30 18:55:39 UTC] 🧠 Using cached ENS for 0x4e5c87772c29381bcabc58c3f182b6633b5a274a: indexer.datanexus.eth
+[2025-04-30 18:55:39 UTC] 🧠 Using cached ENS for 0x51637a35f7f054c98ed51904de939b9561d37885: kolbin.eth
+[2025-04-30 18:55:39 UTC] 🧠 Using cached ENS for 0x53dbbc9d916b1840a2c4c26b150ba2e13f36e10f: thoalt-indexer.eth
+[2025-04-30 18:55:39 UTC] 🧠 Using cached ENS for 0x550c1f4814a85aa10f5f061ca8c45e2ee9620226: experimental.infradao.eth
+[2025-04-30 18:55:39 UTC] 🧠 Using cached ENS for 0x59749d1fa9635cd0413aeff5ee295490a7e87f54: no ENS
+[2025-04-30 18:55:39 UTC] 🧠 Using cached ENS for 0x5af569b692b0598721461027dbbecde74d465d99: no ENS
+[2025-04-30 18:55:39 UTC] 🧠 Using cached ENS for 0x5b3c8f7245dfbd9bea22d9c4b975df60a638e5a3: thegraph.mind-heart-soul.eth
+[2025-04-30 18:55:39 UTC] 🧠 Using cached ENS for 0x5ddee9720e17aad28febb55643cd8ab50c51c60b: maplenodes.eth
+[2025-04-30 18:55:39 UTC] 🧠 Using cached ENS for 0x600f2b53719e1dbacf340572b31a9df9921b82fa: no ENS
+[2025-04-30 18:55:39 UTC] 🧠 Using cached ENS for 0x63c9dc729ba7a22bb8605216b24a34b902e5fe94: infradao.eth
+[2025-04-30 18:55:39 UTC] 🧠 Using cached ENS for 0x6f3ce93a09f30f18d728d2364268b5fe9444b89e: no ENS
+[2025-04-30 18:55:39 UTC] 🧠 Using cached ENS for 0x6f8a032b4b1ee622ef2f0fc091bdbb98cfae81a3: indexer.semiotic.eth
+[2025-04-30 18:55:39 UTC] 🧠 Using cached ENS for 0x6f9bb7e454f5b3eb2310343f0e99269dc2bb8a1d: cp0x.eth
+[2025-04-30 18:55:39 UTC] 🧠 Using cached ENS for 0x735f422922bd4d459ea491f46e1bb9295b89f961: no ENS
+[2025-04-30 18:55:39 UTC] 🧠 Using cached ENS for 0x74dbb201ecc0b16934e68377bc13013883d9417b: rickydata-indexer.eth
+[2025-04-30 18:55:39 UTC] 🧠 Using cached ENS for 0x7bb834017672b1135466661d8dd69c5dd0b3bf51: dataservices.eth
+[2025-04-30 18:55:39 UTC] 🧠 Using cached ENS for 0x8bbe94c2894f76406568dfb44e905dac4b7df699: no ENS
+[2025-04-30 18:55:39 UTC] 🧠 Using cached ENS for 0x8f689a83dd52eaa1d5ad6a40c46189b4a0d70b06: art3mis-cloud.eth
+[2025-04-30 18:55:39 UTC] 🧠 Using cached ENS for 0x9082f497bdc512d08ffde50d6fce28e72c2addcf: holographic-indexer.eth
+[2025-04-30 18:55:39 UTC] 🧠 Using cached ENS for 0x918fcc24e6b7f5ec73b4cf766e2393d8fe707541: dacm.eth
+[2025-04-30 18:55:39 UTC] 🧠 Using cached ENS for 0x91f137715ef8e141d6a8074cbbbc53a0f76b09c5: chainodetech-arbitrum.eth
+[2025-04-30 18:55:39 UTC] 🧠 Using cached ENS for 0x920fdeb00ee04dd72f62d8a8f80f13c82ef76c1e: braindexer.eth
+[2025-04-30 18:55:39 UTC] 🧠 Using cached ENS for 0x958ad15ea21fb79b935524cf90c90276031bee20: hashkeycloud.eth
+[2025-04-30 18:55:39 UTC] 🧠 Using cached ENS for 0x9da1017766bfeb2835db4f811516eea68996538b: ryabina.eth
+[2025-04-30 18:55:39 UTC] 🧠 Using cached ENS for 0xa01b06b0e9feb016d5ab669ce89d059bc666e569: no ENS
+[2025-04-30 18:55:39 UTC] 🧠 Using cached ENS for 0xa181d0f242b3730f8a244cc94eda05faf17a43e8: no ENS
+[2025-04-30 18:55:39 UTC] 🧠 Using cached ENS for 0xa28a99b0219a34142a9398a19460fcd69250a2b2: no ENS
+[2025-04-30 18:55:39 UTC] 🧠 Using cached ENS for 0xa4d629ba2ffb3321008d8cec37cca077696bf24d: no ENS
+[2025-04-30 18:55:39 UTC] 🧠 Using cached ENS for 0xa6ff993e0f6253f1b7f55c873577a2f0f0ceb325: no ENS
+[2025-04-30 18:55:39 UTC] 🧠 Using cached ENS for 0xa9b5da22440dedd72535ec0525582ca0b63be5e1: pdp-indexer.eth
+[2025-04-30 18:55:39 UTC] 🧠 Using cached ENS for 0xaa988dcb035518bc0e20082a3148a5d3dfd1776d: stake🦑squid-1.eth
+[2025-04-30 18:55:39 UTC] 🧠 Using cached ENS for 0xaddd3e23599d2b7267067afbcd18830aefca640a: no ENS
+[2025-04-30 18:55:39 UTC] 🧠 Using cached ENS for 0xb4b4570df6f7fe320f10fdfb702dba7e35244550: nodeify.eth
+[2025-04-30 18:55:39 UTC] 🧠 Using cached ENS for 0xb54c7c9fa1a51300e6054b70ae9952c1fb2800b4: kukisglobal.eth
+[2025-04-30 18:55:39 UTC] 🧠 Using cached ENS for 0xb8ca929e2bd96548cabcabc56cfc9a5147cef0ff: waynewayner.eth
+[2025-04-30 18:55:39 UTC] 🧠 Using cached ENS for 0xc55c63563efb36f7cc65ac3060c52987c6694b37: figment-prime.eth
+[2025-04-30 18:55:39 UTC] 🧠 Using cached ENS for 0xc9014686f6336ad558b539565d5dff840b339082: rampdefigrt.eth
+[2025-04-30 18:55:39 UTC] 🧠 Using cached ENS for 0xcba919cf1ee9c537545975d9968718a09d20f071: no ENS
+[2025-04-30 18:55:39 UTC] 🧠 Using cached ENS for 0xd9819426c82e2b8fc58b9b62a78efe93f78077c6: no ENS
+[2025-04-30 18:55:39 UTC] 🧠 Using cached ENS for 0xda20dde459c8d918f81566995d899a046d4d8503: dsrvlabs-indexer-01.eth
+[2025-04-30 18:55:39 UTC] 🧠 Using cached ENS for 0xdc7daef4d0751a9f6ec28b06d6d9475b13eb0918: bitnordic.eth
+[2025-04-30 18:55:39 UTC] 🧠 Using cached ENS for 0xdeb712db301285ed483ef9e02dd08a1980f273f1: easy2stake-com.eth
+[2025-04-30 18:55:39 UTC] 🧠 Using cached ENS for 0xdec965f0604125be05cd8a136c85d02ef344d61a: stakesquid-3.eth
+[2025-04-30 18:55:39 UTC] 🧠 Using cached ENS for 0xdecba5154aab37ae5e381a19f804f3af4d1bcbb5: 0y.decisionbasis.eth
+[2025-04-30 18:55:39 UTC] 🧠 Using cached ENS for 0xe0ceec6daa59cc951f3f71d6fc4221e55ef6c386: arb.stake-machine.eth
+[2025-04-30 18:55:39 UTC] 🧠 Using cached ENS for 0xe13840a2e92e0cb17a246609b432d0fa2e418774: lunanova-indexer.eth
+[2025-04-30 18:55:39 UTC] 🧠 Using cached ENS for 0xe48b586eeb81bde60f14b0b8d80ddd06c7a24720: no ENS
+[2025-04-30 18:55:39 UTC] 🧠 Using cached ENS for 0xe63e935fba572784d5aa40715e372e7948bbdb12: chorusone-thegraph.eth
+[2025-04-30 18:55:39 UTC] 🧠 Using cached ENS for 0xe6de2325ef1aac1f058fae59d3c38a472f569846: no ENS
+[2025-04-30 18:55:39 UTC] 🧠 Using cached ENS for 0xe91273727203bcc827521fc8b0c762d435c3c5d0: no ENS
+[2025-04-30 18:55:39 UTC] 🧠 Using cached ENS for 0xe9e284277648fcdb09b8efc1832c73c09b5ecf59: no ENS
+[2025-04-30 18:55:39 UTC] 🧠 Using cached ENS for 0xeccdf8231326a9c5aad32df76a633aaa4c49b104: catapulta.eth
+[2025-04-30 18:55:39 UTC] 🧠 Using cached ENS for 0xedca8740873152ff30a2696add66d1ab41882beb: pinax.eth
+[2025-04-30 18:55:39 UTC] 🧠 Using cached ENS for 0xeeeee689aa442c607105f29f06d00d2f748776b2: grt.stakecn.eth
+[2025-04-30 18:55:39 UTC] 🧠 Using cached ENS for 0xf00f7157fa8fd0420b87956d46058a16b2f23adc: p2p-org-booster.eth
+[2025-04-30 18:55:39 UTC] 🧠 Using cached ENS for 0xf0e33495afe697dbe32168bd0743ba32ebb978a3: blockonaut.eth
+[2025-04-30 18:55:39 UTC] 🧠 Using cached ENS for 0xf57dcd881ebd1d81df99194abdfa90f9e0e92f11: no ENS
+[2025-04-30 18:55:39 UTC] 🧠 Using cached ENS for 0xf671c6b83f44ead14ca1c5f4a629f1b9b18c8f29: capitanbeto.eth
+[2025-04-30 18:55:39 UTC] 🧠 Using cached ENS for 0xf7793bf9561c32ffbac603ce572fa55643f9cf72: no ENS
+[2025-04-30 18:55:39 UTC] 🧠 Using cached ENS for 0xf9123292b4d958c53aaad8c5df0138ee0e62944b: figment-prime-2.eth
+[2025-04-30 18:55:39 UTC] 🧠 Using cached ENS for 0xf92f430dd8567b0d466358c79594ab58d919a6d4: ellipfra-indexer.eth
+[2025-04-30 18:55:39 UTC] 🧠 Using cached ENS for 0xfb168335f5a3868a03696904ed38fa95fd167c0e: validatrium.eth
+[2025-04-30 18:55:39 UTC] 🧠 Using cached ENS for 0xfc842f81490dcb37e82d416b2d28327dfb24ba9a: grassets-tech-1.eth
+[2025-04-30 18:55:39 UTC] 🧠 Using cached ENS for 0xfeff9093f6b32d0e5cddba743b06a1fedb87c004: p-ops2.eth
+[2025-04-30 18:55:39 UTC] Fetched 90 indexers
+[2025-04-30 18:55:39 UTC] 📊 Indexer Stats:
+[2025-04-30 18:55:39 UTC] Total Indexers: 161
+[2025-04-30 18:55:39 UTC] Active Indexers with staked GRT: 98
+[2025-04-30 18:55:39 UTC] Allocated Indexers: 90
+[2025-04-30 18:55:39 UTC] Small Active Indexers: 17 with less than 1000000.0 GRT staked
+[2025-04-30 18:55:39 UTC] Medium Active Indexers: 44 with more than 1000000.0 and less than 20000000.0 GRT staked
+[2025-04-30 18:55:39 UTC] Large Active Indexers: 18 with more than 20000000.0 and less than 50000000.0 GRT staked
+[2025-04-30 18:55:39 UTC] Mega Active Indexers: 11 with more than 50000000.0 GRT staked
+[2025-04-30 18:55:39 UTC] Performance Categories — Excellent: 37, Fair: 26, Poor: 27
+[2025-04-30 18:55:39 UTC] ✅ Saved CSV file: reports/indexers_output.csv
+[2025-04-30 18:55:39 UTC] ✅ Saved simple indexers HTML table: reports/index.html
+[2025-04-30 18:55:39 UTC] ✅ Saved HTML documentation file: reports/docs.html
+[2025-04-30 19:00:08 UTC] ⚙️  Fetching data from subgraph...
+[2025-04-30 19:00:08 UTC] (Excluding the Upgrade Indexer)
+[2025-04-30 19:00:15 UTC] ✔️ Adjusted total indexer count to exclude Upgrade Indexer: 161
+[2025-04-30 19:00:15 UTC] 🧠 Using cached ENS for 0x0058223c6617cca7ce76fc929ec9724cd43d4542: grassets-tech-2.eth
+[2025-04-30 19:00:15 UTC] 🧠 Using cached ENS for 0x01f17c392614c7ea586e7272ed348efee21b90a3: oraclegen-indexer.eth
+[2025-04-30 19:00:15 UTC] 🧠 Using cached ENS for 0x089f78d8cf0a5ae1b7a581b1910a73f8cb3e4774: darksiders-team.eth
+[2025-04-30 19:00:15 UTC] 🧠 Using cached ENS for 0x0b9d582b7fdd387ba13ad7f453d49af255a8ed5e: dapplooker-indexer.eth
+[2025-04-30 19:00:15 UTC] 🧠 Using cached ENS for 0x0fd8fd1dc8162148cb9413062fe6c6b144335dbf: a1.protofire.eth
+[2025-04-30 19:00:15 UTC] 🧠 Using cached ENS for 0x17def1a43a323c711c7a32101ecf41e58eff54a2: rampdefi4.eth
+[2025-04-30 19:00:15 UTC] 🧠 Using cached ENS for 0x1b7e0068ca1d7929c8c56408d766e1510e54d98d: suntzu-indexer-arb.eth
+[2025-04-30 19:00:15 UTC] 🧠 Using cached ENS for 0x1b92e4cba0f82c85c1298af861247849988c788c: vincenttaglia-indexer.eth
+[2025-04-30 19:00:15 UTC] 🧠 Using cached ENS for 0x269ebeee083ce6f70486a67dc8036a889bf322a9: thomasblock.eth
+[2025-04-30 19:00:15 UTC] 🧠 Using cached ENS for 0x2b3c7d1ef5fdfc0557934019c531d3e70d6200ae: no ENS
+[2025-04-30 19:00:15 UTC] 🧠 Using cached ENS for 0x2e15f3f0d37b191c33ee06e953c8cce4c493b47a: ai.swiftstaking.eth
+[2025-04-30 19:00:15 UTC] 🧠 Using cached ENS for 0x2e8d26e9b0d280738728e71c37bf05e70a636238: moonli.eth
+[2025-04-30 19:00:15 UTC] 🧠 Using cached ENS for 0x2f09092aacd80196fc984908c5a9a7ab3ee4f1ce: p2p-org-arbitrum.eth
+[2025-04-30 19:00:15 UTC] 🧠 Using cached ENS for 0x326c584e0f0eab1f1f83c93cc6ae1acc0feba0bc: graphtronauts-arbitrum.eth
+[2025-04-30 19:00:15 UTC] 🧠 Using cached ENS for 0x32bbd16a94ebb289edceebe77f35acc82664157b: rampdefi3.eth
+[2025-04-30 19:00:15 UTC] 🧠 Using cached ENS for 0x345c9a221e4caa15f78fb8078c441745de48a225: 0xfury.eth
+[2025-04-30 19:00:15 UTC] 🧠 Using cached ENS for 0x35917c0eb91d2e21bef40940d028940484230c06: streamingfastindexer.eth
+[2025-04-30 19:00:15 UTC] 🧠 Using cached ENS for 0x3717cef8020bddee7a18f4efb2bfa88fefdcb1bc: pinax2.eth
+[2025-04-30 19:00:15 UTC] 🧠 Using cached ENS for 0x3863a65ce278a240f9aa2a4b4a48493be59e6139: indexer.nftx.eth
+[2025-04-30 19:00:15 UTC] 🧠 Using cached ENS for 0x38f412c8d6346a17a53ff9ceecd2e01acecd27c0: graphops.eth
+[2025-04-30 19:00:15 UTC] 🧠 Using cached ENS for 0x3b9ba748691f135b71582dc3292e5e3ed7e13341: no ENS
+[2025-04-30 19:00:15 UTC] 🧠 Using cached ENS for 0x3e1536fc83cd5bed83a521a26034ff3e59c6a7c4: differential-graph.eth
+[2025-04-30 19:00:15 UTC] 🧠 Using cached ENS for 0x3f74870f80ff7449fe4c6ff257da5fa72734c970: stake🦑squid-2.eth
+[2025-04-30 19:00:15 UTC] 🧠 Using cached ENS for 0x4207df52f7ff229364899b21e9c4ad36d3d42981: lux8-net.eth
+[2025-04-30 19:00:15 UTC] 🧠 Using cached ENS for 0x474e571ab6dd77489ec3c7ddf9cbc893fcba684c: allnodescom.eth
+[2025-04-30 19:00:15 UTC] 🧠 Using cached ENS for 0x4d67938e9b07681526fe0345a45b770bba88c659: 4block-team.eth
+[2025-04-30 19:00:15 UTC] 🧠 Using cached ENS for 0x4e5c87772c29381bcabc58c3f182b6633b5a274a: indexer.datanexus.eth
+[2025-04-30 19:00:15 UTC] 🧠 Using cached ENS for 0x51637a35f7f054c98ed51904de939b9561d37885: kolbin.eth
+[2025-04-30 19:00:15 UTC] 🧠 Using cached ENS for 0x53dbbc9d916b1840a2c4c26b150ba2e13f36e10f: thoalt-indexer.eth
+[2025-04-30 19:00:15 UTC] 🧠 Using cached ENS for 0x550c1f4814a85aa10f5f061ca8c45e2ee9620226: experimental.infradao.eth
+[2025-04-30 19:00:15 UTC] 🧠 Using cached ENS for 0x59749d1fa9635cd0413aeff5ee295490a7e87f54: no ENS
+[2025-04-30 19:00:15 UTC] 🧠 Using cached ENS for 0x5af569b692b0598721461027dbbecde74d465d99: no ENS
+[2025-04-30 19:00:15 UTC] 🧠 Using cached ENS for 0x5b3c8f7245dfbd9bea22d9c4b975df60a638e5a3: thegraph.mind-heart-soul.eth
+[2025-04-30 19:00:15 UTC] 🧠 Using cached ENS for 0x5ddee9720e17aad28febb55643cd8ab50c51c60b: maplenodes.eth
+[2025-04-30 19:00:15 UTC] 🧠 Using cached ENS for 0x600f2b53719e1dbacf340572b31a9df9921b82fa: no ENS
+[2025-04-30 19:00:15 UTC] 🧠 Using cached ENS for 0x63c9dc729ba7a22bb8605216b24a34b902e5fe94: infradao.eth
+[2025-04-30 19:00:15 UTC] 🧠 Using cached ENS for 0x6f3ce93a09f30f18d728d2364268b5fe9444b89e: no ENS
+[2025-04-30 19:00:15 UTC] 🧠 Using cached ENS for 0x6f8a032b4b1ee622ef2f0fc091bdbb98cfae81a3: indexer.semiotic.eth
+[2025-04-30 19:00:15 UTC] 🧠 Using cached ENS for 0x6f9bb7e454f5b3eb2310343f0e99269dc2bb8a1d: cp0x.eth
+[2025-04-30 19:00:15 UTC] 🧠 Using cached ENS for 0x735f422922bd4d459ea491f46e1bb9295b89f961: no ENS
+[2025-04-30 19:00:15 UTC] 🧠 Using cached ENS for 0x74dbb201ecc0b16934e68377bc13013883d9417b: rickydata-indexer.eth
+[2025-04-30 19:00:15 UTC] 🧠 Using cached ENS for 0x7bb834017672b1135466661d8dd69c5dd0b3bf51: dataservices.eth
+[2025-04-30 19:00:15 UTC] 🧠 Using cached ENS for 0x8bbe94c2894f76406568dfb44e905dac4b7df699: no ENS
+[2025-04-30 19:00:15 UTC] 🧠 Using cached ENS for 0x8f689a83dd52eaa1d5ad6a40c46189b4a0d70b06: art3mis-cloud.eth
+[2025-04-30 19:00:15 UTC] 🧠 Using cached ENS for 0x9082f497bdc512d08ffde50d6fce28e72c2addcf: holographic-indexer.eth
+[2025-04-30 19:00:15 UTC] 🧠 Using cached ENS for 0x918fcc24e6b7f5ec73b4cf766e2393d8fe707541: dacm.eth
+[2025-04-30 19:00:15 UTC] 🧠 Using cached ENS for 0x91f137715ef8e141d6a8074cbbbc53a0f76b09c5: chainodetech-arbitrum.eth
+[2025-04-30 19:00:15 UTC] 🧠 Using cached ENS for 0x920fdeb00ee04dd72f62d8a8f80f13c82ef76c1e: braindexer.eth
+[2025-04-30 19:00:15 UTC] 🧠 Using cached ENS for 0x958ad15ea21fb79b935524cf90c90276031bee20: hashkeycloud.eth
+[2025-04-30 19:00:15 UTC] 🧠 Using cached ENS for 0x9da1017766bfeb2835db4f811516eea68996538b: ryabina.eth
+[2025-04-30 19:00:15 UTC] 🧠 Using cached ENS for 0xa01b06b0e9feb016d5ab669ce89d059bc666e569: no ENS
+[2025-04-30 19:00:15 UTC] 🧠 Using cached ENS for 0xa181d0f242b3730f8a244cc94eda05faf17a43e8: no ENS
+[2025-04-30 19:00:15 UTC] 🧠 Using cached ENS for 0xa28a99b0219a34142a9398a19460fcd69250a2b2: no ENS
+[2025-04-30 19:00:15 UTC] 🧠 Using cached ENS for 0xa4d629ba2ffb3321008d8cec37cca077696bf24d: no ENS
+[2025-04-30 19:00:15 UTC] 🧠 Using cached ENS for 0xa6ff993e0f6253f1b7f55c873577a2f0f0ceb325: no ENS
+[2025-04-30 19:00:15 UTC] 🧠 Using cached ENS for 0xa9b5da22440dedd72535ec0525582ca0b63be5e1: pdp-indexer.eth
+[2025-04-30 19:00:15 UTC] 🧠 Using cached ENS for 0xaa988dcb035518bc0e20082a3148a5d3dfd1776d: stake🦑squid-1.eth
+[2025-04-30 19:00:15 UTC] 🧠 Using cached ENS for 0xaddd3e23599d2b7267067afbcd18830aefca640a: no ENS
+[2025-04-30 19:00:15 UTC] 🧠 Using cached ENS for 0xb4b4570df6f7fe320f10fdfb702dba7e35244550: nodeify.eth
+[2025-04-30 19:00:15 UTC] 🧠 Using cached ENS for 0xb54c7c9fa1a51300e6054b70ae9952c1fb2800b4: kukisglobal.eth
+[2025-04-30 19:00:15 UTC] 🧠 Using cached ENS for 0xb8ca929e2bd96548cabcabc56cfc9a5147cef0ff: waynewayner.eth
+[2025-04-30 19:00:15 UTC] 🧠 Using cached ENS for 0xc55c63563efb36f7cc65ac3060c52987c6694b37: figment-prime.eth
+[2025-04-30 19:00:15 UTC] 🧠 Using cached ENS for 0xc9014686f6336ad558b539565d5dff840b339082: rampdefigrt.eth
+[2025-04-30 19:00:15 UTC] 🧠 Using cached ENS for 0xcba919cf1ee9c537545975d9968718a09d20f071: no ENS
+[2025-04-30 19:00:15 UTC] 🧠 Using cached ENS for 0xd9819426c82e2b8fc58b9b62a78efe93f78077c6: no ENS
+[2025-04-30 19:00:15 UTC] 🧠 Using cached ENS for 0xda20dde459c8d918f81566995d899a046d4d8503: dsrvlabs-indexer-01.eth
+[2025-04-30 19:00:15 UTC] 🧠 Using cached ENS for 0xdc7daef4d0751a9f6ec28b06d6d9475b13eb0918: bitnordic.eth
+[2025-04-30 19:00:15 UTC] 🧠 Using cached ENS for 0xdeb712db301285ed483ef9e02dd08a1980f273f1: easy2stake-com.eth
+[2025-04-30 19:00:15 UTC] 🧠 Using cached ENS for 0xdec965f0604125be05cd8a136c85d02ef344d61a: stakesquid-3.eth
+[2025-04-30 19:00:15 UTC] 🧠 Using cached ENS for 0xdecba5154aab37ae5e381a19f804f3af4d1bcbb5: 0y.decisionbasis.eth
+[2025-04-30 19:00:15 UTC] 🧠 Using cached ENS for 0xe0ceec6daa59cc951f3f71d6fc4221e55ef6c386: arb.stake-machine.eth
+[2025-04-30 19:00:15 UTC] 🧠 Using cached ENS for 0xe13840a2e92e0cb17a246609b432d0fa2e418774: lunanova-indexer.eth
+[2025-04-30 19:00:15 UTC] 🧠 Using cached ENS for 0xe48b586eeb81bde60f14b0b8d80ddd06c7a24720: no ENS
+[2025-04-30 19:00:15 UTC] 🧠 Using cached ENS for 0xe63e935fba572784d5aa40715e372e7948bbdb12: chorusone-thegraph.eth
+[2025-04-30 19:00:15 UTC] 🧠 Using cached ENS for 0xe6de2325ef1aac1f058fae59d3c38a472f569846: no ENS
+[2025-04-30 19:00:15 UTC] 🧠 Using cached ENS for 0xe91273727203bcc827521fc8b0c762d435c3c5d0: no ENS
+[2025-04-30 19:00:15 UTC] 🧠 Using cached ENS for 0xe9e284277648fcdb09b8efc1832c73c09b5ecf59: no ENS
+[2025-04-30 19:00:15 UTC] 🧠 Using cached ENS for 0xeccdf8231326a9c5aad32df76a633aaa4c49b104: catapulta.eth
+[2025-04-30 19:00:15 UTC] 🧠 Using cached ENS for 0xedca8740873152ff30a2696add66d1ab41882beb: pinax.eth
+[2025-04-30 19:00:15 UTC] 🧠 Using cached ENS for 0xeeeee689aa442c607105f29f06d00d2f748776b2: grt.stakecn.eth
+[2025-04-30 19:00:15 UTC] 🧠 Using cached ENS for 0xf00f7157fa8fd0420b87956d46058a16b2f23adc: p2p-org-booster.eth
+[2025-04-30 19:00:15 UTC] 🧠 Using cached ENS for 0xf0e33495afe697dbe32168bd0743ba32ebb978a3: blockonaut.eth
+[2025-04-30 19:00:15 UTC] 🧠 Using cached ENS for 0xf57dcd881ebd1d81df99194abdfa90f9e0e92f11: no ENS
+[2025-04-30 19:00:15 UTC] 🧠 Using cached ENS for 0xf671c6b83f44ead14ca1c5f4a629f1b9b18c8f29: capitanbeto.eth
+[2025-04-30 19:00:15 UTC] 🧠 Using cached ENS for 0xf7793bf9561c32ffbac603ce572fa55643f9cf72: no ENS
+[2025-04-30 19:00:15 UTC] 🧠 Using cached ENS for 0xf9123292b4d958c53aaad8c5df0138ee0e62944b: figment-prime-2.eth
+[2025-04-30 19:00:15 UTC] 🧠 Using cached ENS for 0xf92f430dd8567b0d466358c79594ab58d919a6d4: ellipfra-indexer.eth
+[2025-04-30 19:00:15 UTC] 🧠 Using cached ENS for 0xfb168335f5a3868a03696904ed38fa95fd167c0e: validatrium.eth
+[2025-04-30 19:00:15 UTC] 🧠 Using cached ENS for 0xfc842f81490dcb37e82d416b2d28327dfb24ba9a: grassets-tech-1.eth
+[2025-04-30 19:00:15 UTC] 🧠 Using cached ENS for 0xfeff9093f6b32d0e5cddba743b06a1fedb87c004: p-ops2.eth
+[2025-04-30 19:00:15 UTC] Fetched 90 indexers
+[2025-04-30 19:00:15 UTC] 📊 Indexer Stats:
+[2025-04-30 19:00:15 UTC] Total Indexers: 161
+[2025-04-30 19:00:15 UTC] Active Indexers with staked GRT: 98
+[2025-04-30 19:00:15 UTC] Allocated Indexers: 90
+[2025-04-30 19:00:15 UTC] Small Active Indexers: 17 with less than 1000000.0 GRT staked
+[2025-04-30 19:00:15 UTC] Medium Active Indexers: 44 with more than 1000000.0 and less than 20000000.0 GRT staked
+[2025-04-30 19:00:15 UTC] Large Active Indexers: 18 with more than 20000000.0 and less than 50000000.0 GRT staked
+[2025-04-30 19:00:15 UTC] Mega Active Indexers: 11 with more than 50000000.0 GRT staked
+[2025-04-30 19:00:15 UTC] Performance Categories — Excellent: 37, Fair: 26, Poor: 27
+[2025-04-30 19:00:16 UTC] ✅ Saved CSV file: reports/indexers_output.csv
+[2025-04-30 19:00:16 UTC] ✅ Saved simple indexers HTML table: reports/index.html
+[2025-04-30 19:00:16 UTC] ✅ Saved HTML documentation file: reports/docs.html
+[2025-04-30 19:03:03 UTC] ⚙️  Fetching data from subgraph...
+[2025-04-30 19:03:03 UTC] (Excluding the Upgrade Indexer)
+[2025-04-30 19:03:07 UTC] ✔️ Adjusted total indexer count to exclude Upgrade Indexer: 161
+[2025-04-30 19:03:07 UTC] 🧠 Using cached ENS for 0x0058223c6617cca7ce76fc929ec9724cd43d4542: grassets-tech-2.eth
+[2025-04-30 19:03:07 UTC] 🧠 Using cached ENS for 0x01f17c392614c7ea586e7272ed348efee21b90a3: oraclegen-indexer.eth
+[2025-04-30 19:03:07 UTC] 🧠 Using cached ENS for 0x089f78d8cf0a5ae1b7a581b1910a73f8cb3e4774: darksiders-team.eth
+[2025-04-30 19:03:07 UTC] 🧠 Using cached ENS for 0x0b9d582b7fdd387ba13ad7f453d49af255a8ed5e: dapplooker-indexer.eth
+[2025-04-30 19:03:07 UTC] 🧠 Using cached ENS for 0x0fd8fd1dc8162148cb9413062fe6c6b144335dbf: a1.protofire.eth
+[2025-04-30 19:03:07 UTC] 🧠 Using cached ENS for 0x17def1a43a323c711c7a32101ecf41e58eff54a2: rampdefi4.eth
+[2025-04-30 19:03:07 UTC] 🧠 Using cached ENS for 0x1b7e0068ca1d7929c8c56408d766e1510e54d98d: suntzu-indexer-arb.eth
+[2025-04-30 19:03:07 UTC] 🧠 Using cached ENS for 0x1b92e4cba0f82c85c1298af861247849988c788c: vincenttaglia-indexer.eth
+[2025-04-30 19:03:07 UTC] 🧠 Using cached ENS for 0x269ebeee083ce6f70486a67dc8036a889bf322a9: thomasblock.eth
+[2025-04-30 19:03:07 UTC] 🧠 Using cached ENS for 0x2b3c7d1ef5fdfc0557934019c531d3e70d6200ae: no ENS
+[2025-04-30 19:03:07 UTC] 🧠 Using cached ENS for 0x2e15f3f0d37b191c33ee06e953c8cce4c493b47a: ai.swiftstaking.eth
+[2025-04-30 19:03:07 UTC] 🧠 Using cached ENS for 0x2e8d26e9b0d280738728e71c37bf05e70a636238: moonli.eth
+[2025-04-30 19:03:07 UTC] 🧠 Using cached ENS for 0x2f09092aacd80196fc984908c5a9a7ab3ee4f1ce: p2p-org-arbitrum.eth
+[2025-04-30 19:03:07 UTC] 🧠 Using cached ENS for 0x326c584e0f0eab1f1f83c93cc6ae1acc0feba0bc: graphtronauts-arbitrum.eth
+[2025-04-30 19:03:07 UTC] 🧠 Using cached ENS for 0x32bbd16a94ebb289edceebe77f35acc82664157b: rampdefi3.eth
+[2025-04-30 19:03:07 UTC] 🧠 Using cached ENS for 0x345c9a221e4caa15f78fb8078c441745de48a225: 0xfury.eth
+[2025-04-30 19:03:07 UTC] 🧠 Using cached ENS for 0x35917c0eb91d2e21bef40940d028940484230c06: streamingfastindexer.eth
+[2025-04-30 19:03:07 UTC] 🧠 Using cached ENS for 0x3717cef8020bddee7a18f4efb2bfa88fefdcb1bc: pinax2.eth
+[2025-04-30 19:03:07 UTC] 🧠 Using cached ENS for 0x3863a65ce278a240f9aa2a4b4a48493be59e6139: indexer.nftx.eth
+[2025-04-30 19:03:07 UTC] 🧠 Using cached ENS for 0x38f412c8d6346a17a53ff9ceecd2e01acecd27c0: graphops.eth
+[2025-04-30 19:03:07 UTC] 🧠 Using cached ENS for 0x3b9ba748691f135b71582dc3292e5e3ed7e13341: no ENS
+[2025-04-30 19:03:07 UTC] 🧠 Using cached ENS for 0x3e1536fc83cd5bed83a521a26034ff3e59c6a7c4: differential-graph.eth
+[2025-04-30 19:03:07 UTC] 🧠 Using cached ENS for 0x3f74870f80ff7449fe4c6ff257da5fa72734c970: stake🦑squid-2.eth
+[2025-04-30 19:03:07 UTC] 🧠 Using cached ENS for 0x4207df52f7ff229364899b21e9c4ad36d3d42981: lux8-net.eth
+[2025-04-30 19:03:07 UTC] 🧠 Using cached ENS for 0x474e571ab6dd77489ec3c7ddf9cbc893fcba684c: allnodescom.eth
+[2025-04-30 19:03:07 UTC] 🧠 Using cached ENS for 0x4d67938e9b07681526fe0345a45b770bba88c659: 4block-team.eth
+[2025-04-30 19:03:07 UTC] 🧠 Using cached ENS for 0x4e5c87772c29381bcabc58c3f182b6633b5a274a: indexer.datanexus.eth
+[2025-04-30 19:03:07 UTC] 🧠 Using cached ENS for 0x51637a35f7f054c98ed51904de939b9561d37885: kolbin.eth
+[2025-04-30 19:03:07 UTC] 🧠 Using cached ENS for 0x53dbbc9d916b1840a2c4c26b150ba2e13f36e10f: thoalt-indexer.eth
+[2025-04-30 19:03:07 UTC] 🧠 Using cached ENS for 0x550c1f4814a85aa10f5f061ca8c45e2ee9620226: experimental.infradao.eth
+[2025-04-30 19:03:07 UTC] 🧠 Using cached ENS for 0x59749d1fa9635cd0413aeff5ee295490a7e87f54: no ENS
+[2025-04-30 19:03:07 UTC] 🧠 Using cached ENS for 0x5af569b692b0598721461027dbbecde74d465d99: no ENS
+[2025-04-30 19:03:07 UTC] 🧠 Using cached ENS for 0x5b3c8f7245dfbd9bea22d9c4b975df60a638e5a3: thegraph.mind-heart-soul.eth
+[2025-04-30 19:03:07 UTC] 🧠 Using cached ENS for 0x5ddee9720e17aad28febb55643cd8ab50c51c60b: maplenodes.eth
+[2025-04-30 19:03:07 UTC] 🧠 Using cached ENS for 0x600f2b53719e1dbacf340572b31a9df9921b82fa: no ENS
+[2025-04-30 19:03:07 UTC] 🧠 Using cached ENS for 0x63c9dc729ba7a22bb8605216b24a34b902e5fe94: infradao.eth
+[2025-04-30 19:03:07 UTC] 🧠 Using cached ENS for 0x6f3ce93a09f30f18d728d2364268b5fe9444b89e: no ENS
+[2025-04-30 19:03:07 UTC] 🧠 Using cached ENS for 0x6f8a032b4b1ee622ef2f0fc091bdbb98cfae81a3: indexer.semiotic.eth
+[2025-04-30 19:03:07 UTC] 🧠 Using cached ENS for 0x6f9bb7e454f5b3eb2310343f0e99269dc2bb8a1d: cp0x.eth
+[2025-04-30 19:03:07 UTC] 🧠 Using cached ENS for 0x735f422922bd4d459ea491f46e1bb9295b89f961: no ENS
+[2025-04-30 19:03:07 UTC] 🧠 Using cached ENS for 0x74dbb201ecc0b16934e68377bc13013883d9417b: rickydata-indexer.eth
+[2025-04-30 19:03:07 UTC] 🧠 Using cached ENS for 0x7bb834017672b1135466661d8dd69c5dd0b3bf51: dataservices.eth
+[2025-04-30 19:03:07 UTC] 🧠 Using cached ENS for 0x8bbe94c2894f76406568dfb44e905dac4b7df699: no ENS
+[2025-04-30 19:03:07 UTC] 🧠 Using cached ENS for 0x8f689a83dd52eaa1d5ad6a40c46189b4a0d70b06: art3mis-cloud.eth
+[2025-04-30 19:03:07 UTC] 🧠 Using cached ENS for 0x9082f497bdc512d08ffde50d6fce28e72c2addcf: holographic-indexer.eth
+[2025-04-30 19:03:07 UTC] 🧠 Using cached ENS for 0x918fcc24e6b7f5ec73b4cf766e2393d8fe707541: dacm.eth
+[2025-04-30 19:03:07 UTC] 🧠 Using cached ENS for 0x91f137715ef8e141d6a8074cbbbc53a0f76b09c5: chainodetech-arbitrum.eth
+[2025-04-30 19:03:07 UTC] 🧠 Using cached ENS for 0x920fdeb00ee04dd72f62d8a8f80f13c82ef76c1e: braindexer.eth
+[2025-04-30 19:03:07 UTC] 🧠 Using cached ENS for 0x958ad15ea21fb79b935524cf90c90276031bee20: hashkeycloud.eth
+[2025-04-30 19:03:07 UTC] 🧠 Using cached ENS for 0x9da1017766bfeb2835db4f811516eea68996538b: ryabina.eth
+[2025-04-30 19:03:07 UTC] 🧠 Using cached ENS for 0xa01b06b0e9feb016d5ab669ce89d059bc666e569: no ENS
+[2025-04-30 19:03:07 UTC] 🧠 Using cached ENS for 0xa181d0f242b3730f8a244cc94eda05faf17a43e8: no ENS
+[2025-04-30 19:03:07 UTC] 🧠 Using cached ENS for 0xa28a99b0219a34142a9398a19460fcd69250a2b2: no ENS
+[2025-04-30 19:03:07 UTC] 🧠 Using cached ENS for 0xa4d629ba2ffb3321008d8cec37cca077696bf24d: no ENS
+[2025-04-30 19:03:07 UTC] 🧠 Using cached ENS for 0xa6ff993e0f6253f1b7f55c873577a2f0f0ceb325: no ENS
+[2025-04-30 19:03:07 UTC] 🧠 Using cached ENS for 0xa9b5da22440dedd72535ec0525582ca0b63be5e1: pdp-indexer.eth
+[2025-04-30 19:03:07 UTC] 🧠 Using cached ENS for 0xaa988dcb035518bc0e20082a3148a5d3dfd1776d: stake🦑squid-1.eth
+[2025-04-30 19:03:07 UTC] 🧠 Using cached ENS for 0xaddd3e23599d2b7267067afbcd18830aefca640a: no ENS
+[2025-04-30 19:03:07 UTC] 🧠 Using cached ENS for 0xb4b4570df6f7fe320f10fdfb702dba7e35244550: nodeify.eth
+[2025-04-30 19:03:07 UTC] 🧠 Using cached ENS for 0xb54c7c9fa1a51300e6054b70ae9952c1fb2800b4: kukisglobal.eth
+[2025-04-30 19:03:07 UTC] 🧠 Using cached ENS for 0xb8ca929e2bd96548cabcabc56cfc9a5147cef0ff: waynewayner.eth
+[2025-04-30 19:03:07 UTC] 🧠 Using cached ENS for 0xc55c63563efb36f7cc65ac3060c52987c6694b37: figment-prime.eth
+[2025-04-30 19:03:07 UTC] 🧠 Using cached ENS for 0xc9014686f6336ad558b539565d5dff840b339082: rampdefigrt.eth
+[2025-04-30 19:03:07 UTC] 🧠 Using cached ENS for 0xcba919cf1ee9c537545975d9968718a09d20f071: no ENS
+[2025-04-30 19:03:07 UTC] 🧠 Using cached ENS for 0xd9819426c82e2b8fc58b9b62a78efe93f78077c6: no ENS
+[2025-04-30 19:03:07 UTC] 🧠 Using cached ENS for 0xda20dde459c8d918f81566995d899a046d4d8503: dsrvlabs-indexer-01.eth
+[2025-04-30 19:03:07 UTC] 🧠 Using cached ENS for 0xdc7daef4d0751a9f6ec28b06d6d9475b13eb0918: bitnordic.eth
+[2025-04-30 19:03:07 UTC] 🧠 Using cached ENS for 0xdeb712db301285ed483ef9e02dd08a1980f273f1: easy2stake-com.eth
+[2025-04-30 19:03:07 UTC] 🧠 Using cached ENS for 0xdec965f0604125be05cd8a136c85d02ef344d61a: stakesquid-3.eth
+[2025-04-30 19:03:07 UTC] 🧠 Using cached ENS for 0xdecba5154aab37ae5e381a19f804f3af4d1bcbb5: 0y.decisionbasis.eth
+[2025-04-30 19:03:07 UTC] 🧠 Using cached ENS for 0xe0ceec6daa59cc951f3f71d6fc4221e55ef6c386: arb.stake-machine.eth
+[2025-04-30 19:03:07 UTC] 🧠 Using cached ENS for 0xe13840a2e92e0cb17a246609b432d0fa2e418774: lunanova-indexer.eth
+[2025-04-30 19:03:07 UTC] 🧠 Using cached ENS for 0xe48b586eeb81bde60f14b0b8d80ddd06c7a24720: no ENS
+[2025-04-30 19:03:07 UTC] 🧠 Using cached ENS for 0xe63e935fba572784d5aa40715e372e7948bbdb12: chorusone-thegraph.eth
+[2025-04-30 19:03:07 UTC] 🧠 Using cached ENS for 0xe6de2325ef1aac1f058fae59d3c38a472f569846: no ENS
+[2025-04-30 19:03:07 UTC] 🧠 Using cached ENS for 0xe91273727203bcc827521fc8b0c762d435c3c5d0: no ENS
+[2025-04-30 19:03:07 UTC] 🧠 Using cached ENS for 0xe9e284277648fcdb09b8efc1832c73c09b5ecf59: no ENS
+[2025-04-30 19:03:07 UTC] 🧠 Using cached ENS for 0xeccdf8231326a9c5aad32df76a633aaa4c49b104: catapulta.eth
+[2025-04-30 19:03:07 UTC] 🧠 Using cached ENS for 0xedca8740873152ff30a2696add66d1ab41882beb: pinax.eth
+[2025-04-30 19:03:07 UTC] 🧠 Using cached ENS for 0xeeeee689aa442c607105f29f06d00d2f748776b2: grt.stakecn.eth
+[2025-04-30 19:03:07 UTC] 🧠 Using cached ENS for 0xf00f7157fa8fd0420b87956d46058a16b2f23adc: p2p-org-booster.eth
+[2025-04-30 19:03:07 UTC] 🧠 Using cached ENS for 0xf0e33495afe697dbe32168bd0743ba32ebb978a3: blockonaut.eth
+[2025-04-30 19:03:07 UTC] 🧠 Using cached ENS for 0xf57dcd881ebd1d81df99194abdfa90f9e0e92f11: no ENS
+[2025-04-30 19:03:07 UTC] 🧠 Using cached ENS for 0xf671c6b83f44ead14ca1c5f4a629f1b9b18c8f29: capitanbeto.eth
+[2025-04-30 19:03:07 UTC] 🧠 Using cached ENS for 0xf7793bf9561c32ffbac603ce572fa55643f9cf72: no ENS
+[2025-04-30 19:03:07 UTC] 🧠 Using cached ENS for 0xf9123292b4d958c53aaad8c5df0138ee0e62944b: figment-prime-2.eth
+[2025-04-30 19:03:07 UTC] 🧠 Using cached ENS for 0xf92f430dd8567b0d466358c79594ab58d919a6d4: ellipfra-indexer.eth
+[2025-04-30 19:03:07 UTC] 🧠 Using cached ENS for 0xfb168335f5a3868a03696904ed38fa95fd167c0e: validatrium.eth
+[2025-04-30 19:03:07 UTC] 🧠 Using cached ENS for 0xfc842f81490dcb37e82d416b2d28327dfb24ba9a: grassets-tech-1.eth
+[2025-04-30 19:03:07 UTC] 🧠 Using cached ENS for 0xfeff9093f6b32d0e5cddba743b06a1fedb87c004: p-ops2.eth
+[2025-04-30 19:03:07 UTC] Fetched 90 indexers
+[2025-04-30 19:03:07 UTC] 📊 Indexer Stats:
+[2025-04-30 19:03:07 UTC] Total Indexers: 161
+[2025-04-30 19:03:07 UTC] Active Indexers with staked GRT: 98
+[2025-04-30 19:03:07 UTC] Allocated Indexers: 90
+[2025-04-30 19:03:07 UTC] Small Active Indexers: 17 with less than 1000000.0 GRT staked
+[2025-04-30 19:03:07 UTC] Medium Active Indexers: 44 with more than 1000000.0 and less than 20000000.0 GRT staked
+[2025-04-30 19:03:07 UTC] Large Active Indexers: 18 with more than 20000000.0 and less than 50000000.0 GRT staked
+[2025-04-30 19:03:07 UTC] Mega Active Indexers: 11 with more than 50000000.0 GRT staked
+[2025-04-30 19:03:07 UTC] Performance Categories — Excellent: 37, Fair: 26, Poor: 27
+[2025-04-30 19:03:07 UTC] ✅ Saved CSV file: reports/indexers_output.csv
+[2025-04-30 19:03:07 UTC] ✅ Saved simple indexers HTML table: reports/index.html
+[2025-04-30 19:03:07 UTC] ✅ Saved HTML documentation file: reports/docs.html
+[2025-04-30 19:03:26 UTC] ⚙️  Fetching data from subgraph...
+[2025-04-30 19:03:26 UTC] (Excluding the Upgrade Indexer)
+[2025-04-30 19:03:27 UTC] ✔️ Adjusted total indexer count to exclude Upgrade Indexer: 161
+[2025-04-30 19:03:27 UTC] 🧠 Using cached ENS for 0x0058223c6617cca7ce76fc929ec9724cd43d4542: grassets-tech-2.eth
+[2025-04-30 19:03:27 UTC] 🧠 Using cached ENS for 0x01f17c392614c7ea586e7272ed348efee21b90a3: oraclegen-indexer.eth
+[2025-04-30 19:03:27 UTC] 🧠 Using cached ENS for 0x089f78d8cf0a5ae1b7a581b1910a73f8cb3e4774: darksiders-team.eth
+[2025-04-30 19:03:27 UTC] 🧠 Using cached ENS for 0x0b9d582b7fdd387ba13ad7f453d49af255a8ed5e: dapplooker-indexer.eth
+[2025-04-30 19:03:27 UTC] 🧠 Using cached ENS for 0x0fd8fd1dc8162148cb9413062fe6c6b144335dbf: a1.protofire.eth
+[2025-04-30 19:03:27 UTC] 🧠 Using cached ENS for 0x17def1a43a323c711c7a32101ecf41e58eff54a2: rampdefi4.eth
+[2025-04-30 19:03:27 UTC] 🧠 Using cached ENS for 0x1b7e0068ca1d7929c8c56408d766e1510e54d98d: suntzu-indexer-arb.eth
+[2025-04-30 19:03:27 UTC] 🧠 Using cached ENS for 0x1b92e4cba0f82c85c1298af861247849988c788c: vincenttaglia-indexer.eth
+[2025-04-30 19:03:27 UTC] 🧠 Using cached ENS for 0x269ebeee083ce6f70486a67dc8036a889bf322a9: thomasblock.eth
+[2025-04-30 19:03:27 UTC] 🧠 Using cached ENS for 0x2b3c7d1ef5fdfc0557934019c531d3e70d6200ae: no ENS
+[2025-04-30 19:03:27 UTC] 🧠 Using cached ENS for 0x2e15f3f0d37b191c33ee06e953c8cce4c493b47a: ai.swiftstaking.eth
+[2025-04-30 19:03:27 UTC] 🧠 Using cached ENS for 0x2e8d26e9b0d280738728e71c37bf05e70a636238: moonli.eth
+[2025-04-30 19:03:27 UTC] 🧠 Using cached ENS for 0x2f09092aacd80196fc984908c5a9a7ab3ee4f1ce: p2p-org-arbitrum.eth
+[2025-04-30 19:03:27 UTC] 🧠 Using cached ENS for 0x326c584e0f0eab1f1f83c93cc6ae1acc0feba0bc: graphtronauts-arbitrum.eth
+[2025-04-30 19:03:27 UTC] 🧠 Using cached ENS for 0x32bbd16a94ebb289edceebe77f35acc82664157b: rampdefi3.eth
+[2025-04-30 19:03:27 UTC] 🧠 Using cached ENS for 0x345c9a221e4caa15f78fb8078c441745de48a225: 0xfury.eth
+[2025-04-30 19:03:27 UTC] 🧠 Using cached ENS for 0x35917c0eb91d2e21bef40940d028940484230c06: streamingfastindexer.eth
+[2025-04-30 19:03:27 UTC] 🧠 Using cached ENS for 0x3717cef8020bddee7a18f4efb2bfa88fefdcb1bc: pinax2.eth
+[2025-04-30 19:03:27 UTC] 🧠 Using cached ENS for 0x3863a65ce278a240f9aa2a4b4a48493be59e6139: indexer.nftx.eth
+[2025-04-30 19:03:27 UTC] 🧠 Using cached ENS for 0x38f412c8d6346a17a53ff9ceecd2e01acecd27c0: graphops.eth
+[2025-04-30 19:03:27 UTC] 🧠 Using cached ENS for 0x3b9ba748691f135b71582dc3292e5e3ed7e13341: no ENS
+[2025-04-30 19:03:27 UTC] 🧠 Using cached ENS for 0x3e1536fc83cd5bed83a521a26034ff3e59c6a7c4: differential-graph.eth
+[2025-04-30 19:03:27 UTC] 🧠 Using cached ENS for 0x3f74870f80ff7449fe4c6ff257da5fa72734c970: stake🦑squid-2.eth
+[2025-04-30 19:03:27 UTC] 🧠 Using cached ENS for 0x4207df52f7ff229364899b21e9c4ad36d3d42981: lux8-net.eth
+[2025-04-30 19:03:27 UTC] 🧠 Using cached ENS for 0x474e571ab6dd77489ec3c7ddf9cbc893fcba684c: allnodescom.eth
+[2025-04-30 19:03:27 UTC] 🧠 Using cached ENS for 0x4d67938e9b07681526fe0345a45b770bba88c659: 4block-team.eth
+[2025-04-30 19:03:27 UTC] 🧠 Using cached ENS for 0x4e5c87772c29381bcabc58c3f182b6633b5a274a: indexer.datanexus.eth
+[2025-04-30 19:03:27 UTC] 🧠 Using cached ENS for 0x51637a35f7f054c98ed51904de939b9561d37885: kolbin.eth
+[2025-04-30 19:03:27 UTC] 🧠 Using cached ENS for 0x53dbbc9d916b1840a2c4c26b150ba2e13f36e10f: thoalt-indexer.eth
+[2025-04-30 19:03:27 UTC] 🧠 Using cached ENS for 0x550c1f4814a85aa10f5f061ca8c45e2ee9620226: experimental.infradao.eth
+[2025-04-30 19:03:27 UTC] 🧠 Using cached ENS for 0x59749d1fa9635cd0413aeff5ee295490a7e87f54: no ENS
+[2025-04-30 19:03:27 UTC] 🧠 Using cached ENS for 0x5af569b692b0598721461027dbbecde74d465d99: no ENS
+[2025-04-30 19:03:27 UTC] 🧠 Using cached ENS for 0x5b3c8f7245dfbd9bea22d9c4b975df60a638e5a3: thegraph.mind-heart-soul.eth
+[2025-04-30 19:03:27 UTC] 🧠 Using cached ENS for 0x5ddee9720e17aad28febb55643cd8ab50c51c60b: maplenodes.eth
+[2025-04-30 19:03:27 UTC] 🧠 Using cached ENS for 0x600f2b53719e1dbacf340572b31a9df9921b82fa: no ENS
+[2025-04-30 19:03:27 UTC] 🧠 Using cached ENS for 0x63c9dc729ba7a22bb8605216b24a34b902e5fe94: infradao.eth
+[2025-04-30 19:03:27 UTC] 🧠 Using cached ENS for 0x6f3ce93a09f30f18d728d2364268b5fe9444b89e: no ENS
+[2025-04-30 19:03:27 UTC] 🧠 Using cached ENS for 0x6f8a032b4b1ee622ef2f0fc091bdbb98cfae81a3: indexer.semiotic.eth
+[2025-04-30 19:03:27 UTC] 🧠 Using cached ENS for 0x6f9bb7e454f5b3eb2310343f0e99269dc2bb8a1d: cp0x.eth
+[2025-04-30 19:03:27 UTC] 🧠 Using cached ENS for 0x735f422922bd4d459ea491f46e1bb9295b89f961: no ENS
+[2025-04-30 19:03:27 UTC] 🧠 Using cached ENS for 0x74dbb201ecc0b16934e68377bc13013883d9417b: rickydata-indexer.eth
+[2025-04-30 19:03:27 UTC] 🧠 Using cached ENS for 0x7bb834017672b1135466661d8dd69c5dd0b3bf51: dataservices.eth
+[2025-04-30 19:03:27 UTC] 🧠 Using cached ENS for 0x8bbe94c2894f76406568dfb44e905dac4b7df699: no ENS
+[2025-04-30 19:03:27 UTC] 🧠 Using cached ENS for 0x8f689a83dd52eaa1d5ad6a40c46189b4a0d70b06: art3mis-cloud.eth
+[2025-04-30 19:03:27 UTC] 🧠 Using cached ENS for 0x9082f497bdc512d08ffde50d6fce28e72c2addcf: holographic-indexer.eth
+[2025-04-30 19:03:27 UTC] 🧠 Using cached ENS for 0x918fcc24e6b7f5ec73b4cf766e2393d8fe707541: dacm.eth
+[2025-04-30 19:03:27 UTC] 🧠 Using cached ENS for 0x91f137715ef8e141d6a8074cbbbc53a0f76b09c5: chainodetech-arbitrum.eth
+[2025-04-30 19:03:27 UTC] 🧠 Using cached ENS for 0x920fdeb00ee04dd72f62d8a8f80f13c82ef76c1e: braindexer.eth
+[2025-04-30 19:03:27 UTC] 🧠 Using cached ENS for 0x958ad15ea21fb79b935524cf90c90276031bee20: hashkeycloud.eth
+[2025-04-30 19:03:27 UTC] 🧠 Using cached ENS for 0x9da1017766bfeb2835db4f811516eea68996538b: ryabina.eth
+[2025-04-30 19:03:27 UTC] 🧠 Using cached ENS for 0xa01b06b0e9feb016d5ab669ce89d059bc666e569: no ENS
+[2025-04-30 19:03:27 UTC] 🧠 Using cached ENS for 0xa181d0f242b3730f8a244cc94eda05faf17a43e8: no ENS
+[2025-04-30 19:03:27 UTC] 🧠 Using cached ENS for 0xa28a99b0219a34142a9398a19460fcd69250a2b2: no ENS
+[2025-04-30 19:03:27 UTC] 🧠 Using cached ENS for 0xa4d629ba2ffb3321008d8cec37cca077696bf24d: no ENS
+[2025-04-30 19:03:27 UTC] 🧠 Using cached ENS for 0xa6ff993e0f6253f1b7f55c873577a2f0f0ceb325: no ENS
+[2025-04-30 19:03:27 UTC] 🧠 Using cached ENS for 0xa9b5da22440dedd72535ec0525582ca0b63be5e1: pdp-indexer.eth
+[2025-04-30 19:03:27 UTC] 🧠 Using cached ENS for 0xaa988dcb035518bc0e20082a3148a5d3dfd1776d: stake🦑squid-1.eth
+[2025-04-30 19:03:27 UTC] 🧠 Using cached ENS for 0xaddd3e23599d2b7267067afbcd18830aefca640a: no ENS
+[2025-04-30 19:03:27 UTC] 🧠 Using cached ENS for 0xb4b4570df6f7fe320f10fdfb702dba7e35244550: nodeify.eth
+[2025-04-30 19:03:27 UTC] 🧠 Using cached ENS for 0xb54c7c9fa1a51300e6054b70ae9952c1fb2800b4: kukisglobal.eth
+[2025-04-30 19:03:27 UTC] 🧠 Using cached ENS for 0xb8ca929e2bd96548cabcabc56cfc9a5147cef0ff: waynewayner.eth
+[2025-04-30 19:03:27 UTC] 🧠 Using cached ENS for 0xc55c63563efb36f7cc65ac3060c52987c6694b37: figment-prime.eth
+[2025-04-30 19:03:27 UTC] 🧠 Using cached ENS for 0xc9014686f6336ad558b539565d5dff840b339082: rampdefigrt.eth
+[2025-04-30 19:03:27 UTC] 🧠 Using cached ENS for 0xcba919cf1ee9c537545975d9968718a09d20f071: no ENS
+[2025-04-30 19:03:27 UTC] 🧠 Using cached ENS for 0xd9819426c82e2b8fc58b9b62a78efe93f78077c6: no ENS
+[2025-04-30 19:03:27 UTC] 🧠 Using cached ENS for 0xda20dde459c8d918f81566995d899a046d4d8503: dsrvlabs-indexer-01.eth
+[2025-04-30 19:03:27 UTC] 🧠 Using cached ENS for 0xdc7daef4d0751a9f6ec28b06d6d9475b13eb0918: bitnordic.eth
+[2025-04-30 19:03:27 UTC] 🧠 Using cached ENS for 0xdeb712db301285ed483ef9e02dd08a1980f273f1: easy2stake-com.eth
+[2025-04-30 19:03:27 UTC] 🧠 Using cached ENS for 0xdec965f0604125be05cd8a136c85d02ef344d61a: stakesquid-3.eth
+[2025-04-30 19:03:27 UTC] 🧠 Using cached ENS for 0xdecba5154aab37ae5e381a19f804f3af4d1bcbb5: 0y.decisionbasis.eth
+[2025-04-30 19:03:27 UTC] 🧠 Using cached ENS for 0xe0ceec6daa59cc951f3f71d6fc4221e55ef6c386: arb.stake-machine.eth
+[2025-04-30 19:03:27 UTC] 🧠 Using cached ENS for 0xe13840a2e92e0cb17a246609b432d0fa2e418774: lunanova-indexer.eth
+[2025-04-30 19:03:27 UTC] 🧠 Using cached ENS for 0xe48b586eeb81bde60f14b0b8d80ddd06c7a24720: no ENS
+[2025-04-30 19:03:27 UTC] 🧠 Using cached ENS for 0xe63e935fba572784d5aa40715e372e7948bbdb12: chorusone-thegraph.eth
+[2025-04-30 19:03:27 UTC] 🧠 Using cached ENS for 0xe6de2325ef1aac1f058fae59d3c38a472f569846: no ENS
+[2025-04-30 19:03:27 UTC] 🧠 Using cached ENS for 0xe91273727203bcc827521fc8b0c762d435c3c5d0: no ENS
+[2025-04-30 19:03:27 UTC] 🧠 Using cached ENS for 0xe9e284277648fcdb09b8efc1832c73c09b5ecf59: no ENS
+[2025-04-30 19:03:27 UTC] 🧠 Using cached ENS for 0xeccdf8231326a9c5aad32df76a633aaa4c49b104: catapulta.eth
+[2025-04-30 19:03:27 UTC] 🧠 Using cached ENS for 0xedca8740873152ff30a2696add66d1ab41882beb: pinax.eth
+[2025-04-30 19:03:27 UTC] 🧠 Using cached ENS for 0xeeeee689aa442c607105f29f06d00d2f748776b2: grt.stakecn.eth
+[2025-04-30 19:03:27 UTC] 🧠 Using cached ENS for 0xf00f7157fa8fd0420b87956d46058a16b2f23adc: p2p-org-booster.eth
+[2025-04-30 19:03:27 UTC] 🧠 Using cached ENS for 0xf0e33495afe697dbe32168bd0743ba32ebb978a3: blockonaut.eth
+[2025-04-30 19:03:27 UTC] 🧠 Using cached ENS for 0xf57dcd881ebd1d81df99194abdfa90f9e0e92f11: no ENS
+[2025-04-30 19:03:27 UTC] 🧠 Using cached ENS for 0xf671c6b83f44ead14ca1c5f4a629f1b9b18c8f29: capitanbeto.eth
+[2025-04-30 19:03:27 UTC] 🧠 Using cached ENS for 0xf7793bf9561c32ffbac603ce572fa55643f9cf72: no ENS
+[2025-04-30 19:03:27 UTC] 🧠 Using cached ENS for 0xf9123292b4d958c53aaad8c5df0138ee0e62944b: figment-prime-2.eth
+[2025-04-30 19:03:27 UTC] 🧠 Using cached ENS for 0xf92f430dd8567b0d466358c79594ab58d919a6d4: ellipfra-indexer.eth
+[2025-04-30 19:03:27 UTC] 🧠 Using cached ENS for 0xfb168335f5a3868a03696904ed38fa95fd167c0e: validatrium.eth
+[2025-04-30 19:03:27 UTC] 🧠 Using cached ENS for 0xfc842f81490dcb37e82d416b2d28327dfb24ba9a: grassets-tech-1.eth
+[2025-04-30 19:03:27 UTC] 🧠 Using cached ENS for 0xfeff9093f6b32d0e5cddba743b06a1fedb87c004: p-ops2.eth
+[2025-04-30 19:03:27 UTC] Fetched 90 indexers
+[2025-04-30 19:03:27 UTC] 📊 Indexer Stats:
+[2025-04-30 19:03:27 UTC] Total Indexers: 161
+[2025-04-30 19:03:27 UTC] Active Indexers with staked GRT: 98
+[2025-04-30 19:03:27 UTC] Allocated Indexers: 90
+[2025-04-30 19:03:27 UTC] Small Active Indexers: 17 with less than 1000000.0 GRT staked
+[2025-04-30 19:03:27 UTC] Medium Active Indexers: 44 with more than 1000000.0 and less than 20000000.0 GRT staked
+[2025-04-30 19:03:27 UTC] Large Active Indexers: 18 with more than 20000000.0 and less than 50000000.0 GRT staked
+[2025-04-30 19:03:27 UTC] Mega Active Indexers: 11 with more than 50000000.0 GRT staked
+[2025-04-30 19:03:27 UTC] Performance Categories — Excellent: 37, Fair: 26, Poor: 27
+[2025-04-30 19:03:27 UTC] ✅ Saved CSV file: reports/indexers_output.csv
+[2025-04-30 19:03:27 UTC] ✅ Saved simple indexers HTML table: reports/index.html
+[2025-04-30 19:03:27 UTC] ✅ Saved HTML documentation file: reports/docs.html

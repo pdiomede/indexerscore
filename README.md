@@ -34,7 +34,7 @@ Scores are normalized and adjusted to reflect both performance and behavior. Fin
 
 Indexers serving fewer than the minimum number of subgraphs also receive a penalty.
 
-➡️ See the full documentation here:  
+See the full documentation here:  
 📘 **[Indexer Score Docs](https://indexerscore.com/docs.html)**  
 📄 **[Whitepaper PDF](https://indexerscore.com/indexer_score_documentation_v1.1.0.pdf)**
 

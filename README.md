@@ -4,7 +4,7 @@ This project generates a detailed performance dashboard and CSV report for **ind
 **Live Dashboard:**  
 🔗 [https://indexerscore.com](https://indexerscore.com)
 
-🧪 This dashboard is part of [**Graph Tools Pro**](https://graphtools.pro), a community-driven initiative to provide useful, independent analytics tools for the entire [Graph ecosystem](https://thegraph.com).
+🧪 This dashboard is part of [**Graph Tools Pro**](https://graphtools.pro), a community-driven initiative to provide useful, independent analytics tools for The Graph ecosystem.
 
 ---
 

@@ -1,0 +1,11 @@
+{
+  "timestamp": "2025-05-14 16:42:09 UTC",
+  "total_subgraphs": 12467,
+  "active_subgraphs": 12314,
+  "total_indexers": 161,
+  "active_indexers": 96,
+  "allocated_indexers": 87,
+  "excellent_count": 35,
+  "fair_count": 26,
+  "poor_count": 26
+}

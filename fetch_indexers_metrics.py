@@ -7,9 +7,9 @@ from dotenv import load_dotenv
 from dataclasses import dataclass, asdict
 from typing import Optional
 
-# v1.2.1 / 6-May-2025
+# v1.2.3 / 20-May-2025
 # Author: Paolo Diomede
-DASHBOARD_VERSION="1.2.1"
+DASHBOARD_VERSION="1.2.3"
 
 
 # Function that writes in the log file
@@ -549,7 +549,7 @@ def generate_indexers_to_csv(indexers, filename="indexers_output.csv"):
         if "delegator_rewards_percentage" not in fieldnames:
             fieldnames.append("delegator_rewards_percentage")
 
-        writer = csv.DictWriter(csvfile, fieldnames=fieldnames, delimiter=';')
+        writer = csv.DictWriter(csvfile, fieldnames=fieldnames, delimiter=',')
         writer.writeheader()
         for indexer in indexers:
             # Create a copy of the indexer's dictionary
@@ -717,9 +717,6 @@ def generate_indexers_to_html(indexers, filename="index.html"):
                 display: inline-block;
                 cursor: help;
                 border-bottom: 1px dotted #999;
-            }}
-            .tooltip-wrapper::after {{
-                font-size: 50%;
             }}
 
             .tooltip-text {{
@@ -1059,6 +1056,9 @@ def generate_indexers_to_html(indexers, filename="index.html"):
                   <span class="tooltip-wrapper"># Allocations<span class="tooltip-text">Number of active allocations the Indexer has open</span></span>
                 </th>
                 <th>
+                  <span class="tooltip-wrapper">Query Fees<span class="tooltip-text">Total query fees earned by the Indexer</span></span>
+                </th>
+                <th>
                   <span class="tooltip-wrapper highlight-delegator">Delegator Reward %<span class="tooltip-text">Percentage of total rewards given to Delegators</span></span>
                 </th>
                 <th>
@@ -1095,9 +1095,9 @@ def generate_indexers_to_html(indexers, filename="index.html"):
                 </a>
             -->
             </td>
-
             <td data-value="{i.allocated_stake}"><span style="font-size: 0.85em;">{i.allocated_stake:,.0f}</span></td>
             <td data-value="{i.number_of_allocations}"><span style="font-size: 0.85em;">{i.number_of_allocations}</span></td>
+            <td data-value="{i.query_fees_earned}"><span style="font-size: 0.85em;">{i.query_fees_earned:,.0f}</span></td>
             <td data-value="{i.delegator_rewards_percentage:.2f}"><span style="font-size: 0.85em; color: #0066ff;">{i.delegator_rewards_percentage:.2f}%</span></td>
             <td data-value="{i.delegator_rewards}"><span style="font-size: 0.85em;">{i.delegator_rewards:,.0f}</span></td>
             <td data-value="{i.indexing_rewards}"><span style="font-size: 0.85em;">{i.indexing_rewards:,.0f}</span></td>
@@ -1126,17 +1126,17 @@ def generate_indexers_to_html(indexers, filename="index.html"):
         <script>
 
             document.addEventListener('DOMContentLoaded', () => {
-                // Automatic sorting by Performance column (10th column, index 9)
+                // Automatic sorting by Performance column (11th column, index 10)
                 const table = document.querySelector('table');
                 const rows = Array.from(table.querySelectorAll('tr:nth-child(n+2)'));
                 rows.sort((a, b) => {
-                    const aVal = parseFloat(a.children[9].getAttribute('data-value') || 0);
-                    const bVal = parseFloat(b.children[9].getAttribute('data-value') || 0);
+                    const aVal = parseFloat(a.children[10].getAttribute('data-value') || 0);
+                    const bVal = parseFloat(b.children[10].getAttribute('data-value') || 0);
                     return aVal - bVal;
                 });
                 rows.forEach(row => table.appendChild(row));
-                table.querySelector('th:nth-child(10)').classList.add('sorted-column');
-                table.querySelector('th:nth-child(10)').setAttribute('data-sort-direction', 'asc');
+                table.querySelector('th:nth-child(11)').classList.add('sorted-column');
+                table.querySelector('th:nth-child(11)').setAttribute('data-sort-direction', 'asc');
 
                 // Theme toggle logic
                 const toggle = document.querySelector('input[type="checkbox"]');
@@ -1156,7 +1156,7 @@ def generate_indexers_to_html(indexers, filename="index.html"):
                         const table = header.closest('table');
                         const rows = Array.from(table.querySelectorAll('tr:nth-child(n+2)'));
                         // Updated numericColumns to include all columns that should sort numerically
-                        const numericColumns = [1, 2, 3, 4, 5, 6, 8, 9];
+                        const numericColumns = [1, 2, 3, 4, 5, 6, 7, 9, 10];
                         const isNumeric = numericColumns.includes(columnIndex);
                         const currentDirection = header.getAttribute('data-sort-direction');
                         const newDirection = currentDirection === 'asc' ? 'desc' : 'asc';
@@ -1170,7 +1170,7 @@ def generate_indexers_to_html(indexers, filename="index.html"):
                             let aVal = a.children[columnIndex].getAttribute('data-value') || a.children[columnIndex].textContent.trim();
                             let bVal = b.children[columnIndex].getAttribute('data-value') || b.children[columnIndex].textContent.trim();
                             // Special handling for Underserving column ("Yes"/"No")
-                            if (columnIndex === 7) {
+                            if (columnIndex === 8) {
                                 aVal = aVal === "Yes" ? 1 : 0;
                                 bVal = bVal === "Yes" ? 1 : 0;
                                 aVal = Number(aVal);
@@ -1209,7 +1209,7 @@ def generate_indexers_to_html(indexers, filename="index.html"):
             function filterByFlag(flag) {
                 const rows = document.querySelectorAll('table tr:nth-child(n+2)');
                 rows.forEach(row => {
-                    const performanceCell = row.children[9];  // 9th column (Performance)
+                    const performanceCell = row.children[10];  // 11th column (Performance)
                     const flagText = performanceCell.textContent.trim();
                     if (flag === 'All') {
                         row.style.display = '';

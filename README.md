@@ -1,99 +1,365 @@
-# Indexer Score Dashboard — The Graph Network
-This project generates a detailed performance dashboard and CSV report for **indexers** on [The Graph Network](https://thegraph.com). It fetches on-chain data via The Graph Network, evaluates indexers using the custom **Indexer Score** metric, and builds a modern, responsive HTML dashboard.
+# Indexer Score Dashboard - The Graph Network
 
-**Live Dashboard:**  
-🔗 [indexerscore.com](https://indexerscore.com)
+> **A simplified, delegator-focused scoring system for evaluating indexer performance on The Graph Network**
 
-🧪 This dashboard is part of [**Graph Tools Pro**](https://graphtools.pro), a community-driven initiative to provide useful, independent analytics tools for The Graph ecosystem.
+## 🎯 Overview
 
----
-
-## 📊 Features
-
-- Scores indexers based on allocation efficiency and query fee generation
-- Fetches indexer metadata including ENS and avatars
-- Ranks indexers by score and assigns performance flags
-- Generates:
-  - A responsive `index.html` dashboard
-  - A `CSV` file for offline data analysis
-  - Daily JSON metric snapshots for historical tracking
-  - A secondary HTML file explaining methodology (`docs.html`)
-- Light/dark mode toggle and performance filter buttons
-- Cached ENS results and clean logs
+The Indexer Score Dashboard provides a transparent and simple way to evaluate indexers based on what matters most: **query fee generation** and **fair reward sharing**. We've removed complexity to focus on the metrics that directly impact delegators' returns.
 
 ---
 
-## 🧮 What Is the Indexer Score?
+## ✨ What Makes This Score Simple
 
-The **Indexer Score** is a synthetic performance metric for The Graph’s indexers. It combines two main factors:
+Unlike complex multi-factor scoring systems, our approach is straightforward:
 
-- **AER (Allocation Efficiency Ratio)** – how effectively GRT is distributed across subgraphs (70% weight)
-- **QFR (Query Fee Ratio)** – how many query fees are generated per GRT allocated (30% weight)
-
-Scores are normalized and adjusted to reflect both performance and behavior. Final scores range from **1.0 (best)** to **10.0 (worst)**, and indexers are labeled as:
-
-- 🟢 **Excellent** (1.0 – 1.25)
-- 🟡 **Fair** (1.26 – 2.5)
-- 🔴 **Poor** (2.51 – 10.0)
-
-Indexers serving fewer than the minimum number of subgraphs also receive a penalty.
-
-See the full documentation here:  
-📘 **[Indexer Score Docs](https://indexerscore.com/docs.html)**  
-📄 **[Whitepaper PDF](https://indexerscore.com/indexer_score_documentation_v1.1.0.pdf)**
-
----
-# Abstract
-
-This project generates PDF statements for **indexers** in [The Graph Network](https://thegraph.com). 
-It fetches on-chain data via subgraph queries and creates a formatted, branded statement including metrics like stake, rewards, query fees, and delegator share.
+- **Single Performance Metric**: Query Fee Ratio (QFR) - how efficiently an indexer generates query fees relative to their allocated stake
+- **Clear Reward Requirement**: Delegator rewards percentage - how much indexers share with their delegators
+- **Transparent Thresholds**: Easy-to-understand tier requirements
+- **Automatic Penalties**: Built-in protections against underserving indexers
 
 ---
 
-## 📌 Features
+## 🛡️ Protecting Delegators
 
-- Fetches active indexers via The Graph Network
-- Generates a local JSON with detailed indexer metrics
-- Downloads and caches avatar images dynamically
-- Outputs one PDF per indexer with full branding and metrics
-- Supports avatar image format detection (PNG, JPG, etc.)
-- Logs all actions to a timestamped log file
+### Delegator Rewards Thresholds
+
+The scoring system is designed to **protect delegators** by enforcing fair reward distribution:
+
+| Delegator Rewards % | Impact | Tier Eligibility |
+|---------------------|--------|------------------|
+| **≥ 30%** | ✅ Fair reward sharing | Can achieve **Excellent** tier |
+| **10-29%** | ⚠️ Below recommended | Maximum **Fair** tier |
+| **< 10%** | 🔴 Unfair to delegators | **Automatic Poor** classification |
+
+**Key Protection:** Any indexer sharing less than 10% of rewards with delegators is **automatically classified as Poor**, regardless of their technical performance. This ensures delegators avoid indexers who keep more than 90% of rewards for themselves.
+
+### Supporting Informed Decisions
+
+The dashboard helps delegators by:
+- 🎯 **Highlighting generous indexers** - Top tier requires ≥30% reward sharing
+- 🚫 **Filtering out unfair indexers** - Automatic Poor rating for <10% sharing
+- 📊 **Transparent metrics** - All data visible including exact reward percentages
+- 🏆 **Easy comparison** - Sorted by tier and reward generosity
 
 ---
 
-## 📂 File Structure
-📦 indexerscore/
-- 📜 generate_indexer_statements.py
-- 📜 .env                        # Contains your GRAPH_API_KEY
-- 📂 logs/
-  - 📜 indexer_statements_log.txt
-- 📂 reports/
-  - 📂 images/                  # Cached avatars and banner
-  - 📂 statements/              # Output PDFs per indexer
-  - 📜 indexers_metrics.json    # Metrics cache
-- 📜 all_indexers.json          # Indexer ID list from subgraph
+## 🌐 Network Health Focus
+
+### Query Fee Ratio (QFR)
+
+We care about the **health of The Graph Network** by evaluating indexers who actually serve the network through meaningful query fee generation.
+
+**QFR Formula:**
+```
+QFR = Query Fees Earned / Total Allocated Stake
+```
+
+**Why QFR Matters:**
+- Measures real network contribution through query serving
+- Reflects indexer's subgraph curation quality
+- Indicates actual demand for indexer's services
+- Shows revenue generation capability
+
+**Network Health Benefits:**
+- Rewards indexers who serve active subgraphs
+- Encourages proper subgraph selection
+- Supports indexers providing value to dApp developers
+- Promotes sustainable network economics
 
 ---
 
-## 🚀 How to Use
+## ⚠️ Underserving Penalty
 
-1. **Install dependencies**:
-`pip install python-dotenv fpdf filetype requests`
+To maintain network decentralization and quality of service, we apply a **significant penalty** to indexers serving too few subgraphs.
 
-2.	Prepare your .env file:
-Create a .env file in the root directory with this line:
-`GRAPH_API_KEY=your_graph_api_key_here`
+### Penalty Details
 
-3.	Run the script:
-`python generate_indexer_statements.py`
+**Threshold:** Indexers must serve at least **10 subgraphs**
 
-The script will:
-- Fetch indexers from the subgraph
-- Fetch their metrics
-- Generate PDFs in ./reports/statements/
+**Penalty Formula:**
+```
+Penalty = 3.0 × (10 - number_of_subgraphs) / 10
+```
 
-## 📊 Powered By
-- 🧠 [The Graph](https://thegraph.com)
-- 📛 ENS (Ethereum Name Service)
-- 🧩 Python, HTML5, CSS3
-- 🌐 GitHub Pages / any static web host
+**Penalty Examples:**
+
+| Subgraphs Served | Penalty Applied | Impact |
+|------------------|-----------------|--------|
+| 1 subgraph | +2.70 points | 🔴 Severe |
+| 3 subgraphs | +2.10 points | 🔴 High |
+| 5 subgraphs | +1.50 points | 🟡 Moderate |
+| 7 subgraphs | +0.90 points | 🟡 Low |
+| 10+ subgraphs | 0.00 points | ✅ No penalty |
+
+**Why This Matters:**
+- Encourages network diversity
+- Prevents over-concentration on few subgraphs
+- Supports broader ecosystem health
+- Incentivizes proper resource allocation
+
+---
+
+## 📐 Score Calculation
+
+### Step 1: Calculate QFR
+```
+QFR = Query Fees Earned / Allocated Stake
+```
+
+### Step 2: Normalize QFR (1-10 scale)
+```
+Normalized QFR = 1 + 9 × (min(QFR, 0.3) / 0.3)
+```
+- QFR capped at 0.3 (30%) for fairness
+- Scale: 1 (worst) to 10 (best)
+
+### Step 3: Invert for Final Score (1 = best, 10 = worst)
+```
+Final Score = 11 - Normalized QFR
+```
+
+### Step 4: Apply Underserving Penalty (if applicable)
+```
+If (subgraphs < 10):
+    Final Score = min(10.0, Final Score + Penalty)
+```
+
+### Step 5: Assign Performance Tier
+```
+If (Delegator Rewards < 10%):
+    Tier = Poor 🔴
+Else If (Final Score ≤ 9.92 AND Delegator Rewards ≥ 30%):
+    Tier = Excellent 🟢
+Else If (Final Score ≤ 9.97):
+    Tier = Fair 🟡
+Else:
+    Tier = Poor 🔴
+```
+
+---
+
+## 📊 Complete Formula
+
+```
+FINAL_SCORE = 11 - (1 + 9 × (min(QFR, 0.3) / 0.3)) + PENALTY
+
+Where:
+    QFR = Query Fees Earned / Allocated Stake
+    PENALTY = 3.0 × (10 - subgraphs) / 10  (if subgraphs < 10, else 0)
+    
+TIER = {
+    Poor 🔴:      if Delegator Rewards < 10% OR Final Score > 9.97
+    Excellent 🟢: if Delegator Rewards ≥ 30% AND Final Score ≤ 9.92
+    Fair 🟡:      otherwise
+}
+```
+
+---
+
+## 💡 Examples
+
+### Example 1: Excellent Indexer
+
+**Indexer: dataservices.eth**
+- Query Fees: 222,106 GRT
+- Allocated Stake: 87,323,802 GRT
+- Subgraphs: 930
+- Delegator Rewards: 81.14%
+
+**Calculation:**
+```
+QFR = 222,106 / 87,323,802 = 0.00254 (0.254%)
+Normalized QFR = 1 + 9 × (0.00254 / 0.3) = 1.08
+Final Score = 11 - 1.08 = 9.92
+Penalty = 0 (serves 930 subgraphs)
+Delegator Rewards = 81.14% ≥ 30% ✅
+
+Result: Excellent 🟢
+```
+
+**Why Excellent:**
+- ✅ Generates meaningful query fees
+- ✅ Shares 81.14% with delegators (exceptional!)
+- ✅ Serves many subgraphs (930)
+- ✅ Final score 9.92 ≤ threshold
+
+---
+
+### Example 2: Fair Indexer
+
+**Indexer: streamingfastindexer.eth**
+- Query Fees: 4,691,469 GRT
+- Allocated Stake: 18,434,122 GRT
+- Subgraphs: 750
+- Delegator Rewards: 22.09%
+
+**Calculation:**
+```
+QFR = 4,691,469 / 18,434,122 = 0.2545 (25.45%)
+Normalized QFR = 1 + 9 × (0.2545 / 0.3) = 8.63
+Final Score = 11 - 8.63 = 2.37
+Penalty = 0 (serves 750 subgraphs)
+Delegator Rewards = 22.09% < 30% ⚠️
+
+Result: Fair 🟡
+```
+
+**Why Fair (not Excellent):**
+- ✅ Excellent query fee generation (top performer!)
+- ❌ Delegator rewards 22.09% < 30% threshold
+- ✅ Serves many subgraphs (750)
+
+---
+
+### Example 3: Poor Indexer (Underserving)
+
+**Indexer: Example Indexer**
+- Query Fees: 1,000 GRT
+- Allocated Stake: 5,000,000 GRT
+- Subgraphs: 3
+- Delegator Rewards: 35%
+
+**Calculation:**
+```
+QFR = 1,000 / 5,000,000 = 0.0002 (0.02%)
+Normalized QFR = 1 + 9 × (0.0002 / 0.3) = 1.01
+Final Score = 11 - 1.01 = 9.99
+Penalty = 3.0 × (10 - 3) / 10 = 2.10
+Final Score with Penalty = min(10.0, 9.99 + 2.10) = 10.0
+
+Result: Poor 🔴
+```
+
+**Why Poor:**
+- ❌ Very low query fee generation
+- ❌ Serves only 3 subgraphs (underserving)
+- ✅ Good delegator rewards (35%) but not enough to overcome poor performance
+
+---
+
+### Example 4: Poor Indexer (Low Delegator Rewards)
+
+**Indexer: pinax2.eth**
+- Query Fees: 2,856,044 GRT
+- Allocated Stake: 15,999,999 GRT
+- Subgraphs: 600
+- Delegator Rewards: 0.00%
+
+**Calculation:**
+```
+QFR = 2,856,044 / 15,999,999 = 0.1785 (17.85%)
+Normalized QFR = 1 + 9 × (0.1785 / 0.3) = 6.36
+Final Score = 11 - 6.36 = 4.64
+Penalty = 0 (serves 600 subgraphs)
+Delegator Rewards = 0.00% < 10% 🔴
+
+Result: Poor 🔴 (Automatic)
+```
+
+**Why Poor:**
+- ✅ Excellent query fee generation (17.85%!)
+- ✅ Serves many subgraphs (600)
+- 🔴 **AUTOMATIC POOR**: Shares 0% with delegators
+- **Critical Failure**: Keeps 100% of rewards for themselves
+
+---
+
+## 🏆 Performance Tiers Summary
+
+| Tier | Requirements | Typical Profile |
+|------|-------------|-----------------|
+| **🟢 Excellent** | Score ≤9.92 + Delegator Rewards ≥30% | Top performers who share fairly |
+| **🟡 Fair** | Score ≤9.97 OR Delegator Rewards 10-29% | Decent performance or moderate sharing |
+| **🔴 Poor** | Score >9.97 OR Delegator Rewards <10% | Low performance or unfair sharing |
+
+---
+
+## 🎯 Key Takeaways
+
+1. **Simplicity First**: One primary metric (QFR) plus reward fairness
+2. **Delegator Protection**: Automatic Poor rating for <10% reward sharing
+3. **Excellence Requires Fairness**: Need ≥30% reward sharing for top tier
+4. **Network Health**: Rewards real query fee generation
+5. **Diversity Incentive**: Penalty for serving too few subgraphs
+6. **Transparent Scoring**: Clear formulas, no black boxes
+
+---
+
+## 📚 Resources
+
+- **Live Dashboard**: [https://indexerscore.com](https://indexerscore.com)
+- **Documentation**: View `docs.html` in the reports folder
+- **GitHub Repository**: [https://github.com/pdiomede/indexerscore](https://github.com/pdiomede/indexerscore)
+- **Forum Discussion**: [The Graph Forum Thread](https://forum.thegraph.com/t/introducing-the-indexer-score/6501)
+
+---
+
+## 🛠️ Technical Details
+
+### Configuration
+
+Key thresholds can be configured via `.env.costs` file:
+
+```bash
+# Delegator rewards threshold for Excellent tier
+DELEGATOR_REWARDS_THRESHOLD=30.0
+
+# Underserving subgraphs threshold
+UNDERSERVING_SUBGRAPHS_COUNT=10
+
+# Indexer size thresholds (GRT)
+SMALL_INDEXER=1000000
+MEDIUM_INDEXER=20000000
+LARGE_INDEXER=50000000
+```
+
+### Running the Script
+
+```bash
+# Install dependencies
+pip install -r requirements.txt
+
+# Run the metrics fetch
+python fetch_indexers_metrics.py
+
+# Output files generated:
+# - reports/index.html (dashboard)
+# - reports/docs.html (documentation)
+# - reports/indexers_output.csv (raw data)
+```
+
+---
+
+## 📊 Current Network Statistics
+
+**Total Indexers**: 82 with allocations  
+**Performance Distribution**:
+- 🟢 Excellent: 20 indexers (24.4%)
+- 🟡 Fair: 11 indexers (13.4%)
+- 🔴 Poor: 51 indexers (62.2%)
+
+*Updated every 6 hours*
+
+---
+
+## 🤝 Contributing
+
+This is an open-source project aimed at improving transparency in The Graph Network. Contributions, suggestions, and feedback are welcome!
+
+---
+
+## 📄 License
+
+MIT License - See LICENSE file for details
+
+---
+
+## 👨‍💻 Author
+
+**Paolo Diomede** ([@pdiomede](https://x.com/pdiomede))  
+Made with ❤️ for The Graph ecosystem 👨‍🚀
+
+---
+
+**Version**: 2.0.0  
+**Last Updated**: October 30, 2025

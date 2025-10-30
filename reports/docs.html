@@ -49,45 +49,44 @@
 
         <p>
         💬 <a target="_blank" href="https://forum.thegraph.com/t/introducing-the-indexer-score/6501">Join the Forum Discussion</a>
-        | 📄 <a  target="_blank" href="./indexer_score_documentation_v1.1.0.pdf" download>Download PDF Documentation</a>
+        | 📄 <a  target="_blank" href="./indexer_score_documentation_v2.0.0.pdf" download>Download PDF Documentation</a>
         | 📊 <a href="./index.html">View the Dashboard</a>
         </p>
        
         <div style="margin-top: 20px; padding: 10px; background-color: #e1f5fe; border-left: 5px solid #2196f3; width: 60%; color: black !important; font-family: 'Courier New', Courier, monospace;">
             <h3>📏 Thresholds Used</h3>
             <ul>
-                <li><strong>Total Indexers:</strong> 161</li>
-                <li><strong>Active Indexers:</strong> 96</li>
-                <li><strong>Indexers with allocations:</strong> 88</li>
+                <li><strong>Total Indexers:</strong> 165</li>
+                <li><strong>Active Indexers:</strong> 88</li>
+                <li><strong>Indexers with allocations:</strong> 82</li>
                 <br />
                 <li><strong>Underserving Subgraphs Threshold:</strong> 10 subgraphs</li>
-                <li><strong>Indexers serving <span style="color: #c83349;">less than</span> 10 allocations:</strong> 28</li>
+                <li><strong>Indexers serving <span style="color: #c83349;">less than</span> 10 allocations:</strong> 23</li>
                 <br />
-                <li><strong>Small Active Indexers:</strong> 17 <span style="font-size: 90%;">(less than 1M GRT allocated)</span></li>
-                <li><strong>Medium Active Indexers:</strong> 42 <span style="font-size: 90%;">(between 1M and 20M GRT allocated)</span></li>
-                <li><strong>Large Active Indexers:</strong> 19 <span style="font-size: 90%;">(more than 20M and 50M GRT allocated)</span></li>
-                <li><strong>Mega Active Indexers:</strong> 10 <span style="font-size: 90%;">(more than 50M GRT allocated)</span></li>
+                <li><strong>Small Active Indexers:</strong> 16 <span style="font-size: 90%;">(less than 1M GRT allocated)</span></li>
+                <li><strong>Medium Active Indexers:</strong> 39 <span style="font-size: 90%;">(between 1M and 20M GRT allocated)</span></li>
+                <li><strong>Large Active Indexers:</strong> 16 <span style="font-size: 90%;">(more than 20M and 50M GRT allocated)</span></li>
+                <li><strong>Mega Active Indexers:</strong> 11 <span style="font-size: 90%;">(more than 50M GRT allocated)</span></li>
             </ul>
         </div>
 
         <div style="margin-top: 30px; padding: 15px; background-color: #fff3e0; border-left: 5px solid #ff9800; font-family: 'Courier New', Courier, monospace;">
             <h2>📈 How the Indexer Score is Calculated</h2>
             <p>
-                The <strong>Indexer Score</strong> is a weighted combination of two critical performance metrics:
+                The <strong>Indexer Score</strong> is based on a single critical performance metric:
             </p>
             <ul>
-                <li><strong>AER (Allocation Efficiency Ratio):</strong> Reflects how efficiently an indexer spreads its GRT across subgraphs. <strong>Weight: 70%</strong></li>
-                <li><strong>QFR (Query Fee Ratio):</strong> Indicates how efficiently an indexer generates query fees relative to its allocated GRT. <strong>Weight: 30%</strong></li>
+                <li><strong>QFR (Query Fee Ratio):</strong> Measures how efficiently an indexer generates query fees relative to its allocated GRT. <strong>Weight: 100%</strong></li>
             </ul>
             <p>
-                This blended metric evaluates an indexer’s overall performance, balancing allocation efficiency and query fee generation.
+                This metric directly evaluates an indexer's ability to generate revenue, making it the most important indicator of real-world performance and value to delegators.
             </p>
         </div>
 
         <p>
-            In the following sections, we break down the methodology used to compute both <strong>AER</strong> and <strong>QFR</strong>, 
-            including their normalization processes. The final score is adjusted to a uniform scale where <strong>1 represents the best performance</strong> 
-            and <strong>10 the worst</strong>, despite differing normalization directions for AER and QFR.
+            In the following sections, we break down the methodology used to compute <strong>QFR</strong>, 
+            including its normalization process. The final score is adjusted to a uniform scale where <strong>1 represents the best performance</strong> 
+            (highest query fees relative to allocated stake) and <strong>10 the worst</strong> (little to no query fees generated).
         </p>
 
         <div style="margin-top: 30px; padding: 15px; background-color: #e9f5ff; border-left: 5px solid #007bff; font-family: 'Courier New', Courier, monospace;">
@@ -161,25 +160,26 @@
             <h2 style="margin-top: 0;">📏 How QFR is Normalized:</h2>
             <div style="margin: 20px 0; font-size: 16px; line-height: 1.6;">
                 <div style="display: inline-block; text-align: center;">
-                    <div><strong style="font-family: 'Courier New', Courier, monospace;">Normalized QFR = 10 - 9 × (min(QFR, 1.0) / 1.0)</strong></div>
+                    <div><strong style="font-family: 'Courier New', Courier, monospace;">Normalized QFR = 1 + 9 × (min(QFR, 0.3) / 0.3)</strong></div>
                 </div>
             </div>
             <p>
-                QFR is normalized to a scale from <strong>10 (best)</strong> to <strong>1 (worst)</strong> to reflect its efficiency metric, where higher raw QFR values are better:
+                QFR is normalized to a scale from <strong>1 (worst)</strong> to <strong>10 (best)</strong> to reflect its efficiency metric, where higher raw QFR values are better:
             </p>
             <ul style="margin-left: 20px;">
-                <li><strong>Capping:</strong> QFR is capped at 1.0, representing a theoretical maximum where query fees equal the allocated GRT (a rare but ideal scenario).</li>
-                <li><strong>Scaling:</strong> The capped QFR is scaled inversely from 0 to 1.0 onto a 10-to-1 range using the formula above. This inversion ensures that higher QFR values (better performance) result in higher normalized scores.</li>
+                <li><strong>Capping:</strong> QFR is capped at 0.3 (30%), representing excellent query fee performance based on the actual distribution observed in The Graph Network. This cap was chosen to properly differentiate between indexers, as most perform in the 0-10% range, with top performers reaching 10-30%.</li>
+                <li><strong>Scaling:</strong> The capped QFR is scaled linearly from 0 to 0.3 onto a 1-to-10 range using the formula above. This ensures that higher QFR values (better performance) result in higher normalized scores.</li>
                 <li><strong>Interpretation:</strong>
                     <ul>
-                        <li>QFR = 1 or higher → Normalized = 10 (most efficient, best)</li>
-                        <li>QFR = 0 → Normalized = 1 (least efficient, worst)</li>
-                        <li>Example: QFR = 0.002856 → Normalized = 10 - 9 × (0.002856 / 1) ≈ 9.97</li>
+                        <li>QFR = 0.3 or higher → Normalized = 10 (exceptional performance)</li>
+                        <li>QFR = 0 → Normalized = 1 (no query fees generated)</li>
+                        <li>Example: QFR = 0.2545 → Normalized = 1 + 9 × (0.2545 / 0.3) ≈ 8.64</li>
+                        <li>Example: QFR = 0.014 → Normalized = 1 + 9 × (0.014 / 0.3) ≈ 1.42</li>
                     </ul>
                 </li>
             </ul>
             <p>
-                This normalization preserves QFR’s meaning: indexers generating more query fees relative to their allocations receive higher (better) scores, 
+                This normalization preserves QFR's meaning: indexers generating more query fees relative to their allocations receive higher (better) scores, 
                 while those with little to no fees score lower.
             </p>
         </div>
@@ -187,58 +187,68 @@
         <div style="margin-top: 30px; padding: 15px; background-color: #ede7f6; border-left: 5px solid #673ab7; font-family: 'Courier New', Courier, monospace;">
             <h2 style="margin-top: 0;">📊 How the Final Indexer Score is calculated:</h2>
             <p style="font-size: 16px; line-height: 1.6;">
-                The final Indexer Score combines <strong>AER</strong> (70%) and <strong>QFR</strong> (30%) into a unified scale from <strong>1 (best)</strong> to <strong>10 (worst)</strong>. 
-                Since AER and QFR have opposite normalization directions, QFR is adjusted before combining:
+                The final Indexer Score is based solely on <strong>QFR (Query Fee Ratio)</strong>, scaled from <strong>1 (best)</strong> to <strong>10 (worst)</strong>.
             </p>
             <ul style="font-size: 16px; line-height: 1.6; padding-left: 20px;">
-                <li><strong>AER Normalized</strong>: Ranges from 1 (best, low AER) to 10 (worst, high AER).</li>
-                <li><strong>QFR Normalized</strong>: Ranges from 10 (best, high QFR) to 1 (worst, low QFR). To align with the final score’s direction, it’s adjusted using: <strong>QFR Adjusted = 11 - Normalized QFR</strong>, flipping it to 1 (best) to 10 (worst).</li>
+                <li><strong>QFR Normalized</strong>: Ranges from 1 (worst, low QFR) to 10 (best, high QFR).</li>
+                <li><strong>Score Adjustment</strong>: To align with the scoring convention where 1 = best and 10 = worst, the normalized QFR is inverted using: <strong>Final Score = 11 - Normalized QFR</strong></li>
             </ul>
             <div style="margin: 20px 0; font-size: 16px; line-height: 1.6; text-align: center;">
-                <div><strong>Final Score = (Normalized AER × 0.7) + ((11 - Normalized QFR) × 0.3)</strong></div>
+                <div><strong>Final Score = 11 - Normalized QFR</strong></div>
             </div>
             <p style="font-size: 16px; line-height: 1.6;">
-                Here’s how it works:
+                <strong>How it works:</strong>
             </p>
             <ul style="margin-left: 20px;">
-                <li><strong>AER Contribution:</strong> Normalized AER (1 to 10) is multiplied by 0.7, contributing 70% to the final score. A lower AER (better efficiency) lowers the score.</li>
-                <li><strong>QFR Contribution:</strong> Normalized QFR (10 to 1) is inverted to QFR Adjusted (1 to 10) by subtracting it from 11, then multiplied by 0.3, contributing 30%. A higher raw QFR (better fee generation) results in a lower adjusted value, lowering the final score.</li>
-                <li><strong>Final Scaling:</strong> The weighted sum naturally falls between 1 and 10, with 1 indicating the best performance (low AER, high QFR) and 10 the worst (high AER, low QFR).</li>
+                <li><strong>High Query Fees:</strong> An indexer generating high query fees relative to allocated stake gets a high normalized QFR (e.g., 10), which becomes a low final score (11 - 10 = 1) = Excellent performance.</li>
+                <li><strong>Low Query Fees:</strong> An indexer generating few or no query fees gets a low normalized QFR (e.g., 1), which becomes a high final score (11 - 1 = 10) = Poor performance.</li>
             </ul>
             <p style="font-size: 16px; line-height: 1.6;">
                 <strong>Examples:</strong>
             </p>
             <ul style="margin-left: 20px;">
-                <li>Best Case: AER = 0 (Normalized = 1), QFR = 1 (Normalized = 10, Adjusted = 1) → Final = (1 × 0.7) + (1 × 0.3) = 1.0</li>
-                <li>Worst Case: AER = 500 (Normalized = 10), QFR = 0 (Normalized = 1, Adjusted = 10) → Final = (10 × 0.7) + (10 × 0.3) = 10.0</li>
-                <li>Mixed Case: AER = 23.788 (Normalized ≈ 1.43), QFR = 0.002856 (Normalized ≈ 9.97, Adjusted ≈ 1.03) → Final = (1.43 × 0.7) + (1.03 × 0.3) ≈ 1.31</li>
+                <li>Best Case: QFR = 0.3+ (30%+) → Normalized = 10 → Final Score = 11 - 10 = <strong>1.0</strong> 🟢</li>
+                <li>Excellent: QFR = 0.2545 (25.45%) → Normalized ≈ 8.64 → Final Score = 11 - 8.64 = <strong>2.36</strong> 🟢</li>
+                <li>Fair: QFR = 0.05 (5%) → Normalized ≈ 2.5 → Final Score = 11 - 2.5 = <strong>8.5</strong> 🟡</li>
+                <li>Poor: QFR = 0.014 (1.4%) → Normalized ≈ 1.42 → Final Score = 11 - 1.42 = <strong>9.58</strong> 🔴</li>
+                <li>Worst Case: QFR = 0 (0%) → Normalized = 1 → Final Score = 11 - 1 = <strong>10.0</strong> 🔴</li>
             </ul>
             <p style="font-size: 16px; line-height: 1.6;">
-                This method ensures that efficient allocation and high query fee generation both drive the final score toward 1 (best), 
-                while poor performance in either metric increases it toward 10 (worst).
+                This method ensures that indexers who generate the most query fees relative to their allocated stake receive the best scores,
+                providing a clear and direct measure of indexer performance that matters most to delegators.
             </p>
             <p style="font-size: 16px; line-height: 1.6;">
-                <strong>⚠️ 🔴 Underserving Penalty:</strong> Indexers serving fewer than 10 subgraphs are considered underserving and receive a penalty to their final score. 
-                The penalty is calculated as <code>Penalty = 2.0 × (10 - number_of_subgraphs) / 10</code>, and the new score is capped at 10. 
-                For example, an Indexer with 1 subgraph receives a penalty of 1.8, while an Indexer with 5 subgraphs receives a penalty of 1.0. 
-                This ensures that Indexers are incentivized to support a diverse set of subgraphs, contributing to the health and decentralization of The Graph Network.
+                <strong>⚠️ 🔴 Underserving Penalty:</strong> Indexers serving fewer than 10 subgraphs are considered underserving and receive a significant penalty to their final score. 
+                The penalty is calculated as <code>Penalty = 3.0 × (10 - number_of_subgraphs) / 10</code>, and the new score is capped at 10. 
+                For example, an Indexer with 1 subgraph receives a penalty of <strong>+2.7</strong>, while an Indexer with 5 subgraphs receives a penalty of <strong>+1.5</strong>. 
+                This severe penalty ensures that Indexers are strongly incentivized to support a diverse set of subgraphs, contributing to the health and decentralization of The Graph Network. 
+                Underserving indexers will typically fall into the Poor or Fair categories, regardless of their query fee performance.
             </p>
         </div>
 
         <div style="margin-top: 30px; padding: 15px; background-color: #f0f4f8; border-left: 5px solid #607d8b; font-family: 'Courier New', Courier, monospace;">
             <h2 style="margin-top: 0;">🏅 Performance Flags</h2>
             <p style="font-size: 16px; line-height: 1.6;">
-                Each indexer is assigned a <strong>Performance Flag</strong> based on its final Indexer Score, 
-                providing a quick visual indicator of its overall efficiency and effectiveness:
+                Each indexer is assigned a <strong>Performance Flag</strong> based on its final Indexer Score AND delegator rewards percentage, 
+                providing a quick visual indicator of both query fee generation efficiency and delegator-friendliness:
             </p>
             <ul style="margin-left: 20px;">
-                <li><strong>Excellent 🟢 (1.0 - 1.25):</strong> Top-tier performance with highly efficient allocation and strong query fee generation.</li>
-                <li><strong>Fair 🟡 (1.26 - 2.5):</strong> Average performance with moderate inefficiencies or lower query fee generation, indicating room for improvement.</li>
-                <li><strong>Poor 🔴 (2.51 - 10.0):</strong> Poor performance with significant inefficiencies or negligible query fees, requiring attention.</li>
+                <li><strong>Excellent 🟢 (Score: 1.0 - 9.92 + Delegator Rewards ≥ 30%):</strong> Average to exceptional query fee generation <strong>AND</strong> generous delegator rewards. These indexers demonstrate efficiency in converting their allocated stake into query fee revenue while sharing at least 30% of total rewards with delegators. They generate meaningful query fees (typically 0.08-30% of allocated stake) and provide strong value for delegators through both performance and fair reward sharing. Most importantly, they share rewards generously with their delegators.</li>
+                <li><strong>Fair 🟡 (Score: 9.93 - 9.97 OR Delegator Rewards 10-29%):</strong> Below-average query fee generation OR insufficient delegator rewards. These indexers either generate small fees relative to their allocation (typically 0.005-0.08% of allocated stake), or they have good performance but share between 10-29% of rewards with delegators. There is significant room for optimization through better subgraph selection or improved reward sharing.</li>
+                <li><strong>Poor 🔴 (Score: 9.98 - 10.0 OR Delegator Rewards < 10%):</strong> Minimal query fee generation OR unfair reward distribution. These indexers either generate negligible fees relative to their allocation (<0.005% of allocated stake) OR share less than 10% of rewards with delegators. <strong style="color: #c83349;">CRITICAL: Any indexer sharing less than 10% of rewards with delegators is automatically classified as Poor</strong>, regardless of query fee performance. These indexers should prioritize both optimization and fair reward sharing.</li>
             </ul>
             <p style="font-size: 16px; line-height: 1.6;">
-                These ranges are designed to reflect the distribution of scores across the network, 
-                distinguishing top performers (🟢) from those needing optimization (🔴).
+                <strong>🔴 Critical Rules:</strong>
+            </p>
+            <ul style="margin-left: 20px;">
+                <li><strong>Automatic Poor Classification:</strong> Delegator Rewards < 10% → Poor tier (regardless of QFR score)</li>
+                <li><strong>Excellent Tier Requirement:</strong> Delegator Rewards ≥ 30% + Reasonable QFR (score ≤ 9.92) [Relaxed threshold]</li>
+                <li><strong>Fair Tier Range:</strong> Delegator Rewards 10-29% OR Score 9.93-9.97</li>
+            </ul>
+            <p style="font-size: 16px; line-height: 1.6;">
+                These thresholds ensure that only indexers who provide meaningful value to delegators through BOTH strong performance AND fair reward sharing can achieve top ratings. 
+                Indexers who keep more than 90% of rewards for themselves are considered unfair to delegators and will always be rated as Poor, 
+                regardless of their technical performance.
             </p>
         </div>
     </body>

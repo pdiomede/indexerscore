@@ -389,6 +389,17 @@
                 font-weight: bold;
             }
 
+            @keyframes pulse {
+                0%, 100% {
+                    opacity: 1;
+                    transform: scale(1);
+                }
+                50% {
+                    opacity: 0.8;
+                    transform: scale(1.05);
+                }
+            }
+
         </style>
 
         <!-- Plausible Analytics -->
@@ -422,13 +433,18 @@
         
         <hr class="divider">
         <div style="text-align: center;">       
-            <h1 style="margin-bottom: 4px;">Indexer Score Dashboard</h1>
+            <h1 style="margin-bottom: 4px;">
+                Indexer Score Dashboard 
+                <a href="whats-new.html" target="_blank" style="text-decoration: none;">
+                    <span style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 4px 12px; border-radius: 20px; font-size: 0.35em; font-weight: bold; margin-left: 10px; display: inline-block; box-shadow: 0 2px 8px rgba(102, 126, 234, 0.4); vertical-align: middle; animation: pulse 2s infinite; cursor: pointer;">✨ NEW</span>
+                </a>
+            </h1>
             <div style="text-align: center; font-size: 0.8em; color: var(--text-color); margin-top: 0; margin-bottom: 30px;">
-                Generated on: 2025-05-20 10:45:52 UTC - (updated every 6 hours) - v1.2.3
+                Generated on: 2025-10-30 10:03:31 UTC - (updated every 6 hours) - v2.0.0
                 <p style="margin-top: 10px;">
                     💬 <a target="_blank" href="https://forum.thegraph.com/t/introducing-the-indexer-score/6501">Join the Forum Discussion</a>
                     | 📚 <a href="docs.html" target="_blank">How the Dashboard Works</a>
-                    | 📄 <a  target="_blank" href="./indexer_score_documentation_v1.1.0.pdf" download>Download PDF Documentation</a>
+                    | 📄 <a  target="_blank" href="./indexer_score_documentation_v2.0.0.pdf" download>Download PDF Documentation</a>
                 </p>
             </div>
         </div>
@@ -438,9 +454,9 @@
             <!-- Network Stats Box -->
             <div style="padding: 6px 12px; background-color: #d6cbd3; border-left: 5px solid #4caf50; width: fit-content; color: black !important;">
                 <ul style="margin: 0; padding-left: 20px;">
-                    <li><strong>Active Indexers:</strong> 96  <span style="font-size: 0.8em;"> (excluding the Upgrade Indexer)</span></li>
-                    <li><strong>Indexers with allocations:</strong> 88</li>
-                    <li><strong>Indexers serving <span style="color: #c83349;">less than</span> 10 allocations:</strong> 28 <span style="font-size: 0.8em;">→ check the 'Underserving' column</span></li>
+                    <li><strong>Active Indexers:</strong> 88  <span style="font-size: 0.8em;"> (excluding the Upgrade Indexer)</span></li>
+                    <li><strong>Indexers with allocations:</strong> 82</li>
+                    <li><strong>Indexers serving <span style="color: #c83349;">less than</span> 10 allocations:</strong> 23 <span style="font-size: 0.8em;">→ check the 'Underserving' column</span></li>
                 </ul>
             </div>
         </div>
@@ -455,9 +471,9 @@
 
             <div class="performance-filter" style="display: flex; align-items: center; gap: 8px; font-size: 0.8em;">
                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong style="margin-right: 6px;">Filter by Performance: </strong>
-                <a href="#" class="filter-button" onclick="filterByFlag('Excellent')">🟢 Excellent (37)</a>
-                | <a href="#" class="filter-button" onclick="filterByFlag('Fair')">🟡 Fair (26)</a>
-                | <a href="#" class="filter-button" onclick="filterByFlag('Poor')">🔴 Poor (25)</a>
+                <a href="#" class="filter-button" onclick="filterByFlag('Excellent')">🟢 Excellent (20)</a>
+                | <a href="#" class="filter-button" onclick="filterByFlag('Fair')">🟡 Fair (11)</a>
+                | <a href="#" class="filter-button" onclick="filterByFlag('Poor')">🔴 Poor (51)</a>
                 | <a href="#" class="filter-button" onclick="filterByFlag('All')">🧹 Clear Filter</a>
             </div>
 
@@ -512,16 +528,16 @@
                 </a>
             -->
             </td>
-            <td data-value="5218898.0"><span style="font-size: 0.85em;">5,218,898</span></td>
-            <td data-value="14"><span style="font-size: 0.85em;">14</span></td>
-            <td data-value="16325.561878472876"><span style="font-size: 0.85em;">16,326</span></td>
-            <td data-value="53.26"><span style="font-size: 0.85em; color: #0066ff;">53.26%</span></td>
-            <td data-value="1307791.5049826931"><span style="font-size: 0.85em;">1,307,792</span></td>
-            <td data-value="1147883.5682143588"><span style="font-size: 0.85em;">1,147,884</span></td>
-            <td data-value="2455675.073197052"><span style="font-size: 0.85em;">2,455,675</span></td>
+            <td data-value="4233577.0"><span style="font-size: 0.85em;">4,233,577</span></td>
+            <td data-value="24"><span style="font-size: 0.85em;">24</span></td>
+            <td data-value="20185.740940753007"><span style="font-size: 0.85em;">20,186</span></td>
+            <td data-value="49.40"><span style="font-size: 0.85em; color: #0066ff;">49.40%</span></td>
+            <td data-value="1469759.6125348876"><span style="font-size: 0.85em;">1,469,760</span></td>
+            <td data-value="1505535.4860589798"><span style="font-size: 0.85em;">1,505,535</span></td>
+            <td data-value="2975295.0985938674"><span style="font-size: 0.85em;">2,975,295</span></td>
             <td style="color: inherit;"><span style="font-size: 0.85em;">No</span></td>
-            <td data-value="1.48"><span style="font-size: 0.85em;">1.48</span></td>
-            <td data-value="1.48"><span style="font-size: 0.85em;">Fair 🟡</span></td>
+            <td data-value="9.86"><span style="font-size: 0.85em;">9.86</span></td>
+            <td data-value="9.86"><span style="font-size: 0.85em;">Excellent 🟢</span></td>
         </tr>
         
         <tr>
@@ -535,16 +551,39 @@
                 </a>
             -->
             </td>
-            <td data-value="8132193.0"><span style="font-size: 0.85em;">8,132,193</span></td>
-            <td data-value="1"><span style="font-size: 0.85em;">1</span></td>
+            <td data-value="8246479.0"><span style="font-size: 0.85em;">8,246,479</span></td>
+            <td data-value="26"><span style="font-size: 0.85em;">26</span></td>
             <td data-value="932.5563690435876"><span style="font-size: 0.85em;">933</span></td>
             <td data-value="22.00"><span style="font-size: 0.85em; color: #0066ff;">22.00%</span></td>
-            <td data-value="570184.050489455"><span style="font-size: 0.85em;">570,184</span></td>
-            <td data-value="2021561.6335535226"><span style="font-size: 0.85em;">2,021,562</span></td>
-            <td data-value="2591745.6840429776"><span style="font-size: 0.85em;">2,591,746</span></td>
+            <td data-value="685713.2216339917"><span style="font-size: 0.85em;">685,713</span></td>
+            <td data-value="2431165.0585205154"><span style="font-size: 0.85em;">2,431,165</span></td>
+            <td data-value="3116878.280154507"><span style="font-size: 0.85em;">3,116,878</span></td>
+            <td style="color: inherit;"><span style="font-size: 0.85em;">No</span></td>
+            <td data-value="10.0"><span style="font-size: 0.85em;">10.00</span></td>
+            <td data-value="10.0"><span style="font-size: 0.85em;">Poor 🔴</span></td>
+        </tr>
+        
+        <tr>
+            
+            <td>
+                <img src='https://ipfs.thegraph.com/ipfs/QmPqzRRSvJ5sahcNuBUVSmYiCokufg3qkwDFFQN4Wxo4AQ' style='width:20px; height:20px; border-radius:50%; vertical-align:middle; margin-right:6px;' />
+                <a target="_blank" href="https://thegraph.com/explorer/profile/0x0874e792462406dc12ee96b75e52a3bdbba3a123?view=Overview&chain=arbitrum-one"><span style="font-size: 0.85em;">posthuman-validator.eth</span></a>
+            <!--
+                <a href="statements/0x0874e792462406dc12ee96b75e52a3bdbba3a123.pdf" target="_blank">
+                    <img src="images/pdf.png" alt="PDF" style="width:14px; height:14px; vertical-align:middle; margin-left:6px;" />
+                </a>
+            -->
+            </td>
+            <td data-value="237179.00000000003"><span style="font-size: 0.85em;">237,179</span></td>
+            <td data-value="1"><span style="font-size: 0.85em;">1</span></td>
+            <td data-value="0.5344264042711303"><span style="font-size: 0.85em;">1</span></td>
+            <td data-value="0.00"><span style="font-size: 0.85em; color: #0066ff;">0.00%</span></td>
+            <td data-value="0.0"><span style="font-size: 0.85em;">0</span></td>
+            <td data-value="12341.111543378967"><span style="font-size: 0.85em;">12,341</span></td>
+            <td data-value="12341.111543378967"><span style="font-size: 0.85em;">12,341</span></td>
             <td style="color: #c83349;"><span style="font-size: 0.85em;">Yes</span></td>
-            <td data-value="9.1"><span style="font-size: 0.85em;">9.10</span></td>
-            <td data-value="9.1"><span style="font-size: 0.85em;">Poor 🔴</span></td>
+            <td data-value="10.0"><span style="font-size: 0.85em;">10.00</span></td>
+            <td data-value="10.0"><span style="font-size: 0.85em;">Poor 🔴</span></td>
         </tr>
         
         <tr>
@@ -558,16 +597,16 @@
                 </a>
             -->
             </td>
-            <td data-value="30535726.0"><span style="font-size: 0.85em;">30,535,726</span></td>
-            <td data-value="19"><span style="font-size: 0.85em;">19</span></td>
-            <td data-value="24996.823270582376"><span style="font-size: 0.85em;">24,997</span></td>
-            <td data-value="83.46"><span style="font-size: 0.85em; color: #0066ff;">83.46%</span></td>
-            <td data-value="5452613.448985143"><span style="font-size: 0.85em;">5,452,613</span></td>
-            <td data-value="1080416.5001587854"><span style="font-size: 0.85em;">1,080,417</span></td>
-            <td data-value="6533029.9491439285"><span style="font-size: 0.85em;">6,533,030</span></td>
+            <td data-value="29474071.0"><span style="font-size: 0.85em;">29,474,071</span></td>
+            <td data-value="16"><span style="font-size: 0.85em;">16</span></td>
+            <td data-value="31374.392536125775"><span style="font-size: 0.85em;">31,374</span></td>
+            <td data-value="83.45"><span style="font-size: 0.85em; color: #0066ff;">83.45%</span></td>
+            <td data-value="7130555.377244014"><span style="font-size: 0.85em;">7,130,555</span></td>
+            <td data-value="1414395.3491887283"><span style="font-size: 0.85em;">1,414,395</span></td>
+            <td data-value="8544950.726432743"><span style="font-size: 0.85em;">8,544,951</span></td>
             <td style="color: inherit;"><span style="font-size: 0.85em;">No</span></td>
-            <td data-value="2.02"><span style="font-size: 0.85em;">2.02</span></td>
-            <td data-value="2.02"><span style="font-size: 0.85em;">Fair 🟡</span></td>
+            <td data-value="9.97"><span style="font-size: 0.85em;">9.97</span></td>
+            <td data-value="9.97"><span style="font-size: 0.85em;">Fair 🟡</span></td>
         </tr>
         
         <tr>
@@ -581,16 +620,39 @@
                 </a>
             -->
             </td>
-            <td data-value="2199136.0"><span style="font-size: 0.85em;">2,199,136</span></td>
-            <td data-value="7"><span style="font-size: 0.85em;">7</span></td>
-            <td data-value="2706.8696547465715"><span style="font-size: 0.85em;">2,707</span></td>
-            <td data-value="80.11"><span style="font-size: 0.85em; color: #0066ff;">80.11%</span></td>
-            <td data-value="734930.0318035819"><span style="font-size: 0.85em;">734,930</span></td>
-            <td data-value="182458.2351271497"><span style="font-size: 0.85em;">182,458</span></td>
-            <td data-value="917388.2669307316"><span style="font-size: 0.85em;">917,388</span></td>
+            <td data-value="2168764.0"><span style="font-size: 0.85em;">2,168,764</span></td>
+            <td data-value="8"><span style="font-size: 0.85em;">8</span></td>
+            <td data-value="2807.3977872424075"><span style="font-size: 0.85em;">2,807</span></td>
+            <td data-value="79.49"><span style="font-size: 0.85em; color: #0066ff;">79.49%</span></td>
+            <td data-value="830965.9332489271"><span style="font-size: 0.85em;">830,966</span></td>
+            <td data-value="214470.20227559807"><span style="font-size: 0.85em;">214,470</span></td>
+            <td data-value="1045436.1355245252"><span style="font-size: 0.85em;">1,045,436</span></td>
             <td style="color: #c83349;"><span style="font-size: 0.85em;">Yes</span></td>
-            <td data-value="2.0"><span style="font-size: 0.85em;">2.00</span></td>
-            <td data-value="2.0"><span style="font-size: 0.85em;">Fair 🟡</span></td>
+            <td data-value="10.0"><span style="font-size: 0.85em;">10.00</span></td>
+            <td data-value="10.0"><span style="font-size: 0.85em;">Poor 🔴</span></td>
+        </tr>
+        
+        <tr>
+            
+            <td>
+                
+                <a target="_blank" href="https://thegraph.com/explorer/profile/0x0ee85c30ff1797d9f041261b88c4a58d6d68fbbf?view=Overview&chain=arbitrum-one"><span style="font-size: 0.85em;">0x0ee85c30ff1797d9f041261b88c4a58d6d68fbbf</span></a>
+            <!--
+                <a href="statements/0x0ee85c30ff1797d9f041261b88c4a58d6d68fbbf.pdf" target="_blank">
+                    <img src="images/pdf.png" alt="PDF" style="width:14px; height:14px; vertical-align:middle; margin-left:6px;" />
+                </a>
+            -->
+            </td>
+            <td data-value="469200.0"><span style="font-size: 0.85em;">469,200</span></td>
+            <td data-value="1"><span style="font-size: 0.85em;">1</span></td>
+            <td data-value="15.20456676936999"><span style="font-size: 0.85em;">15</span></td>
+            <td data-value="0.00"><span style="font-size: 0.85em; color: #0066ff;">0.00%</span></td>
+            <td data-value="0.0"><span style="font-size: 0.85em;">0</span></td>
+            <td data-value="25023.020426136733"><span style="font-size: 0.85em;">25,023</span></td>
+            <td data-value="25023.020426136733"><span style="font-size: 0.85em;">25,023</span></td>
+            <td style="color: #c83349;"><span style="font-size: 0.85em;">Yes</span></td>
+            <td data-value="10.0"><span style="font-size: 0.85em;">10.00</span></td>
+            <td data-value="10.0"><span style="font-size: 0.85em;">Poor 🔴</span></td>
         </tr>
         
         <tr>
@@ -604,16 +666,16 @@
                 </a>
             -->
             </td>
-            <td data-value="36568293.93"><span style="font-size: 0.85em;">36,568,294</span></td>
-            <td data-value="59"><span style="font-size: 0.85em;">59</span></td>
-            <td data-value="37951.92760094245"><span style="font-size: 0.85em;">37,952</span></td>
-            <td data-value="75.22"><span style="font-size: 0.85em; color: #0066ff;">75.22%</span></td>
-            <td data-value="13442551.009776972"><span style="font-size: 0.85em;">13,442,551</span></td>
-            <td data-value="4428104.656561866"><span style="font-size: 0.85em;">4,428,105</span></td>
-            <td data-value="17870655.66633884"><span style="font-size: 0.85em;">17,870,656</span></td>
+            <td data-value="31336142.62"><span style="font-size: 0.85em;">31,336,143</span></td>
+            <td data-value="45"><span style="font-size: 0.85em;">45</span></td>
+            <td data-value="40945.21905634423"><span style="font-size: 0.85em;">40,945</span></td>
+            <td data-value="75.44"><span style="font-size: 0.85em; color: #0066ff;">75.44%</span></td>
+            <td data-value="15331688.714564886"><span style="font-size: 0.85em;">15,331,689</span></td>
+            <td data-value="4992392.542407606"><span style="font-size: 0.85em;">4,992,393</span></td>
+            <td data-value="20324081.25697249"><span style="font-size: 0.85em;">20,324,081</span></td>
             <td style="color: inherit;"><span style="font-size: 0.85em;">No</span></td>
-            <td data-value="1.39"><span style="font-size: 0.85em;">1.39</span></td>
-            <td data-value="1.39"><span style="font-size: 0.85em;">Fair 🟡</span></td>
+            <td data-value="9.96"><span style="font-size: 0.85em;">9.96</span></td>
+            <td data-value="9.96"><span style="font-size: 0.85em;">Fair 🟡</span></td>
         </tr>
         
         <tr>
@@ -627,16 +689,16 @@
                 </a>
             -->
             </td>
-            <td data-value="4777600.0"><span style="font-size: 0.85em;">4,777,600</span></td>
-            <td data-value="1"><span style="font-size: 0.85em;">1</span></td>
-            <td data-value="635.6362223187527"><span style="font-size: 0.85em;">636</span></td>
+            <td data-value="4778000.0"><span style="font-size: 0.85em;">4,778,000</span></td>
+            <td data-value="6"><span style="font-size: 0.85em;">6</span></td>
+            <td data-value="1317.5939693277833"><span style="font-size: 0.85em;">1,318</span></td>
             <td data-value="0.00"><span style="font-size: 0.85em; color: #0066ff;">0.00%</span></td>
             <td data-value="0.0"><span style="font-size: 0.85em;">0</span></td>
-            <td data-value="1522593.0413172364"><span style="font-size: 0.85em;">1,522,593</span></td>
-            <td data-value="1522593.0413172364"><span style="font-size: 0.85em;">1,522,593</span></td>
+            <td data-value="1773623.4245011925"><span style="font-size: 0.85em;">1,773,623</span></td>
+            <td data-value="1773623.4245011925"><span style="font-size: 0.85em;">1,773,623</span></td>
             <td style="color: #c83349;"><span style="font-size: 0.85em;">Yes</span></td>
-            <td data-value="8.82"><span style="font-size: 0.85em;">8.82</span></td>
-            <td data-value="8.82"><span style="font-size: 0.85em;">Poor 🔴</span></td>
+            <td data-value="10.0"><span style="font-size: 0.85em;">10.00</span></td>
+            <td data-value="10.0"><span style="font-size: 0.85em;">Poor 🔴</span></td>
         </tr>
         
         <tr>
@@ -650,16 +712,16 @@
                 </a>
             -->
             </td>
-            <td data-value="59437639.0"><span style="font-size: 0.85em;">59,437,639</span></td>
-            <td data-value="435"><span style="font-size: 0.85em;">435</span></td>
-            <td data-value="586210.5851007677"><span style="font-size: 0.85em;">586,211</span></td>
-            <td data-value="64.50"><span style="font-size: 0.85em; color: #0066ff;">64.50%</span></td>
-            <td data-value="9055651.698981512"><span style="font-size: 0.85em;">9,055,652</span></td>
-            <td data-value="4984173.290337132"><span style="font-size: 0.85em;">4,984,173</span></td>
-            <td data-value="14039824.989318645"><span style="font-size: 0.85em;">14,039,825</span></td>
+            <td data-value="56202777.0"><span style="font-size: 0.85em;">56,202,777</span></td>
+            <td data-value="475"><span style="font-size: 0.85em;">475</span></td>
+            <td data-value="695150.284596615"><span style="font-size: 0.85em;">695,150</span></td>
+            <td data-value="64.63"><span style="font-size: 0.85em; color: #0066ff;">64.63%</span></td>
+            <td data-value="12200589.980628453"><span style="font-size: 0.85em;">12,200,590</span></td>
+            <td data-value="6677601.59583933"><span style="font-size: 0.85em;">6,677,602</span></td>
+            <td data-value="18878191.576467782"><span style="font-size: 0.85em;">18,878,192</span></td>
             <td style="color: inherit;"><span style="font-size: 0.85em;">No</span></td>
-            <td data-value="1.07"><span style="font-size: 0.85em;">1.07</span></td>
-            <td data-value="1.07"><span style="font-size: 0.85em;">Excellent 🟢</span></td>
+            <td data-value="9.63"><span style="font-size: 0.85em;">9.63</span></td>
+            <td data-value="9.63"><span style="font-size: 0.85em;">Excellent 🟢</span></td>
         </tr>
         
         <tr>
@@ -673,16 +735,39 @@
                 </a>
             -->
             </td>
-            <td data-value="2817603.9999999995"><span style="font-size: 0.85em;">2,817,604</span></td>
-            <td data-value="18"><span style="font-size: 0.85em;">18</span></td>
-            <td data-value="15589.09412872318"><span style="font-size: 0.85em;">15,589</span></td>
-            <td data-value="75.77"><span style="font-size: 0.85em; color: #0066ff;">75.77%</span></td>
-            <td data-value="945611.6843552717"><span style="font-size: 0.85em;">945,612</span></td>
-            <td data-value="302346.9330108352"><span style="font-size: 0.85em;">302,347</span></td>
-            <td data-value="1247958.617366107"><span style="font-size: 0.85em;">1,247,959</span></td>
+            <td data-value="2814378.0"><span style="font-size: 0.85em;">2,814,378</span></td>
+            <td data-value="12"><span style="font-size: 0.85em;">12</span></td>
+            <td data-value="15687.208328202152"><span style="font-size: 0.85em;">15,687</span></td>
+            <td data-value="73.63"><span style="font-size: 0.85em; color: #0066ff;">73.63%</span></td>
+            <td data-value="1098223.992965819"><span style="font-size: 0.85em;">1,098,224</span></td>
+            <td data-value="393251.9510486799"><span style="font-size: 0.85em;">393,252</span></td>
+            <td data-value="1491475.944014499"><span style="font-size: 0.85em;">1,491,476</span></td>
             <td style="color: inherit;"><span style="font-size: 0.85em;">No</span></td>
-            <td data-value="1.21"><span style="font-size: 0.85em;">1.21</span></td>
-            <td data-value="1.21"><span style="font-size: 0.85em;">Excellent 🟢</span></td>
+            <td data-value="9.83"><span style="font-size: 0.85em;">9.83</span></td>
+            <td data-value="9.83"><span style="font-size: 0.85em;">Excellent 🟢</span></td>
+        </tr>
+        
+        <tr>
+            
+            <td>
+                
+                <a target="_blank" href="https://thegraph.com/explorer/profile/0x2121bc6437100fc21d19a9eea30898419e020afa?view=Overview&chain=arbitrum-one"><span style="font-size: 0.85em;">pillar-p2p-org.eth</span></a>
+            <!--
+                <a href="statements/0x2121bc6437100fc21d19a9eea30898419e020afa.pdf" target="_blank">
+                    <img src="images/pdf.png" alt="PDF" style="width:14px; height:14px; vertical-align:middle; margin-left:6px;" />
+                </a>
+            -->
+            </td>
+            <td data-value="5.0"><span style="font-size: 0.85em;">5</span></td>
+            <td data-value="60"><span style="font-size: 0.85em;">60</span></td>
+            <td data-value="0.0"><span style="font-size: 0.85em;">0</span></td>
+            <td data-value="0.00"><span style="font-size: 0.85em; color: #0066ff;">0.00%</span></td>
+            <td data-value="0.0"><span style="font-size: 0.85em;">0</span></td>
+            <td data-value="0.0"><span style="font-size: 0.85em;">0</span></td>
+            <td data-value="0.0"><span style="font-size: 0.85em;">0</span></td>
+            <td style="color: inherit;"><span style="font-size: 0.85em;">No</span></td>
+            <td data-value="10.0"><span style="font-size: 0.85em;">10.00</span></td>
+            <td data-value="10.0"><span style="font-size: 0.85em;">Poor 🔴</span></td>
         </tr>
         
         <tr>
@@ -696,16 +781,16 @@
                 </a>
             -->
             </td>
-            <td data-value="746314.0"><span style="font-size: 0.85em;">746,314</span></td>
-            <td data-value="3"><span style="font-size: 0.85em;">3</span></td>
-            <td data-value="10.140691382079828"><span style="font-size: 0.85em;">10</span></td>
-            <td data-value="90.04"><span style="font-size: 0.85em; color: #0066ff;">90.04%</span></td>
-            <td data-value="112949.540393236"><span style="font-size: 0.85em;">112,950</span></td>
-            <td data-value="12490.830627428943"><span style="font-size: 0.85em;">12,491</span></td>
-            <td data-value="125440.37102066494"><span style="font-size: 0.85em;">125,440</span></td>
+            <td data-value="430000.0"><span style="font-size: 0.85em;">430,000</span></td>
+            <td data-value="1"><span style="font-size: 0.85em;">1</span></td>
+            <td data-value="38.538528527607475"><span style="font-size: 0.85em;">39</span></td>
+            <td data-value="90.03"><span style="font-size: 0.85em; color: #0066ff;">90.03%</span></td>
+            <td data-value="144103.39992983447"><span style="font-size: 0.85em;">144,103</span></td>
+            <td data-value="15952.370575939885"><span style="font-size: 0.85em;">15,952</span></td>
+            <td data-value="160055.77050577436"><span style="font-size: 0.85em;">160,056</span></td>
             <td style="color: #c83349;"><span style="font-size: 0.85em;">Yes</span></td>
-            <td data-value="3.03"><span style="font-size: 0.85em;">3.03</span></td>
-            <td data-value="3.03"><span style="font-size: 0.85em;">Poor 🔴</span></td>
+            <td data-value="10.0"><span style="font-size: 0.85em;">10.00</span></td>
+            <td data-value="10.0"><span style="font-size: 0.85em;">Poor 🔴</span></td>
         </tr>
         
         <tr>
@@ -719,16 +804,16 @@
                 </a>
             -->
             </td>
-            <td data-value="123576131.0"><span style="font-size: 0.85em;">123,576,131</span></td>
-            <td data-value="225"><span style="font-size: 0.85em;">225</span></td>
-            <td data-value="6164.842816703465"><span style="font-size: 0.85em;">6,165</span></td>
+            <td data-value="123576100.0"><span style="font-size: 0.85em;">123,576,100</span></td>
+            <td data-value="167"><span style="font-size: 0.85em;">167</span></td>
+            <td data-value="9796.776979954402"><span style="font-size: 0.85em;">9,797</span></td>
             <td data-value="0.00"><span style="font-size: 0.85em; color: #0066ff;">0.00%</span></td>
             <td data-value="0.0"><span style="font-size: 0.85em;">0</span></td>
-            <td data-value="22839031.84443572"><span style="font-size: 0.85em;">22,839,032</span></td>
-            <td data-value="22839031.84443572"><span style="font-size: 0.85em;">22,839,032</span></td>
+            <td data-value="29280158.929120097"><span style="font-size: 0.85em;">29,280,159</span></td>
+            <td data-value="29280158.929120097"><span style="font-size: 0.85em;">29,280,159</span></td>
             <td style="color: inherit;"><span style="font-size: 0.85em;">No</span></td>
-            <td data-value="1.18"><span style="font-size: 0.85em;">1.18</span></td>
-            <td data-value="1.18"><span style="font-size: 0.85em;">Excellent 🟢</span></td>
+            <td data-value="10.0"><span style="font-size: 0.85em;">10.00</span></td>
+            <td data-value="10.0"><span style="font-size: 0.85em;">Poor 🔴</span></td>
         </tr>
         
         <tr>
@@ -742,16 +827,16 @@
                 </a>
             -->
             </td>
-            <td data-value="4878982.0"><span style="font-size: 0.85em;">4,878,982</span></td>
-            <td data-value="3"><span style="font-size: 0.85em;">3</span></td>
+            <td data-value="5025717.999999999"><span style="font-size: 0.85em;">5,025,718</span></td>
+            <td data-value="5"><span style="font-size: 0.85em;">5</span></td>
             <td data-value="0.03885258235252989"><span style="font-size: 0.85em;">0</span></td>
-            <td data-value="47.71"><span style="font-size: 0.85em; color: #0066ff;">47.71%</span></td>
-            <td data-value="372009.8770397058"><span style="font-size: 0.85em;">372,010</span></td>
-            <td data-value="407658.04921566736"><span style="font-size: 0.85em;">407,658</span></td>
-            <td data-value="779667.9262553732"><span style="font-size: 0.85em;">779,668</span></td>
+            <td data-value="48.91"><span style="font-size: 0.85em; color: #0066ff;">48.91%</span></td>
+            <td data-value="529182.9830404443"><span style="font-size: 0.85em;">529,183</span></td>
+            <td data-value="552740.916293272"><span style="font-size: 0.85em;">552,741</span></td>
+            <td data-value="1081923.8993337164"><span style="font-size: 0.85em;">1,081,924</span></td>
             <td style="color: #c83349;"><span style="font-size: 0.85em;">Yes</span></td>
-            <td data-value="4.45"><span style="font-size: 0.85em;">4.45</span></td>
-            <td data-value="4.45"><span style="font-size: 0.85em;">Poor 🔴</span></td>
+            <td data-value="10.0"><span style="font-size: 0.85em;">10.00</span></td>
+            <td data-value="10.0"><span style="font-size: 0.85em;">Poor 🔴</span></td>
         </tr>
         
         <tr>
@@ -765,16 +850,16 @@
                 </a>
             -->
             </td>
-            <td data-value="5300000.0"><span style="font-size: 0.85em;">5,300,000</span></td>
+            <td data-value="2122804.0"><span style="font-size: 0.85em;">2,122,804</span></td>
             <td data-value="4"><span style="font-size: 0.85em;">4</span></td>
-            <td data-value="44.698078252725054"><span style="font-size: 0.85em;">45</span></td>
-            <td data-value="46.99"><span style="font-size: 0.85em; color: #0066ff;">46.99%</span></td>
-            <td data-value="429975.13679102715"><span style="font-size: 0.85em;">429,975</span></td>
-            <td data-value="485080.39167179505"><span style="font-size: 0.85em;">485,080</span></td>
-            <td data-value="915055.5284628222"><span style="font-size: 0.85em;">915,056</span></td>
+            <td data-value="205.20921565686834"><span style="font-size: 0.85em;">205</span></td>
+            <td data-value="47.51"><span style="font-size: 0.85em; color: #0066ff;">47.51%</span></td>
+            <td data-value="526413.7977503536"><span style="font-size: 0.85em;">526,414</span></td>
+            <td data-value="581519.0526311214"><span style="font-size: 0.85em;">581,519</span></td>
+            <td data-value="1107932.850381475"><span style="font-size: 0.85em;">1,107,933</span></td>
             <td style="color: #c83349;"><span style="font-size: 0.85em;">Yes</span></td>
-            <td data-value="3.87"><span style="font-size: 0.85em;">3.87</span></td>
-            <td data-value="3.87"><span style="font-size: 0.85em;">Poor 🔴</span></td>
+            <td data-value="10.0"><span style="font-size: 0.85em;">10.00</span></td>
+            <td data-value="10.0"><span style="font-size: 0.85em;">Poor 🔴</span></td>
         </tr>
         
         <tr>
@@ -788,16 +873,16 @@
                 </a>
             -->
             </td>
-            <td data-value="246505892.99999997"><span style="font-size: 0.85em;">246,505,893</span></td>
-            <td data-value="92"><span style="font-size: 0.85em;">92</span></td>
-            <td data-value="8829.378335659932"><span style="font-size: 0.85em;">8,829</span></td>
-            <td data-value="79.92"><span style="font-size: 0.85em; color: #0066ff;">79.92%</span></td>
-            <td data-value="41223870.886941686"><span style="font-size: 0.85em;">41,223,871</span></td>
-            <td data-value="10359573.577570207"><span style="font-size: 0.85em;">10,359,574</span></td>
-            <td data-value="51583444.46451189"><span style="font-size: 0.85em;">51,583,444</span></td>
+            <td data-value="275981746.0"><span style="font-size: 0.85em;">275,981,746</span></td>
+            <td data-value="507"><span style="font-size: 0.85em;">507</span></td>
+            <td data-value="12127.812159840681"><span style="font-size: 0.85em;">12,128</span></td>
+            <td data-value="78.73"><span style="font-size: 0.85em; color: #0066ff;">78.73%</span></td>
+            <td data-value="52622040.17230739"><span style="font-size: 0.85em;">52,622,040</span></td>
+            <td data-value="14218979.30493684"><span style="font-size: 0.85em;">14,218,979</span></td>
+            <td data-value="66841019.47724423"><span style="font-size: 0.85em;">66,841,019</span></td>
             <td style="color: inherit;"><span style="font-size: 0.85em;">No</span></td>
-            <td data-value="1.85"><span style="font-size: 0.85em;">1.85</span></td>
-            <td data-value="1.85"><span style="font-size: 0.85em;">Fair 🟡</span></td>
+            <td data-value="10.0"><span style="font-size: 0.85em;">10.00</span></td>
+            <td data-value="10.0"><span style="font-size: 0.85em;">Poor 🔴</span></td>
         </tr>
         
         <tr>
@@ -811,16 +896,16 @@
                 </a>
             -->
             </td>
-            <td data-value="31469380.0"><span style="font-size: 0.85em;">31,469,380</span></td>
-            <td data-value="341"><span style="font-size: 0.85em;">341</span></td>
+            <td data-value="30930120.0"><span style="font-size: 0.85em;">30,930,120</span></td>
+            <td data-value="238"><span style="font-size: 0.85em;">238</span></td>
             <td data-value="18978.7389934669"><span style="font-size: 0.85em;">18,979</span></td>
-            <td data-value="82.84"><span style="font-size: 0.85em; color: #0066ff;">82.84%</span></td>
-            <td data-value="4847034.975455501"><span style="font-size: 0.85em;">4,847,035</span></td>
-            <td data-value="1004112.0020198118"><span style="font-size: 0.85em;">1,004,112</span></td>
-            <td data-value="5851146.977475313"><span style="font-size: 0.85em;">5,851,147</span></td>
+            <td data-value="79.21"><span style="font-size: 0.85em; color: #0066ff;">79.21%</span></td>
+            <td data-value="6748389.212859124"><span style="font-size: 0.85em;">6,748,389</span></td>
+            <td data-value="1771152.7327812652"><span style="font-size: 0.85em;">1,771,153</span></td>
+            <td data-value="8519541.945640389"><span style="font-size: 0.85em;">8,519,542</span></td>
             <td style="color: inherit;"><span style="font-size: 0.85em;">No</span></td>
-            <td data-value="1.06"><span style="font-size: 0.85em;">1.06</span></td>
-            <td data-value="1.06"><span style="font-size: 0.85em;">Excellent 🟢</span></td>
+            <td data-value="9.98"><span style="font-size: 0.85em;">9.98</span></td>
+            <td data-value="9.98"><span style="font-size: 0.85em;">Poor 🔴</span></td>
         </tr>
         
         <tr>
@@ -835,38 +920,15 @@
             -->
             </td>
             <td data-value="15436000.0"><span style="font-size: 0.85em;">15,436,000</span></td>
-            <td data-value="1"><span style="font-size: 0.85em;">1</span></td>
+            <td data-value="8"><span style="font-size: 0.85em;">8</span></td>
             <td data-value="393.30433796319426"><span style="font-size: 0.85em;">393</span></td>
             <td data-value="0.00"><span style="font-size: 0.85em; color: #0066ff;">0.00%</span></td>
             <td data-value="0.0"><span style="font-size: 0.85em;">0</span></td>
-            <td data-value="2577928.461820138"><span style="font-size: 0.85em;">2,577,928</span></td>
-            <td data-value="2577928.461820138"><span style="font-size: 0.85em;">2,577,928</span></td>
+            <td data-value="3335723.6355596925"><span style="font-size: 0.85em;">3,335,724</span></td>
+            <td data-value="3335723.6355596925"><span style="font-size: 0.85em;">3,335,724</span></td>
             <td style="color: #c83349;"><span style="font-size: 0.85em;">Yes</span></td>
-            <td data-value="9.1"><span style="font-size: 0.85em;">9.10</span></td>
-            <td data-value="9.1"><span style="font-size: 0.85em;">Poor 🔴</span></td>
-        </tr>
-        
-        <tr>
-            
-            <td>
-                <img src='https://api.thegraph.com/ipfs/api/v0/cat?arg=QmPQcUtUYBNizkQkN7rcVZduRjWaWLb4Wsrs6YwoeqkiLc' style='width:20px; height:20px; border-radius:50%; vertical-align:middle; margin-right:6px;' />
-                <a target="_blank" href="https://thegraph.com/explorer/profile/0x345c9a221e4caa15f78fb8078c441745de48a225?view=Overview&chain=arbitrum-one"><span style="font-size: 0.85em;">0xfury.eth</span></a>
-            <!--
-                <a href="statements/0x345c9a221e4caa15f78fb8078c441745de48a225.pdf" target="_blank">
-                    <img src="images/pdf.png" alt="PDF" style="width:14px; height:14px; vertical-align:middle; margin-left:6px;" />
-                </a>
-            -->
-            </td>
-            <td data-value="8464971.0"><span style="font-size: 0.85em;">8,464,971</span></td>
-            <td data-value="110"><span style="font-size: 0.85em;">110</span></td>
-            <td data-value="3977.5949882128452"><span style="font-size: 0.85em;">3,978</span></td>
-            <td data-value="80.25"><span style="font-size: 0.85em; color: #0066ff;">80.25%</span></td>
-            <td data-value="1440155.4058187609"><span style="font-size: 0.85em;">1,440,155</span></td>
-            <td data-value="354395.05472361646"><span style="font-size: 0.85em;">354,395</span></td>
-            <td data-value="1794550.4605423773"><span style="font-size: 0.85em;">1,794,550</span></td>
-            <td style="color: inherit;"><span style="font-size: 0.85em;">No</span></td>
-            <td data-value="1.1"><span style="font-size: 0.85em;">1.10</span></td>
-            <td data-value="1.1"><span style="font-size: 0.85em;">Excellent 🟢</span></td>
+            <td data-value="10.0"><span style="font-size: 0.85em;">10.00</span></td>
+            <td data-value="10.0"><span style="font-size: 0.85em;">Poor 🔴</span></td>
         </tr>
         
         <tr>
@@ -880,16 +942,16 @@
                 </a>
             -->
             </td>
-            <td data-value="25253176.0"><span style="font-size: 0.85em;">25,253,176</span></td>
-            <td data-value="836"><span style="font-size: 0.85em;">836</span></td>
-            <td data-value="1766036.3450178606"><span style="font-size: 0.85em;">1,766,036</span></td>
-            <td data-value="22.73"><span style="font-size: 0.85em; color: #0066ff;">22.73%</span></td>
-            <td data-value="1906307.4465196338"><span style="font-size: 0.85em;">1,906,307</span></td>
-            <td data-value="6481985.486888307"><span style="font-size: 0.85em;">6,481,985</span></td>
-            <td data-value="8388292.933407941"><span style="font-size: 0.85em;">8,388,293</span></td>
+            <td data-value="18434122.0"><span style="font-size: 0.85em;">18,434,122</span></td>
+            <td data-value="750"><span style="font-size: 0.85em;">750</span></td>
+            <td data-value="4691469.047307344"><span style="font-size: 0.85em;">4,691,469</span></td>
+            <td data-value="22.09"><span style="font-size: 0.85em; color: #0066ff;">22.09%</span></td>
+            <td data-value="2411807.65283216"><span style="font-size: 0.85em;">2,411,808</span></td>
+            <td data-value="8503986.312138408"><span style="font-size: 0.85em;">8,503,986</span></td>
+            <td data-value="10915793.964970568"><span style="font-size: 0.85em;">10,915,794</span></td>
             <td style="color: inherit;"><span style="font-size: 0.85em;">No</span></td>
-            <td data-value="1.21"><span style="font-size: 0.85em;">1.21</span></td>
-            <td data-value="1.21"><span style="font-size: 0.85em;">Excellent 🟢</span></td>
+            <td data-value="2.37"><span style="font-size: 0.85em;">2.37</span></td>
+            <td data-value="2.37"><span style="font-size: 0.85em;">Fair 🟡</span></td>
         </tr>
         
         <tr>
@@ -903,16 +965,16 @@
                 </a>
             -->
             </td>
-            <td data-value="3988.0"><span style="font-size: 0.85em;">3,988</span></td>
-            <td data-value="149"><span style="font-size: 0.85em;">149</span></td>
-            <td data-value="650.0021335828523"><span style="font-size: 0.85em;">650</span></td>
+            <td data-value="1024.0"><span style="font-size: 0.85em;">1,024</span></td>
+            <td data-value="34"><span style="font-size: 0.85em;">34</span></td>
+            <td data-value="2250.1065516294902"><span style="font-size: 0.85em;">2,250</span></td>
             <td data-value="0.00"><span style="font-size: 0.85em; color: #0066ff;">0.00%</span></td>
             <td data-value="0.0"><span style="font-size: 0.85em;">0</span></td>
-            <td data-value="3557.0805768013715"><span style="font-size: 0.85em;">3,557</span></td>
-            <td data-value="3557.0805768013715"><span style="font-size: 0.85em;">3,557</span></td>
+            <td data-value="5526.577808996601"><span style="font-size: 0.85em;">5,527</span></td>
+            <td data-value="5526.577808996601"><span style="font-size: 0.85em;">5,527</span></td>
             <td style="color: inherit;"><span style="font-size: 0.85em;">No</span></td>
-            <td data-value="1.44"><span style="font-size: 0.85em;">1.44</span></td>
-            <td data-value="1.44"><span style="font-size: 0.85em;">Fair 🟡</span></td>
+            <td data-value="1.0"><span style="font-size: 0.85em;">1.00</span></td>
+            <td data-value="1.0"><span style="font-size: 0.85em;">Poor 🔴</span></td>
         </tr>
         
         <tr>
@@ -930,12 +992,12 @@
             <td data-value="13"><span style="font-size: 0.85em;">13</span></td>
             <td data-value="1162.9322793864415"><span style="font-size: 0.85em;">1,163</span></td>
             <td data-value="95.00"><span style="font-size: 0.85em; color: #0066ff;">95.00%</span></td>
-            <td data-value="12413.897544372361"><span style="font-size: 0.85em;">12,414</span></td>
-            <td data-value="653.3630286511769"><span style="font-size: 0.85em;">653</span></td>
-            <td data-value="13067.260573023537"><span style="font-size: 0.85em;">13,067</span></td>
+            <td data-value="12851.368021392553"><span style="font-size: 0.85em;">12,851</span></td>
+            <td data-value="676.387790599608"><span style="font-size: 0.85em;">676</span></td>
+            <td data-value="13527.755811992161"><span style="font-size: 0.85em;">13,528</span></td>
             <td style="color: inherit;"><span style="font-size: 0.85em;">No</span></td>
-            <td data-value="1.26"><span style="font-size: 0.85em;">1.26</span></td>
-            <td data-value="1.26"><span style="font-size: 0.85em;">Fair 🟡</span></td>
+            <td data-value="7.1"><span style="font-size: 0.85em;">7.10</span></td>
+            <td data-value="7.1"><span style="font-size: 0.85em;">Excellent 🟢</span></td>
         </tr>
         
         <tr>
@@ -949,39 +1011,39 @@
                 </a>
             -->
             </td>
-            <td data-value="35557525.0"><span style="font-size: 0.85em;">35,557,525</span></td>
-            <td data-value="76"><span style="font-size: 0.85em;">76</span></td>
-            <td data-value="19009.650078695442"><span style="font-size: 0.85em;">19,010</span></td>
-            <td data-value="48.80"><span style="font-size: 0.85em; color: #0066ff;">48.80%</span></td>
-            <td data-value="3342865.766965422"><span style="font-size: 0.85em;">3,342,866</span></td>
-            <td data-value="3507768.6903493423"><span style="font-size: 0.85em;">3,507,769</span></td>
-            <td data-value="6850634.457314764"><span style="font-size: 0.85em;">6,850,634</span></td>
+            <td data-value="6835369.9"><span style="font-size: 0.85em;">6,835,370</span></td>
+            <td data-value="38"><span style="font-size: 0.85em;">38</span></td>
+            <td data-value="20677.697235501088"><span style="font-size: 0.85em;">20,678</span></td>
+            <td data-value="48.88"><span style="font-size: 0.85em; color: #0066ff;">48.88%</span></td>
+            <td data-value="3844498.2417791383"><span style="font-size: 0.85em;">3,844,498</span></td>
+            <td data-value="4021118.497071064"><span style="font-size: 0.85em;">4,021,118</span></td>
+            <td data-value="7865616.738850202"><span style="font-size: 0.85em;">7,865,617</span></td>
             <td style="color: inherit;"><span style="font-size: 0.85em;">No</span></td>
-            <td data-value="1.29"><span style="font-size: 0.85em;">1.29</span></td>
-            <td data-value="1.29"><span style="font-size: 0.85em;">Fair 🟡</span></td>
+            <td data-value="9.91"><span style="font-size: 0.85em;">9.91</span></td>
+            <td data-value="9.91"><span style="font-size: 0.85em;">Excellent 🟢</span></td>
         </tr>
         
         <tr>
             
             <td>
                 
-                <a target="_blank" href="https://thegraph.com/explorer/profile/0x3b9ba748691f135b71582dc3292e5e3ed7e13341?view=Overview&chain=arbitrum-one"><span style="font-size: 0.85em;">0x3b9ba748691f135b71582dc3292e5e3ed7e13341</span></a>
+                <a target="_blank" href="https://thegraph.com/explorer/profile/0x3b9ba748691f135b71582dc3292e5e3ed7e13341?view=Overview&chain=arbitrum-one"><span style="font-size: 0.85em;">tehn-r.eth</span></a>
             <!--
                 <a href="statements/0x3b9ba748691f135b71582dc3292e5e3ed7e13341.pdf" target="_blank">
                     <img src="images/pdf.png" alt="PDF" style="width:14px; height:14px; vertical-align:middle; margin-left:6px;" />
                 </a>
             -->
             </td>
-            <td data-value="2790200.0"><span style="font-size: 0.85em;">2,790,200</span></td>
-            <td data-value="44"><span style="font-size: 0.85em;">44</span></td>
-            <td data-value="3514.6579880430104"><span style="font-size: 0.85em;">3,515</span></td>
-            <td data-value="65.16"><span style="font-size: 0.85em; color: #0066ff;">65.16%</span></td>
-            <td data-value="296372.16617330024"><span style="font-size: 0.85em;">296,372</span></td>
-            <td data-value="158459.52050692224"><span style="font-size: 0.85em;">158,460</span></td>
-            <td data-value="454831.68668022245"><span style="font-size: 0.85em;">454,832</span></td>
+            <td data-value="2585344.0"><span style="font-size: 0.85em;">2,585,344</span></td>
+            <td data-value="78"><span style="font-size: 0.85em;">78</span></td>
+            <td data-value="4913.778527514753"><span style="font-size: 0.85em;">4,914</span></td>
+            <td data-value="65.20"><span style="font-size: 0.85em; color: #0066ff;">65.20%</span></td>
+            <td data-value="459529.96690744476"><span style="font-size: 0.85em;">459,530</span></td>
+            <td data-value="245261.57979821038"><span style="font-size: 0.85em;">245,262</span></td>
+            <td data-value="704791.5467056552"><span style="font-size: 0.85em;">704,792</span></td>
             <td style="color: inherit;"><span style="font-size: 0.85em;">No</span></td>
-            <td data-value="1.08"><span style="font-size: 0.85em;">1.08</span></td>
-            <td data-value="1.08"><span style="font-size: 0.85em;">Excellent 🟢</span></td>
+            <td data-value="9.94"><span style="font-size: 0.85em;">9.94</span></td>
+            <td data-value="9.94"><span style="font-size: 0.85em;">Fair 🟡</span></td>
         </tr>
         
         <tr>
@@ -995,16 +1057,16 @@
                 </a>
             -->
             </td>
-            <td data-value="3770749.0"><span style="font-size: 0.85em;">3,770,749</span></td>
-            <td data-value="134"><span style="font-size: 0.85em;">134</span></td>
-            <td data-value="4356.280921646233"><span style="font-size: 0.85em;">4,356</span></td>
-            <td data-value="78.74"><span style="font-size: 0.85em; color: #0066ff;">78.74%</span></td>
-            <td data-value="707047.3031100323"><span style="font-size: 0.85em;">707,047</span></td>
-            <td data-value="190900.67212568515"><span style="font-size: 0.85em;">190,901</span></td>
-            <td data-value="897947.9752357175"><span style="font-size: 0.85em;">897,948</span></td>
+            <td data-value="5647172.0"><span style="font-size: 0.85em;">5,647,172</span></td>
+            <td data-value="248"><span style="font-size: 0.85em;">248</span></td>
+            <td data-value="6280.465558691117"><span style="font-size: 0.85em;">6,280</span></td>
+            <td data-value="79.17"><span style="font-size: 0.85em; color: #0066ff;">79.17%</span></td>
+            <td data-value="1077982.591588234"><span style="font-size: 0.85em;">1,077,983</span></td>
+            <td data-value="283634.4942452356"><span style="font-size: 0.85em;">283,634</span></td>
+            <td data-value="1361617.0858334696"><span style="font-size: 0.85em;">1,361,617</span></td>
             <td style="color: inherit;"><span style="font-size: 0.85em;">No</span></td>
-            <td data-value="1.04"><span style="font-size: 0.85em;">1.04</span></td>
-            <td data-value="1.04"><span style="font-size: 0.85em;">Excellent 🟢</span></td>
+            <td data-value="9.97"><span style="font-size: 0.85em;">9.97</span></td>
+            <td data-value="9.97"><span style="font-size: 0.85em;">Fair 🟡</span></td>
         </tr>
         
         <tr>
@@ -1018,39 +1080,16 @@
                 </a>
             -->
             </td>
-            <td data-value="7392259.0"><span style="font-size: 0.85em;">7,392,259</span></td>
-            <td data-value="377"><span style="font-size: 0.85em;">377</span></td>
+            <td data-value="4286282.0"><span style="font-size: 0.85em;">4,286,282</span></td>
+            <td data-value="350"><span style="font-size: 0.85em;">350</span></td>
             <td data-value="29556.66815070078"><span style="font-size: 0.85em;">29,557</span></td>
-            <td data-value="54.04"><span style="font-size: 0.85em; color: #0066ff;">54.04%</span></td>
-            <td data-value="2742656.6894078525"><span style="font-size: 0.85em;">2,742,657</span></td>
-            <td data-value="2332633.6329670567"><span style="font-size: 0.85em;">2,332,634</span></td>
-            <td data-value="5075290.322374909"><span style="font-size: 0.85em;">5,075,290</span></td>
+            <td data-value="53.81"><span style="font-size: 0.85em; color: #0066ff;">53.81%</span></td>
+            <td data-value="3037092.916010763"><span style="font-size: 0.85em;">3,037,093</span></td>
+            <td data-value="2606691.5264796293"><span style="font-size: 0.85em;">2,606,692</span></td>
+            <td data-value="5643784.442490392"><span style="font-size: 0.85em;">5,643,784</span></td>
             <td style="color: inherit;"><span style="font-size: 0.85em;">No</span></td>
-            <td data-value="1.04"><span style="font-size: 0.85em;">1.04</span></td>
-            <td data-value="1.04"><span style="font-size: 0.85em;">Excellent 🟢</span></td>
-        </tr>
-        
-        <tr>
-            
-            <td>
-                <img src='https://api.thegraph.com/ipfs/api/v0/cat?arg=QmXJ3suvVjsTr1sJVE9GwDiuJGPMjgaNkm4XFkAaezc83x' style='width:20px; height:20px; border-radius:50%; vertical-align:middle; margin-right:6px;' />
-                <a target="_blank" href="https://thegraph.com/explorer/profile/0x4207df52f7ff229364899b21e9c4ad36d3d42981?view=Overview&chain=arbitrum-one"><span style="font-size: 0.85em;">lux8-net.eth</span></a>
-            <!--
-                <a href="statements/0x4207df52f7ff229364899b21e9c4ad36d3d42981.pdf" target="_blank">
-                    <img src="images/pdf.png" alt="PDF" style="width:14px; height:14px; vertical-align:middle; margin-left:6px;" />
-                </a>
-            -->
-            </td>
-            <td data-value="463999.99999999994"><span style="font-size: 0.85em;">464,000</span></td>
-            <td data-value="1"><span style="font-size: 0.85em;">1</span></td>
-            <td data-value="0.0"><span style="font-size: 0.85em;">0</span></td>
-            <td data-value="51.27"><span style="font-size: 0.85em; color: #0066ff;">51.27%</span></td>
-            <td data-value="55993.733653117844"><span style="font-size: 0.85em;">55,994</span></td>
-            <td data-value="53211.59800904026"><span style="font-size: 0.85em;">53,212</span></td>
-            <td data-value="109205.3316621581"><span style="font-size: 0.85em;">109,205</span></td>
-            <td style="color: #c83349;"><span style="font-size: 0.85em;">Yes</span></td>
-            <td data-value="3.97"><span style="font-size: 0.85em;">3.97</span></td>
-            <td data-value="3.97"><span style="font-size: 0.85em;">Poor 🔴</span></td>
+            <td data-value="9.79"><span style="font-size: 0.85em;">9.79</span></td>
+            <td data-value="9.79"><span style="font-size: 0.85em;">Excellent 🟢</span></td>
         </tr>
         
         <tr>
@@ -1064,16 +1103,16 @@
                 </a>
             -->
             </td>
-            <td data-value="1596429.9999999998"><span style="font-size: 0.85em;">1,596,430</span></td>
+            <td data-value="1323414.0000000002"><span style="font-size: 0.85em;">1,323,414</span></td>
             <td data-value="1"><span style="font-size: 0.85em;">1</span></td>
             <td data-value="0.0"><span style="font-size: 0.85em;">0</span></td>
-            <td data-value="97.33"><span style="font-size: 0.85em; color: #0066ff;">97.33%</span></td>
-            <td data-value="102024.17604132889"><span style="font-size: 0.85em;">102,024</span></td>
-            <td data-value="2801.647635885215"><span style="font-size: 0.85em;">2,802</span></td>
-            <td data-value="104825.8236772141"><span style="font-size: 0.85em;">104,826</span></td>
+            <td data-value="98.61"><span style="font-size: 0.85em; color: #0066ff;">98.61%</span></td>
+            <td data-value="198717.73818527238"><span style="font-size: 0.85em;">198,718</span></td>
+            <td data-value="2803.5815458062925"><span style="font-size: 0.85em;">2,804</span></td>
+            <td data-value="201521.31973107866"><span style="font-size: 0.85em;">201,521</span></td>
             <td style="color: #c83349;"><span style="font-size: 0.85em;">Yes</span></td>
-            <td data-value="4.81"><span style="font-size: 0.85em;">4.81</span></td>
-            <td data-value="4.81"><span style="font-size: 0.85em;">Poor 🔴</span></td>
+            <td data-value="10.0"><span style="font-size: 0.85em;">10.00</span></td>
+            <td data-value="10.0"><span style="font-size: 0.85em;">Poor 🔴</span></td>
         </tr>
         
         <tr>
@@ -1087,16 +1126,16 @@
                 </a>
             -->
             </td>
-            <td data-value="1758397.0"><span style="font-size: 0.85em;">1,758,397</span></td>
+            <td data-value="1833978.0"><span style="font-size: 0.85em;">1,833,978</span></td>
             <td data-value="1"><span style="font-size: 0.85em;">1</span></td>
-            <td data-value="29.199928812973166"><span style="font-size: 0.85em;">29</span></td>
-            <td data-value="73.58"><span style="font-size: 0.85em; color: #0066ff;">73.58%</span></td>
-            <td data-value="490989.2450077381"><span style="font-size: 0.85em;">490,989</span></td>
-            <td data-value="176276.91640310513"><span style="font-size: 0.85em;">176,277</span></td>
-            <td data-value="667266.1614108433"><span style="font-size: 0.85em;">667,266</span></td>
+            <td data-value="39.65559677338983"><span style="font-size: 0.85em;">40</span></td>
+            <td data-value="72.46"><span style="font-size: 0.85em; color: #0066ff;">72.46%</span></td>
+            <td data-value="567521.8284119907"><span style="font-size: 0.85em;">567,522</span></td>
+            <td data-value="215702.79270226546"><span style="font-size: 0.85em;">215,703</span></td>
+            <td data-value="783224.6211142561"><span style="font-size: 0.85em;">783,225</span></td>
             <td style="color: #c83349;"><span style="font-size: 0.85em;">Yes</span></td>
-            <td data-value="5.02"><span style="font-size: 0.85em;">5.02</span></td>
-            <td data-value="5.02"><span style="font-size: 0.85em;">Poor 🔴</span></td>
+            <td data-value="10.0"><span style="font-size: 0.85em;">10.00</span></td>
+            <td data-value="10.0"><span style="font-size: 0.85em;">Poor 🔴</span></td>
         </tr>
         
         <tr>
@@ -1110,16 +1149,16 @@
                 </a>
             -->
             </td>
-            <td data-value="119299790.0"><span style="font-size: 0.85em;">119,299,790</span></td>
-            <td data-value="262"><span style="font-size: 0.85em;">262</span></td>
-            <td data-value="230150.54810465543"><span style="font-size: 0.85em;">230,151</span></td>
-            <td data-value="73.18"><span style="font-size: 0.85em; color: #0066ff;">73.18%</span></td>
-            <td data-value="17193461.676484093"><span style="font-size: 0.85em;">17,193,462</span></td>
-            <td data-value="6300233.771168554"><span style="font-size: 0.85em;">6,300,234</span></td>
-            <td data-value="23493695.44765265"><span style="font-size: 0.85em;">23,493,695</span></td>
+            <td data-value="99564021.0"><span style="font-size: 0.85em;">99,564,021</span></td>
+            <td data-value="63"><span style="font-size: 0.85em;">63</span></td>
+            <td data-value="268727.95966535853"><span style="font-size: 0.85em;">268,728</span></td>
+            <td data-value="73.09"><span style="font-size: 0.85em; color: #0066ff;">73.09%</span></td>
+            <td data-value="22860866.98958039"><span style="font-size: 0.85em;">22,860,867</span></td>
+            <td data-value="8417801.938641138"><span style="font-size: 0.85em;">8,417,802</span></td>
+            <td data-value="31278668.928221527"><span style="font-size: 0.85em;">31,278,669</span></td>
             <td style="color: inherit;"><span style="font-size: 0.85em;">No</span></td>
-            <td data-value="1.15"><span style="font-size: 0.85em;">1.15</span></td>
-            <td data-value="1.15"><span style="font-size: 0.85em;">Excellent 🟢</span></td>
+            <td data-value="9.92"><span style="font-size: 0.85em;">9.92</span></td>
+            <td data-value="9.92"><span style="font-size: 0.85em;">Excellent 🟢</span></td>
         </tr>
         
         <tr>
@@ -1133,45 +1172,45 @@
                 </a>
             -->
             </td>
-            <td data-value="2951100.0100000002"><span style="font-size: 0.85em;">2,951,100</span></td>
-            <td data-value="11"><span style="font-size: 0.85em;">11</span></td>
-            <td data-value="1913.0342956726963"><span style="font-size: 0.85em;">1,913</span></td>
-            <td data-value="82.16"><span style="font-size: 0.85em; color: #0066ff;">82.16%</span></td>
-            <td data-value="828611.3318410334"><span style="font-size: 0.85em;">828,611</span></td>
-            <td data-value="179962.39167269607"><span style="font-size: 0.85em;">179,962</span></td>
-            <td data-value="1008573.7235137295"><span style="font-size: 0.85em;">1,008,574</span></td>
-            <td style="color: inherit;"><span style="font-size: 0.85em;">No</span></td>
-            <td data-value="1.34"><span style="font-size: 0.85em;">1.34</span></td>
-            <td data-value="1.34"><span style="font-size: 0.85em;">Fair 🟡</span></td>
+            <td data-value="2180100.0"><span style="font-size: 0.85em;">2,180,100</span></td>
+            <td data-value="6"><span style="font-size: 0.85em;">6</span></td>
+            <td data-value="8635.816390728616"><span style="font-size: 0.85em;">8,636</span></td>
+            <td data-value="82.00"><span style="font-size: 0.85em; color: #0066ff;">82.00%</span></td>
+            <td data-value="976534.2426108515"><span style="font-size: 0.85em;">976,534</span></td>
+            <td data-value="214415.78211272697"><span style="font-size: 0.85em;">214,416</span></td>
+            <td data-value="1190950.0247235785"><span style="font-size: 0.85em;">1,190,950</span></td>
+            <td style="color: #c83349;"><span style="font-size: 0.85em;">Yes</span></td>
+            <td data-value="10.0"><span style="font-size: 0.85em;">10.00</span></td>
+            <td data-value="10.0"><span style="font-size: 0.85em;">Poor 🔴</span></td>
         </tr>
         
         <tr>
             
             <td>
                 <img src='https://api.thegraph.com/ipfs/api/v0/cat?arg=QmcjGuXG1bsenjpu7te3GjzPAgsDL7cbH5K5xn1oXEHS3b' style='width:20px; height:20px; border-radius:50%; vertical-align:middle; margin-right:6px;' />
-                <a target="_blank" href="https://thegraph.com/explorer/profile/0x53dbbc9d916b1840a2c4c26b150ba2e13f36e10f?view=Overview&chain=arbitrum-one"><span style="font-size: 0.85em;">thoalt-indexer.eth</span></a>
+                <a target="_blank" href="https://thegraph.com/explorer/profile/0x53dbbc9d916b1840a2c4c26b150ba2e13f36e10f?view=Overview&chain=arbitrum-one"><span style="font-size: 0.85em;">thoalt-indexer-arb.eth</span></a>
             <!--
                 <a href="statements/0x53dbbc9d916b1840a2c4c26b150ba2e13f36e10f.pdf" target="_blank">
                     <img src="images/pdf.png" alt="PDF" style="width:14px; height:14px; vertical-align:middle; margin-left:6px;" />
                 </a>
             -->
             </td>
-            <td data-value="1086876.0"><span style="font-size: 0.85em;">1,086,876</span></td>
-            <td data-value="59"><span style="font-size: 0.85em;">59</span></td>
-            <td data-value="109075.36087825999"><span style="font-size: 0.85em;">109,075</span></td>
-            <td data-value="64.46"><span style="font-size: 0.85em; color: #0066ff;">64.46%</span></td>
-            <td data-value="709266.0763926072"><span style="font-size: 0.85em;">709,266</span></td>
-            <td data-value="390990.59080457326"><span style="font-size: 0.85em;">390,991</span></td>
-            <td data-value="1100256.6671971804"><span style="font-size: 0.85em;">1,100,257</span></td>
+            <td data-value="1242049.0"><span style="font-size: 0.85em;">1,242,049</span></td>
+            <td data-value="81"><span style="font-size: 0.85em;">81</span></td>
+            <td data-value="133517.21572081212"><span style="font-size: 0.85em;">133,517</span></td>
+            <td data-value="62.58"><span style="font-size: 0.85em; color: #0066ff;">62.58%</span></td>
+            <td data-value="772377.4106022965"><span style="font-size: 0.85em;">772,377</span></td>
+            <td data-value="461874.0703621891"><span style="font-size: 0.85em;">461,874</span></td>
+            <td data-value="1234251.4809644856"><span style="font-size: 0.85em;">1,234,251</span></td>
             <td style="color: inherit;"><span style="font-size: 0.85em;">No</span></td>
-            <td data-value="1.29"><span style="font-size: 0.85em;">1.29</span></td>
-            <td data-value="1.29"><span style="font-size: 0.85em;">Fair 🟡</span></td>
+            <td data-value="6.78"><span style="font-size: 0.85em;">6.78</span></td>
+            <td data-value="6.78"><span style="font-size: 0.85em;">Excellent 🟢</span></td>
         </tr>
         
         <tr>
             
             <td>
-                <img src='https://api.thegraph.com/ipfs/api/v0/cat?arg=QmQYHkFma7DQxWiCAkgFHNyVBVCJCvuPrVDgTbQH8jXMtP' style='width:20px; height:20px; border-radius:50%; vertical-align:middle; margin-right:6px;' />
+                <img src='https://ipfs.thegraph.com/ipfs/QmQYHkFma7DQxWiCAkgFHNyVBVCJCvuPrVDgTbQH8jXMtP' style='width:20px; height:20px; border-radius:50%; vertical-align:middle; margin-right:6px;' />
                 <a target="_blank" href="https://thegraph.com/explorer/profile/0x550c1f4814a85aa10f5f061ca8c45e2ee9620226?view=Overview&chain=arbitrum-one"><span style="font-size: 0.85em;">experimental.infradao.eth</span></a>
             <!--
                 <a href="statements/0x550c1f4814a85aa10f5f061ca8c45e2ee9620226.pdf" target="_blank">
@@ -1179,39 +1218,16 @@
                 </a>
             -->
             </td>
-            <td data-value="444504.0"><span style="font-size: 0.85em;">444,504</span></td>
-            <td data-value="4"><span style="font-size: 0.85em;">4</span></td>
-            <td data-value="7378.296865338938"><span style="font-size: 0.85em;">7,378</span></td>
-            <td data-value="66.30"><span style="font-size: 0.85em; color: #0066ff;">66.30%</span></td>
-            <td data-value="131154.79510109712"><span style="font-size: 0.85em;">131,155</span></td>
-            <td data-value="66654.56025372303"><span style="font-size: 0.85em;">66,655</span></td>
-            <td data-value="197809.35535482015"><span style="font-size: 0.85em;">197,809</span></td>
-            <td style="color: #c83349;"><span style="font-size: 0.85em;">Yes</span></td>
-            <td data-value="2.52"><span style="font-size: 0.85em;">2.52</span></td>
-            <td data-value="2.52"><span style="font-size: 0.85em;">Poor 🔴</span></td>
-        </tr>
-        
-        <tr>
-            
-            <td>
-                
-                <a target="_blank" href="https://thegraph.com/explorer/profile/0x59749d1fa9635cd0413aeff5ee295490a7e87f54?view=Overview&chain=arbitrum-one"><span style="font-size: 0.85em;">0x59749d1fa9635cd0413aeff5ee295490a7e87f54</span></a>
-            <!--
-                <a href="statements/0x59749d1fa9635cd0413aeff5ee295490a7e87f54.pdf" target="_blank">
-                    <img src="images/pdf.png" alt="PDF" style="width:14px; height:14px; vertical-align:middle; margin-left:6px;" />
-                </a>
-            -->
-            </td>
-            <td data-value="4751707.0"><span style="font-size: 0.85em;">4,751,707</span></td>
-            <td data-value="12"><span style="font-size: 0.85em;">12</span></td>
-            <td data-value="0.0"><span style="font-size: 0.85em;">0</span></td>
-            <td data-value="77.05"><span style="font-size: 0.85em; color: #0066ff;">77.05%</span></td>
-            <td data-value="843608.1376199656"><span style="font-size: 0.85em;">843,608</span></td>
-            <td data-value="251310.34873930473"><span style="font-size: 0.85em;">251,310</span></td>
-            <td data-value="1094918.4863592703"><span style="font-size: 0.85em;">1,094,918</span></td>
+            <td data-value="15072514.0"><span style="font-size: 0.85em;">15,072,514</span></td>
+            <td data-value="42"><span style="font-size: 0.85em;">42</span></td>
+            <td data-value="8359.69793948165"><span style="font-size: 0.85em;">8,360</span></td>
+            <td data-value="31.46"><span style="font-size: 0.85em; color: #0066ff;">31.46%</span></td>
+            <td data-value="136281.99669668917"><span style="font-size: 0.85em;">136,282</span></td>
+            <td data-value="296909.3202586188"><span style="font-size: 0.85em;">296,909</span></td>
+            <td data-value="433191.31695530796"><span style="font-size: 0.85em;">433,191</span></td>
             <td style="color: inherit;"><span style="font-size: 0.85em;">No</span></td>
-            <td data-value="1.5"><span style="font-size: 0.85em;">1.50</span></td>
-            <td data-value="1.5"><span style="font-size: 0.85em;">Fair 🟡</span></td>
+            <td data-value="9.98"><span style="font-size: 0.85em;">9.98</span></td>
+            <td data-value="9.98"><span style="font-size: 0.85em;">Poor 🔴</span></td>
         </tr>
         
         <tr>
@@ -1226,15 +1242,15 @@
             -->
             </td>
             <td data-value="5039484.0"><span style="font-size: 0.85em;">5,039,484</span></td>
-            <td data-value="84"><span style="font-size: 0.85em;">84</span></td>
-            <td data-value="672.5052855390112"><span style="font-size: 0.85em;">673</span></td>
+            <td data-value="62"><span style="font-size: 0.85em;">62</span></td>
+            <td data-value="11966.121405741227"><span style="font-size: 0.85em;">11,966</span></td>
             <td data-value="0.00"><span style="font-size: 0.85em; color: #0066ff;">0.00%</span></td>
             <td data-value="0.0"><span style="font-size: 0.85em;">0</span></td>
-            <td data-value="38469.61267801134"><span style="font-size: 0.85em;">38,470</span></td>
-            <td data-value="38469.61267801134"><span style="font-size: 0.85em;">38,470</span></td>
+            <td data-value="546149.6496514205"><span style="font-size: 0.85em;">546,150</span></td>
+            <td data-value="546149.6496514205"><span style="font-size: 0.85em;">546,150</span></td>
             <td style="color: inherit;"><span style="font-size: 0.85em;">No</span></td>
-            <td data-value="1.08"><span style="font-size: 0.85em;">1.08</span></td>
-            <td data-value="1.08"><span style="font-size: 0.85em;">Excellent 🟢</span></td>
+            <td data-value="9.93"><span style="font-size: 0.85em;">9.93</span></td>
+            <td data-value="9.93"><span style="font-size: 0.85em;">Poor 🔴</span></td>
         </tr>
         
         <tr>
@@ -1248,16 +1264,16 @@
                 </a>
             -->
             </td>
-            <td data-value="5638800.0"><span style="font-size: 0.85em;">5,638,800</span></td>
+            <td data-value="5641500.0"><span style="font-size: 0.85em;">5,641,500</span></td>
             <td data-value="15"><span style="font-size: 0.85em;">15</span></td>
             <td data-value="1150.864331014646"><span style="font-size: 0.85em;">1,151</span></td>
-            <td data-value="11.44"><span style="font-size: 0.85em; color: #0066ff;">11.44%</span></td>
-            <td data-value="193609.26709673903"><span style="font-size: 0.85em;">193,609</span></td>
-            <td data-value="1498900.162862872"><span style="font-size: 0.85em;">1,498,900</span></td>
-            <td data-value="1692509.429959611"><span style="font-size: 0.85em;">1,692,509</span></td>
+            <td data-value="10.05"><span style="font-size: 0.85em; color: #0066ff;">10.05%</span></td>
+            <td data-value="216970.28200071328"><span style="font-size: 0.85em;">216,970</span></td>
+            <td data-value="1942759.4460383866"><span style="font-size: 0.85em;">1,942,759</span></td>
+            <td data-value="2159729.7280391"><span style="font-size: 0.85em;">2,159,730</span></td>
             <td style="color: inherit;"><span style="font-size: 0.85em;">No</span></td>
-            <td data-value="1.48"><span style="font-size: 0.85em;">1.48</span></td>
-            <td data-value="1.48"><span style="font-size: 0.85em;">Fair 🟡</span></td>
+            <td data-value="9.99"><span style="font-size: 0.85em;">9.99</span></td>
+            <td data-value="9.99"><span style="font-size: 0.85em;">Poor 🔴</span></td>
         </tr>
         
         <tr>
@@ -1271,16 +1287,16 @@
                 </a>
             -->
             </td>
-            <td data-value="5943738.0"><span style="font-size: 0.85em;">5,943,738</span></td>
-            <td data-value="12"><span style="font-size: 0.85em;">12</span></td>
-            <td data-value="1485.5826075678076"><span style="font-size: 0.85em;">1,486</span></td>
-            <td data-value="71.31"><span style="font-size: 0.85em; color: #0066ff;">71.31%</span></td>
-            <td data-value="1376377.1831238442"><span style="font-size: 0.85em;">1,376,377</span></td>
-            <td data-value="553823.6137121633"><span style="font-size: 0.85em;">553,824</span></td>
-            <td data-value="1930200.7968360074"><span style="font-size: 0.85em;">1,930,201</span></td>
+            <td data-value="6156974.0"><span style="font-size: 0.85em;">6,156,974</span></td>
+            <td data-value="13"><span style="font-size: 0.85em;">13</span></td>
+            <td data-value="2144.0388392417276"><span style="font-size: 0.85em;">2,144</span></td>
+            <td data-value="68.32"><span style="font-size: 0.85em; color: #0066ff;">68.32%</span></td>
+            <td data-value="1681070.8950753103"><span style="font-size: 0.85em;">1,681,071</span></td>
+            <td data-value="779548.5911825101"><span style="font-size: 0.85em;">779,549</span></td>
+            <td data-value="2460619.4862578204"><span style="font-size: 0.85em;">2,460,619</span></td>
             <td style="color: inherit;"><span style="font-size: 0.85em;">No</span></td>
-            <td data-value="1.62"><span style="font-size: 0.85em;">1.62</span></td>
-            <td data-value="1.62"><span style="font-size: 0.85em;">Fair 🟡</span></td>
+            <td data-value="9.99"><span style="font-size: 0.85em;">9.99</span></td>
+            <td data-value="9.99"><span style="font-size: 0.85em;">Poor 🔴</span></td>
         </tr>
         
         <tr>
@@ -1294,16 +1310,16 @@
                 </a>
             -->
             </td>
-            <td data-value="1558549.0"><span style="font-size: 0.85em;">1,558,549</span></td>
+            <td data-value="1558524.0"><span style="font-size: 0.85em;">1,558,524</span></td>
             <td data-value="2"><span style="font-size: 0.85em;">2</span></td>
-            <td data-value="440.17495181415103"><span style="font-size: 0.85em;">440</span></td>
+            <td data-value="3916.216345266977"><span style="font-size: 0.85em;">3,916</span></td>
             <td data-value="0.00"><span style="font-size: 0.85em; color: #0066ff;">0.00%</span></td>
             <td data-value="0.0"><span style="font-size: 0.85em;">0</span></td>
-            <td data-value="367203.799548115"><span style="font-size: 0.85em;">367,204</span></td>
-            <td data-value="367203.799548115"><span style="font-size: 0.85em;">367,204</span></td>
+            <td data-value="483937.20874681807"><span style="font-size: 0.85em;">483,937</span></td>
+            <td data-value="483937.20874681807"><span style="font-size: 0.85em;">483,937</span></td>
             <td style="color: #c83349;"><span style="font-size: 0.85em;">Yes</span></td>
-            <td data-value="3.58"><span style="font-size: 0.85em;">3.58</span></td>
-            <td data-value="3.58"><span style="font-size: 0.85em;">Poor 🔴</span></td>
+            <td data-value="10.0"><span style="font-size: 0.85em;">10.00</span></td>
+            <td data-value="10.0"><span style="font-size: 0.85em;">Poor 🔴</span></td>
         </tr>
         
         <tr>
@@ -1317,16 +1333,16 @@
                 </a>
             -->
             </td>
-            <td data-value="22763825.0"><span style="font-size: 0.85em;">22,763,825</span></td>
-            <td data-value="55"><span style="font-size: 0.85em;">55</span></td>
-            <td data-value="15028.44918480806"><span style="font-size: 0.85em;">15,028</span></td>
-            <td data-value="66.43"><span style="font-size: 0.85em; color: #0066ff;">66.43%</span></td>
-            <td data-value="20334158.0024039"><span style="font-size: 0.85em;">20,334,158</span></td>
-            <td data-value="10276785.11584115"><span style="font-size: 0.85em;">10,276,785</span></td>
-            <td data-value="30610943.11824505"><span style="font-size: 0.85em;">30,610,943</span></td>
+            <td data-value="18501697.0"><span style="font-size: 0.85em;">18,501,697</span></td>
+            <td data-value="25"><span style="font-size: 0.85em;">25</span></td>
+            <td data-value="26759.498082470483"><span style="font-size: 0.85em;">26,759</span></td>
+            <td data-value="63.30"><span style="font-size: 0.85em; color: #0066ff;">63.30%</span></td>
+            <td data-value="21484079.30466803"><span style="font-size: 0.85em;">21,484,079</span></td>
+            <td data-value="12456287.505589494"><span style="font-size: 0.85em;">12,456,288</span></td>
+            <td data-value="33940366.810257524"><span style="font-size: 0.85em;">33,940,367</span></td>
             <td style="color: inherit;"><span style="font-size: 0.85em;">No</span></td>
-            <td data-value="1.14"><span style="font-size: 0.85em;">1.14</span></td>
-            <td data-value="1.14"><span style="font-size: 0.85em;">Excellent 🟢</span></td>
+            <td data-value="9.96"><span style="font-size: 0.85em;">9.96</span></td>
+            <td data-value="9.96"><span style="font-size: 0.85em;">Fair 🟡</span></td>
         </tr>
         
         <tr>
@@ -1340,16 +1356,16 @@
                 </a>
             -->
             </td>
-            <td data-value="24890952.000000004"><span style="font-size: 0.85em;">24,890,952</span></td>
-            <td data-value="241"><span style="font-size: 0.85em;">241</span></td>
+            <td data-value="24891053.0"><span style="font-size: 0.85em;">24,891,053</span></td>
+            <td data-value="409"><span style="font-size: 0.85em;">409</span></td>
             <td data-value="1409.3957825640712"><span style="font-size: 0.85em;">1,409</span></td>
             <td data-value="0.00"><span style="font-size: 0.85em; color: #0066ff;">0.00%</span></td>
             <td data-value="0.0"><span style="font-size: 0.85em;">0</span></td>
-            <td data-value="5989631.700995415"><span style="font-size: 0.85em;">5,989,632</span></td>
-            <td data-value="5989631.700995415"><span style="font-size: 0.85em;">5,989,632</span></td>
+            <td data-value="7992515.489677971"><span style="font-size: 0.85em;">7,992,515</span></td>
+            <td data-value="7992515.489677971"><span style="font-size: 0.85em;">7,992,515</span></td>
             <td style="color: inherit;"><span style="font-size: 0.85em;">No</span></td>
-            <td data-value="1.06"><span style="font-size: 0.85em;">1.06</span></td>
-            <td data-value="1.06"><span style="font-size: 0.85em;">Excellent 🟢</span></td>
+            <td data-value="10.0"><span style="font-size: 0.85em;">10.00</span></td>
+            <td data-value="10.0"><span style="font-size: 0.85em;">Poor 🔴</span></td>
         </tr>
         
         <tr>
@@ -1363,16 +1379,16 @@
                 </a>
             -->
             </td>
-            <td data-value="12191518.4"><span style="font-size: 0.85em;">12,191,518</span></td>
-            <td data-value="15"><span style="font-size: 0.85em;">15</span></td>
-            <td data-value="9596.73634050321"><span style="font-size: 0.85em;">9,597</span></td>
-            <td data-value="14.81"><span style="font-size: 0.85em; color: #0066ff;">14.81%</span></td>
-            <td data-value="309689.3393124812"><span style="font-size: 0.85em;">309,689</span></td>
-            <td data-value="1782033.5713640694"><span style="font-size: 0.85em;">1,782,034</span></td>
-            <td data-value="2091722.9106765506"><span style="font-size: 0.85em;">2,091,723</span></td>
+            <td data-value="11256146.299999999"><span style="font-size: 0.85em;">11,256,146</span></td>
+            <td data-value="11"><span style="font-size: 0.85em;">11</span></td>
+            <td data-value="65032.039818384015"><span style="font-size: 0.85em;">65,032</span></td>
+            <td data-value="14.45"><span style="font-size: 0.85em; color: #0066ff;">14.45%</span></td>
+            <td data-value="414172.23084440874"><span style="font-size: 0.85em;">414,172</span></td>
+            <td data-value="2452774.555109846"><span style="font-size: 0.85em;">2,452,775</span></td>
+            <td data-value="2866946.7859542547"><span style="font-size: 0.85em;">2,866,947</span></td>
             <td style="color: inherit;"><span style="font-size: 0.85em;">No</span></td>
-            <td data-value="2.02"><span style="font-size: 0.85em;">2.02</span></td>
-            <td data-value="2.02"><span style="font-size: 0.85em;">Fair 🟡</span></td>
+            <td data-value="9.83"><span style="font-size: 0.85em;">9.83</span></td>
+            <td data-value="9.83"><span style="font-size: 0.85em;">Fair 🟡</span></td>
         </tr>
         
         <tr>
@@ -1386,16 +1402,16 @@
                 </a>
             -->
             </td>
-            <td data-value="5715617.666"><span style="font-size: 0.85em;">5,715,618</span></td>
-            <td data-value="26"><span style="font-size: 0.85em;">26</span></td>
-            <td data-value="15645.804353479842"><span style="font-size: 0.85em;">15,646</span></td>
-            <td data-value="58.26"><span style="font-size: 0.85em; color: #0066ff;">58.26%</span></td>
-            <td data-value="1571265.5755685943"><span style="font-size: 0.85em;">1,571,266</span></td>
-            <td data-value="1125850.9776633948"><span style="font-size: 0.85em;">1,125,851</span></td>
-            <td data-value="2697116.553231989"><span style="font-size: 0.85em;">2,697,117</span></td>
+            <td data-value="5461350.166"><span style="font-size: 0.85em;">5,461,350</span></td>
+            <td data-value="42"><span style="font-size: 0.85em;">42</span></td>
+            <td data-value="20224.69238959188"><span style="font-size: 0.85em;">20,225</span></td>
+            <td data-value="54.60"><span style="font-size: 0.85em; color: #0066ff;">54.60%</span></td>
+            <td data-value="1718251.3980577786"><span style="font-size: 0.85em;">1,718,251</span></td>
+            <td data-value="1428875.0067466723"><span style="font-size: 0.85em;">1,428,875</span></td>
+            <td data-value="3147126.404804451"><span style="font-size: 0.85em;">3,147,126</span></td>
             <td style="color: inherit;"><span style="font-size: 0.85em;">No</span></td>
-            <td data-value="1.29"><span style="font-size: 0.85em;">1.29</span></td>
-            <td data-value="1.29"><span style="font-size: 0.85em;">Fair 🟡</span></td>
+            <td data-value="9.89"><span style="font-size: 0.85em;">9.89</span></td>
+            <td data-value="9.89"><span style="font-size: 0.85em;">Excellent 🟢</span></td>
         </tr>
         
         <tr>
@@ -1409,16 +1425,16 @@
                 </a>
             -->
             </td>
-            <td data-value="162583.0"><span style="font-size: 0.85em;">162,583</span></td>
+            <td data-value="164838.0"><span style="font-size: 0.85em;">164,838</span></td>
             <td data-value="1"><span style="font-size: 0.85em;">1</span></td>
             <td data-value="38.26164001488376"><span style="font-size: 0.85em;">38</span></td>
             <td data-value="0.00"><span style="font-size: 0.85em; color: #0066ff;">0.00%</span></td>
             <td data-value="0.0"><span style="font-size: 0.85em;">0</span></td>
-            <td data-value="15829.00890571366"><span style="font-size: 0.85em;">15,829</span></td>
-            <td data-value="15829.00890571366"><span style="font-size: 0.85em;">15,829</span></td>
+            <td data-value="18083.937577654455"><span style="font-size: 0.85em;">18,084</span></td>
+            <td data-value="18083.937577654455"><span style="font-size: 0.85em;">18,084</span></td>
             <td style="color: #c83349;"><span style="font-size: 0.85em;">Yes</span></td>
-            <td data-value="3.21"><span style="font-size: 0.85em;">3.21</span></td>
-            <td data-value="3.21"><span style="font-size: 0.85em;">Poor 🔴</span></td>
+            <td data-value="10.0"><span style="font-size: 0.85em;">10.00</span></td>
+            <td data-value="10.0"><span style="font-size: 0.85em;">Poor 🔴</span></td>
         </tr>
         
         <tr>
@@ -1432,16 +1448,16 @@
                 </a>
             -->
             </td>
-            <td data-value="3125400.0"><span style="font-size: 0.85em;">3,125,400</span></td>
-            <td data-value="47"><span style="font-size: 0.85em;">47</span></td>
-            <td data-value="12314.65088091195"><span style="font-size: 0.85em;">12,315</span></td>
-            <td data-value="97.55"><span style="font-size: 0.85em; color: #0066ff;">97.55%</span></td>
-            <td data-value="190097.845107495"><span style="font-size: 0.85em;">190,098</span></td>
+            <td data-value="2612970.0"><span style="font-size: 0.85em;">2,612,970</span></td>
+            <td data-value="175"><span style="font-size: 0.85em;">175</span></td>
+            <td data-value="14583.77806357077"><span style="font-size: 0.85em;">14,584</span></td>
+            <td data-value="98.84"><span style="font-size: 0.85em; color: #0066ff;">98.84%</span></td>
+            <td data-value="406521.14908094244"><span style="font-size: 0.85em;">406,521</span></td>
             <td data-value="4766.574706934471"><span style="font-size: 0.85em;">4,767</span></td>
-            <td data-value="194864.41981442948"><span style="font-size: 0.85em;">194,864</span></td>
+            <td data-value="411287.7237878769"><span style="font-size: 0.85em;">411,288</span></td>
             <td style="color: inherit;"><span style="font-size: 0.85em;">No</span></td>
-            <td data-value="1.1"><span style="font-size: 0.85em;">1.10</span></td>
-            <td data-value="1.1"><span style="font-size: 0.85em;">Excellent 🟢</span></td>
+            <td data-value="9.83"><span style="font-size: 0.85em;">9.83</span></td>
+            <td data-value="9.83"><span style="font-size: 0.85em;">Excellent 🟢</span></td>
         </tr>
         
         <tr>
@@ -1455,16 +1471,16 @@
                 </a>
             -->
             </td>
-            <td data-value="81824594.0"><span style="font-size: 0.85em;">81,824,594</span></td>
-            <td data-value="797"><span style="font-size: 0.85em;">797</span></td>
-            <td data-value="161572.7952958641"><span style="font-size: 0.85em;">161,573</span></td>
-            <td data-value="81.89"><span style="font-size: 0.85em; color: #0066ff;">81.89%</span></td>
-            <td data-value="13170059.842766624"><span style="font-size: 0.85em;">13,170,060</span></td>
-            <td data-value="2911831.6884742477"><span style="font-size: 0.85em;">2,911,832</span></td>
-            <td data-value="16081891.531240871"><span style="font-size: 0.85em;">16,081,892</span></td>
+            <td data-value="87323802.0"><span style="font-size: 0.85em;">87,323,802</span></td>
+            <td data-value="930"><span style="font-size: 0.85em;">930</span></td>
+            <td data-value="222106.17188852932"><span style="font-size: 0.85em;">222,106</span></td>
+            <td data-value="81.14"><span style="font-size: 0.85em; color: #0066ff;">81.14%</span></td>
+            <td data-value="18435956.842780475"><span style="font-size: 0.85em;">18,435,957</span></td>
+            <td data-value="4286441.994524335"><span style="font-size: 0.85em;">4,286,442</span></td>
+            <td data-value="22722398.83730481"><span style="font-size: 0.85em;">22,722,399</span></td>
             <td style="color: inherit;"><span style="font-size: 0.85em;">No</span></td>
-            <td data-value="1.04"><span style="font-size: 0.85em;">1.04</span></td>
-            <td data-value="1.04"><span style="font-size: 0.85em;">Excellent 🟢</span></td>
+            <td data-value="9.92"><span style="font-size: 0.85em;">9.92</span></td>
+            <td data-value="9.92"><span style="font-size: 0.85em;">Excellent 🟢</span></td>
         </tr>
         
         <tr>
@@ -1478,16 +1494,39 @@
                 </a>
             -->
             </td>
-            <td data-value="102026.0"><span style="font-size: 0.85em;">102,026</span></td>
-            <td data-value="19"><span style="font-size: 0.85em;">19</span></td>
-            <td data-value="195.32420622549097"><span style="font-size: 0.85em;">195</span></td>
+            <td data-value="180907308.97594503"><span style="font-size: 0.85em;">180,907,309</span></td>
+            <td data-value="210"><span style="font-size: 0.85em;">210</span></td>
+            <td data-value="1506.0451990690306"><span style="font-size: 0.85em;">1,506</span></td>
             <td data-value="0.00"><span style="font-size: 0.85em; color: #0066ff;">0.00%</span></td>
             <td data-value="0.0"><span style="font-size: 0.85em;">0</span></td>
-            <td data-value="1847.055925565769"><span style="font-size: 0.85em;">1,847</span></td>
-            <td data-value="1847.055925565769"><span style="font-size: 0.85em;">1,847</span></td>
+            <td data-value="646014.5170444477"><span style="font-size: 0.85em;">646,015</span></td>
+            <td data-value="646014.5170444477"><span style="font-size: 0.85em;">646,015</span></td>
             <td style="color: inherit;"><span style="font-size: 0.85em;">No</span></td>
-            <td data-value="1.02"><span style="font-size: 0.85em;">1.02</span></td>
-            <td data-value="1.02"><span style="font-size: 0.85em;">Excellent 🟢</span></td>
+            <td data-value="10.0"><span style="font-size: 0.85em;">10.00</span></td>
+            <td data-value="10.0"><span style="font-size: 0.85em;">Poor 🔴</span></td>
+        </tr>
+        
+        <tr>
+            
+            <td>
+                
+                <a target="_blank" href="https://thegraph.com/explorer/profile/0x8cc22436ba6f07a4d5dd2043e3109267eee5aab8?view=Overview&chain=arbitrum-one"><span style="font-size: 0.85em;">0x8cc22436ba6f07a4d5dd2043e3109267eee5aab8</span></a>
+            <!--
+                <a href="statements/0x8cc22436ba6f07a4d5dd2043e3109267eee5aab8.pdf" target="_blank">
+                    <img src="images/pdf.png" alt="PDF" style="width:14px; height:14px; vertical-align:middle; margin-left:6px;" />
+                </a>
+            -->
+            </td>
+            <td data-value="355164.0"><span style="font-size: 0.85em;">355,164</span></td>
+            <td data-value="26"><span style="font-size: 0.85em;">26</span></td>
+            <td data-value="86.03660395566055"><span style="font-size: 0.85em;">86</span></td>
+            <td data-value="80.00"><span style="font-size: 0.85em; color: #0066ff;">80.00%</span></td>
+            <td data-value="21447.544293376348"><span style="font-size: 0.85em;">21,448</span></td>
+            <td data-value="5361.886073344087"><span style="font-size: 0.85em;">5,362</span></td>
+            <td data-value="26809.430366720433"><span style="font-size: 0.85em;">26,809</span></td>
+            <td style="color: inherit;"><span style="font-size: 0.85em;">No</span></td>
+            <td data-value="9.99"><span style="font-size: 0.85em;">9.99</span></td>
+            <td data-value="9.99"><span style="font-size: 0.85em;">Poor 🔴</span></td>
         </tr>
         
         <tr>
@@ -1509,14 +1548,14 @@
             <td data-value="29138.329731319092"><span style="font-size: 0.85em;">29,138</span></td>
             <td data-value="97127.76577106363"><span style="font-size: 0.85em;">97,128</span></td>
             <td style="color: #c83349;"><span style="font-size: 0.85em;">Yes</span></td>
-            <td data-value="1.78"><span style="font-size: 0.85em;">1.78</span></td>
-            <td data-value="1.78"><span style="font-size: 0.85em;">Fair 🟡</span></td>
+            <td data-value="10.0"><span style="font-size: 0.85em;">10.00</span></td>
+            <td data-value="10.0"><span style="font-size: 0.85em;">Poor 🔴</span></td>
         </tr>
         
         <tr>
             
             <td>
-                <img src='https://api.thegraph.com/ipfs/api/v0/cat?arg=QmQ37jh6DVhwxpW3XGUgSY2qkzC894Le45aJaAr7hxwwL8' style='width:20px; height:20px; border-radius:50%; vertical-align:middle; margin-right:6px;' />
+                <img src='https://ipfs.thegraph.com/ipfs/QmNsGtgz32uvA3xGPQbEHF789bVGhMoi7KsUybJhh82c6U' style='width:20px; height:20px; border-radius:50%; vertical-align:middle; margin-right:6px;' />
                 <a target="_blank" href="https://thegraph.com/explorer/profile/0x9082f497bdc512d08ffde50d6fce28e72c2addcf?view=Overview&chain=arbitrum-one"><span style="font-size: 0.85em;">holographic-indexer.eth</span></a>
             <!--
                 <a href="statements/0x9082f497bdc512d08ffde50d6fce28e72c2addcf.pdf" target="_blank">
@@ -1524,16 +1563,16 @@
                 </a>
             -->
             </td>
-            <td data-value="5974424.9"><span style="font-size: 0.85em;">5,974,425</span></td>
-            <td data-value="155"><span style="font-size: 0.85em;">155</span></td>
-            <td data-value="368.3796994781104"><span style="font-size: 0.85em;">368</span></td>
-            <td data-value="0.00"><span style="font-size: 0.85em; color: #0066ff;">0.00%</span></td>
-            <td data-value="0.0"><span style="font-size: 0.85em;">0</span></td>
-            <td data-value="160717.8352594159"><span style="font-size: 0.85em;">160,718</span></td>
-            <td data-value="160717.8352594159"><span style="font-size: 0.85em;">160,718</span></td>
+            <td data-value="5986017.4"><span style="font-size: 0.85em;">5,986,017</span></td>
+            <td data-value="471"><span style="font-size: 0.85em;">471</span></td>
+            <td data-value="21090.094790565396"><span style="font-size: 0.85em;">21,090</span></td>
+            <td data-value="1.44"><span style="font-size: 0.85em; color: #0066ff;">1.44%</span></td>
+            <td data-value="10652.495215983246"><span style="font-size: 0.85em;">10,652</span></td>
+            <td data-value="729558.6317073571"><span style="font-size: 0.85em;">729,559</span></td>
+            <td data-value="740211.1269233404"><span style="font-size: 0.85em;">740,211</span></td>
             <td style="color: inherit;"><span style="font-size: 0.85em;">No</span></td>
-            <td data-value="1.05"><span style="font-size: 0.85em;">1.05</span></td>
-            <td data-value="1.05"><span style="font-size: 0.85em;">Excellent 🟢</span></td>
+            <td data-value="9.89"><span style="font-size: 0.85em;">9.89</span></td>
+            <td data-value="9.89"><span style="font-size: 0.85em;">Poor 🔴</span></td>
         </tr>
         
         <tr>
@@ -1547,39 +1586,16 @@
                 </a>
             -->
             </td>
-            <td data-value="24095748.0"><span style="font-size: 0.85em;">24,095,748</span></td>
-            <td data-value="355"><span style="font-size: 0.85em;">355</span></td>
-            <td data-value="36536.18210984965"><span style="font-size: 0.85em;">36,536</span></td>
-            <td data-value="74.03"><span style="font-size: 0.85em; color: #0066ff;">74.03%</span></td>
-            <td data-value="2538463.0180122145"><span style="font-size: 0.85em;">2,538,463</span></td>
-            <td data-value="890556.9875362042"><span style="font-size: 0.85em;">890,557</span></td>
-            <td data-value="3429020.0055484185"><span style="font-size: 0.85em;">3,429,020</span></td>
+            <td data-value="26053909.999999996"><span style="font-size: 0.85em;">26,053,910</span></td>
+            <td data-value="247"><span style="font-size: 0.85em;">247</span></td>
+            <td data-value="47887.72199181721"><span style="font-size: 0.85em;">47,888</span></td>
+            <td data-value="74.18"><span style="font-size: 0.85em; color: #0066ff;">74.18%</span></td>
+            <td data-value="3858171.7375472924"><span style="font-size: 0.85em;">3,858,172</span></td>
+            <td data-value="1343078.1709569425"><span style="font-size: 0.85em;">1,343,078</span></td>
+            <td data-value="5201249.908504235"><span style="font-size: 0.85em;">5,201,250</span></td>
             <td style="color: inherit;"><span style="font-size: 0.85em;">No</span></td>
-            <td data-value="1.04"><span style="font-size: 0.85em;">1.04</span></td>
-            <td data-value="1.04"><span style="font-size: 0.85em;">Excellent 🟢</span></td>
-        </tr>
-        
-        <tr>
-            
-            <td>
-                <img src='https://api.thegraph.com/ipfs/api/v0/cat?arg=QmfYSx9KKg2Tab2itndWyNKxo1W4ujB4zTSMRNYzCwxFnY' style='width:20px; height:20px; border-radius:50%; vertical-align:middle; margin-right:6px;' />
-                <a target="_blank" href="https://thegraph.com/explorer/profile/0x958ad15ea21fb79b935524cf90c90276031bee20?view=Overview&chain=arbitrum-one"><span style="font-size: 0.85em;">hashkeycloud.eth</span></a>
-            <!--
-                <a href="statements/0x958ad15ea21fb79b935524cf90c90276031bee20.pdf" target="_blank">
-                    <img src="images/pdf.png" alt="PDF" style="width:14px; height:14px; vertical-align:middle; margin-left:6px;" />
-                </a>
-            -->
-            </td>
-            <td data-value="1484584.0"><span style="font-size: 0.85em;">1,484,584</span></td>
-            <td data-value="1"><span style="font-size: 0.85em;">1</span></td>
-            <td data-value="24.160573040359935"><span style="font-size: 0.85em;">24</span></td>
-            <td data-value="8.25"><span style="font-size: 0.85em; color: #0066ff;">8.25%</span></td>
-            <td data-value="10746.152992821939"><span style="font-size: 0.85em;">10,746</span></td>
-            <td data-value="119466.72388790743"><span style="font-size: 0.85em;">119,467</span></td>
-            <td data-value="130212.87688072937"><span style="font-size: 0.85em;">130,213</span></td>
-            <td style="color: #c83349;"><span style="font-size: 0.85em;">Yes</span></td>
-            <td data-value="4.67"><span style="font-size: 0.85em;">4.67</span></td>
-            <td data-value="4.67"><span style="font-size: 0.85em;">Poor 🔴</span></td>
+            <td data-value="9.94"><span style="font-size: 0.85em;">9.94</span></td>
+            <td data-value="9.94"><span style="font-size: 0.85em;">Fair 🟡</span></td>
         </tr>
         
         <tr>
@@ -1593,16 +1609,16 @@
                 </a>
             -->
             </td>
-            <td data-value="41272233.813999996"><span style="font-size: 0.85em;">41,272,234</span></td>
-            <td data-value="93"><span style="font-size: 0.85em;">93</span></td>
-            <td data-value="8666.779682685526"><span style="font-size: 0.85em;">8,667</span></td>
-            <td data-value="80.19"><span style="font-size: 0.85em; color: #0066ff;">80.19%</span></td>
-            <td data-value="6680118.864092708"><span style="font-size: 0.85em;">6,680,119</span></td>
-            <td data-value="1650400.5442989916"><span style="font-size: 0.85em;">1,650,401</span></td>
-            <td data-value="8330519.408391699"><span style="font-size: 0.85em;">8,330,519</span></td>
+            <td data-value="41159968.828999996"><span style="font-size: 0.85em;">41,159,969</span></td>
+            <td data-value="88"><span style="font-size: 0.85em;">88</span></td>
+            <td data-value="13174.363622620323"><span style="font-size: 0.85em;">13,174</span></td>
+            <td data-value="80.57"><span style="font-size: 0.85em; color: #0066ff;">80.57%</span></td>
+            <td data-value="9108127.426719049"><span style="font-size: 0.85em;">9,108,127</span></td>
+            <td data-value="2196471.236227877"><span style="font-size: 0.85em;">2,196,471</span></td>
+            <td data-value="11304598.662946926"><span style="font-size: 0.85em;">11,304,599</span></td>
             <td style="color: inherit;"><span style="font-size: 0.85em;">No</span></td>
-            <td data-value="1.28"><span style="font-size: 0.85em;">1.28</span></td>
-            <td data-value="1.28"><span style="font-size: 0.85em;">Fair 🟡</span></td>
+            <td data-value="9.99"><span style="font-size: 0.85em;">9.99</span></td>
+            <td data-value="9.99"><span style="font-size: 0.85em;">Poor 🔴</span></td>
         </tr>
         
         <tr>
@@ -1616,16 +1632,16 @@
                 </a>
             -->
             </td>
-            <td data-value="2948258.0"><span style="font-size: 0.85em;">2,948,258</span></td>
+            <td data-value="3015427.0"><span style="font-size: 0.85em;">3,015,427</span></td>
             <td data-value="2"><span style="font-size: 0.85em;">2</span></td>
             <td data-value="0.0"><span style="font-size: 0.85em;">0</span></td>
-            <td data-value="38.74"><span style="font-size: 0.85em; color: #0066ff;">38.74%</span></td>
-            <td data-value="183575.41460304434"><span style="font-size: 0.85em;">183,575</span></td>
-            <td data-value="290243.313458956"><span style="font-size: 0.85em;">290,243</span></td>
-            <td data-value="473818.72806200036"><span style="font-size: 0.85em;">473,819</span></td>
+            <td data-value="32.09"><span style="font-size: 0.85em; color: #0066ff;">32.09%</span></td>
+            <td data-value="213566.63026505342"><span style="font-size: 0.85em;">213,567</span></td>
+            <td data-value="451991.18358396884"><span style="font-size: 0.85em;">451,991</span></td>
+            <td data-value="665557.8138490223"><span style="font-size: 0.85em;">665,558</span></td>
             <td style="color: #c83349;"><span style="font-size: 0.85em;">Yes</span></td>
-            <td data-value="4.45"><span style="font-size: 0.85em;">4.45</span></td>
-            <td data-value="4.45"><span style="font-size: 0.85em;">Poor 🔴</span></td>
+            <td data-value="10.0"><span style="font-size: 0.85em;">10.00</span></td>
+            <td data-value="10.0"><span style="font-size: 0.85em;">Poor 🔴</span></td>
         </tr>
         
         <tr>
@@ -1639,16 +1655,16 @@
                 </a>
             -->
             </td>
-            <td data-value="445000.0"><span style="font-size: 0.85em;">445,000</span></td>
-            <td data-value="2"><span style="font-size: 0.85em;">2</span></td>
+            <td data-value="474272.0"><span style="font-size: 0.85em;">474,272</span></td>
+            <td data-value="11"><span style="font-size: 0.85em;">11</span></td>
             <td data-value="27.71948997998546"><span style="font-size: 0.85em;">28</span></td>
             <td data-value="0.00"><span style="font-size: 0.85em; color: #0066ff;">0.00%</span></td>
             <td data-value="0.0"><span style="font-size: 0.85em;">0</span></td>
-            <td data-value="46322.1396076411"><span style="font-size: 0.85em;">46,322</span></td>
-            <td data-value="46322.1396076411"><span style="font-size: 0.85em;">46,322</span></td>
-            <td style="color: #c83349;"><span style="font-size: 0.85em;">Yes</span></td>
-            <td data-value="3.16"><span style="font-size: 0.85em;">3.16</span></td>
-            <td data-value="3.16"><span style="font-size: 0.85em;">Poor 🔴</span></td>
+            <td data-value="73188.43868641913"><span style="font-size: 0.85em;">73,188</span></td>
+            <td data-value="73188.43868641913"><span style="font-size: 0.85em;">73,188</span></td>
+            <td style="color: inherit;"><span style="font-size: 0.85em;">No</span></td>
+            <td data-value="10.0"><span style="font-size: 0.85em;">10.00</span></td>
+            <td data-value="10.0"><span style="font-size: 0.85em;">Poor 🔴</span></td>
         </tr>
         
         <tr>
@@ -1670,8 +1686,8 @@
             <td data-value="0.0"><span style="font-size: 0.85em;">0</span></td>
             <td data-value="0.0"><span style="font-size: 0.85em;">0</span></td>
             <td style="color: #c83349;"><span style="font-size: 0.85em;">Yes</span></td>
-            <td data-value="2.33"><span style="font-size: 0.85em;">2.33</span></td>
-            <td data-value="2.33"><span style="font-size: 0.85em;">Fair 🟡</span></td>
+            <td data-value="10.0"><span style="font-size: 0.85em;">10.00</span></td>
+            <td data-value="10.0"><span style="font-size: 0.85em;">Poor 🔴</span></td>
         </tr>
         
         <tr>
@@ -1685,16 +1701,16 @@
                 </a>
             -->
             </td>
-            <td data-value="133500.0"><span style="font-size: 0.85em;">133,500</span></td>
-            <td data-value="82"><span style="font-size: 0.85em;">82</span></td>
-            <td data-value="6299.2102539088155"><span style="font-size: 0.85em;">6,299</span></td>
+            <td data-value="186410.0"><span style="font-size: 0.85em;">186,410</span></td>
+            <td data-value="44"><span style="font-size: 0.85em;">44</span></td>
+            <td data-value="15194.445237875207"><span style="font-size: 0.85em;">15,194</span></td>
             <td data-value="0.00"><span style="font-size: 0.85em; color: #0066ff;">0.00%</span></td>
             <td data-value="0.0"><span style="font-size: 0.85em;">0</span></td>
-            <td data-value="41409.22430535602"><span style="font-size: 0.85em;">41,409</span></td>
-            <td data-value="41409.22430535602"><span style="font-size: 0.85em;">41,409</span></td>
+            <td data-value="75465.90837444048"><span style="font-size: 0.85em;">75,466</span></td>
+            <td data-value="75465.90837444048"><span style="font-size: 0.85em;">75,466</span></td>
             <td style="color: inherit;"><span style="font-size: 0.85em;">No</span></td>
-            <td data-value="1.13"><span style="font-size: 0.85em;">1.13</span></td>
-            <td data-value="1.13"><span style="font-size: 0.85em;">Excellent 🟢</span></td>
+            <td data-value="7.55"><span style="font-size: 0.85em;">7.55</span></td>
+            <td data-value="7.55"><span style="font-size: 0.85em;">Poor 🔴</span></td>
         </tr>
         
         <tr>
@@ -1709,38 +1725,15 @@
             -->
             </td>
             <td data-value="8515900.0"><span style="font-size: 0.85em;">8,515,900</span></td>
-            <td data-value="113"><span style="font-size: 0.85em;">113</span></td>
-            <td data-value="8451.537598296665"><span style="font-size: 0.85em;">8,452</span></td>
+            <td data-value="15"><span style="font-size: 0.85em;">15</span></td>
+            <td data-value="9353.441486993286"><span style="font-size: 0.85em;">9,353</span></td>
             <td data-value="0.00"><span style="font-size: 0.85em; color: #0066ff;">0.00%</span></td>
             <td data-value="0.0"><span style="font-size: 0.85em;">0</span></td>
-            <td data-value="1130474.7134867562"><span style="font-size: 0.85em;">1,130,475</span></td>
-            <td data-value="1130474.7134867562"><span style="font-size: 0.85em;">1,130,475</span></td>
+            <td data-value="1596138.2699250183"><span style="font-size: 0.85em;">1,596,138</span></td>
+            <td data-value="1596138.2699250183"><span style="font-size: 0.85em;">1,596,138</span></td>
             <td style="color: inherit;"><span style="font-size: 0.85em;">No</span></td>
-            <td data-value="1.1"><span style="font-size: 0.85em;">1.10</span></td>
-            <td data-value="1.1"><span style="font-size: 0.85em;">Excellent 🟢</span></td>
-        </tr>
-        
-        <tr>
-            
-            <td>
-                <img src='https://api.thegraph.com/ipfs/api/v0/cat?arg=QmTKPCwTix4mphGkQ3VjKRVAuctvUi4oo6F9JzGVEyP8gp' style='width:20px; height:20px; border-radius:50%; vertical-align:middle; margin-right:6px;' />
-                <a target="_blank" href="https://thegraph.com/explorer/profile/0xa9b5da22440dedd72535ec0525582ca0b63be5e1?view=Overview&chain=arbitrum-one"><span style="font-size: 0.85em;">pdp-indexer.eth</span></a>
-            <!--
-                <a href="statements/0xa9b5da22440dedd72535ec0525582ca0b63be5e1.pdf" target="_blank">
-                    <img src="images/pdf.png" alt="PDF" style="width:14px; height:14px; vertical-align:middle; margin-left:6px;" />
-                </a>
-            -->
-            </td>
-            <td data-value="115999.99999999999"><span style="font-size: 0.85em;">116,000</span></td>
-            <td data-value="1"><span style="font-size: 0.85em;">1</span></td>
-            <td data-value="277.44353895972495"><span style="font-size: 0.85em;">277</span></td>
-            <td data-value="48.00"><span style="font-size: 0.85em; color: #0066ff;">48.00%</span></td>
-            <td data-value="52805.390046154374"><span style="font-size: 0.85em;">52,805</span></td>
-            <td data-value="57214.53543476173"><span style="font-size: 0.85em;">57,215</span></td>
-            <td data-value="110019.9254809161"><span style="font-size: 0.85em;">110,020</span></td>
-            <td style="color: #c83349;"><span style="font-size: 0.85em;">Yes</span></td>
-            <td data-value="3.1"><span style="font-size: 0.85em;">3.10</span></td>
-            <td data-value="3.1"><span style="font-size: 0.85em;">Poor 🔴</span></td>
+            <td data-value="9.97"><span style="font-size: 0.85em;">9.97</span></td>
+            <td data-value="9.97"><span style="font-size: 0.85em;">Poor 🔴</span></td>
         </tr>
         
         <tr>
@@ -1754,16 +1747,16 @@
                 </a>
             -->
             </td>
-            <td data-value="43254554.0"><span style="font-size: 0.85em;">43,254,554</span></td>
-            <td data-value="468"><span style="font-size: 0.85em;">468</span></td>
+            <td data-value="32121263.0"><span style="font-size: 0.85em;">32,121,263</span></td>
+            <td data-value="331"><span style="font-size: 0.85em;">331</span></td>
             <td data-value="34940.02775629716"><span style="font-size: 0.85em;">34,940</span></td>
-            <td data-value="72.39"><span style="font-size: 0.85em; color: #0066ff;">72.39%</span></td>
-            <td data-value="6569076.437977511"><span style="font-size: 0.85em;">6,569,076</span></td>
-            <td data-value="2506016.681790726"><span style="font-size: 0.85em;">2,506,017</span></td>
-            <td data-value="9075093.119768238"><span style="font-size: 0.85em;">9,075,093</span></td>
+            <td data-value="66.69"><span style="font-size: 0.85em; color: #0066ff;">66.69%</span></td>
+            <td data-value="8445544.208243525"><span style="font-size: 0.85em;">8,445,544</span></td>
+            <td data-value="4217753.42131505"><span style="font-size: 0.85em;">4,217,753</span></td>
+            <td data-value="12663297.629558574"><span style="font-size: 0.85em;">12,663,298</span></td>
             <td style="color: inherit;"><span style="font-size: 0.85em;">No</span></td>
-            <td data-value="1.06"><span style="font-size: 0.85em;">1.06</span></td>
-            <td data-value="1.06"><span style="font-size: 0.85em;">Excellent 🟢</span></td>
+            <td data-value="9.97"><span style="font-size: 0.85em;">9.97</span></td>
+            <td data-value="9.97"><span style="font-size: 0.85em;">Fair 🟡</span></td>
         </tr>
         
         <tr>
@@ -1777,16 +1770,16 @@
                 </a>
             -->
             </td>
-            <td data-value="969337.0"><span style="font-size: 0.85em;">969,337</span></td>
+            <td data-value="978948.0"><span style="font-size: 0.85em;">978,948</span></td>
             <td data-value="1"><span style="font-size: 0.85em;">1</span></td>
-            <td data-value="11511.108982417394"><span style="font-size: 0.85em;">11,511</span></td>
-            <td data-value="59.09"><span style="font-size: 0.85em; color: #0066ff;">59.09%</span></td>
-            <td data-value="227913.38856326853"><span style="font-size: 0.85em;">227,913</span></td>
-            <td data-value="157802.526362097"><span style="font-size: 0.85em;">157,803</span></td>
-            <td data-value="385715.91492536553"><span style="font-size: 0.85em;">385,716</span></td>
+            <td data-value="11656.114504827829"><span style="font-size: 0.85em;">11,656</span></td>
+            <td data-value="57.04"><span style="font-size: 0.85em; color: #0066ff;">57.04%</span></td>
+            <td data-value="244963.32423292886"><span style="font-size: 0.85em;">244,963</span></td>
+            <td data-value="184470.37446079653"><span style="font-size: 0.85em;">184,470</span></td>
+            <td data-value="429433.6986937254"><span style="font-size: 0.85em;">429,434</span></td>
             <td style="color: #c83349;"><span style="font-size: 0.85em;">Yes</span></td>
-            <td data-value="5.28"><span style="font-size: 0.85em;">5.28</span></td>
-            <td data-value="5.28"><span style="font-size: 0.85em;">Poor 🔴</span></td>
+            <td data-value="10.0"><span style="font-size: 0.85em;">10.00</span></td>
+            <td data-value="10.0"><span style="font-size: 0.85em;">Poor 🔴</span></td>
         </tr>
         
         <tr>
@@ -1800,16 +1793,16 @@
                 </a>
             -->
             </td>
-            <td data-value="8897555.0"><span style="font-size: 0.85em;">8,897,555</span></td>
-            <td data-value="35"><span style="font-size: 0.85em;">35</span></td>
-            <td data-value="42842.42510415017"><span style="font-size: 0.85em;">42,842</span></td>
-            <td data-value="77.70"><span style="font-size: 0.85em; color: #0066ff;">77.70%</span></td>
-            <td data-value="1402671.4643544166"><span style="font-size: 0.85em;">1,402,671</span></td>
-            <td data-value="402504.06231479935"><span style="font-size: 0.85em;">402,504</span></td>
-            <td data-value="1805175.5266692159"><span style="font-size: 0.85em;">1,805,176</span></td>
+            <td data-value="9445242.0"><span style="font-size: 0.85em;">9,445,242</span></td>
+            <td data-value="25"><span style="font-size: 0.85em;">25</span></td>
+            <td data-value="52654.97109731756"><span style="font-size: 0.85em;">52,655</span></td>
+            <td data-value="76.99"><span style="font-size: 0.85em; color: #0066ff;">76.99%</span></td>
+            <td data-value="1923350.213025672"><span style="font-size: 0.85em;">1,923,350</span></td>
+            <td data-value="574789.2336456426"><span style="font-size: 0.85em;">574,789</span></td>
+            <td data-value="2498139.4466713145"><span style="font-size: 0.85em;">2,498,139</span></td>
             <td style="color: inherit;"><span style="font-size: 0.85em;">No</span></td>
-            <td data-value="1.33"><span style="font-size: 0.85em;">1.33</span></td>
-            <td data-value="1.33"><span style="font-size: 0.85em;">Fair 🟡</span></td>
+            <td data-value="9.83"><span style="font-size: 0.85em;">9.83</span></td>
+            <td data-value="9.83"><span style="font-size: 0.85em;">Excellent 🟢</span></td>
         </tr>
         
         <tr>
@@ -1823,16 +1816,16 @@
                 </a>
             -->
             </td>
-            <td data-value="11530994.000000002"><span style="font-size: 0.85em;">11,530,994</span></td>
-            <td data-value="6"><span style="font-size: 0.85em;">6</span></td>
+            <td data-value="11947610.0"><span style="font-size: 0.85em;">11,947,610</span></td>
+            <td data-value="5"><span style="font-size: 0.85em;">5</span></td>
             <td data-value="0.0"><span style="font-size: 0.85em;">0</span></td>
-            <td data-value="85.63"><span style="font-size: 0.85em; color: #0066ff;">85.63%</span></td>
-            <td data-value="1582638.6266461303"><span style="font-size: 0.85em;">1,582,639</span></td>
-            <td data-value="265547.9265933755"><span style="font-size: 0.85em;">265,548</span></td>
-            <td data-value="1848186.553239506"><span style="font-size: 0.85em;">1,848,187</span></td>
+            <td data-value="86.03"><span style="font-size: 0.85em; color: #0066ff;">86.03%</span></td>
+            <td data-value="2055496.758135411"><span style="font-size: 0.85em;">2,055,497</span></td>
+            <td data-value="333717.4055037295"><span style="font-size: 0.85em;">333,717</span></td>
+            <td data-value="2389214.1636391403"><span style="font-size: 0.85em;">2,389,214</span></td>
             <td style="color: #c83349;"><span style="font-size: 0.85em;">Yes</span></td>
-            <td data-value="4.22"><span style="font-size: 0.85em;">4.22</span></td>
-            <td data-value="4.22"><span style="font-size: 0.85em;">Poor 🔴</span></td>
+            <td data-value="10.0"><span style="font-size: 0.85em;">10.00</span></td>
+            <td data-value="10.0"><span style="font-size: 0.85em;">Poor 🔴</span></td>
         </tr>
         
         <tr>
@@ -1846,16 +1839,16 @@
                 </a>
             -->
             </td>
-            <td data-value="3429864.9999999995"><span style="font-size: 0.85em;">3,429,865</span></td>
-            <td data-value="14"><span style="font-size: 0.85em;">14</span></td>
+            <td data-value="3571198.0"><span style="font-size: 0.85em;">3,571,198</span></td>
+            <td data-value="7"><span style="font-size: 0.85em;">7</span></td>
             <td data-value="0.0"><span style="font-size: 0.85em;">0</span></td>
-            <td data-value="58.85"><span style="font-size: 0.85em; color: #0066ff;">58.85%</span></td>
-            <td data-value="441631.79919017485"><span style="font-size: 0.85em;">441,632</span></td>
-            <td data-value="308772.0155679542"><span style="font-size: 0.85em;">308,772</span></td>
-            <td data-value="750403.8147581291"><span style="font-size: 0.85em;">750,404</span></td>
-            <td style="color: inherit;"><span style="font-size: 0.85em;">No</span></td>
-            <td data-value="1.31"><span style="font-size: 0.85em;">1.31</span></td>
-            <td data-value="1.31"><span style="font-size: 0.85em;">Fair 🟡</span></td>
+            <td data-value="63.86"><span style="font-size: 0.85em; color: #0066ff;">63.86%</span></td>
+            <td data-value="627963.5676167677"><span style="font-size: 0.85em;">627,964</span></td>
+            <td data-value="355354.9576746024"><span style="font-size: 0.85em;">355,355</span></td>
+            <td data-value="983318.5252913701"><span style="font-size: 0.85em;">983,319</span></td>
+            <td style="color: #c83349;"><span style="font-size: 0.85em;">Yes</span></td>
+            <td data-value="10.0"><span style="font-size: 0.85em;">10.00</span></td>
+            <td data-value="10.0"><span style="font-size: 0.85em;">Poor 🔴</span></td>
         </tr>
         
         <tr>
@@ -1869,16 +1862,16 @@
                 </a>
             -->
             </td>
-            <td data-value="29450254.9"><span style="font-size: 0.85em;">29,450,255</span></td>
-            <td data-value="19"><span style="font-size: 0.85em;">19</span></td>
+            <td data-value="30555178.7"><span style="font-size: 0.85em;">30,555,179</span></td>
+            <td data-value="12"><span style="font-size: 0.85em;">12</span></td>
             <td data-value="6802.402092629886"><span style="font-size: 0.85em;">6,802</span></td>
-            <td data-value="79.65"><span style="font-size: 0.85em; color: #0066ff;">79.65%</span></td>
-            <td data-value="5466917.233551888"><span style="font-size: 0.85em;">5,466,917</span></td>
-            <td data-value="1396844.1500820792"><span style="font-size: 0.85em;">1,396,844</span></td>
-            <td data-value="6863761.383633967"><span style="font-size: 0.85em;">6,863,761</span></td>
+            <td data-value="74.89"><span style="font-size: 0.85em; color: #0066ff;">74.89%</span></td>
+            <td data-value="6017973.539154546"><span style="font-size: 0.85em;">6,017,974</span></td>
+            <td data-value="2018248.06916593"><span style="font-size: 0.85em;">2,018,248</span></td>
+            <td data-value="8036221.6083204765"><span style="font-size: 0.85em;">8,036,222</span></td>
             <td style="color: inherit;"><span style="font-size: 0.85em;">No</span></td>
-            <td data-value="1.98"><span style="font-size: 0.85em;">1.98</span></td>
-            <td data-value="1.98"><span style="font-size: 0.85em;">Fair 🟡</span></td>
+            <td data-value="9.99"><span style="font-size: 0.85em;">9.99</span></td>
+            <td data-value="9.99"><span style="font-size: 0.85em;">Poor 🔴</span></td>
         </tr>
         
         <tr>
@@ -1892,39 +1885,16 @@
                 </a>
             -->
             </td>
-            <td data-value="36368000.0"><span style="font-size: 0.85em;">36,368,000</span></td>
-            <td data-value="17"><span style="font-size: 0.85em;">17</span></td>
-            <td data-value="6085.560903165063"><span style="font-size: 0.85em;">6,086</span></td>
+            <td data-value="36292000.0"><span style="font-size: 0.85em;">36,292,000</span></td>
+            <td data-value="25"><span style="font-size: 0.85em;">25</span></td>
+            <td data-value="14145.859541907135"><span style="font-size: 0.85em;">14,146</span></td>
             <td data-value="0.00"><span style="font-size: 0.85em; color: #0066ff;">0.00%</span></td>
             <td data-value="0.0"><span style="font-size: 0.85em;">0</span></td>
-            <td data-value="6348858.224463771"><span style="font-size: 0.85em;">6,348,858</span></td>
-            <td data-value="6348858.224463771"><span style="font-size: 0.85em;">6,348,858</span></td>
+            <td data-value="8519004.00611035"><span style="font-size: 0.85em;">8,519,004</span></td>
+            <td data-value="8519004.00611035"><span style="font-size: 0.85em;">8,519,004</span></td>
             <td style="color: inherit;"><span style="font-size: 0.85em;">No</span></td>
-            <td data-value="2.35"><span style="font-size: 0.85em;">2.35</span></td>
-            <td data-value="2.35"><span style="font-size: 0.85em;">Fair 🟡</span></td>
-        </tr>
-        
-        <tr>
-            
-            <td>
-                
-                <a target="_blank" href="https://thegraph.com/explorer/profile/0xcba919cf1ee9c537545975d9968718a09d20f071?view=Overview&chain=arbitrum-one"><span style="font-size: 0.85em;">0xcba919cf1ee9c537545975d9968718a09d20f071</span></a>
-            <!--
-                <a href="statements/0xcba919cf1ee9c537545975d9968718a09d20f071.pdf" target="_blank">
-                    <img src="images/pdf.png" alt="PDF" style="width:14px; height:14px; vertical-align:middle; margin-left:6px;" />
-                </a>
-            -->
-            </td>
-            <td data-value="3664759.0"><span style="font-size: 0.85em;">3,664,759</span></td>
-            <td data-value="1"><span style="font-size: 0.85em;">1</span></td>
-            <td data-value="2235.8208255475115"><span style="font-size: 0.85em;">2,236</span></td>
-            <td data-value="0.00"><span style="font-size: 0.85em; color: #0066ff;">0.00%</span></td>
-            <td data-value="0.0"><span style="font-size: 0.85em;">0</span></td>
-            <td data-value="855479.8200057163"><span style="font-size: 0.85em;">855,480</span></td>
-            <td data-value="855479.8200057163"><span style="font-size: 0.85em;">855,480</span></td>
-            <td style="color: #c83349;"><span style="font-size: 0.85em;">Yes</span></td>
-            <td data-value="9.1"><span style="font-size: 0.85em;">9.10</span></td>
-            <td data-value="9.1"><span style="font-size: 0.85em;">Poor 🔴</span></td>
+            <td data-value="9.99"><span style="font-size: 0.85em;">9.99</span></td>
+            <td data-value="9.99"><span style="font-size: 0.85em;">Poor 🔴</span></td>
         </tr>
         
         <tr>
@@ -1938,16 +1908,16 @@
                 </a>
             -->
             </td>
-            <td data-value="63128855.0"><span style="font-size: 0.85em;">63,128,855</span></td>
-            <td data-value="226"><span style="font-size: 0.85em;">226</span></td>
-            <td data-value="1466.3819799713608"><span style="font-size: 0.85em;">1,466</span></td>
+            <td data-value="83550581.0"><span style="font-size: 0.85em;">83,550,581</span></td>
+            <td data-value="193"><span style="font-size: 0.85em;">193</span></td>
+            <td data-value="4153.729632761108"><span style="font-size: 0.85em;">4,154</span></td>
             <td data-value="0.00"><span style="font-size: 0.85em; color: #0066ff;">0.00%</span></td>
             <td data-value="0.0"><span style="font-size: 0.85em;">0</span></td>
-            <td data-value="724605.4949899155"><span style="font-size: 0.85em;">724,605</span></td>
-            <td data-value="724605.4949899155"><span style="font-size: 0.85em;">724,605</span></td>
+            <td data-value="4197992.449516954"><span style="font-size: 0.85em;">4,197,992</span></td>
+            <td data-value="4197992.449516954"><span style="font-size: 0.85em;">4,197,992</span></td>
             <td style="color: inherit;"><span style="font-size: 0.85em;">No</span></td>
-            <td data-value="1.09"><span style="font-size: 0.85em;">1.09</span></td>
-            <td data-value="1.09"><span style="font-size: 0.85em;">Excellent 🟢</span></td>
+            <td data-value="10.0"><span style="font-size: 0.85em;">10.00</span></td>
+            <td data-value="10.0"><span style="font-size: 0.85em;">Poor 🔴</span></td>
         </tr>
         
         <tr>
@@ -1961,16 +1931,16 @@
                 </a>
             -->
             </td>
-            <td data-value="1075200.0"><span style="font-size: 0.85em;">1,075,200</span></td>
-            <td data-value="12"><span style="font-size: 0.85em;">12</span></td>
-            <td data-value="6845.7689153012"><span style="font-size: 0.85em;">6,846</span></td>
-            <td data-value="61.58"><span style="font-size: 0.85em; color: #0066ff;">61.58%</span></td>
-            <td data-value="118616.18276935183"><span style="font-size: 0.85em;">118,616</span></td>
-            <td data-value="74013.68240351028"><span style="font-size: 0.85em;">74,014</span></td>
-            <td data-value="192629.8651728621"><span style="font-size: 0.85em;">192,630</span></td>
+            <td data-value="1075300.0"><span style="font-size: 0.85em;">1,075,300</span></td>
+            <td data-value="13"><span style="font-size: 0.85em;">13</span></td>
+            <td data-value="7415.470623219984"><span style="font-size: 0.85em;">7,415</span></td>
+            <td data-value="62.31"><span style="font-size: 0.85em; color: #0066ff;">62.31%</span></td>
+            <td data-value="152808.7813123376"><span style="font-size: 0.85em;">152,809</span></td>
+            <td data-value="92425.08161896416"><span style="font-size: 0.85em;">92,425</span></td>
+            <td data-value="245233.86293130176"><span style="font-size: 0.85em;">245,234</span></td>
             <td style="color: inherit;"><span style="font-size: 0.85em;">No</span></td>
-            <td data-value="1.13"><span style="font-size: 0.85em;">1.13</span></td>
-            <td data-value="1.13"><span style="font-size: 0.85em;">Excellent 🟢</span></td>
+            <td data-value="9.79"><span style="font-size: 0.85em;">9.79</span></td>
+            <td data-value="9.79"><span style="font-size: 0.85em;">Excellent 🟢</span></td>
         </tr>
         
         <tr>
@@ -1984,16 +1954,16 @@
                 </a>
             -->
             </td>
-            <td data-value="4179913.65"><span style="font-size: 0.85em;">4,179,914</span></td>
+            <td data-value="4377884.8"><span style="font-size: 0.85em;">4,377,885</span></td>
             <td data-value="12"><span style="font-size: 0.85em;">12</span></td>
-            <td data-value="3431.595858873986"><span style="font-size: 0.85em;">3,432</span></td>
-            <td data-value="68.65"><span style="font-size: 0.85em; color: #0066ff;">68.65%</span></td>
-            <td data-value="807049.0070008393"><span style="font-size: 0.85em;">807,049</span></td>
-            <td data-value="368598.2788780955"><span style="font-size: 0.85em;">368,598</span></td>
-            <td data-value="1175647.285878935"><span style="font-size: 0.85em;">1,175,647</span></td>
+            <td data-value="6566.800165450447"><span style="font-size: 0.85em;">6,567</span></td>
+            <td data-value="66.54"><span style="font-size: 0.85em; color: #0066ff;">66.54%</span></td>
+            <td data-value="978643.3201764852"><span style="font-size: 0.85em;">978,643</span></td>
+            <td data-value="492143.82324570016"><span style="font-size: 0.85em;">492,144</span></td>
+            <td data-value="1470787.1434221854"><span style="font-size: 0.85em;">1,470,787</span></td>
             <td style="color: inherit;"><span style="font-size: 0.85em;">No</span></td>
-            <td data-value="1.44"><span style="font-size: 0.85em;">1.44</span></td>
-            <td data-value="1.44"><span style="font-size: 0.85em;">Fair 🟡</span></td>
+            <td data-value="9.96"><span style="font-size: 0.85em;">9.96</span></td>
+            <td data-value="9.96"><span style="font-size: 0.85em;">Fair 🟡</span></td>
         </tr>
         
         <tr>
@@ -2007,16 +1977,16 @@
                 </a>
             -->
             </td>
-            <td data-value="461703.0"><span style="font-size: 0.85em;">461,703</span></td>
-            <td data-value="242"><span style="font-size: 0.85em;">242</span></td>
+            <td data-value="461244.0"><span style="font-size: 0.85em;">461,244</span></td>
+            <td data-value="361"><span style="font-size: 0.85em;">361</span></td>
             <td data-value="1248.133469075122"><span style="font-size: 0.85em;">1,248</span></td>
-            <td data-value="46.49"><span style="font-size: 0.85em; color: #0066ff;">46.49%</span></td>
-            <td data-value="239173.75606300746"><span style="font-size: 0.85em;">239,174</span></td>
-            <td data-value="275264.2523998636"><span style="font-size: 0.85em;">275,264</span></td>
-            <td data-value="514438.0084628711"><span style="font-size: 0.85em;">514,438</span></td>
+            <td data-value="47.69"><span style="font-size: 0.85em; color: #0066ff;">47.69%</span></td>
+            <td data-value="263445.07549982745"><span style="font-size: 0.85em;">263,445</span></td>
+            <td data-value="288916.8695830749"><span style="font-size: 0.85em;">288,917</span></td>
+            <td data-value="552361.9450829023"><span style="font-size: 0.85em;">552,362</span></td>
             <td style="color: inherit;"><span style="font-size: 0.85em;">No</span></td>
-            <td data-value="1.01"><span style="font-size: 0.85em;">1.01</span></td>
-            <td data-value="1.01"><span style="font-size: 0.85em;">Excellent 🟢</span></td>
+            <td data-value="9.92"><span style="font-size: 0.85em;">9.92</span></td>
+            <td data-value="9.92"><span style="font-size: 0.85em;">Excellent 🟢</span></td>
         </tr>
         
         <tr>
@@ -2030,16 +2000,16 @@
                 </a>
             -->
             </td>
-            <td data-value="6169966.000000001"><span style="font-size: 0.85em;">6,169,966</span></td>
-            <td data-value="360"><span style="font-size: 0.85em;">360</span></td>
+            <td data-value="6026943.0"><span style="font-size: 0.85em;">6,026,943</span></td>
+            <td data-value="364"><span style="font-size: 0.85em;">364</span></td>
             <td data-value="22620.74792857072"><span style="font-size: 0.85em;">22,621</span></td>
-            <td data-value="73.54"><span style="font-size: 0.85em; color: #0066ff;">73.54%</span></td>
-            <td data-value="1839761.4788778424"><span style="font-size: 0.85em;">1,839,761</span></td>
-            <td data-value="661879.8983084928"><span style="font-size: 0.85em;">661,880</span></td>
-            <td data-value="2501641.377186335"><span style="font-size: 0.85em;">2,501,641</span></td>
+            <td data-value="69.02"><span style="font-size: 0.85em; color: #0066ff;">69.02%</span></td>
+            <td data-value="2049730.3032719237"><span style="font-size: 0.85em;">2,049,730</span></td>
+            <td data-value="919949.2153783502"><span style="font-size: 0.85em;">919,949</span></td>
+            <td data-value="2969679.518650274"><span style="font-size: 0.85em;">2,969,680</span></td>
             <td style="color: inherit;"><span style="font-size: 0.85em;">No</span></td>
-            <td data-value="1.03"><span style="font-size: 0.85em;">1.03</span></td>
-            <td data-value="1.03"><span style="font-size: 0.85em;">Excellent 🟢</span></td>
+            <td data-value="9.89"><span style="font-size: 0.85em;">9.89</span></td>
+            <td data-value="9.89"><span style="font-size: 0.85em;">Excellent 🟢</span></td>
         </tr>
         
         <tr>
@@ -2053,16 +2023,16 @@
                 </a>
             -->
             </td>
-            <td data-value="34528922.0"><span style="font-size: 0.85em;">34,528,922</span></td>
-            <td data-value="206"><span style="font-size: 0.85em;">206</span></td>
-            <td data-value="10801.685318354588"><span style="font-size: 0.85em;">10,802</span></td>
-            <td data-value="76.61"><span style="font-size: 0.85em; color: #0066ff;">76.61%</span></td>
-            <td data-value="5831012.0786546515"><span style="font-size: 0.85em;">5,831,012</span></td>
-            <td data-value="1780768.9579918096"><span style="font-size: 0.85em;">1,780,769</span></td>
-            <td data-value="7611781.036646461"><span style="font-size: 0.85em;">7,611,781</span></td>
+            <td data-value="35166256.0"><span style="font-size: 0.85em;">35,166,256</span></td>
+            <td data-value="387"><span style="font-size: 0.85em;">387</span></td>
+            <td data-value="13220.316288456179"><span style="font-size: 0.85em;">13,220</span></td>
+            <td data-value="75.80"><span style="font-size: 0.85em; color: #0066ff;">75.80%</span></td>
+            <td data-value="7888343.917277081"><span style="font-size: 0.85em;">7,888,344</span></td>
+            <td data-value="2518424.93809866"><span style="font-size: 0.85em;">2,518,425</span></td>
+            <td data-value="10406768.85537574"><span style="font-size: 0.85em;">10,406,769</span></td>
             <td style="color: inherit;"><span style="font-size: 0.85em;">No</span></td>
-            <td data-value="1.1"><span style="font-size: 0.85em;">1.10</span></td>
-            <td data-value="1.1"><span style="font-size: 0.85em;">Excellent 🟢</span></td>
+            <td data-value="9.99"><span style="font-size: 0.85em;">9.99</span></td>
+            <td data-value="9.99"><span style="font-size: 0.85em;">Poor 🔴</span></td>
         </tr>
         
         <tr>
@@ -2076,16 +2046,16 @@
                 </a>
             -->
             </td>
-            <td data-value="32901400.0"><span style="font-size: 0.85em;">32,901,400</span></td>
+            <td data-value="34376900.0"><span style="font-size: 0.85em;">34,376,900</span></td>
             <td data-value="30"><span style="font-size: 0.85em;">30</span></td>
-            <td data-value="3280.9963490855243"><span style="font-size: 0.85em;">3,281</span></td>
-            <td data-value="80.34"><span style="font-size: 0.85em; color: #0066ff;">80.34%</span></td>
-            <td data-value="4773798.481480056"><span style="font-size: 0.85em;">4,773,798</span></td>
-            <td data-value="1167861.1453152085"><span style="font-size: 0.85em;">1,167,861</span></td>
-            <td data-value="5941659.626795265"><span style="font-size: 0.85em;">5,941,660</span></td>
+            <td data-value="4271.427772890913"><span style="font-size: 0.85em;">4,271</span></td>
+            <td data-value="80.26"><span style="font-size: 0.85em; color: #0066ff;">80.26%</span></td>
+            <td data-value="6292014.5173899885"><span style="font-size: 0.85em;">6,292,015</span></td>
+            <td data-value="1547415.154292692"><span style="font-size: 0.85em;">1,547,415</span></td>
+            <td data-value="7839429.671682681"><span style="font-size: 0.85em;">7,839,430</span></td>
             <td style="color: inherit;"><span style="font-size: 0.85em;">No</span></td>
-            <td data-value="1.69"><span style="font-size: 0.85em;">1.69</span></td>
-            <td data-value="1.69"><span style="font-size: 0.85em;">Fair 🟡</span></td>
+            <td data-value="10.0"><span style="font-size: 0.85em;">10.00</span></td>
+            <td data-value="10.0"><span style="font-size: 0.85em;">Poor 🔴</span></td>
         </tr>
         
         <tr>
@@ -2099,16 +2069,16 @@
                 </a>
             -->
             </td>
-            <td data-value="17575881.81"><span style="font-size: 0.85em;">17,575,882</span></td>
-            <td data-value="551"><span style="font-size: 0.85em;">551</span></td>
-            <td data-value="15728.590173429679"><span style="font-size: 0.85em;">15,729</span></td>
-            <td data-value="64.32"><span style="font-size: 0.85em; color: #0066ff;">64.32%</span></td>
-            <td data-value="7468765.828926001"><span style="font-size: 0.85em;">7,468,766</span></td>
-            <td data-value="4142763.1099876924"><span style="font-size: 0.85em;">4,142,763</span></td>
-            <td data-value="11611528.938913694"><span style="font-size: 0.85em;">11,611,529</span></td>
+            <td data-value="14786510.52"><span style="font-size: 0.85em;">14,786,511</span></td>
+            <td data-value="827"><span style="font-size: 0.85em;">827</span></td>
+            <td data-value="75723.68327822347"><span style="font-size: 0.85em;">75,724</span></td>
+            <td data-value="64.01"><span style="font-size: 0.85em; color: #0066ff;">64.01%</span></td>
+            <td data-value="8538399.198288176"><span style="font-size: 0.85em;">8,538,399</span></td>
+            <td data-value="4800333.274414986"><span style="font-size: 0.85em;">4,800,333</span></td>
+            <td data-value="13338732.472703163"><span style="font-size: 0.85em;">13,338,732</span></td>
             <td style="color: inherit;"><span style="font-size: 0.85em;">No</span></td>
-            <td data-value="1.04"><span style="font-size: 0.85em;">1.04</span></td>
-            <td data-value="1.04"><span style="font-size: 0.85em;">Excellent 🟢</span></td>
+            <td data-value="9.85"><span style="font-size: 0.85em;">9.85</span></td>
+            <td data-value="9.85"><span style="font-size: 0.85em;">Excellent 🟢</span></td>
         </tr>
         
         <tr>
@@ -2122,16 +2092,16 @@
                 </a>
             -->
             </td>
-            <td data-value="13841244.999999998"><span style="font-size: 0.85em;">13,841,245</span></td>
-            <td data-value="60"><span style="font-size: 0.85em;">60</span></td>
-            <td data-value="2113.5206357075435"><span style="font-size: 0.85em;">2,114</span></td>
+            <td data-value="46774747.0"><span style="font-size: 0.85em;">46,774,747</span></td>
+            <td data-value="111"><span style="font-size: 0.85em;">111</span></td>
+            <td data-value="4244.497441145616"><span style="font-size: 0.85em;">4,244</span></td>
             <td data-value="0.00"><span style="font-size: 0.85em; color: #0066ff;">0.00%</span></td>
             <td data-value="0.0"><span style="font-size: 0.85em;">0</span></td>
-            <td data-value="356974.0770412068"><span style="font-size: 0.85em;">356,974</span></td>
-            <td data-value="356974.0770412068"><span style="font-size: 0.85em;">356,974</span></td>
+            <td data-value="1773790.0018634445"><span style="font-size: 0.85em;">1,773,790</span></td>
+            <td data-value="1773790.0018634445"><span style="font-size: 0.85em;">1,773,790</span></td>
             <td style="color: inherit;"><span style="font-size: 0.85em;">No</span></td>
-            <td data-value="1.29"><span style="font-size: 0.85em;">1.29</span></td>
-            <td data-value="1.29"><span style="font-size: 0.85em;">Fair 🟡</span></td>
+            <td data-value="10.0"><span style="font-size: 0.85em;">10.00</span></td>
+            <td data-value="10.0"><span style="font-size: 0.85em;">Poor 🔴</span></td>
         </tr>
         
         <tr>
@@ -2145,16 +2115,16 @@
                 </a>
             -->
             </td>
-            <td data-value="38005878.01414773"><span style="font-size: 0.85em;">38,005,878</span></td>
-            <td data-value="10"><span style="font-size: 0.85em;">10</span></td>
-            <td data-value="804.766911999787"><span style="font-size: 0.85em;">805</span></td>
+            <td data-value="39281213.85789057"><span style="font-size: 0.85em;">39,281,214</span></td>
+            <td data-value="7"><span style="font-size: 0.85em;">7</span></td>
+            <td data-value="1080.3370571165326"><span style="font-size: 0.85em;">1,080</span></td>
             <td data-value="85.00"><span style="font-size: 0.85em; color: #0066ff;">85.00%</span></td>
-            <td data-value="4020050.105498691"><span style="font-size: 0.85em;">4,020,050</span></td>
-            <td data-value="709420.6068527102"><span style="font-size: 0.85em;">709,421</span></td>
-            <td data-value="4729470.712351401"><span style="font-size: 0.85em;">4,729,471</span></td>
+            <td data-value="5297544.008011159"><span style="font-size: 0.85em;">5,297,544</span></td>
+            <td data-value="934860.7072960867"><span style="font-size: 0.85em;">934,861</span></td>
+            <td data-value="6232404.715307245"><span style="font-size: 0.85em;">6,232,405</span></td>
             <td style="color: #c83349;"><span style="font-size: 0.85em;">Yes</span></td>
-            <td data-value="3.39"><span style="font-size: 0.85em;">3.39</span></td>
-            <td data-value="3.39"><span style="font-size: 0.85em;">Poor 🔴</span></td>
+            <td data-value="10.0"><span style="font-size: 0.85em;">10.00</span></td>
+            <td data-value="10.0"><span style="font-size: 0.85em;">Poor 🔴</span></td>
         </tr>
         
         <tr>
@@ -2169,15 +2139,15 @@
             -->
             </td>
             <td data-value="14999009.0"><span style="font-size: 0.85em;">14,999,009</span></td>
-            <td data-value="219"><span style="font-size: 0.85em;">219</span></td>
-            <td data-value="8914.09295894322"><span style="font-size: 0.85em;">8,914</span></td>
+            <td data-value="38"><span style="font-size: 0.85em;">38</span></td>
+            <td data-value="9954.95576869886"><span style="font-size: 0.85em;">9,955</span></td>
             <td data-value="0.00"><span style="font-size: 0.85em; color: #0066ff;">0.00%</span></td>
             <td data-value="0.0"><span style="font-size: 0.85em;">0</span></td>
-            <td data-value="3124937.3467964064"><span style="font-size: 0.85em;">3,124,937</span></td>
-            <td data-value="3124937.3467964064"><span style="font-size: 0.85em;">3,124,937</span></td>
+            <td data-value="3930235.276489764"><span style="font-size: 0.85em;">3,930,235</span></td>
+            <td data-value="3930235.276489764"><span style="font-size: 0.85em;">3,930,235</span></td>
             <td style="color: inherit;"><span style="font-size: 0.85em;">No</span></td>
-            <td data-value="1.09"><span style="font-size: 0.85em;">1.09</span></td>
-            <td data-value="1.09"><span style="font-size: 0.85em;">Excellent 🟢</span></td>
+            <td data-value="9.98"><span style="font-size: 0.85em;">9.98</span></td>
+            <td data-value="9.98"><span style="font-size: 0.85em;">Poor 🔴</span></td>
         </tr>
         
         <tr>
@@ -2191,16 +2161,16 @@
                 </a>
             -->
             </td>
-            <td data-value="74879308.0"><span style="font-size: 0.85em;">74,879,308</span></td>
-            <td data-value="121"><span style="font-size: 0.85em;">121</span></td>
-            <td data-value="5754.855096688111"><span style="font-size: 0.85em;">5,755</span></td>
+            <td data-value="90031274.0"><span style="font-size: 0.85em;">90,031,274</span></td>
+            <td data-value="186"><span style="font-size: 0.85em;">186</span></td>
+            <td data-value="7130.773107325582"><span style="font-size: 0.85em;">7,131</span></td>
             <td data-value="0.00"><span style="font-size: 0.85em; color: #0066ff;">0.00%</span></td>
             <td data-value="0.0"><span style="font-size: 0.85em;">0</span></td>
-            <td data-value="19589941.33577161"><span style="font-size: 0.85em;">19,589,941</span></td>
-            <td data-value="19589941.33577161"><span style="font-size: 0.85em;">19,589,941</span></td>
+            <td data-value="23965127.212104518"><span style="font-size: 0.85em;">23,965,127</span></td>
+            <td data-value="23965127.212104518"><span style="font-size: 0.85em;">23,965,127</span></td>
             <td style="color: inherit;"><span style="font-size: 0.85em;">No</span></td>
-            <td data-value="1.2"><span style="font-size: 0.85em;">1.20</span></td>
-            <td data-value="1.2"><span style="font-size: 0.85em;">Excellent 🟢</span></td>
+            <td data-value="10.0"><span style="font-size: 0.85em;">10.00</span></td>
+            <td data-value="10.0"><span style="font-size: 0.85em;">Poor 🔴</span></td>
         </tr>
         
         <tr>
@@ -2214,16 +2184,16 @@
                 </a>
             -->
             </td>
-            <td data-value="78686451.0"><span style="font-size: 0.85em;">78,686,451</span></td>
-            <td data-value="217"><span style="font-size: 0.85em;">217</span></td>
-            <td data-value="13744.571845244245"><span style="font-size: 0.85em;">13,745</span></td>
-            <td data-value="79.45"><span style="font-size: 0.85em; color: #0066ff;">79.45%</span></td>
-            <td data-value="11132588.689764133"><span style="font-size: 0.85em;">11,132,589</span></td>
-            <td data-value="2880251.8041921295"><span style="font-size: 0.85em;">2,880,252</span></td>
-            <td data-value="14012840.493956262"><span style="font-size: 0.85em;">14,012,840</span></td>
+            <td data-value="116381339.0"><span style="font-size: 0.85em;">116,381,339</span></td>
+            <td data-value="181"><span style="font-size: 0.85em;">181</span></td>
+            <td data-value="16411.59412404836"><span style="font-size: 0.85em;">16,412</span></td>
+            <td data-value="79.40"><span style="font-size: 0.85em; color: #0066ff;">79.40%</span></td>
+            <td data-value="14750808.098030608"><span style="font-size: 0.85em;">14,750,808</span></td>
+            <td data-value="3827608.9363249918"><span style="font-size: 0.85em;">3,827,609</span></td>
+            <td data-value="18578417.0343556"><span style="font-size: 0.85em;">18,578,417</span></td>
             <td style="color: inherit;"><span style="font-size: 0.85em;">No</span></td>
-            <td data-value="1.11"><span style="font-size: 0.85em;">1.11</span></td>
-            <td data-value="1.11"><span style="font-size: 0.85em;">Excellent 🟢</span></td>
+            <td data-value="10.0"><span style="font-size: 0.85em;">10.00</span></td>
+            <td data-value="10.0"><span style="font-size: 0.85em;">Poor 🔴</span></td>
         </tr>
         
         <tr>
@@ -2237,16 +2207,16 @@
                 </a>
             -->
             </td>
-            <td data-value="3002000.0"><span style="font-size: 0.85em;">3,002,000</span></td>
-            <td data-value="29"><span style="font-size: 0.85em;">29</span></td>
-            <td data-value="24899.15145223787"><span style="font-size: 0.85em;">24,899</span></td>
-            <td data-value="57.70"><span style="font-size: 0.85em; color: #0066ff;">57.70%</span></td>
-            <td data-value="215931.34061587372"><span style="font-size: 0.85em;">215,931</span></td>
-            <td data-value="158312.2111921327"><span style="font-size: 0.85em;">158,312</span></td>
-            <td data-value="374243.5518080064"><span style="font-size: 0.85em;">374,244</span></td>
+            <td data-value="3759999.9999999995"><span style="font-size: 0.85em;">3,760,000</span></td>
+            <td data-value="46"><span style="font-size: 0.85em;">46</span></td>
+            <td data-value="36726.892855851176"><span style="font-size: 0.85em;">36,727</span></td>
+            <td data-value="62.19"><span style="font-size: 0.85em; color: #0066ff;">62.19%</span></td>
+            <td data-value="430948.4842335252"><span style="font-size: 0.85em;">430,948</span></td>
+            <td data-value="261994.13600685465"><span style="font-size: 0.85em;">261,994</span></td>
+            <td data-value="692942.6202403798"><span style="font-size: 0.85em;">692,943</span></td>
             <td style="color: inherit;"><span style="font-size: 0.85em;">No</span></td>
-            <td data-value="1.15"><span style="font-size: 0.85em;">1.15</span></td>
-            <td data-value="1.15"><span style="font-size: 0.85em;">Excellent 🟢</span></td>
+            <td data-value="9.71"><span style="font-size: 0.85em;">9.71</span></td>
+            <td data-value="9.71"><span style="font-size: 0.85em;">Excellent 🟢</span></td>
         </tr>
         
         <tr>
@@ -2260,39 +2230,16 @@
                 </a>
             -->
             </td>
-            <td data-value="31170507.0"><span style="font-size: 0.85em;">31,170,507</span></td>
-            <td data-value="605"><span style="font-size: 0.85em;">605</span></td>
-            <td data-value="326224.710792294"><span style="font-size: 0.85em;">326,225</span></td>
-            <td data-value="81.49"><span style="font-size: 0.85em; color: #0066ff;">81.49%</span></td>
-            <td data-value="4493152.718151721"><span style="font-size: 0.85em;">4,493,153</span></td>
-            <td data-value="1020837.6123879596"><span style="font-size: 0.85em;">1,020,838</span></td>
-            <td data-value="5513990.330539681"><span style="font-size: 0.85em;">5,513,990</span></td>
+            <td data-value="37056177.0"><span style="font-size: 0.85em;">37,056,177</span></td>
+            <td data-value="537"><span style="font-size: 0.85em;">537</span></td>
+            <td data-value="713971.2458687075"><span style="font-size: 0.85em;">713,971</span></td>
+            <td data-value="80.22"><span style="font-size: 0.85em; color: #0066ff;">80.22%</span></td>
+            <td data-value="7501076.692749516"><span style="font-size: 0.85em;">7,501,077</span></td>
+            <td data-value="1849012.0376651874"><span style="font-size: 0.85em;">1,849,012</span></td>
+            <td data-value="9350088.730414703"><span style="font-size: 0.85em;">9,350,089</span></td>
             <td style="color: inherit;"><span style="font-size: 0.85em;">No</span></td>
-            <td data-value="1.06"><span style="font-size: 0.85em;">1.06</span></td>
-            <td data-value="1.06"><span style="font-size: 0.85em;">Excellent 🟢</span></td>
-        </tr>
-        
-        <tr>
-            
-            <td>
-                <img src='https://api.thegraph.com/ipfs/api/v0/cat?arg=QmcXsc64rkHi9rAQPN61qP6UUxYyyACX9WQkPMVNSfzvfD' style='width:20px; height:20px; border-radius:50%; vertical-align:middle; margin-right:6px;' />
-                <a target="_blank" href="https://thegraph.com/explorer/profile/0xeeeee689aa442c607105f29f06d00d2f748776b2?view=Overview&chain=arbitrum-one"><span style="font-size: 0.85em;">grt.stakecn.eth</span></a>
-            <!--
-                <a href="statements/0xeeeee689aa442c607105f29f06d00d2f748776b2.pdf" target="_blank">
-                    <img src="images/pdf.png" alt="PDF" style="width:14px; height:14px; vertical-align:middle; margin-left:6px;" />
-                </a>
-            -->
-            </td>
-            <td data-value="2136260.0"><span style="font-size: 0.85em;">2,136,260</span></td>
-            <td data-value="1"><span style="font-size: 0.85em;">1</span></td>
-            <td data-value="0.0"><span style="font-size: 0.85em;">0</span></td>
-            <td data-value="0.56"><span style="font-size: 0.85em; color: #0066ff;">0.56%</span></td>
-            <td data-value="2559.076479862095"><span style="font-size: 0.85em;">2,559</span></td>
-            <td data-value="456093.83854205575"><span style="font-size: 0.85em;">456,094</span></td>
-            <td data-value="458652.91502191784"><span style="font-size: 0.85em;">458,653</span></td>
-            <td style="color: #c83349;"><span style="font-size: 0.85em;">Yes</span></td>
-            <td data-value="5.49"><span style="font-size: 0.85em;">5.49</span></td>
-            <td data-value="5.49"><span style="font-size: 0.85em;">Poor 🔴</span></td>
+            <td data-value="9.42"><span style="font-size: 0.85em;">9.42</span></td>
+            <td data-value="9.42"><span style="font-size: 0.85em;">Excellent 🟢</span></td>
         </tr>
         
         <tr>
@@ -2306,85 +2253,16 @@
                 </a>
             -->
             </td>
-            <td data-value="24069635.0"><span style="font-size: 0.85em;">24,069,635</span></td>
-            <td data-value="67"><span style="font-size: 0.85em;">67</span></td>
-            <td data-value="8433.031861812125"><span style="font-size: 0.85em;">8,433</span></td>
-            <td data-value="81.21"><span style="font-size: 0.85em; color: #0066ff;">81.21%</span></td>
-            <td data-value="3574785.2986558257"><span style="font-size: 0.85em;">3,574,785</span></td>
-            <td data-value="827067.2253027374"><span style="font-size: 0.85em;">827,067</span></td>
-            <td data-value="4401852.523958563"><span style="font-size: 0.85em;">4,401,853</span></td>
+            <td data-value="31489769.0"><span style="font-size: 0.85em;">31,489,769</span></td>
+            <td data-value="292"><span style="font-size: 0.85em;">292</span></td>
+            <td data-value="15232.675362949409"><span style="font-size: 0.85em;">15,233</span></td>
+            <td data-value="81.54"><span style="font-size: 0.85em; color: #0066ff;">81.54%</span></td>
+            <td data-value="5225588.583223338"><span style="font-size: 0.85em;">5,225,589</span></td>
+            <td data-value="1183319.6058628997"><span style="font-size: 0.85em;">1,183,320</span></td>
+            <td data-value="6408908.189086238"><span style="font-size: 0.85em;">6,408,908</span></td>
             <td style="color: inherit;"><span style="font-size: 0.85em;">No</span></td>
-            <td data-value="1.22"><span style="font-size: 0.85em;">1.22</span></td>
-            <td data-value="1.22"><span style="font-size: 0.85em;">Excellent 🟢</span></td>
-        </tr>
-        
-        <tr>
-            
-            <td>
-                <img src='https://api.thegraph.com/ipfs/api/v0/cat?arg=QmWqhirSmC1GcdYz61cqj5ahpfX9x7w8ED4rz6LikWcYF1' style='width:20px; height:20px; border-radius:50%; vertical-align:middle; margin-right:6px;' />
-                <a target="_blank" href="https://thegraph.com/explorer/profile/0xf0e33495afe697dbe32168bd0743ba32ebb978a3?view=Overview&chain=arbitrum-one"><span style="font-size: 0.85em;">blockonaut.eth</span></a>
-            <!--
-                <a href="statements/0xf0e33495afe697dbe32168bd0743ba32ebb978a3.pdf" target="_blank">
-                    <img src="images/pdf.png" alt="PDF" style="width:14px; height:14px; vertical-align:middle; margin-left:6px;" />
-                </a>
-            -->
-            </td>
-            <td data-value="311500.0"><span style="font-size: 0.85em;">311,500</span></td>
-            <td data-value="3"><span style="font-size: 0.85em;">3</span></td>
-            <td data-value="19.14944035269772"><span style="font-size: 0.85em;">19</span></td>
-            <td data-value="42.00"><span style="font-size: 0.85em; color: #0066ff;">42.00%</span></td>
-            <td data-value="14772.833179489728"><span style="font-size: 0.85em;">14,773</span></td>
-            <td data-value="20400.579152628667"><span style="font-size: 0.85em;">20,401</span></td>
-            <td data-value="35173.412332118394"><span style="font-size: 0.85em;">35,173</span></td>
-            <td style="color: #c83349;"><span style="font-size: 0.85em;">Yes</span></td>
-            <td data-value="2.66"><span style="font-size: 0.85em;">2.66</span></td>
-            <td data-value="2.66"><span style="font-size: 0.85em;">Poor 🔴</span></td>
-        </tr>
-        
-        <tr>
-            
-            <td>
-                <img src='https://api.thegraph.com/ipfs/api/v0/cat?arg=QmTqxLqBfqBwALif91Gk1gj1KWt4iaY1vaSyavspXPWcgj' style='width:20px; height:20px; border-radius:50%; vertical-align:middle; margin-right:6px;' />
-                <a target="_blank" href="https://thegraph.com/explorer/profile/0xf57dcd881ebd1d81df99194abdfa90f9e0e92f11?view=Overview&chain=arbitrum-one"><span style="font-size: 0.85em;">0xf57dcd881ebd1d81df99194abdfa90f9e0e92f11</span></a>
-            <!--
-                <a href="statements/0xf57dcd881ebd1d81df99194abdfa90f9e0e92f11.pdf" target="_blank">
-                    <img src="images/pdf.png" alt="PDF" style="width:14px; height:14px; vertical-align:middle; margin-left:6px;" />
-                </a>
-            -->
-            </td>
-            <td data-value="9884089.0"><span style="font-size: 0.85em;">9,884,089</span></td>
-            <td data-value="34"><span style="font-size: 0.85em;">34</span></td>
-            <td data-value="6805.554638018162"><span style="font-size: 0.85em;">6,806</span></td>
-            <td data-value="17.51"><span style="font-size: 0.85em; color: #0066ff;">17.51%</span></td>
-            <td data-value="458875.04635047447"><span style="font-size: 0.85em;">458,875</span></td>
-            <td data-value="2162149.570581719"><span style="font-size: 0.85em;">2,162,150</span></td>
-            <td data-value="2621024.6169321933"><span style="font-size: 0.85em;">2,621,025</span></td>
-            <td style="color: inherit;"><span style="font-size: 0.85em;">No</span></td>
-            <td data-value="1.37"><span style="font-size: 0.85em;">1.37</span></td>
-            <td data-value="1.37"><span style="font-size: 0.85em;">Fair 🟡</span></td>
-        </tr>
-        
-        <tr>
-            
-            <td>
-                <img src='https://api.thegraph.com/ipfs/api/v0/cat?arg=QmZsUSxm9Z7XhtapgS4NAAn1rZRKuaaLwBxG6ph2cDsnUn' style='width:20px; height:20px; border-radius:50%; vertical-align:middle; margin-right:6px;' />
-                <a target="_blank" href="https://thegraph.com/explorer/profile/0xf671c6b83f44ead14ca1c5f4a629f1b9b18c8f29?view=Overview&chain=arbitrum-one"><span style="font-size: 0.85em;">capitanbeto.eth</span></a>
-            <!--
-                <a href="statements/0xf671c6b83f44ead14ca1c5f4a629f1b9b18c8f29.pdf" target="_blank">
-                    <img src="images/pdf.png" alt="PDF" style="width:14px; height:14px; vertical-align:middle; margin-left:6px;" />
-                </a>
-            -->
-            </td>
-            <td data-value="340799.0"><span style="font-size: 0.85em;">340,799</span></td>
-            <td data-value="10"><span style="font-size: 0.85em;">10</span></td>
-            <td data-value="0.0"><span style="font-size: 0.85em;">0</span></td>
-            <td data-value="20.01"><span style="font-size: 0.85em; color: #0066ff;">20.01%</span></td>
-            <td data-value="6658.637917457781"><span style="font-size: 0.85em;">6,659</span></td>
-            <td data-value="26616.855552384462"><span style="font-size: 0.85em;">26,617</span></td>
-            <td data-value="33275.493469842244"><span style="font-size: 0.85em;">33,275</span></td>
-            <td style="color: #c83349;"><span style="font-size: 0.85em;">Yes</span></td>
-            <td data-value="1.08"><span style="font-size: 0.85em;">1.08</span></td>
-            <td data-value="1.08"><span style="font-size: 0.85em;">Excellent 🟢</span></td>
+            <td data-value="9.99"><span style="font-size: 0.85em;">9.99</span></td>
+            <td data-value="9.99"><span style="font-size: 0.85em;">Poor 🔴</span></td>
         </tr>
         
         <tr>
@@ -2398,16 +2276,16 @@
                 </a>
             -->
             </td>
-            <td data-value="8036800.0"><span style="font-size: 0.85em;">8,036,800</span></td>
-            <td data-value="4"><span style="font-size: 0.85em;">4</span></td>
+            <td data-value="5349000.0"><span style="font-size: 0.85em;">5,349,000</span></td>
+            <td data-value="3"><span style="font-size: 0.85em;">3</span></td>
             <td data-value="4230.6425616885535"><span style="font-size: 0.85em;">4,231</span></td>
             <td data-value="0.00"><span style="font-size: 0.85em; color: #0066ff;">0.00%</span></td>
             <td data-value="0.0"><span style="font-size: 0.85em;">0</span></td>
-            <td data-value="2855456.988255605"><span style="font-size: 0.85em;">2,855,457</span></td>
-            <td data-value="2855456.988255605"><span style="font-size: 0.85em;">2,855,457</span></td>
+            <td data-value="3183405.379709318"><span style="font-size: 0.85em;">3,183,405</span></td>
+            <td data-value="3183405.379709318"><span style="font-size: 0.85em;">3,183,405</span></td>
             <td style="color: #c83349;"><span style="font-size: 0.85em;">Yes</span></td>
-            <td data-value="4.73"><span style="font-size: 0.85em;">4.73</span></td>
-            <td data-value="4.73"><span style="font-size: 0.85em;">Poor 🔴</span></td>
+            <td data-value="10.0"><span style="font-size: 0.85em;">10.00</span></td>
+            <td data-value="10.0"><span style="font-size: 0.85em;">Poor 🔴</span></td>
         </tr>
         
         <tr>
@@ -2421,16 +2299,16 @@
                 </a>
             -->
             </td>
-            <td data-value="160993758.0"><span style="font-size: 0.85em;">160,993,758</span></td>
-            <td data-value="18"><span style="font-size: 0.85em;">18</span></td>
+            <td data-value="123428535.80000001"><span style="font-size: 0.85em;">123,428,536</span></td>
+            <td data-value="8"><span style="font-size: 0.85em;">8</span></td>
             <td data-value="3299.6254930098225"><span style="font-size: 0.85em;">3,300</span></td>
             <td data-value="79.00"><span style="font-size: 0.85em; color: #0066ff;">79.00%</span></td>
-            <td data-value="13413701.050528208"><span style="font-size: 0.85em;">13,413,701</span></td>
-            <td data-value="3565667.367861929"><span style="font-size: 0.85em;">3,565,667</span></td>
-            <td data-value="16979368.418390136"><span style="font-size: 0.85em;">16,979,368</span></td>
-            <td style="color: inherit;"><span style="font-size: 0.85em;">No</span></td>
-            <td data-value="3.81"><span style="font-size: 0.85em;">3.81</span></td>
-            <td data-value="3.81"><span style="font-size: 0.85em;">Poor 🔴</span></td>
+            <td data-value="15714591.876855483"><span style="font-size: 0.85em;">15,714,592</span></td>
+            <td data-value="4177296.5748603176"><span style="font-size: 0.85em;">4,177,297</span></td>
+            <td data-value="19891888.4517158"><span style="font-size: 0.85em;">19,891,888</span></td>
+            <td style="color: #c83349;"><span style="font-size: 0.85em;">Yes</span></td>
+            <td data-value="10.0"><span style="font-size: 0.85em;">10.00</span></td>
+            <td data-value="10.0"><span style="font-size: 0.85em;">Poor 🔴</span></td>
         </tr>
         
         <tr>
@@ -2444,16 +2322,16 @@
                 </a>
             -->
             </td>
-            <td data-value="89553544.0"><span style="font-size: 0.85em;">89,553,544</span></td>
-            <td data-value="845"><span style="font-size: 0.85em;">845</span></td>
-            <td data-value="952143.9870431352"><span style="font-size: 0.85em;">952,144</span></td>
-            <td data-value="79.37"><span style="font-size: 0.85em; color: #0066ff;">79.37%</span></td>
-            <td data-value="17482610.58609983"><span style="font-size: 0.85em;">17,482,611</span></td>
-            <td data-value="4545220.745176114"><span style="font-size: 0.85em;">4,545,221</span></td>
-            <td data-value="22027831.331275944"><span style="font-size: 0.85em;">22,027,831</span></td>
+            <td data-value="102742687.0"><span style="font-size: 0.85em;">102,742,687</span></td>
+            <td data-value="1286"><span style="font-size: 0.85em;">1286</span></td>
+            <td data-value="1435311.2112468951"><span style="font-size: 0.85em;">1,435,311</span></td>
+            <td data-value="78.20"><span style="font-size: 0.85em; color: #0066ff;">78.20%</span></td>
+            <td data-value="26593412.65623072"><span style="font-size: 0.85em;">26,593,413</span></td>
+            <td data-value="7414716.632340986"><span style="font-size: 0.85em;">7,414,717</span></td>
+            <td data-value="34008129.28857171"><span style="font-size: 0.85em;">34,008,129</span></td>
             <td style="color: inherit;"><span style="font-size: 0.85em;">No</span></td>
-            <td data-value="1.06"><span style="font-size: 0.85em;">1.06</span></td>
-            <td data-value="1.06"><span style="font-size: 0.85em;">Excellent 🟢</span></td>
+            <td data-value="9.58"><span style="font-size: 0.85em;">9.58</span></td>
+            <td data-value="9.58"><span style="font-size: 0.85em;">Excellent 🟢</span></td>
         </tr>
         
         <tr>
@@ -2467,16 +2345,16 @@
                 </a>
             -->
             </td>
-            <td data-value="110470.0"><span style="font-size: 0.85em;">110,470</span></td>
-            <td data-value="1"><span style="font-size: 0.85em;">1</span></td>
-            <td data-value="0.043953271000154115"><span style="font-size: 0.85em;">0</span></td>
+            <td data-value="115384.0"><span style="font-size: 0.85em;">115,384</span></td>
+            <td data-value="2"><span style="font-size: 0.85em;">2</span></td>
+            <td data-value="0.25447455808523445"><span style="font-size: 0.85em;">0</span></td>
             <td data-value="0.00"><span style="font-size: 0.85em; color: #0066ff;">0.00%</span></td>
             <td data-value="0.0"><span style="font-size: 0.85em;">0</span></td>
-            <td data-value="11942.681027849254"><span style="font-size: 0.85em;">11,943</span></td>
-            <td data-value="11942.681027849254"><span style="font-size: 0.85em;">11,943</span></td>
+            <td data-value="15777.19432533636"><span style="font-size: 0.85em;">15,777</span></td>
+            <td data-value="15777.19432533636"><span style="font-size: 0.85em;">15,777</span></td>
             <td style="color: #c83349;"><span style="font-size: 0.85em;">Yes</span></td>
-            <td data-value="3.08"><span style="font-size: 0.85em;">3.08</span></td>
-            <td data-value="3.08"><span style="font-size: 0.85em;">Poor 🔴</span></td>
+            <td data-value="10.0"><span style="font-size: 0.85em;">10.00</span></td>
+            <td data-value="10.0"><span style="font-size: 0.85em;">Poor 🔴</span></td>
         </tr>
         
         <tr>
@@ -2490,16 +2368,16 @@
                 </a>
             -->
             </td>
-            <td data-value="31216373.0"><span style="font-size: 0.85em;">31,216,373</span></td>
-            <td data-value="85"><span style="font-size: 0.85em;">85</span></td>
-            <td data-value="26679.32049704576"><span style="font-size: 0.85em;">26,679</span></td>
-            <td data-value="69.67"><span style="font-size: 0.85em; color: #0066ff;">69.67%</span></td>
-            <td data-value="4284681.815082115"><span style="font-size: 0.85em;">4,284,682</span></td>
-            <td data-value="1865532.611588252"><span style="font-size: 0.85em;">1,865,533</span></td>
-            <td data-value="6150214.426670367"><span style="font-size: 0.85em;">6,150,214</span></td>
+            <td data-value="32881134.0"><span style="font-size: 0.85em;">32,881,134</span></td>
+            <td data-value="83"><span style="font-size: 0.85em;">83</span></td>
+            <td data-value="41993.73381481217"><span style="font-size: 0.85em;">41,994</span></td>
+            <td data-value="70.48"><span style="font-size: 0.85em; color: #0066ff;">70.48%</span></td>
+            <td data-value="6162021.903215936"><span style="font-size: 0.85em;">6,162,022</span></td>
+            <td data-value="2580669.78752518"><span style="font-size: 0.85em;">2,580,670</span></td>
+            <td data-value="8742691.690741116"><span style="font-size: 0.85em;">8,742,692</span></td>
             <td style="color: inherit;"><span style="font-size: 0.85em;">No</span></td>
-            <td data-value="1.23"><span style="font-size: 0.85em;">1.23</span></td>
-            <td data-value="1.23"><span style="font-size: 0.85em;">Excellent 🟢</span></td>
+            <td data-value="9.96"><span style="font-size: 0.85em;">9.96</span></td>
+            <td data-value="9.96"><span style="font-size: 0.85em;">Fair 🟡</span></td>
         </tr>
         
         <tr>
@@ -2513,16 +2391,16 @@
                 </a>
             -->
             </td>
-            <td data-value="20860890.0"><span style="font-size: 0.85em;">20,860,890</span></td>
-            <td data-value="60"><span style="font-size: 0.85em;">60</span></td>
-            <td data-value="114767.37962056977"><span style="font-size: 0.85em;">114,767</span></td>
-            <td data-value="75.21"><span style="font-size: 0.85em; color: #0066ff;">75.21%</span></td>
-            <td data-value="6151531.649250096"><span style="font-size: 0.85em;">6,151,532</span></td>
-            <td data-value="2028066.4257308957"><span style="font-size: 0.85em;">2,028,066</span></td>
-            <td data-value="8179598.074980992"><span style="font-size: 0.85em;">8,179,598</span></td>
+            <td data-value="19542694.0"><span style="font-size: 0.85em;">19,542,694</span></td>
+            <td data-value="68"><span style="font-size: 0.85em;">68</span></td>
+            <td data-value="161458.32205961357"><span style="font-size: 0.85em;">161,458</span></td>
+            <td data-value="72.91"><span style="font-size: 0.85em; color: #0066ff;">72.91%</span></td>
+            <td data-value="7415336.0910953535"><span style="font-size: 0.85em;">7,415,336</span></td>
+            <td data-value="2755508.373521528"><span style="font-size: 0.85em;">2,755,508</span></td>
+            <td data-value="10170844.464616882"><span style="font-size: 0.85em;">10,170,844</span></td>
             <td style="color: inherit;"><span style="font-size: 0.85em;">No</span></td>
-            <td data-value="1.23"><span style="font-size: 0.85em;">1.23</span></td>
-            <td data-value="1.23"><span style="font-size: 0.85em;">Excellent 🟢</span></td>
+            <td data-value="9.75"><span style="font-size: 0.85em;">9.75</span></td>
+            <td data-value="9.75"><span style="font-size: 0.85em;">Excellent 🟢</span></td>
         </tr>
         
         </table>
@@ -2532,24 +2410,46 @@
         <div class="footer">
             ©<script>document.write(new Date().getFullYear())</script> 
             <a href="https://graphtools.pro">Graph Tools Pro</a> :: Made with ❤️ by 
-            <a href="https://x.com/graphtronauts_c" target="_blank">Graphtronauts</a>
+            <a href="https://x.com/pdiomede" target="_blank">pdiomede</a>
             for <a href="https://x.com/graphprotocol" target="_blank">The Graph</a> ecosystem 👨‍🚀
-            <div style="margin-top: 8px;">
-                <span style="font-size: 0.8rem;">For Info: <a href="https://x.com/pdiomede" target="_blank">@pdiomede</a> & <a href="https://x.com/PaulBarba12" target="_blank">@PaulBarba12</a></span>
+            <div style="margin-top: 4px; text-align: center;">
+                <span style="font-size: 0.8rem;">
+                    <img src="./github.png" style="width: 15px; height: 15px; vertical-align: middle; margin-left: 6px; margin-right: 4px;" />
+                    <a href="https://github.com/pdiomede/indexerscore" target="_blank">GitHub repo</a>
+                </span>
             </div>
         </div>
 
         <script>
 
             document.addEventListener('DOMContentLoaded', () => {
-                // Automatic sorting by Performance column (11th column, index 10)
+                // Automatic sorting by Performance tier first, then by Delegator Rewards % descending
                 const table = document.querySelector('table');
                 const rows = Array.from(table.querySelectorAll('tr:nth-child(n+2)'));
+                
+                // Define tier priority (lower number = higher priority)
+                const tierPriority = {
+                    'Excellent': 1,
+                    'Fair': 2,
+                    'Poor': 3
+                };
+                
                 rows.sort((a, b) => {
-                    const aVal = parseFloat(a.children[10].getAttribute('data-value') || 0);
-                    const bVal = parseFloat(b.children[10].getAttribute('data-value') || 0);
-                    return aVal - bVal;
+                    // Primary sort: Performance tier
+                    const aPerformance = a.children[10].textContent.trim();
+                    const bPerformance = b.children[10].textContent.trim();
+                    const aTier = aPerformance.split(' ')[0]; // Extract 'Excellent', 'Fair', or 'Poor'
+                    const bTier = bPerformance.split(' ')[0];
+                    const tierDiff = tierPriority[aTier] - tierPriority[bTier];
+                    
+                    if (tierDiff !== 0) return tierDiff;
+                    
+                    // Secondary sort: Delegator Rewards % descending
+                    const aDelegatorRewards = parseFloat(a.children[4].getAttribute('data-value') || 0);
+                    const bDelegatorRewards = parseFloat(b.children[4].getAttribute('data-value') || 0);
+                    return bDelegatorRewards - aDelegatorRewards; // Descending order
                 });
+                
                 rows.forEach(row => table.appendChild(row));
                 table.querySelector('th:nth-child(11)').classList.add('sorted-column');
                 table.querySelector('th:nth-child(11)').setAttribute('data-sort-direction', 'asc');

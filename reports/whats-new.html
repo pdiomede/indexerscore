@@ -1,0 +1,449 @@
+
+<html>
+    <head>
+        <meta charset='UTF-8'>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <title>What's New - Indexer Score Dashboard v2.0</title>
+        <meta name="description" content="Discover the new simplified scoring system for The Graph Network indexers - focused on delegator protection and network health.">
+        
+        <link rel="icon" type="image/png" href="https://graphtools.pro/favicon.ico">
+        
+        <style>
+            body {
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+                line-height: 1.6;
+                max-width: 1100px;
+                margin: 0 auto;
+                padding: 20px;
+                background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+                color: #333;
+            }
+            
+            .container {
+                background: white;
+                border-radius: 12px;
+                padding: 40px;
+                box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+            }
+            
+            h1 {
+                color: #667eea;
+                border-bottom: 3px solid #667eea;
+                padding-bottom: 10px;
+                margin-top: 0;
+            }
+            
+            h2 {
+                color: #764ba2;
+                margin-top: 40px;
+                padding-left: 10px;
+                border-left: 4px solid #764ba2;
+            }
+            
+            h3 {
+                color: #667eea;
+                margin-top: 25px;
+            }
+            
+            .badge {
+                background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+                color: white;
+                padding: 6px 14px;
+                border-radius: 20px;
+                font-size: 0.9em;
+                font-weight: bold;
+                display: inline-block;
+                margin-left: 10px;
+            }
+            
+            table {
+                width: 100%;
+                border-collapse: collapse;
+                margin: 20px 0;
+                box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            }
+            
+            th, td {
+                padding: 12px;
+                text-align: left;
+                border-bottom: 1px solid #ddd;
+            }
+            
+            th {
+                background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+                color: white;
+                font-weight: bold;
+            }
+            
+            tr:hover {
+                background-color: #f5f5f5;
+            }
+            
+            .highlight-box {
+                background: #f8f9fa;
+                border-left: 4px solid #667eea;
+                padding: 20px;
+                margin: 20px 0;
+                border-radius: 4px;
+            }
+            
+            .warning-box {
+                background: #fff3cd;
+                border-left: 4px solid #ffc107;
+                padding: 20px;
+                margin: 20px 0;
+                border-radius: 4px;
+            }
+            
+            .success-box {
+                background: #d4edda;
+                border-left: 4px solid #28a745;
+                padding: 20px;
+                margin: 20px 0;
+                border-radius: 4px;
+            }
+            
+            .danger-box {
+                background: #f8d7da;
+                border-left: 4px solid #dc3545;
+                padding: 20px;
+                margin: 20px 0;
+                border-radius: 4px;
+            }
+            
+            code {
+                background: #f4f4f4;
+                padding: 2px 6px;
+                border-radius: 3px;
+                font-family: 'Courier New', monospace;
+                font-size: 0.9em;
+            }
+            
+            pre {
+                background: #2d2d2d;
+                color: #f8f8f2;
+                padding: 20px;
+                border-radius: 6px;
+                overflow-x: auto;
+                font-size: 0.9em;
+            }
+            
+            pre code {
+                background: none;
+                color: inherit;
+                padding: 0;
+            }
+            
+            .back-link {
+                display: inline-block;
+                margin-bottom: 20px;
+                color: white;
+                background: #667eea;
+                padding: 10px 20px;
+                border-radius: 6px;
+                text-decoration: none;
+                font-weight: bold;
+            }
+            
+            .back-link:hover {
+                background: #764ba2;
+            }
+            
+            ul {
+                line-height: 1.8;
+            }
+            
+            li {
+                margin: 8px 0;
+            }
+        </style>
+    </head>
+    
+    <body>
+        <div class="container">
+            <a href="index.html" class="back-link">← Back to Dashboard</a>
+            
+            <h1>✨ What's New in Indexer Score v2.0</h1>
+            
+            <div class="success-box">
+                <h3 style="margin-top:0;">🎉 A Simpler, Delegator-Focused Scoring System</h3>
+                <p>We've completely redesigned the Indexer Score to focus on what matters most: <strong>query fee generation</strong> and <strong>fair reward sharing</strong>. We removed complexity to create a transparent system that protects delegators and promotes network health.</p>
+            </div>
+            
+            <h2>🎯 The New Simple Approach</h2>
+            <p>Unlike complex multi-factor scoring systems, our approach is straightforward:</p>
+            <ul>
+                <li><strong>Single Performance Metric:</strong> Query Fee Ratio (QFR) - how efficiently an indexer generates query fees relative to their allocated stake</li>
+                <li><strong>Clear Reward Requirement:</strong> Delegator rewards percentage - how much indexers share with their delegators</li>
+                <li><strong>Transparent Thresholds:</strong> Easy-to-understand tier requirements</li>
+                <li><strong>Automatic Penalties:</strong> Built-in protections against underserving indexers</li>
+            </ul>
+            
+            <h2>🛡️ Protecting Delegators</h2>
+            
+            <h3>Delegator Rewards Thresholds</h3>
+            <p>The scoring system is designed to <strong>protect delegators</strong> by enforcing fair reward distribution:</p>
+            
+            <table>
+                <tr>
+                    <th>Delegator Rewards %</th>
+                    <th>Impact</th>
+                    <th>Tier Eligibility</th>
+                </tr>
+                <tr>
+                    <td><strong>≥ 30%</strong></td>
+                    <td>✅ Fair reward sharing</td>
+                    <td>Can achieve <strong>Excellent</strong> tier</td>
+                </tr>
+                <tr>
+                    <td><strong>10-29%</strong></td>
+                    <td>⚠️ Below recommended</td>
+                    <td>Maximum <strong>Fair</strong> tier</td>
+                </tr>
+                <tr>
+                    <td><strong>&lt; 10%</strong></td>
+                    <td>🔴 Unfair to delegators</td>
+                    <td><strong>Automatic Poor</strong> classification</td>
+                </tr>
+            </table>
+            
+            <div class="danger-box">
+                <h3 style="margin-top:0;">🔴 Key Protection</h3>
+                <p><strong>Any indexer sharing less than 10% of rewards with delegators is automatically classified as Poor</strong>, regardless of their technical performance. This ensures delegators avoid indexers who keep more than 90% of rewards for themselves.</p>
+            </div>
+            
+            <h3>Supporting Informed Decisions</h3>
+            <p>The dashboard helps delegators by:</p>
+            <ul>
+                <li>🎯 <strong>Highlighting generous indexers</strong> - Top tier requires ≥30% reward sharing</li>
+                <li>🚫 <strong>Filtering out unfair indexers</strong> - Automatic Poor rating for &lt;10% sharing</li>
+                <li>📊 <strong>Transparent metrics</strong> - All data visible including exact reward percentages</li>
+                <li>🏆 <strong>Easy comparison</strong> - Sorted by tier and reward generosity</li>
+            </ul>
+            
+            <h2>🌐 Network Health Focus</h2>
+            
+            <h3>Query Fee Ratio (QFR)</h3>
+            <p>We care about the <strong>health of The Graph Network</strong> by evaluating indexers who actually serve the network through meaningful query fee generation.</p>
+            
+            <div class="highlight-box">
+                <h4>QFR Formula:</h4>
+                <pre><code>QFR = Query Fees Earned / Total Allocated Stake</code></pre>
+            </div>
+            
+            <p><strong>Why QFR Matters:</strong></p>
+            <ul>
+                <li>Measures real network contribution through query serving</li>
+                <li>Reflects indexer's subgraph curation quality</li>
+                <li>Indicates actual demand for indexer's services</li>
+                <li>Shows revenue generation capability</li>
+            </ul>
+            
+            <p><strong>Network Health Benefits:</strong></p>
+            <ul>
+                <li>Rewards indexers who serve active subgraphs</li>
+                <li>Encourages proper subgraph selection</li>
+                <li>Supports indexers providing value to dApp developers</li>
+                <li>Promotes sustainable network economics</li>
+            </ul>
+            
+            <h2>⚠️ Underserving Penalty</h2>
+            <p>To maintain network decentralization and quality of service, we apply a <strong>significant penalty</strong> to indexers serving too few subgraphs.</p>
+            
+            <div class="warning-box">
+                <h4>Penalty Formula:</h4>
+                <pre><code>Penalty = 3.0 × (10 - number_of_subgraphs) / 10</code></pre>
+                <p><strong>Threshold:</strong> Indexers must serve at least <strong>10 subgraphs</strong></p>
+            </div>
+            
+            <table>
+                <tr>
+                    <th>Subgraphs Served</th>
+                    <th>Penalty Applied</th>
+                    <th>Impact</th>
+                </tr>
+                <tr>
+                    <td>1 subgraph</td>
+                    <td>+2.70 points</td>
+                    <td>🔴 Severe</td>
+                </tr>
+                <tr>
+                    <td>3 subgraphs</td>
+                    <td>+2.10 points</td>
+                    <td>🔴 High</td>
+                </tr>
+                <tr>
+                    <td>5 subgraphs</td>
+                    <td>+1.50 points</td>
+                    <td>🟡 Moderate</td>
+                </tr>
+                <tr>
+                    <td>7 subgraphs</td>
+                    <td>+0.90 points</td>
+                    <td>🟡 Low</td>
+                </tr>
+                <tr>
+                    <td>10+ subgraphs</td>
+                    <td>0.00 points</td>
+                    <td>✅ No penalty</td>
+                </tr>
+            </table>
+            
+            <h2>📐 Score Calculation</h2>
+            
+            <h3>Step-by-Step Breakdown</h3>
+            
+            <div class="highlight-box">
+                <h4>Step 1: Calculate QFR</h4>
+                <pre><code>QFR = Query Fees Earned / Allocated Stake</code></pre>
+                
+                <h4>Step 2: Normalize QFR (1-10 scale)</h4>
+                <pre><code>Normalized QFR = 1 + 9 × (min(QFR, 0.3) / 0.3)</code></pre>
+                <p>QFR capped at 0.3 (30%) for fairness<br>Scale: 1 (worst) to 10 (best)</p>
+                
+                <h4>Step 3: Invert for Final Score (1 = best, 10 = worst)</h4>
+                <pre><code>Final Score = 11 - Normalized QFR</code></pre>
+                
+                <h4>Step 4: Apply Underserving Penalty (if applicable)</h4>
+                <pre><code>If (subgraphs < 10):
+    Final Score = min(10.0, Final Score + Penalty)</code></pre>
+                
+                <h4>Step 5: Assign Performance Tier</h4>
+                <pre><code>If (Delegator Rewards < 10%):
+    Tier = Poor 🔴
+Else If (Final Score ≤ 9.92 AND Delegator Rewards ≥ 30%):
+    Tier = Excellent 🟢
+Else If (Final Score ≤ 9.97):
+    Tier = Fair 🟡
+Else:
+    Tier = Poor 🔴</code></pre>
+            </div>
+            
+            <h2>💡 Real Examples</h2>
+            
+            <h3>Example 1: Excellent Indexer (dataservices.eth)</h3>
+            <div class="success-box">
+                <ul style="margin: 0;">
+                    <li><strong>Query Fees:</strong> 222,106 GRT</li>
+                    <li><strong>Allocated Stake:</strong> 87,323,802 GRT</li>
+                    <li><strong>Subgraphs:</strong> 930</li>
+                    <li><strong>Delegator Rewards:</strong> 81.14%</li>
+                </ul>
+                
+                <h4>Calculation:</h4>
+                <pre><code>QFR = 222,106 / 87,323,802 = 0.00254 (0.254%)
+Normalized QFR = 1 + 9 × (0.00254 / 0.3) = 1.08
+Final Score = 11 - 1.08 = 9.92
+Penalty = 0 (serves 930 subgraphs)
+Delegator Rewards = 81.14% ≥ 30% ✅
+
+<strong style="color: #28a745;">Result: Excellent 🟢</strong></code></pre>
+                
+                <p><strong>Why Excellent:</strong> Generates meaningful query fees, shares 81.14% with delegators (exceptional!), serves many subgraphs, and meets all requirements.</p>
+            </div>
+            
+            <h3>Example 2: Fair Indexer (streamingfastindexer.eth)</h3>
+            <div class="warning-box">
+                <ul style="margin: 0;">
+                    <li><strong>Query Fees:</strong> 4,691,469 GRT</li>
+                    <li><strong>Allocated Stake:</strong> 18,434,122 GRT</li>
+                    <li><strong>Subgraphs:</strong> 750</li>
+                    <li><strong>Delegator Rewards:</strong> 22.09%</li>
+                </ul>
+                
+                <h4>Calculation:</h4>
+                <pre><code>QFR = 4,691,469 / 18,434,122 = 0.2545 (25.45%)
+Normalized QFR = 1 + 9 × (0.2545 / 0.3) = 8.63
+Final Score = 11 - 8.63 = 2.37
+Penalty = 0 (serves 750 subgraphs)
+Delegator Rewards = 22.09% < 30% ⚠️
+
+<strong style="color: #ffc107;">Result: Fair 🟡</strong></code></pre>
+                
+                <p><strong>Why Fair (not Excellent):</strong> Excellent query fee generation (top performer!), BUT delegator rewards 22.09% &lt; 30% threshold. Still serves many subgraphs (750).</p>
+            </div>
+            
+            <h3>Example 3: Poor Indexer - Unfair Rewards (pinax2.eth)</h3>
+            <div class="danger-box">
+                <ul style="margin: 0;">
+                    <li><strong>Query Fees:</strong> 2,856,044 GRT</li>
+                    <li><strong>Allocated Stake:</strong> 15,999,999 GRT</li>
+                    <li><strong>Subgraphs:</strong> 600</li>
+                    <li><strong>Delegator Rewards:</strong> 0.00%</li>
+                </ul>
+                
+                <h4>Calculation:</h4>
+                <pre><code>QFR = 2,856,044 / 15,999,999 = 0.1785 (17.85%)
+Normalized QFR = 1 + 9 × (0.1785 / 0.3) = 6.36
+Final Score = 11 - 6.36 = 4.64
+Penalty = 0 (serves 600 subgraphs)
+Delegator Rewards = 0.00% < 10% 🔴
+
+<strong style="color: #dc3545;">Result: Poor 🔴 (AUTOMATIC)</strong></code></pre>
+                
+                <p><strong>Why Poor:</strong> Excellent query fee generation (17.85%!), serves many subgraphs (600), BUT <strong>AUTOMATIC POOR</strong> because shares 0% with delegators. Critical failure: keeps 100% of rewards for themselves.</p>
+            </div>
+            
+            <h2>🏆 Performance Tiers Summary</h2>
+            
+            <table>
+                <tr>
+                    <th>Tier</th>
+                    <th>Requirements</th>
+                    <th>Typical Profile</th>
+                </tr>
+                <tr>
+                    <td><strong>🟢 Excellent</strong></td>
+                    <td>Score ≤9.92 + Delegator Rewards ≥30%</td>
+                    <td>Top performers who share fairly</td>
+                </tr>
+                <tr>
+                    <td><strong>🟡 Fair</strong></td>
+                    <td>Score ≤9.97 OR Delegator Rewards 10-29%</td>
+                    <td>Decent performance or moderate sharing</td>
+                </tr>
+                <tr>
+                    <td><strong>🔴 Poor</strong></td>
+                    <td>Score >9.97 OR Delegator Rewards &lt;10%</td>
+                    <td>Low performance or unfair sharing</td>
+                </tr>
+            </table>
+            
+            <h2>🎯 Key Takeaways</h2>
+            
+            <div class="highlight-box">
+                <ol>
+                    <li><strong>Simplicity First:</strong> One primary metric (QFR) plus reward fairness</li>
+                    <li><strong>Delegator Protection:</strong> Automatic Poor rating for &lt;10% reward sharing</li>
+                    <li><strong>Excellence Requires Fairness:</strong> Need ≥30% reward sharing for top tier</li>
+                    <li><strong>Network Health:</strong> Rewards real query fee generation</li>
+                    <li><strong>Diversity Incentive:</strong> Penalty for serving too few subgraphs</li>
+                    <li><strong>Transparent Scoring:</strong> Clear formulas, no black boxes</li>
+                </ol>
+            </div>
+            
+            <h2>📊 Current Network Statistics</h2>
+            
+            <p><strong>Total Indexers:</strong> 82 with allocations<br>
+            <strong>Performance Distribution:</strong></p>
+            <ul>
+                <li>🟢 Excellent: 20 indexers (24.4%)</li>
+                <li>🟡 Fair: 11 indexers (13.4%)</li>
+                <li>🔴 Poor: 51 indexers (62.2%)</li>
+            </ul>
+            
+            <p style="text-align: center; margin-top: 40px;">
+                <a href="index.html" class="back-link">← Back to Dashboard</a>
+            </p>
+            
+            <hr style="margin: 40px 0; border: none; border-top: 1px solid #ddd;">
+            
+            <p style="text-align: center; color: #666; font-size: 0.9em;">
+                <strong>Version:</strong> 2.0.0 | <strong>Last Updated:</strong> 2025-10-30 10:03:31 UTC<br>
+                Made with ❤️ by <a href="https://x.com/pdiomede" target="_blank">Paolo Diomede</a> for The Graph ecosystem 👨‍🚀
+            </p>
+        </div>
+    </body>
+</html>
+    

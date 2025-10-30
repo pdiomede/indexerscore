@@ -1036,7 +1036,7 @@ def generate_indexers_to_html(indexers, filename="index.html"):
                 Generated on: {timestamp} - (updated every 6 hours) - v{DASHBOARD_VERSION}
                 <p style="margin-top: 10px;">
                     💬 <a target="_blank" href="https://forum.thegraph.com/t/introducing-the-indexer-score/6501">Join the Forum Discussion</a>
-                    | 📚 <a href="docs.html" target="_blank">How the Dashboard Works</a>
+                    | 📚 <a href="whats-new.html">How the Dashboard Works</a>
                     | 📄 <a  target="_blank" href="./indexer_score_documentation_v2.0.0.pdf" download>Download PDF Documentation</a>
                 </p>
             </div>
